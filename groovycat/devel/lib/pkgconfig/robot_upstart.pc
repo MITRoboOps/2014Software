@@ -1,0 +1,8 @@
+prefix=/home/roboops/groovycat/devel
+
+Name: robot_upstart
+Description: Description of robot_upstart
+Version: 0.0.6
+Cflags: 
+Libs: -L/home/roboops/groovycat/devel/lib 
+Requires: 

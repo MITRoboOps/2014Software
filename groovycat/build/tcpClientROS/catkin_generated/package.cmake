@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "tcpClientROS")
+set(tcpClientROS_MAINTAINER "roboops <roboops@todo.todo>")
+set(tcpClientROS_DEPRECATED "")
+set(tcpClientROS_VERSION "0.0.0")
+set(tcpClientROS_BUILD_DEPENDS "joy" "roscpp" "rospy" "std_msgs")
+set(tcpClientROS_RUN_DEPENDS "joy" "roscpp" "rospy" "std_msgs")
+set(tcpClientROS_BUILDTOOL_DEPENDS "catkin")

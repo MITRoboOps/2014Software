@@ -1,0 +1,8 @@
+prefix=/home/roboops/groovycat/install
+
+Name: tcpClientROS
+Description: Description of tcpClientROS
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/roboops/groovycat/install/lib 
+Requires: 

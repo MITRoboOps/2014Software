@@ -1,0 +1,4 @@
+<launch>
+  <node name="tcpIN" pkg="tcpClientROS" type="publisher" />
+  <node name="Drivetrain" pkg="motorjoy" type="talktomotor" />
+</launch>

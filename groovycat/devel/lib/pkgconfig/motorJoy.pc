@@ -1,0 +1,8 @@
+prefix=/home/roboops/groovycat/devel
+
+Name: motorJoy
+Description: Description of motorJoy
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/roboops/groovycat/devel/lib 
+Requires: 

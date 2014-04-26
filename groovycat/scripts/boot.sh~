@@ -1,0 +1,8 @@
+echo "Launching Rover..."
+mkdir /home/roboops/groovycat/scripts/bootexecuted
+sudo su - roboops /home/roboops/groovycat/scripts/bootRoverLaunch.sh
+echo "Done."
+echo "View with screen -ls"
+echo "Enter session with screen -r name"
+echo "To return from session, use CTRL-A-D"
+sleep 5

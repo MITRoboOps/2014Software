@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "motorJoy")
+set(motorJoy_MAINTAINER "bowen <bowen@todo.todo>")
+set(motorJoy_DEPRECATED "")
+set(motorJoy_VERSION "0.0.0")
+set(motorJoy_BUILD_DEPENDS "joy" "roscpp" "rospy" "std_msgs")
+set(motorJoy_RUN_DEPENDS "joy" "roscpp" "rospy" "std_msgs")
+set(motorJoy_BUILDTOOL_DEPENDS "catkin")

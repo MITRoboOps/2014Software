@@ -1,0 +1,5 @@
+cd /home/roboops/groovycat/
+source devel/setup.sh
+sleep 15
+sudo su - roboops rosrun motorjoy talktomotor 
+

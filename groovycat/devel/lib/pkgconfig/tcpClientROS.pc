@@ -1,0 +1,8 @@
+prefix=/home/roboops/groovycat/devel
+
+Name: tcpClientROS
+Description: Description of tcpClientROS
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/roboops/groovycat/devel/lib 
+Requires: 

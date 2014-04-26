@@ -1,0 +1,4 @@
+<launch>
+  <node name="JoystickIn" pkg="joy" type="joy_node" />
+  <node name="Drivetrain" pkg="motorjoy" type="talktomotor" />
+</launch>
