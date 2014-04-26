@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "Motor")
+set(Motor_MAINTAINER "roboops <roboops@todo.todo>")
+set(Motor_DEPRECATED "")
+set(Motor_VERSION "0.0.0")
+set(Motor_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(Motor_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(Motor_BUILDTOOL_DEPENDS "catkin")
