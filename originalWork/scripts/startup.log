@@ -1,0 +1,34 @@
+... logging to /home/roboops/.ros/log/a4519c70-c8db-11e3-a53a-d850e64a0f18/roslaunch-Rover-2064.log
+Checking log directory for disk usage. This may take awhile.
+Press Ctrl-C to interrupt
+Done checking log file disk usage. Usage is <1GB.
+]2;rover.launch
+[1mstarted roslaunch server http://Rover:39285/[0m
+
+SUMMARY
+========
+
+PARAMETERS
+ * /rosdistro
+ * /rosversion
+
+NODES
+  /
+    Drivetrain (motorjoy/talktomotor)
+    tcpIN (tcpClientROS/publisher)
+
+auto-starting new master
+[1mprocess[master]: started with pid [2078][0m
+[1mROS_MASTER_URI=http://localhost:11311[0m
+]2;rover.launch http://localhost:11311
+[1msetting /run_id to a4519c70-c8db-11e3-a53a-d850e64a0f18[0m
+[1mprocess[rosout-1]: started with pid [2091][0m
+started core service [/rosout]
+[1mprocess[tcpIN-2]: started with pid [2094][0m
+[1mprocess[Drivetrain-3]: started with pid [2114][0m
+[Drivetrain-3] killing on exit
+[rosout-1] killing on exit
+[master] killing on exit
+shutting down processing monitor...
+... shutting down processing monitor complete
+[1mdone[0m
