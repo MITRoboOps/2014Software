@@ -4,10 +4,12 @@
 using namespace std;
 
 class MotorController {
-	private:
+	protected:
     	bool status = true;
         string deviceID;
   	public:
+ 		//returns true if successfully connected
+  		virtual bool connectToDevice(string devID) =0;
   		//getter methods
 		virtual double getVelocity() =0;
   		virtual double getPosition() =0;
@@ -22,6 +24,5 @@ class MotorController {
   		virtual bool getStatusBool() =0;
   		//returns error message or empty string
   		virtual string getStatusString() =0;
-  		//returns true if successfully connected
-  		virtual bool connectToDevice(string devID) =0;
+  		
 }
