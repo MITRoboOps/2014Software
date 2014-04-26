@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <string>
 
 int Firgelli::m_debug;
 
@@ -30,7 +31,7 @@ void Firgelli::SetDebug(int m)
 	m_debug=m;
 }
 
-void Firgelli::Open(int rank)
+void Firgelli::Open(string lacDevID)
 {
 	int rval;
 	uint16_t vid=0x04d8;		// Microtech
@@ -67,8 +68,6 @@ void Firgelli::Open(int rank)
 			exit(1);
 		}
 		if((ddesc.idVendor == vid) && (ddesc.idProduct == pid)){
-			printf("Serialnumber is %i\n", ddesc.iSerialNumber);
-			printf("idVendor is %i\n", ddesc.idVendor);
 			nfound++;
 			if (nfound==rank)
 				found=dev;
