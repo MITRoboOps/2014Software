@@ -68,7 +68,7 @@ void Firgelli::Open(int rank)
 		}
 		if((ddesc.idVendor == vid) && (ddesc.idProduct == pid)){
 			printf("Serialnumber is %i\n", ddesc.iSerialNumber);
-			printf("idVendor is %s\n", ddesc.idVendor);
+			printf("idVendor is %i\n", ddesc.idVendor);
 			nfound++;
 			if (nfound==rank)
 				found=dev;
@@ -81,6 +81,7 @@ void Firgelli::Open(int rank)
 		exit(1);
 	}
 	rval=libusb_open(found,&m_handle);
+	printf("rval is %i\n", rval);
 	assert(rval==0);	
 #endif
 	rval=libusb_claim_interface(m_handle,m_interface);

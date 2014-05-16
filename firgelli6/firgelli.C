@@ -67,8 +67,6 @@ void Firgelli::Open(int rank)
 			exit(1);
 		}
 		if((ddesc.idVendor == vid) && (ddesc.idProduct == pid)){
-			printf("Serialnumber is %i\n", ddesc.iSerialNumber);
-			printf("idVendor is %i\n", ddesc.idVendor);
 			nfound++;
 			if (nfound==rank)
 				found=dev;

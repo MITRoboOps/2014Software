@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <iostream>
-  
+
 using namespace std;
 
 class MotorController {
@@ -17,12 +17,12 @@ class MotorController {
   		//setter methods :
   		//		return true if successfully set parameter
   		//		return false otherwise
-  		virtual void setVelocity(double vel) =0;
-  		virtual void setPosition(double pos) =0;
-  		virtual void setCurrent(double current) =0;
+  		virtual bool setVelocity(double vel) =0;
+  		virtual bool setPosition(double pos) =0;
+  		virtual bool setCurrent(double current) =0;
   		//returns status
   		virtual bool getStatusBool() =0;
   		//returns error message or empty string
   		virtual string getStatusString() =0;
-  		
+
 }

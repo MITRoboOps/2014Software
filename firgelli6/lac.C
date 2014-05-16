@@ -48,6 +48,8 @@ int main(int argc, char *argv[])
 				fprintf(stderr,"lac: two values not found\n");
 				exit(1);
 			}
+			printf("loc is : %i, value is : %i\n",loc,value);
+
 			value=firgelli.WriteCode(loc,value);
 			printf("value=%d\n",value);
 			continue;
