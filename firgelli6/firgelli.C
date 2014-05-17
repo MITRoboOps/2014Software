@@ -1,6 +1,7 @@
 #include "firgelli.h"
 #include <stdio.h>
 #include <stdlib.h>
+#include <libusb.h>
 #include <assert.h>
 
 int Firgelli::m_debug;
@@ -18,7 +19,7 @@ Firgelli::~Firgelli()
 {
 	int rval=libusb_release_interface(m_handle,m_interface);
 	assert(rval==0);
-	
+
 	if(m_handle)
 		libusb_close(m_handle);
 	libusb_exit(m_ctx);
@@ -35,7 +36,7 @@ void Firgelli::Open(int rank)
 	int rval;
 	uint16_t vid=0x04d8;		// Microtech
 	uint16_t pid=0xfc5f;		// ??
-	
+
 #ifdef SIMPLE
 	m_handle=libusb_open_device_with_vid_pid(m_ctx,vid,pid);
 	if(m_handle==NULL){
@@ -79,7 +80,7 @@ void Firgelli::Open(int rank)
 		exit(1);
 	}
 	rval=libusb_open(found,&m_handle);
-	assert(rval==0);	
+	assert(rval==0);
 #endif
 	rval=libusb_claim_interface(m_handle,m_interface);
 	assert(rval==0);
@@ -98,8 +99,8 @@ void Firgelli::Info()
 //	rval=libusb_get_string_descriptor_ascii(m_handle,
 
 	libusb_device *device=libusb_get_device(m_handle);
-	int busno=libusb_get_bus_number(device);	
-	int address=libusb_get_device_address(device);	
+	int busno=libusb_get_bus_number(device);
+	int address=libusb_get_device_address(device);
 	printf("busno=%d address=%d\n",busno,address);
 
 	libusb_device_descriptor ddesc;
@@ -146,11 +147,11 @@ int Firgelli::WriteCode(int location, int value)
 	buf[1]=value%256;	// Low
 	buf[2]=value/256;	// High
 
-	unsigned char endpoint=1 | LIBUSB_ENDPOINT_OUT; 
+	unsigned char endpoint=1 | LIBUSB_ENDPOINT_OUT;
 
 	int rval=libusb_bulk_transfer(
 		m_handle,
-		endpoint,	
+		endpoint,
 		buf,
 		3,
 		&transferred,
@@ -169,7 +170,7 @@ int Firgelli::WriteCode(int location, int value)
 	endpoint=1 | LIBUSB_ENDPOINT_IN;
 	rval=libusb_bulk_transfer(
 		m_handle,
-		endpoint,	
+		endpoint,
 		buf,
 		3,
 		&transferred,
@@ -186,7 +187,7 @@ int Firgelli::WriteCode(int location, int value)
 	if(m_debug)
 		printf("buf[0]=0x%x buf[1]=0x%x buf[2]=0x%x\n",
 		buf[0], buf[1],buf[2]);
-	
+
 	return buf[1]+256*buf[2];
 
 }
