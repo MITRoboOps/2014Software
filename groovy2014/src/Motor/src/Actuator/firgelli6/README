@@ -1,0 +1,38 @@
+This code controls the Firgelli LAC from Linux.
+It is provided as-is with no warranty.
+Name: Richard Treffers
+e-mail: info@StarmanSystems.com
+Date: August 4, 2012
+
+Requirements:
+	libusb-1.0
+	g++ compiler
+
+Installation:
+	make  # to generate main program lac 
+	make sure that lac is accessible from the current PATH	
+
+	copy the appropriate .rules file into /etc/udev/rules and
+	follow instructions within the file.
+	It has been tested under Ubuntu 12:04 and SUSE 12.1
+
+Program usage:
+	lac [debug] [rank=1] [write=location,value]
+
+	debug - puts more printout as to operation
+	rank=n - picks the nth LAC card
+	write=location,value transmits the value to the register location
+		locations should be prefaced by 0x if in hexadecimal.
+	
+	setall - a script to set sample values
+	
+Examples:
+	setall   #to configure
+	lac write=0x20,200    # to move to position 200
+	lac write=0x20,800    # to move to position 800
+	lac write=0x10        # to read current position 
+
+See Lac_Advanced)Configuration.pdf  for register descriptions
+
+LIMITATIONS
+	Multiple lacs (using the rank option above) is untested.

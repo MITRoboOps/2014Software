@@ -1,0 +1,30 @@
+# depslib dependency file v1.0
+1400471604 source:/home/roboops/2014Software/groovy2014/src/Motor/src/Robotech/RobotechMotor.cpp
+	"RobotechMotor.h"
+
+1400471140 /home/roboops/2014Software/groovy2014/src/Motor/src/Robotech/RobotechMotor.h
+	"Serial.h"
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	"stdlib.h"
+	<iostream>
+	<cmath>
+	<sstream>
+	<exception>
+	<pthread.h>
+
+1400468882 /home/roboops/2014Software/groovy2014/src/Motor/src/Robotech/Serial.h
+	<string>
+	<boost/asio.hpp>
+
+1400468690 source:/home/roboops/2014Software/groovy2014/src/Motor/src/Robotech/Serial.cpp
+	"Serial.h"
+
+1400471506 source:/home/roboops/2014Software/groovy2014/src/Motor/src/Robotech/RobotechMotorTest.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+	"RobotechMotor.h"
+
