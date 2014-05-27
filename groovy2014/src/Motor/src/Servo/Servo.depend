@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1400468690 source:/home/roboops/2014Software/groovy2014/src/Motor/src/Servo/Serial.cpp
+	"Serial.h"
+
+1400468882 /home/roboops/2014Software/groovy2014/src/Motor/src/Servo/Serial.h
+	<string>
+	<boost/asio.hpp>
+
+1401074656 source:/home/roboops/2014Software/groovy2014/src/Motor/src/Servo/ServoMotor.cpp
+	"ServoMotor.h"
+
+1401074684 /home/roboops/2014Software/groovy2014/src/Motor/src/Servo/ServoMotor.h
+	"Serial.h"
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	"stdlib.h"
+	<iostream>
+	<cmath>
+	<sstream>
+	<exception>
+	<pthread.h>
+	<fcntl.h>
+	<stdio.h>
+	<unistd.h>
+	<termios.h>
+
+1401072391 source:/home/roboops/2014Software/groovy2014/src/Motor/src/Servo/ServoMotorTest.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+	"ServoMotor.h"
+

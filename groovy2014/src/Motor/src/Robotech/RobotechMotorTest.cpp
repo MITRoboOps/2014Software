@@ -8,16 +8,25 @@ using namespace std;
 
 int main(){
     cout << "successful run" << endl;
-    RobotechMotor *robo = new RobotechMotor();
+    RobotechMotor *robo = new RobotechMotor(150, 100,1500,1500);
+    RobotechMotor *robo1 = new RobotechMotor(150,100,1500,1500);
     cout << "successful initialization" << endl;
 
 
-    if(robo->connectToDevice("/dev/ttyUSB1")){
+    if(robo->connectToDevice("/dev/ttyUSB0")){
         cout << "successful connect" << endl;
     }
+    robo1->connectToDevice("/dev/ttyUSB1");
 
     robo->setVelocity(500);
-    sleep(1*1000000);
-    robo->setVelocity(0);
+    for(int i =0; i < 200; i++){
+        robo->setVelocity(-500);
+        robo1->setVelocity(-500);
+        usleep(100*1000);
+    }
+
+    sleep(1);
+    cout << "after sleep" << endl;
+ //   robo->setRelativePosition(100);
 
 }

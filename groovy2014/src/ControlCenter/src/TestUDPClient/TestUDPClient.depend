@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1401046257 source:/home/roboops/2014Software/groovy2014/src/ControlCenter/src/TestUDPClient/UDPClient.cpp
+	<arpa/inet.h>
+	<netinet/in.h>
+	<stdio.h>
+	<sys/types.h>
+	<sys/socket.h>
+	<unistd.h>
+	<stdlib.h>
+	<string.h>
+

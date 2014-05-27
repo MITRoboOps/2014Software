@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1400991828 source:/home/roboops/2014Software/groovy2014/src/ControlCenter/src/ControlServer/UDPServer.cpp
+	<boost/asio.hpp>
+	<iostream>
+	<boost/array.hpp>
+	<ctime>
+	<sstream>
+	<stdio.h>
+	<stdlib.h>
+

@@ -16,8 +16,12 @@ void Actuator::changeVel(int newSpeed)
     firgelli.WriteCode(33,newSpeed);
 }
 
-Actuator::Actuator(int myRank)
+Actuator::Actuator(int myRank, int minPos, int maxPos, int maxVelMag, int millisecs)
 {
+    minPosition = minPos;
+    maxPosition = maxPos;
+    maxVelocityMagnitude = maxVelMag;
+    stallTime = millisecs;
     setRank(myRank);
 }
 
@@ -59,7 +63,10 @@ double Actuator::getCurrent()
 
 void Actuator::setPosition(double pos)
 {
-    int lastPos = firgelli.WriteCode(32, (int) (pos + 0.5));
+    int actualPos = pos;
+    if(pos < minPosition) actualPos = minPosition;
+    if(pos > maxPosition) actualPos = maxPosition;
+    int lastPos = firgelli.WriteCode(32, (int) (actualPos + 0.5));
 }
 
 //takes in all ints
@@ -67,6 +74,10 @@ void Actuator::setVelocity(double vel)
 {
     velocity = vel;
     int actualVel = (int) (vel + 0.5); //this makes it round correctly
+
+    if(actualVel > maxVelocityMagnitude) actualVel = maxVelocityMagnitude;
+    if(actualVel < -maxVelocityMagnitude) actualVel = -maxVelocityMagnitude;
+
     if(vel == 0)
     {
         setPosition(getPosition());
@@ -74,12 +85,13 @@ void Actuator::setVelocity(double vel)
     }
     else if(vel > 0)
     {
-        setPosition(10000000);
+        setPosition(getPosition() + vel * stallTime);
         changeVel(actualVel);
     }
     else
     {
-        setPosition(0);
+        if(getPosition() + vel*stallTime < 0) setPosition(0);
+        else setPosition(getPosition() + vel * stallTime);
         changeVel(-actualVel);
     }
 }

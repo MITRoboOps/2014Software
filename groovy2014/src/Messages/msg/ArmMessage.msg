@@ -1,0 +1,5 @@
+int32 thumb
+int32 claw
+int32 stick
+int32 boom
+int32 armRot

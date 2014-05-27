@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libDriveTrain.so -o /home/roboops/2014Software/groovy2014/devel/lib/libDriveTrain.so CMakeFiles/DriveTrain.dir/src/DriveTrainClass.cpp.o 

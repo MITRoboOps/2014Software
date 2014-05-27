@@ -1,0 +1,2546 @@
+[p PRO_MODE GLOBOPT AUTOSTATIC PIC14 PIC14E SPACEOPT ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F1825 ]
+"150 C:\Program\HI-TECH Software\PICC\9.83\include\pic16f1825.h
+[s S28 . 1 `uc 1 C 1 0 :1:0 
+`uc 1 DC 1 0 :1:1 
+`uc 1 Z 1 0 :1:2 
+`uc 1 nPD 1 0 :1:3 
+`uc 1 nTO 1 0 :1:4 
+`uc 1 . 1 0 :2:5 
+`uc 1 . 1 0 :1:7 
+]
+[u S36 . 1 `S28 1 . 1 0 ]
+"196
+[s S59 . 1 `uc 1 BSR0 1 0 :1:0 
+`uc 1 BSR1 1 0 :1:1 
+`uc 1 BSR2 1 0 :1:2 
+`uc 1 BSR3 1 0 :1:3 
+`uc 1 BSR4 1 0 :1:4 
+]
+[s S65 . 1 `uc 1 BSR 1 0 :5:0 
+]
+[u S67 . 1 `S59 1 . 1 0 `S65 1 . 1 0 ]
+"217
+[s S81 . 1 `uc 1 PCLATH 1 0 :7:0 
+]
+[u S83 . 1 `S81 1 . 1 0 ]
+"239
+[s S99 . 1 `uc 1 IOCIF 1 0 :1:0 
+`uc 1 INTF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 IOCIE 1 0 :1:3 
+`uc 1 INTE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S108 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 T0IE 1 0 :1:5 
+]
+[u S113 . 1 `S99 1 . 1 0 `S108 1 . 1 0 ]
+"269
+[s S138 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[u S147 . 1 `S138 1 . 1 0 ]
+"293
+[s S166 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[u S175 . 1 `S166 1 . 1 0 ]
+"327
+[s S196 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSP1IF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+`uc 1 TMR1GIF 1 0 :1:7 
+]
+[u S205 . 1 `S196 1 . 1 0 ]
+"351
+[s S224 . 1 `uc 1 CCP2IF 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 EEIF 1 0 :1:4 
+`uc 1 C1IF 1 0 :1:5 
+`uc 1 C2IF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+[u S233 . 1 `S224 1 . 1 0 ]
+"373
+[s S250 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TMR4IF 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TMR6IF 1 0 :1:3 
+`uc 1 CCP3IF 1 0 :1:4 
+`uc 1 CCP4IF 1 0 :1:5 
+]
+[u S257 . 1 `S250 1 . 1 0 ]
+"412
+[s S279 . 1 `uc 1 TMR1ON 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 nT1SYNC 1 0 :1:2 
+`uc 1 T1OSCEN 1 0 :1:3 
+`uc 1 T1CKPS0 1 0 :1:4 
+`uc 1 T1CKPS1 1 0 :1:5 
+`uc 1 TMR1CS0 1 0 :1:6 
+`uc 1 TMR1CS1 1 0 :1:7 
+]
+[s S288 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 T1CKPS 1 0 :2:4 
+`uc 1 TMR1CS 1 0 :2:6 
+]
+[u S292 . 1 `S279 1 . 1 0 `S288 1 . 1 0 ]
+"443
+[s S318 . 1 `uc 1 T1GSS0 1 0 :1:0 
+`uc 1 T1GSS1 1 0 :1:1 
+`uc 1 T1GVAL 1 0 :1:2 
+`uc 1 T1GGO 1 0 :1:3 
+`uc 1 T1GSPM 1 0 :1:4 
+`uc 1 T1GTM 1 0 :1:5 
+`uc 1 T1GPOL 1 0 :1:6 
+`uc 1 TMR1GE 1 0 :1:7 
+]
+[s S327 . 1 `uc 1 T1GSS 1 0 :2:0 
+]
+[u S329 . 1 `S318 1 . 1 0 `S327 1 . 1 0 ]
+"479
+[s S354 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+`uc 1 T2CKPS1 1 0 :1:1 
+`uc 1 TMR2ON 1 0 :1:2 
+`uc 1 T2OUTPS0 1 0 :1:3 
+`uc 1 T2OUTPS1 1 0 :1:4 
+`uc 1 T2OUTPS2 1 0 :1:5 
+`uc 1 T2OUTPS3 1 0 :1:6 
+]
+[s S362 . 1 `uc 1 T2CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T2OUTPS 1 0 :4:3 
+]
+[u S366 . 1 `S354 1 . 1 0 `S362 1 . 1 0 ]
+"507
+[s S389 . 1 `uc 1 T0XCS 1 0 :1:0 
+`uc 1 CPSOUT 1 0 :1:1 
+`uc 1 CPSRNG0 1 0 :1:2 
+`uc 1 CPSRNG1 1 0 :1:3 
+`uc 1 . 1 0 :2:4 
+`uc 1 CPSRM 1 0 :1:6 
+`uc 1 CPSON 1 0 :1:7 
+]
+[s S397 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CPSRNG 1 0 :2:2 
+]
+[u S400 . 1 `S389 1 . 1 0 `S397 1 . 1 0 ]
+"532
+[s S420 . 1 `uc 1 CPSCH0 1 0 :1:0 
+`uc 1 CPSCH1 1 0 :1:1 
+`uc 1 CPSCH2 1 0 :1:2 
+`uc 1 CPSCH3 1 0 :1:3 
+]
+[s S425 . 1 `uc 1 CPSCH 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+]
+[u S428 . 1 `S420 1 . 1 0 `S425 1 . 1 0 ]
+"562
+[s S447 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S456 . 1 `uc 1 TRISA 1 0 :6:0 
+`uc 1 . 1 0 :2:6 
+]
+[u S459 . 1 `S447 1 . 1 0 `S456 1 . 1 0 ]
+"591
+[s S482 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S491 . 1 `uc 1 TRISC 1 0 :6:0 
+`uc 1 . 1 0 :2:6 
+]
+[u S494 . 1 `S482 1 . 1 0 `S491 1 . 1 0 ]
+"630
+[s S519 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSP1IE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+`uc 1 TMR1GIE 1 0 :1:7 
+]
+[u S528 . 1 `S519 1 . 1 0 ]
+"660
+[s S547 . 1 `uc 1 CCP2IE 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BCL1IE 1 0 :1:3 
+`uc 1 EEIE 1 0 :1:4 
+`uc 1 C1IE 1 0 :1:5 
+`uc 1 C2IE 1 0 :1:6 
+`uc 1 OSFIE 1 0 :1:7 
+]
+[u S556 . 1 `S547 1 . 1 0 ]
+"682
+[s S573 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 TMR4IE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 TMR6IE 1 0 :1:3 
+`uc 1 CCP3IE 1 0 :1:4 
+`uc 1 CCP4IE 1 0 :1:5 
+]
+[u S580 . 1 `S573 1 . 1 0 ]
+"717
+[s S601 . 1 `uc 1 PS0 1 0 :1:0 
+`uc 1 PS1 1 0 :1:1 
+`uc 1 PS2 1 0 :1:2 
+`uc 1 PSA 1 0 :1:3 
+`uc 1 TMR0SE 1 0 :1:4 
+`uc 1 TMR0CS 1 0 :1:5 
+`uc 1 INTEDG 1 0 :1:6 
+`uc 1 nWPUEN 1 0 :1:7 
+]
+[s S610 . 1 `uc 1 PS 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 T0SE 1 0 :1:4 
+`uc 1 T0CS 1 0 :1:5 
+]
+[u S615 . 1 `S601 1 . 1 0 `S610 1 . 1 0 ]
+"754
+[s S640 . 1 `uc 1 nBOR 1 0 :1:0 
+`uc 1 nPOR 1 0 :1:1 
+`uc 1 nRI 1 0 :1:2 
+`uc 1 nRMCLR 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 STKUNF 1 0 :1:6 
+`uc 1 STKOVF 1 0 :1:7 
+]
+[u S649 . 1 `S640 1 . 1 0 ]
+"785
+[s S668 . 1 `uc 1 SWDTEN 1 0 :1:0 
+`uc 1 WDTPS0 1 0 :1:1 
+`uc 1 WDTPS1 1 0 :1:2 
+`uc 1 WDTPS2 1 0 :1:3 
+`uc 1 WDTPS3 1 0 :1:4 
+`uc 1 WDTPS4 1 0 :1:5 
+]
+[s S675 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 WDTPS 1 0 :5:1 
+]
+[u S678 . 1 `S668 1 . 1 0 `S675 1 . 1 0 ]
+"818
+[s S699 . 1 `uc 1 TUN0 1 0 :1:0 
+`uc 1 TUN1 1 0 :1:1 
+`uc 1 TUN2 1 0 :1:2 
+`uc 1 TUN3 1 0 :1:3 
+`uc 1 TUN4 1 0 :1:4 
+`uc 1 TUN5 1 0 :1:5 
+]
+[s S706 . 1 `uc 1 TUN 1 0 :6:0 
+]
+[u S708 . 1 `S699 1 . 1 0 `S706 1 . 1 0 ]
+"852
+[s S729 . 1 `uc 1 SCS0 1 0 :1:0 
+`uc 1 SCS1 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF0 1 0 :1:3 
+`uc 1 IRCF1 1 0 :1:4 
+`uc 1 IRCF2 1 0 :1:5 
+`uc 1 IRCF3 1 0 :1:6 
+`uc 1 SPLLEN 1 0 :1:7 
+]
+[s S738 . 1 `uc 1 SCS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 IRCF 1 0 :4:3 
+]
+[u S742 . 1 `S729 1 . 1 0 `S738 1 . 1 0 ]
+"892
+[s S768 . 1 `uc 1 HFIOFS 1 0 :1:0 
+`uc 1 LFIOFR 1 0 :1:1 
+`uc 1 MFIOFR 1 0 :1:2 
+`uc 1 HFIOFL 1 0 :1:3 
+`uc 1 HFIOFR 1 0 :1:4 
+`uc 1 OSTS 1 0 :1:5 
+`uc 1 PLLR 1 0 :1:6 
+`uc 1 T1OSCR 1 0 :1:7 
+]
+[u S777 . 1 `S768 1 . 1 0 ]
+"943
+[s S802 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S811 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+[s S815 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S818 . 1 `S802 1 . 1 0 `S811 1 . 1 0 `S815 1 . 1 0 ]
+"985
+[s S847 . 1 `uc 1 ADPREF0 1 0 :1:0 
+`uc 1 ADPREF1 1 0 :1:1 
+`uc 1 ADNREF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ADCS0 1 0 :1:4 
+`uc 1 ADCS1 1 0 :1:5 
+`uc 1 ADCS2 1 0 :1:6 
+`uc 1 ADFM 1 0 :1:7 
+]
+[s S856 . 1 `uc 1 ADPREF 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 ADCS 1 0 :3:4 
+]
+[u S860 . 1 `S847 1 . 1 0 `S856 1 . 1 0 ]
+"1018
+[s S883 . 1 `uc 1 LATA0 1 0 :1:0 
+`uc 1 LATA1 1 0 :1:1 
+`uc 1 LATA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 LATA4 1 0 :1:4 
+`uc 1 LATA5 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S892 . 1 `uc 1 LATA 1 0 :6:0 
+`uc 1 . 1 0 :2:6 
+]
+[u S895 . 1 `S883 1 . 1 0 `S892 1 . 1 0 ]
+"1046
+[s S918 . 1 `uc 1 LATC0 1 0 :1:0 
+`uc 1 LATC1 1 0 :1:1 
+`uc 1 LATC2 1 0 :1:2 
+`uc 1 LATC3 1 0 :1:3 
+`uc 1 LATC4 1 0 :1:4 
+`uc 1 LATC5 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S927 . 1 `uc 1 LATC 1 0 :6:0 
+`uc 1 . 1 0 :2:6 
+]
+[u S930 . 1 `S918 1 . 1 0 `S927 1 . 1 0 ]
+"1082
+[s S954 . 1 `uc 1 C1SYNC 1 0 :1:0 
+`uc 1 C1HYS 1 0 :1:1 
+`uc 1 C1SP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 C1POL 1 0 :1:4 
+`uc 1 C1OE 1 0 :1:5 
+`uc 1 C1OUT 1 0 :1:6 
+`uc 1 C1ON 1 0 :1:7 
+]
+[u S963 . 1 `S954 1 . 1 0 ]
+"1112
+[s S982 . 1 `uc 1 C1NCH0 1 0 :1:0 
+`uc 1 C1NCH1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 C1PCH0 1 0 :1:4 
+`uc 1 C1PCH1 1 0 :1:5 
+`uc 1 C1INTN 1 0 :1:6 
+`uc 1 C1INTP 1 0 :1:7 
+]
+[s S990 . 1 `uc 1 C1NCH 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 C1PCH 1 0 :2:4 
+]
+[u S994 . 1 `S982 1 . 1 0 `S990 1 . 1 0 ]
+"1141
+[s S1018 . 1 `uc 1 C2SYNC 1 0 :1:0 
+`uc 1 C2HYS 1 0 :1:1 
+`uc 1 C2SP 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 C2POL 1 0 :1:4 
+`uc 1 C2OE 1 0 :1:5 
+`uc 1 C2OUT 1 0 :1:6 
+`uc 1 C2ON 1 0 :1:7 
+]
+[u S1027 . 1 `S1018 1 . 1 0 ]
+"1171
+[s S1046 . 1 `uc 1 C2NCH0 1 0 :1:0 
+`uc 1 C2NCH1 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 C2PCH0 1 0 :1:4 
+`uc 1 C2PCH1 1 0 :1:5 
+`uc 1 C2INTN 1 0 :1:6 
+`uc 1 C2INTP 1 0 :1:7 
+]
+[s S1054 . 1 `uc 1 C2NCH 1 0 :2:0 
+`uc 1 . 1 0 :2:2 
+`uc 1 C2PCH 1 0 :2:4 
+]
+[u S1058 . 1 `S1046 1 . 1 0 `S1054 1 . 1 0 ]
+"1196
+[s S1077 . 1 `uc 1 MC1OUT 1 0 :1:0 
+`uc 1 MC2OUT 1 0 :1:1 
+]
+[u S1080 . 1 `S1077 1 . 1 0 ]
+"1213
+[s S1089 . 1 `uc 1 BORRDY 1 0 :1:0 
+`uc 1 . 1 0 :6:1 
+`uc 1 SBOREN 1 0 :1:7 
+]
+[u S1093 . 1 `S1089 1 . 1 0 ]
+"1243
+[s S1109 . 1 `uc 1 ADFVR0 1 0 :1:0 
+`uc 1 ADFVR1 1 0 :1:1 
+`uc 1 CDAFVR0 1 0 :1:2 
+`uc 1 CDAFVR1 1 0 :1:3 
+`uc 1 TSRNG 1 0 :1:4 
+`uc 1 TSEN 1 0 :1:5 
+`uc 1 FVRRDY 1 0 :1:6 
+`uc 1 FVREN 1 0 :1:7 
+]
+[s S1118 . 1 `uc 1 ADFVR 1 0 :2:0 
+`uc 1 CDAFVR 1 0 :2:2 
+]
+[u S1121 . 1 `S1109 1 . 1 0 `S1118 1 . 1 0 ]
+"1278
+[s S1144 . 1 `uc 1 DACNSS 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 DACPSS0 1 0 :1:2 
+`uc 1 DACPSS1 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 DACOE 1 0 :1:5 
+`uc 1 DACLPS 1 0 :1:6 
+`uc 1 DACEN 1 0 :1:7 
+]
+[s S1153 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 DACPSS 1 0 :2:2 
+]
+[u S1156 . 1 `S1144 1 . 1 0 `S1153 1 . 1 0 ]
+"1311
+[s S1178 . 1 `uc 1 DACR0 1 0 :1:0 
+`uc 1 DACR1 1 0 :1:1 
+`uc 1 DACR2 1 0 :1:2 
+`uc 1 DACR3 1 0 :1:3 
+`uc 1 DACR4 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+]
+[s S1185 . 1 `uc 1 DACR 1 0 :5:0 
+]
+[u S1187 . 1 `S1178 1 . 1 0 `S1185 1 . 1 0 ]
+"1347
+[s S1209 . 1 `uc 1 SRPR 1 0 :1:0 
+`uc 1 SRPS 1 0 :1:1 
+`uc 1 SRNQEN 1 0 :1:2 
+`uc 1 SRQEN 1 0 :1:3 
+`uc 1 SRCLK0 1 0 :1:4 
+`uc 1 SRCLK1 1 0 :1:5 
+`uc 1 SRCLK2 1 0 :1:6 
+`uc 1 SRLEN 1 0 :1:7 
+]
+[s S1218 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SRCLK 1 0 :3:4 
+]
+[u S1221 . 1 `S1209 1 . 1 0 `S1218 1 . 1 0 ]
+"1381
+[s S1244 . 1 `uc 1 SRRC1E 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 SRRCKE 1 0 :1:2 
+`uc 1 SRRPE 1 0 :1:3 
+`uc 1 SRSC1E 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 SRSCKE 1 0 :1:6 
+`uc 1 SRSPE 1 0 :1:7 
+]
+[u S1253 . 1 `S1244 1 . 1 0 ]
+"1407
+[s S1271 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 . 1 0 :1:1 
+`uc 1 TXCKSEL 1 0 :1:2 
+`uc 1 T1GSEL 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 SSSEL 1 0 :1:5 
+`uc 1 SDOSEL 1 0 :1:6 
+`uc 1 RXDTSEL 1 0 :1:7 
+]
+[u S1280 . 1 `S1271 1 . 1 0 ]
+"1429
+[s S1297 . 1 `uc 1 CCP2SEL 1 0 :1:0 
+`uc 1 P2BSEL 1 0 :1:1 
+`uc 1 P1CSEL 1 0 :1:2 
+`uc 1 P1DSEL 1 0 :1:3 
+]
+[u S1302 . 1 `S1297 1 . 1 0 ]
+"1452
+[s S1315 . 1 `uc 1 ANSA0 1 0 :1:0 
+`uc 1 ANSA1 1 0 :1:1 
+`uc 1 ANSA2 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 ANSA4 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S1324 . 1 `uc 1 ANSELA 1 0 :5:0 
+`uc 1 . 1 0 :1:5 
+]
+[u S1327 . 1 `S1315 1 . 1 0 `S1324 1 . 1 0 ]
+"1478
+[s S1348 . 1 `uc 1 ANSC0 1 0 :1:0 
+`uc 1 ANSC1 1 0 :1:1 
+`uc 1 ANSC2 1 0 :1:2 
+`uc 1 ANSC3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S1357 . 1 `uc 1 ANSELC 1 0 :4:0 
+`uc 1 . 1 0 :4:4 
+]
+[u S1360 . 1 `S1348 1 . 1 0 `S1357 1 . 1 0 ]
+"1504
+[s S1378 . 1 `uc 1 EEADRH 1 0 :7:0 
+]
+[u S1380 . 1 `S1378 1 . 1 0 ]
+"1524
+[s S1389 . 1 `uc 1 EEDATH 1 0 :6:0 
+]
+[u S1391 . 1 `S1389 1 . 1 0 ]
+"1555
+[s S1406 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+`uc 1 EEPGD 1 0 :1:7 
+]
+[u S1415 . 1 `S1406 1 . 1 0 ]
+"1611
+[s S1442 . 1 `uc 1 RX9D 1 0 :1:0 
+`uc 1 OERR 1 0 :1:1 
+`uc 1 FERR 1 0 :1:2 
+`uc 1 ADDEN 1 0 :1:3 
+`uc 1 CREN 1 0 :1:4 
+`uc 1 SREN 1 0 :1:5 
+`uc 1 RX9 1 0 :1:6 
+`uc 1 SPEN 1 0 :1:7 
+]
+[u S1451 . 1 `S1442 1 . 1 0 ]
+"1646
+[s S1472 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+[u S1481 . 1 `S1472 1 . 1 0 ]
+"1677
+[s S1500 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+[u S1509 . 1 `S1500 1 . 1 0 ]
+"1706
+[s S1528 . 1 `uc 1 WPUA0 1 0 :1:0 
+`uc 1 WPUA1 1 0 :1:1 
+`uc 1 WPUA2 1 0 :1:2 
+`uc 1 WPUA3 1 0 :1:3 
+`uc 1 WPUA4 1 0 :1:4 
+`uc 1 WPUA5 1 0 :1:5 
+]
+[s S1535 . 1 `uc 1 WPUA 1 0 :6:0 
+`uc 1 . 1 0 :2:6 
+]
+[u S1538 . 1 `S1528 1 . 1 0 `S1535 1 . 1 0 ]
+"1732
+[s S1559 . 1 `uc 1 WPUC0 1 0 :1:0 
+`uc 1 WPUC1 1 0 :1:1 
+`uc 1 WPUC2 1 0 :1:2 
+`uc 1 WPUC3 1 0 :1:3 
+`uc 1 WPUC4 1 0 :1:4 
+`uc 1 WPUC5 1 0 :1:5 
+]
+[u S1566 . 1 `S1559 1 . 1 0 ]
+"1772
+[s S1592 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[u S1601 . 1 `S1592 1 . 1 0 ]
+"1800
+[s S1624 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+[s S1633 . 1 `uc 1 SSPM 1 0 :4:0 
+]
+[u S1635 . 1 `S1624 1 . 1 0 `S1633 1 . 1 0 ]
+"1830
+[s S1660 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+[u S1669 . 1 `S1660 1 . 1 0 ]
+"1857
+[s S1691 . 1 `uc 1 DHEN 1 0 :1:0 
+`uc 1 AHEN 1 0 :1:1 
+`uc 1 SBCDE 1 0 :1:2 
+`uc 1 SDAHT 1 0 :1:3 
+`uc 1 BOEN 1 0 :1:4 
+`uc 1 SCIE 1 0 :1:5 
+`uc 1 PCIE 1 0 :1:6 
+`uc 1 ACKTIM 1 0 :1:7 
+]
+[u S1700 . 1 `S1691 1 . 1 0 ]
+"1896
+[s S1723 . 1 `uc 1 CCP1M0 1 0 :1:0 
+`uc 1 CCP1M1 1 0 :1:1 
+`uc 1 CCP1M2 1 0 :1:2 
+`uc 1 CCP1M3 1 0 :1:3 
+`uc 1 DC1B0 1 0 :1:4 
+`uc 1 DC1B1 1 0 :1:5 
+`uc 1 P1M0 1 0 :1:6 
+`uc 1 P1M1 1 0 :1:7 
+]
+[s S1732 . 1 `uc 1 CCP1M 1 0 :4:0 
+`uc 1 DC1B 1 0 :2:4 
+`uc 1 P1M 1 0 :2:6 
+]
+[u S1736 . 1 `S1723 1 . 1 0 `S1732 1 . 1 0 ]
+"1927
+[s S1762 . 1 `uc 1 P1DC0 1 0 :1:0 
+`uc 1 P1DC1 1 0 :1:1 
+`uc 1 P1DC2 1 0 :1:2 
+`uc 1 P1DC3 1 0 :1:3 
+`uc 1 P1DC4 1 0 :1:4 
+`uc 1 P1DC5 1 0 :1:5 
+`uc 1 P1DC6 1 0 :1:6 
+`uc 1 P1RSEN 1 0 :1:7 
+]
+[s S1771 . 1 `uc 1 P1DC 1 0 :7:0 
+]
+[u S1773 . 1 `S1762 1 . 1 0 `S1771 1 . 1 0 ]
+"1957
+[s S1798 . 1 `uc 1 PSS1BD0 1 0 :1:0 
+`uc 1 PSS1BD1 1 0 :1:1 
+`uc 1 PSS1AC0 1 0 :1:2 
+`uc 1 PSS1AC1 1 0 :1:3 
+`uc 1 CCP1AS0 1 0 :1:4 
+`uc 1 CCP1AS1 1 0 :1:5 
+`uc 1 CCP1AS2 1 0 :1:6 
+`uc 1 CCP1ASE 1 0 :1:7 
+]
+[s S1807 . 1 `uc 1 PSS1BD 1 0 :2:0 
+`uc 1 PSS1AC 1 0 :2:2 
+`uc 1 CCP1AS 1 0 :3:4 
+]
+[u S1811 . 1 `S1798 1 . 1 0 `S1807 1 . 1 0 ]
+"1985
+[s S1834 . 1 `uc 1 STR1A 1 0 :1:0 
+`uc 1 STR1B 1 0 :1:1 
+`uc 1 STR1C 1 0 :1:2 
+`uc 1 STR1D 1 0 :1:3 
+`uc 1 STR1SYNC 1 0 :1:4 
+]
+[u S1840 . 1 `S1834 1 . 1 0 ]
+"2016
+[s S1860 . 1 `uc 1 CCP2M0 1 0 :1:0 
+`uc 1 CCP2M1 1 0 :1:1 
+`uc 1 CCP2M2 1 0 :1:2 
+`uc 1 CCP2M3 1 0 :1:3 
+`uc 1 DC2B0 1 0 :1:4 
+`uc 1 DC2B1 1 0 :1:5 
+`uc 1 P2M0 1 0 :1:6 
+`uc 1 P2M1 1 0 :1:7 
+]
+[s S1869 . 1 `uc 1 CCP2M 1 0 :4:0 
+`uc 1 DC2B 1 0 :2:4 
+`uc 1 P2M 1 0 :2:6 
+]
+[u S1873 . 1 `S1860 1 . 1 0 `S1869 1 . 1 0 ]
+"2047
+[s S1899 . 1 `uc 1 P2DC0 1 0 :1:0 
+`uc 1 P2DC1 1 0 :1:1 
+`uc 1 P2DC2 1 0 :1:2 
+`uc 1 P2DC3 1 0 :1:3 
+`uc 1 P2DC4 1 0 :1:4 
+`uc 1 P2DC5 1 0 :1:5 
+`uc 1 P2DC6 1 0 :1:6 
+`uc 1 P2RSEN 1 0 :1:7 
+]
+[s S1908 . 1 `uc 1 P2DC 1 0 :7:0 
+]
+[u S1910 . 1 `S1899 1 . 1 0 `S1908 1 . 1 0 ]
+"2076
+[s S1934 . 1 `uc 1 PSS2BD0 1 0 :1:0 
+`uc 1 PSS2BD1 1 0 :1:1 
+`uc 1 PSS2AC0 1 0 :1:2 
+`uc 1 PSS2AC1 1 0 :1:3 
+`uc 1 CCP2AS0 1 0 :1:4 
+`uc 1 CCP2AS1 1 0 :1:5 
+`uc 1 CCP2AS2 1 0 :1:6 
+`uc 1 CCP2ASE 1 0 :1:7 
+]
+[s S1943 . 1 `uc 1 PSS2BD 1 0 :2:0 
+`uc 1 PSS2AC 1 0 :2:2 
+`uc 1 CCP2AS 1 0 :3:4 
+]
+[u S1947 . 1 `S1934 1 . 1 0 `S1943 1 . 1 0 ]
+"2104
+[s S1970 . 1 `uc 1 STR2A 1 0 :1:0 
+`uc 1 STR2B 1 0 :1:1 
+`uc 1 STR2C 1 0 :1:2 
+`uc 1 STR2D 1 0 :1:3 
+`uc 1 STR2SYNC 1 0 :1:4 
+]
+[u S1976 . 1 `S1970 1 . 1 0 ]
+"2127
+[s S1994 . 1 `uc 1 C1TSEL0 1 0 :1:0 
+`uc 1 C1TSEL1 1 0 :1:1 
+`uc 1 C2TSEL0 1 0 :1:2 
+`uc 1 C2TSEL1 1 0 :1:3 
+`uc 1 C3TSEL0 1 0 :1:4 
+`uc 1 C3TSEL1 1 0 :1:5 
+`uc 1 C4TSEL0 1 0 :1:6 
+`uc 1 C4TSEL1 1 0 :1:7 
+]
+[s S2003 . 1 `uc 1 C1TSEL 1 0 :2:0 
+`uc 1 C2TSEL 1 0 :2:2 
+`uc 1 C3TSEL 1 0 :2:4 
+`uc 1 C4TSEL 1 0 :2:6 
+]
+[u S2008 . 1 `S1994 1 . 1 0 `S2003 1 . 1 0 ]
+"2170
+[s S2035 . 1 `uc 1 CCP3M0 1 0 :1:0 
+`uc 1 CCP3M1 1 0 :1:1 
+`uc 1 CCP3M2 1 0 :1:2 
+`uc 1 CCP3M3 1 0 :1:3 
+`uc 1 DC3B0 1 0 :1:4 
+`uc 1 DC3B1 1 0 :1:5 
+]
+[s S2042 . 1 `uc 1 CCP3M 1 0 :4:0 
+`uc 1 DC3B 1 0 :2:4 
+]
+[u S2045 . 1 `S2035 1 . 1 0 `S2042 1 . 1 0 ]
+"2204
+[s S2068 . 1 `uc 1 CCP4M0 1 0 :1:0 
+`uc 1 CCP4M1 1 0 :1:1 
+`uc 1 CCP4M2 1 0 :1:2 
+`uc 1 CCP4M3 1 0 :1:3 
+`uc 1 DC4B0 1 0 :1:4 
+`uc 1 DC4B1 1 0 :1:5 
+]
+[s S2075 . 1 `uc 1 CCP4M 1 0 :4:0 
+`uc 1 DC4B 1 0 :2:4 
+]
+[u S2078 . 1 `S2068 1 . 1 0 `S2075 1 . 1 0 ]
+"2235
+[s S2099 . 1 `uc 1 INLVLA0 1 0 :1:0 
+`uc 1 INLVLA1 1 0 :1:1 
+`uc 1 INLVLA2 1 0 :1:2 
+`uc 1 INLVLA3 1 0 :1:3 
+`uc 1 INLVLA4 1 0 :1:4 
+`uc 1 INLVLA5 1 0 :1:5 
+]
+[s S2106 . 1 `uc 1 INLVLA 1 0 :6:0 
+]
+[u S2108 . 1 `S2099 1 . 1 0 `S2106 1 . 1 0 ]
+"2260
+[s S2128 . 1 `uc 1 INLVLC0 1 0 :1:0 
+`uc 1 INLVLC1 1 0 :1:1 
+`uc 1 INLVLC2 1 0 :1:2 
+`uc 1 INLVLC3 1 0 :1:3 
+`uc 1 INLVLC4 1 0 :1:4 
+`uc 1 INLVLC5 1 0 :1:5 
+]
+[s S2135 . 1 `uc 1 INLVLC 1 0 :6:0 
+]
+[u S2137 . 1 `S2128 1 . 1 0 `S2135 1 . 1 0 ]
+"2286
+[s S2157 . 1 `uc 1 IOCAP0 1 0 :1:0 
+`uc 1 IOCAP1 1 0 :1:1 
+`uc 1 IOCAP2 1 0 :1:2 
+`uc 1 IOCAP3 1 0 :1:3 
+`uc 1 IOCAP4 1 0 :1:4 
+`uc 1 IOCAP5 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S2166 . 1 `uc 1 IOCAP 1 0 :6:0 
+`uc 1 . 1 0 :2:6 
+]
+[u S2169 . 1 `S2157 1 . 1 0 `S2166 1 . 1 0 ]
+"2315
+[s S2192 . 1 `uc 1 IOCAN0 1 0 :1:0 
+`uc 1 IOCAN1 1 0 :1:1 
+`uc 1 IOCAN2 1 0 :1:2 
+`uc 1 IOCAN3 1 0 :1:3 
+`uc 1 IOCAN4 1 0 :1:4 
+`uc 1 IOCAN5 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S2201 . 1 `uc 1 IOCAN 1 0 :6:0 
+`uc 1 . 1 0 :2:6 
+]
+[u S2204 . 1 `S2192 1 . 1 0 `S2201 1 . 1 0 ]
+"2344
+[s S2227 . 1 `uc 1 IOCAF0 1 0 :1:0 
+`uc 1 IOCAF1 1 0 :1:1 
+`uc 1 IOCAF2 1 0 :1:2 
+`uc 1 IOCAF3 1 0 :1:3 
+`uc 1 IOCAF4 1 0 :1:4 
+`uc 1 IOCAF5 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 . 1 0 :1:7 
+]
+[s S2236 . 1 `uc 1 IOCAF 1 0 :6:0 
+`uc 1 . 1 0 :2:6 
+]
+[u S2239 . 1 `S2227 1 . 1 0 `S2236 1 . 1 0 ]
+"2374
+[s S2264 . 1 `uc 1 CLKRDIV0 1 0 :1:0 
+`uc 1 CLKRDIV1 1 0 :1:1 
+`uc 1 CLKRDIV2 1 0 :1:2 
+`uc 1 CLKRDC0 1 0 :1:3 
+`uc 1 CLKRDC1 1 0 :1:4 
+`uc 1 CLKRSLR 1 0 :1:5 
+`uc 1 CLKROE 1 0 :1:6 
+`uc 1 CLKREN 1 0 :1:7 
+]
+[s S2273 . 1 `uc 1 CLKRDIV 1 0 :3:0 
+`uc 1 CLKRDC 1 0 :2:3 
+]
+[u S2276 . 1 `S2264 1 . 1 0 `S2273 1 . 1 0 ]
+"2402
+[s S2299 . 1 `uc 1 MDBIT 1 0 :1:0 
+`uc 1 . 1 0 :2:1 
+`uc 1 MDOUT 1 0 :1:3 
+`uc 1 MDOPOL 1 0 :1:4 
+`uc 1 MDSLR 1 0 :1:5 
+`uc 1 MDOE 1 0 :1:6 
+`uc 1 MDEN 1 0 :1:7 
+]
+[u S2307 . 1 `S2299 1 . 1 0 ]
+"2424
+[s S2324 . 1 `uc 1 MDMS0 1 0 :1:0 
+`uc 1 MDMS1 1 0 :1:1 
+`uc 1 MDMS2 1 0 :1:2 
+`uc 1 MDMS3 1 0 :1:3 
+`uc 1 . 1 0 :3:4 
+`uc 1 MDMSODIS 1 0 :1:7 
+]
+[s S2331 . 1 `uc 1 MDMS 1 0 :4:0 
+]
+[u S2333 . 1 `S2324 1 . 1 0 `S2331 1 . 1 0 ]
+"2450
+[s S2354 . 1 `uc 1 MDCL0 1 0 :1:0 
+`uc 1 MDCL1 1 0 :1:1 
+`uc 1 MDCL2 1 0 :1:2 
+`uc 1 MDCL3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 MDCLSYNC 1 0 :1:5 
+`uc 1 MDCLPOL 1 0 :1:6 
+`uc 1 MDCLODIS 1 0 :1:7 
+]
+[s S2363 . 1 `uc 1 MDCL 1 0 :4:0 
+]
+[u S2365 . 1 `S2354 1 . 1 0 `S2363 1 . 1 0 ]
+"2478
+[s S2388 . 1 `uc 1 MDCH0 1 0 :1:0 
+`uc 1 MDCH1 1 0 :1:1 
+`uc 1 MDCH2 1 0 :1:2 
+`uc 1 MDCH3 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 MDCHSYNC 1 0 :1:5 
+`uc 1 MDCHPOL 1 0 :1:6 
+`uc 1 MDCHODIS 1 0 :1:7 
+]
+[s S2397 . 1 `uc 1 MDCH 1 0 :4:0 
+]
+[u S2399 . 1 `S2388 1 . 1 0 `S2397 1 . 1 0 ]
+"2519
+[s S2424 . 1 `uc 1 T4CKPS0 1 0 :1:0 
+`uc 1 T4CKPS1 1 0 :1:1 
+`uc 1 TMR4ON 1 0 :1:2 
+`uc 1 T4OUTPS0 1 0 :1:3 
+`uc 1 T4OUTPS1 1 0 :1:4 
+`uc 1 T4OUTPS2 1 0 :1:5 
+`uc 1 T4OUTPS3 1 0 :1:6 
+]
+[s S2432 . 1 `uc 1 T4CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T4OUTPS 1 0 :4:3 
+]
+[u S2436 . 1 `S2424 1 . 1 0 `S2432 1 . 1 0 ]
+"2556
+[s S2462 . 1 `uc 1 T6CKPS0 1 0 :1:0 
+`uc 1 T6CKPS1 1 0 :1:1 
+`uc 1 TMR6ON 1 0 :1:2 
+`uc 1 T6OUTPS0 1 0 :1:3 
+`uc 1 T6OUTPS1 1 0 :1:4 
+`uc 1 T6OUTPS2 1 0 :1:5 
+`uc 1 T6OUTPS3 1 0 :1:6 
+]
+[s S2470 . 1 `uc 1 T6CKPS 1 0 :2:0 
+`uc 1 . 1 0 :1:2 
+`uc 1 T6OUTPS 1 0 :4:3 
+]
+[u S2474 . 1 `S2462 1 . 1 0 `S2470 1 . 1 0 ]
+"2586
+[s S2494 . 1 `uc 1 C_SHAD 1 0 :1:0 
+`uc 1 DC_SHAD 1 0 :1:1 
+`uc 1 Z_SHAD 1 0 :1:2 
+]
+[u S2498 . 1 `S2494 1 . 1 0 ]
+"2602
+[s S2507 . 1 `uc 1 BSR_SHAD 1 0 :5:0 
+]
+[u S2509 . 1 `S2507 1 . 1 0 ]
+"2613
+[s S2515 . 1 `uc 1 PCLATH_SHAD 1 0 :7:0 
+]
+[u S2517 . 1 `S2515 1 . 1 0 ]
+"2641
+[s S2527 . 1 `uc 1 STKPTR 1 0 :5:0 
+]
+[u S2529 . 1 `S2527 1 . 1 0 ]
+"2658
+[s S2536 . 1 `uc 1 TOSH 1 0 :7:0 
+]
+[u S2538 . 1 `S2536 1 . 1 0 ]
+"24 C:\Dropbox\RoboCortex\arduino\KiwiRay\KiwiEmotion\KiwiEmotion.c
+[v F2281 `(i  1 t 2 ]
+[v _isr `I(i  1 e 2 0 ]
+"110
+[v _setup `(v  1 e 0 0 ]
+"141
+[v _main `(v  1 e 0 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\abdiv.c
+[v ___abdiv `(c  1 e 1 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\abmod.c
+[v ___abmod `(c  1 e 1 0 ]
+"34 C:\Program\HI-TECH Software\PICC\9.83\sources\abtoft.c
+[v ___abtoft `(f  1 e 3 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\aldiv.c
+[v ___aldiv `(l  1 e 4 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\almod.c
+[v ___almod `(l  1 e 4 0 ]
+"43 C:\Program\HI-TECH Software\PICC\9.83\sources\altoft.c
+[v ___altoft `(f  1 e 3 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\atdiv.c
+[v ___atdiv `(m  1 e 3 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\atmod.c
+[v ___atmod `(m  1 e 3 0 ]
+"38 C:\Program\HI-TECH Software\PICC\9.83\sources\attoft.c
+[v ___attoft `(f  1 e 3 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\awdiv.c
+[v ___awdiv `(i  1 e 2 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\awmod.c
+[v ___awmod `(i  1 e 2 0 ]
+"33 C:\Program\HI-TECH Software\PICC\9.83\sources\awtoft.c
+[v ___awtoft `(f  1 e 3 0 ]
+"3 C:\Program\HI-TECH Software\PICC\9.83\sources\bmul.c
+[v ___bmul `(uc  1 e 1 0 ]
+"63 C:\Program\HI-TECH Software\PICC\9.83\sources\float.c
+[v ___ftpack `(f  1 e 3 0 ]
+"87 C:\Program\HI-TECH Software\PICC\9.83\sources\ftadd.c
+[v ___ftadd `(f  1 e 3 0 ]
+"50 C:\Program\HI-TECH Software\PICC\9.83\sources\ftdiv.c
+[v ___ftdiv `(f  1 e 3 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\ftge.c
+[v ___ftge `(b  1 e 0 0 ]
+"52 C:\Program\HI-TECH Software\PICC\9.83\sources\ftmul.c
+[v ___ftmul `(f  1 e 3 0 ]
+"16 C:\Program\HI-TECH Software\PICC\9.83\sources\ftneg.c
+[v ___ftneg `(f  1 e 3 0 ]
+"17 C:\Program\HI-TECH Software\PICC\9.83\sources\ftsub.c
+[v ___ftsub `(f  1 e 3 0 ]
+"45 C:\Program\HI-TECH Software\PICC\9.83\sources\fttol.c
+[v ___fttol `(l  1 e 4 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\lbdiv.c
+[v ___lbdiv `(uc  1 e 1 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\lbmod.c
+[v ___lbmod `(uc  1 e 1 0 ]
+"28 C:\Program\HI-TECH Software\PICC\9.83\sources\lbtoft.c
+[v ___lbtoft `(f  1 e 3 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\lldiv.c
+[v ___lldiv `(ul  1 e 4 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\llmod.c
+[v ___llmod `(ul  1 e 4 0 ]
+"36 C:\Program\HI-TECH Software\PICC\9.83\sources\lltoft.c
+[v ___lltoft `(f  1 e 3 0 ]
+"3 C:\Program\HI-TECH Software\PICC\9.83\sources\lmul.c
+[v ___lmul `(ul  1 e 4 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\ltdiv.c
+[v ___ltdiv `(um  1 e 3 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\ltmod.c
+[v ___ltmod `(um  1 e 3 0 ]
+"31 C:\Program\HI-TECH Software\PICC\9.83\sources\lttoft.c
+[v ___lttoft `(f  1 e 3 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\lwdiv.c
+[v ___lwdiv `(ui  1 e 2 0 ]
+"5 C:\Program\HI-TECH Software\PICC\9.83\sources\lwmod.c
+[v ___lwmod `(ui  1 e 2 0 ]
+"29 C:\Program\HI-TECH Software\PICC\9.83\sources\lwtoft.c
+[v ___lwtoft `(f  1 e 3 0 ]
+"3 C:\Program\HI-TECH Software\PICC\9.83\sources\tmul.c
+[v ___tmul `(um  1 e 3 0 ]
+"3 C:\Program\HI-TECH Software\PICC\9.83\sources\wmul.c
+[v ___wmul `(ui  1 e 2 0 ]
+"7 eeprom.c
+[v _eecpymem `(v  1 e 0 0 ]
+"25
+[v _memcpyee `(v  1 e 0 0 ]
+"49
+[v ___eetoc `(uc  1 e 1 0 ]
+"57
+[v ___eetoi `(ui  1 e 2 0 ]
+"65
+[v ___eetom `(um  1 e 3 0 ]
+"73
+[v ___eetol `(ul  1 e 4 0 ]
+"81
+[v ___ctoee `(uc  1 e 1 0 ]
+"88
+[v ___itoee `(ui  1 e 2 0 ]
+"95
+[v ___mtoee `(um  1 e 3 0 ]
+"102
+[v ___ltoee `(ul  1 e 4 0 ]
+"109
+[v ___eetoft `(f  1 e 3 0 ]
+"117
+[v ___eetofl `(d  1 e 3 0 ]
+"125
+[v ___fttoee `(f  1 e 3 0 ]
+"132
+[v ___fltoee `(d  1 e 3 0 ]
+"132 /hitech/products/compilers/pic/pro/9.83/dist/linux/include/pic16f1825.h
+[v _INDF0 `VEuc  1 e 1 @0 ]
+"136
+[v _INDF1 `VEuc  1 e 1 @1 ]
+"140
+[v _PCL `VEuc  1 e 1 @2 ]
+"144
+[v _STATUS `VEuc  1 e 1 @3 ]
+"146
+[v _CARRY `VEb  1 e 0 @24 ]
+"147
+[v _DC `VEb  1 e 0 @25 ]
+"148
+[v _ZERO `VEb  1 e 0 @26 ]
+"149
+[v _nPD `VEb  1 e 0 @27 ]
+"150
+[v _nTO `VEb  1 e 0 @28 ]
+"167
+[v _FSR0L `VEuc  1 e 1 @4 ]
+"171
+[v _FSR0H `VEuc  1 e 1 @5 ]
+"175
+[v _FSR0 `VEui  1 e 2 @4 ]
+"179
+[v _FSR1L `VEuc  1 e 1 @6 ]
+"183
+[v _FSR1H `VEuc  1 e 1 @7 ]
+"187
+[v _FSR1 `VEui  1 e 2 @6 ]
+"190
+[v _BSR `VEuc  1 e 1 @8 ]
+"192
+[v _BSR0 `VEb  1 e 0 @64 ]
+"193
+[v _BSR1 `VEb  1 e 0 @65 ]
+"194
+[v _BSR2 `VEb  1 e 0 @66 ]
+"195
+[v _BSR3 `VEb  1 e 0 @67 ]
+"196
+[v _BSR4 `VEb  1 e 0 @68 ]
+"213
+[v _WREG `VEuc  1 e 1 @9 ]
+"217
+[v _PCLATH `VEuc  1 e 1 @10 ]
+"228
+[v _INTCON `VEuc  1 e 1 @11 ]
+"230
+[v _IOCIF `VEb  1 e 0 @88 ]
+"231
+[v _INTF `VEb  1 e 0 @89 ]
+"232
+[v _TMR0IF `VEb  1 e 0 @90 ]
+"233
+[v _IOCIE `VEb  1 e 0 @91 ]
+"234
+[v _INTE `VEb  1 e 0 @92 ]
+"235
+[v _TMR0IE `VEb  1 e 0 @93 ]
+"236
+[v _PEIE `VEb  1 e 0 @94 ]
+"237
+[v _GIE `VEb  1 e 0 @95 ]
+"238
+[v _T0IF `VEb  1 e 0 @90 ]
+"239
+[v _T0IE `VEb  1 e 0 @93 ]
+"262
+[v _PORTA `VEuc  1 e 1 @12 ]
+"264
+[v _RA0 `VEb  1 e 0 @96 ]
+"265
+[v _RA1 `VEb  1 e 0 @97 ]
+"266
+[v _RA2 `VEb  1 e 0 @98 ]
+"267
+[v _RA3 `VEb  1 e 0 @99 ]
+"268
+[v _RA4 `VEb  1 e 0 @100 ]
+"269
+[v _RA5 `VEb  1 e 0 @101 ]
+"286
+[v _PORTC `VEuc  1 e 1 @14 ]
+"288
+[v _RC0 `VEb  1 e 0 @112 ]
+"289
+[v _RC1 `VEb  1 e 0 @113 ]
+"290
+[v _RC2 `VEb  1 e 0 @114 ]
+"291
+[v _RC3 `VEb  1 e 0 @115 ]
+"292
+[v _RC4 `VEb  1 e 0 @116 ]
+"293
+[v _RC5 `VEb  1 e 0 @117 ]
+"310
+[v _PIR1 `VEuc  1 e 1 @17 ]
+"313
+[v _TMR1IF `VEb  1 e 0 @136 ]
+"315
+[v _TMR2IF `VEb  1 e 0 @137 ]
+"317
+[v _CCP1IF `VEb  1 e 0 @138 ]
+"319
+[v _SSP1IF `VEb  1 e 0 @139 ]
+"321
+[v _TXIF `VEb  1 e 0 @140 ]
+"323
+[v _RCIF `VEb  1 e 0 @141 ]
+"325
+[v _ADIF `VEb  1 e 0 @142 ]
+"327
+[v _TMR1GIF `VEb  1 e 0 @143 ]
+"344
+[v _PIR2 `VEuc  1 e 1 @18 ]
+"346
+[v _CCP2IF `VEb  1 e 0 @144 ]
+"347
+[v _BCL1IF `VEb  1 e 0 @147 ]
+"348
+[v _EEIF `VEb  1 e 0 @148 ]
+"349
+[v _C1IF `VEb  1 e 0 @149 ]
+"350
+[v _C2IF `VEb  1 e 0 @150 ]
+"351
+[v _OSFIF `VEb  1 e 0 @151 ]
+"368
+[v _PIR3 `VEuc  1 e 1 @19 ]
+"370
+[v _TMR4IF `VEb  1 e 0 @153 ]
+"371
+[v _TMR6IF `VEb  1 e 0 @155 ]
+"372
+[v _CCP3IF `VEb  1 e 0 @156 ]
+"373
+[v _CCP4IF `VEb  1 e 0 @157 ]
+"388
+[v _TMR0 `VEuc  1 e 1 @21 ]
+"393
+[v _TMR1L `VEuc  1 e 1 @22 ]
+"397
+[v _TMR1H `VEuc  1 e 1 @23 ]
+"401
+[v _TMR1 `VEui  1 e 2 @22 ]
+"404
+[v _T1CON `VEuc  1 e 1 @24 ]
+"406
+[v _TMR1ON `VEb  1 e 0 @192 ]
+"407
+[v _nT1SYNC `VEb  1 e 0 @194 ]
+"408
+[v _T1OSCEN `VEb  1 e 0 @195 ]
+"409
+[v _T1CKPS0 `VEb  1 e 0 @196 ]
+"410
+[v _T1CKPS1 `VEb  1 e 0 @197 ]
+"411
+[v _TMR1CS0 `VEb  1 e 0 @198 ]
+"412
+[v _TMR1CS1 `VEb  1 e 0 @199 ]
+"434
+[v _T1GCON `VEuc  1 e 1 @25 ]
+"436
+[v _T1GSS0 `VEb  1 e 0 @200 ]
+"437
+[v _T1GSS1 `VEb  1 e 0 @201 ]
+"438
+[v _T1GVAL `VEb  1 e 0 @202 ]
+"439
+[v _T1GGO `VEb  1 e 0 @203 ]
+"440
+[v _T1GSPM `VEb  1 e 0 @204 ]
+"441
+[v _T1GTM `VEb  1 e 0 @205 ]
+"442
+[v _T1GPOL `VEb  1 e 0 @206 ]
+"443
+[v _TMR1GE `VEb  1 e 0 @207 ]
+"463
+[v _TMR2 `VEuc  1 e 1 @26 ]
+"467
+[v _PR2 `VEuc  1 e 1 @27 ]
+"471
+[v _T2CON `VEuc  1 e 1 @28 ]
+"473
+[v _T2CKPS0 `VEb  1 e 0 @224 ]
+"474
+[v _T2CKPS1 `VEb  1 e 0 @225 ]
+"475
+[v _TMR2ON `VEb  1 e 0 @226 ]
+"476
+[v _T2OUTPS0 `VEb  1 e 0 @227 ]
+"477
+[v _T2OUTPS1 `VEb  1 e 0 @228 ]
+"478
+[v _T2OUTPS2 `VEb  1 e 0 @229 ]
+"479
+[v _T2OUTPS3 `VEb  1 e 0 @230 ]
+"500
+[v _CPSCON0 `VEuc  1 e 1 @30 ]
+"502
+[v _T0XCS `VEb  1 e 0 @240 ]
+"503
+[v _CPSOUT `VEb  1 e 0 @241 ]
+"504
+[v _CPSRNG0 `VEb  1 e 0 @242 ]
+"505
+[v _CPSRNG1 `VEb  1 e 0 @243 ]
+"506
+[v _CPSRM `VEb  1 e 0 @246 ]
+"507
+[v _CPSON `VEb  1 e 0 @247 ]
+"527
+[v _CPSCON1 `VEuc  1 e 1 @31 ]
+"529
+[v _CPSCH0 `VEb  1 e 0 @248 ]
+"530
+[v _CPSCH1 `VEb  1 e 0 @249 ]
+"531
+[v _CPSCH2 `VEb  1 e 0 @250 ]
+"532
+[v _CPSCH3 `VEb  1 e 0 @251 ]
+"555
+[v _TRISA `VEuc  1 e 1 @140 ]
+"557
+[v _TRISA0 `VEb  1 e 0 @1120 ]
+"558
+[v _TRISA1 `VEb  1 e 0 @1121 ]
+"559
+[v _TRISA2 `VEb  1 e 0 @1122 ]
+"560
+[v _TRISA3 `VEb  1 e 0 @1123 ]
+"561
+[v _TRISA4 `VEb  1 e 0 @1124 ]
+"562
+[v _TRISA5 `VEb  1 e 0 @1125 ]
+"584
+[v _TRISC `VEuc  1 e 1 @142 ]
+"586
+[v _TRISC0 `VEb  1 e 0 @1136 ]
+"587
+[v _TRISC1 `VEb  1 e 0 @1137 ]
+"588
+[v _TRISC2 `VEb  1 e 0 @1138 ]
+"589
+[v _TRISC3 `VEb  1 e 0 @1139 ]
+"590
+[v _TRISC4 `VEb  1 e 0 @1140 ]
+"591
+[v _TRISC5 `VEb  1 e 0 @1141 ]
+"613
+[v _PIE1 `VEuc  1 e 1 @145 ]
+"616
+[v _TMR1IE `VEb  1 e 0 @1160 ]
+"618
+[v _TMR2IE `VEb  1 e 0 @1161 ]
+"620
+[v _CCP1IE `VEb  1 e 0 @1162 ]
+"622
+[v _SSP1IE `VEb  1 e 0 @1163 ]
+"624
+[v _TXIE `VEb  1 e 0 @1164 ]
+"626
+[v _RCIE `VEb  1 e 0 @1165 ]
+"628
+[v _ADIE `VEb  1 e 0 @1166 ]
+"630
+[v _TMR1GIE `VEb  1 e 0 @1167 ]
+"648
+[v _PIE2 `VEuc  1 e 1 @146 ]
+"650
+[v _CCP2IE `VEb  1 e 0 @1168 ]
+"652
+[v _BCL1IE `VEb  1 e 0 @1171 ]
+"654
+[v _EEIE `VEb  1 e 0 @1172 ]
+"656
+[v _C1IE `VEb  1 e 0 @1173 ]
+"658
+[v _C2IE `VEb  1 e 0 @1174 ]
+"660
+[v _OSFIE `VEb  1 e 0 @1175 ]
+"677
+[v _PIE3 `VEuc  1 e 1 @147 ]
+"679
+[v _TMR4IE `VEb  1 e 0 @1177 ]
+"680
+[v _TMR6IE `VEb  1 e 0 @1179 ]
+"681
+[v _CCP3IE `VEb  1 e 0 @1180 ]
+"682
+[v _CCP4IE `VEb  1 e 0 @1181 ]
+"698
+[v _OPTION_REG `VEuc  1 e 1 @149 ]
+"701
+[v _PS0 `VEb  1 e 0 @1192 ]
+"703
+[v _PS1 `VEb  1 e 0 @1193 ]
+"705
+[v _PS2 `VEb  1 e 0 @1194 ]
+"707
+[v _PSA `VEb  1 e 0 @1195 ]
+"709
+[v _TMR0SE `VEb  1 e 0 @1196 ]
+"711
+[v _TMR0CS `VEb  1 e 0 @1197 ]
+"713
+[v _INTEDG `VEb  1 e 0 @1198 ]
+"715
+[v _nWPUEN `VEb  1 e 0 @1199 ]
+"716
+[v _T0SE `VEb  1 e 0 @1196 ]
+"717
+[v _T0CS `VEb  1 e 0 @1197 ]
+"741
+[v _PCON `VEuc  1 e 1 @150 ]
+"744
+[v _nBOR `VEb  1 e 0 @1200 ]
+"746
+[v _nPOR `VEb  1 e 0 @1201 ]
+"748
+[v _nRI `VEb  1 e 0 @1202 ]
+"750
+[v _nRMCLR `VEb  1 e 0 @1203 ]
+"752
+[v _STKUNF `VEb  1 e 0 @1206 ]
+"754
+[v _STKOVF `VEb  1 e 0 @1207 ]
+"772
+[v _WDTCON `VEuc  1 e 1 @151 ]
+"775
+[v _SWDTEN `VEb  1 e 0 @1208 ]
+"777
+[v _WDTPS0 `VEb  1 e 0 @1209 ]
+"779
+[v _WDTPS1 `VEb  1 e 0 @1210 ]
+"781
+[v _WDTPS2 `VEb  1 e 0 @1211 ]
+"783
+[v _WDTPS3 `VEb  1 e 0 @1212 ]
+"785
+[v _WDTPS4 `VEb  1 e 0 @1213 ]
+"805
+[v _OSCTUNE `VEuc  1 e 1 @152 ]
+"808
+[v _TUN0 `VEb  1 e 0 @1216 ]
+"810
+[v _TUN1 `VEb  1 e 0 @1217 ]
+"812
+[v _TUN2 `VEb  1 e 0 @1218 ]
+"814
+[v _TUN3 `VEb  1 e 0 @1219 ]
+"816
+[v _TUN4 `VEb  1 e 0 @1220 ]
+"818
+[v _TUN5 `VEb  1 e 0 @1221 ]
+"837
+[v _OSCCON `VEuc  1 e 1 @153 ]
+"840
+[v _SCS0 `VEb  1 e 0 @1224 ]
+"842
+[v _SCS1 `VEb  1 e 0 @1225 ]
+"844
+[v _IRCF0 `VEb  1 e 0 @1227 ]
+"846
+[v _IRCF1 `VEb  1 e 0 @1228 ]
+"848
+[v _IRCF2 `VEb  1 e 0 @1229 ]
+"850
+[v _IRCF3 `VEb  1 e 0 @1230 ]
+"852
+[v _SPLLEN `VEb  1 e 0 @1231 ]
+"875
+[v _OSCSTAT `VEuc  1 e 1 @154 ]
+"878
+[v _HFIOFS `VEb  1 e 0 @1232 ]
+"880
+[v _LFIOFR `VEb  1 e 0 @1233 ]
+"882
+[v _MFIOFR `VEb  1 e 0 @1234 ]
+"884
+[v _HFIOFL `VEb  1 e 0 @1235 ]
+"886
+[v _HFIOFR `VEb  1 e 0 @1236 ]
+"888
+[v _OSTS `VEb  1 e 0 @1237 ]
+"890
+[v _PLLR `VEb  1 e 0 @1238 ]
+"892
+[v _T1OSCR `VEb  1 e 0 @1239 ]
+"911
+[v _ADRESL `VEuc  1 e 1 @155 ]
+"916
+[v _ADRESH `VEuc  1 e 1 @156 ]
+"920
+[v _ADRES `VEui  1 e 2 @155 ]
+"924
+[v _ADCON0 `VEuc  1 e 1 @157 ]
+"927
+[v _ADON `VEb  1 e 0 @1256 ]
+"929
+[v _GO_nDONE `VEb  1 e 0 @1257 ]
+"931
+[v _CHS0 `VEb  1 e 0 @1258 ]
+"933
+[v _CHS1 `VEb  1 e 0 @1259 ]
+"935
+[v _CHS2 `VEb  1 e 0 @1260 ]
+"937
+[v _CHS3 `VEb  1 e 0 @1261 ]
+"939
+[v _CHS4 `VEb  1 e 0 @1262 ]
+"941
+[v _ADGO `VEb  1 e 0 @1257 ]
+"943
+[v _GO `VEb  1 e 0 @1257 ]
+"970
+[v _ADCON1 `VEuc  1 e 1 @158 ]
+"973
+[v _ADPREF0 `VEb  1 e 0 @1264 ]
+"975
+[v _ADPREF1 `VEb  1 e 0 @1265 ]
+"977
+[v _ADNREF `VEb  1 e 0 @1266 ]
+"979
+[v _ADCS0 `VEb  1 e 0 @1268 ]
+"981
+[v _ADCS1 `VEb  1 e 0 @1269 ]
+"983
+[v _ADCS2 `VEb  1 e 0 @1270 ]
+"985
+[v _ADFM `VEb  1 e 0 @1271 ]
+"1012
+[v _LATA `VEuc  1 e 1 @268 ]
+"1014
+[v _LATA0 `VEb  1 e 0 @2144 ]
+"1015
+[v _LATA1 `VEb  1 e 0 @2145 ]
+"1016
+[v _LATA2 `VEb  1 e 0 @2146 ]
+"1017
+[v _LATA4 `VEb  1 e 0 @2148 ]
+"1018
+[v _LATA5 `VEb  1 e 0 @2149 ]
+"1039
+[v _LATC `VEuc  1 e 1 @270 ]
+"1041
+[v _LATC0 `VEb  1 e 0 @2160 ]
+"1042
+[v _LATC1 `VEb  1 e 0 @2161 ]
+"1043
+[v _LATC2 `VEb  1 e 0 @2162 ]
+"1044
+[v _LATC3 `VEb  1 e 0 @2163 ]
+"1045
+[v _LATC4 `VEb  1 e 0 @2164 ]
+"1046
+[v _LATC5 `VEb  1 e 0 @2165 ]
+"1067
+[v _CM1CON0 `VEuc  1 e 1 @273 ]
+"1070
+[v _C1SYNC `VEb  1 e 0 @2184 ]
+"1072
+[v _C1HYS `VEb  1 e 0 @2185 ]
+"1074
+[v _C1SP `VEb  1 e 0 @2186 ]
+"1076
+[v _C1POL `VEb  1 e 0 @2188 ]
+"1078
+[v _C1OE `VEb  1 e 0 @2189 ]
+"1080
+[v _C1OUT `VEb  1 e 0 @2190 ]
+"1082
+[v _C1ON `VEb  1 e 0 @2191 ]
+"1099
+[v _CM1CON1 `VEuc  1 e 1 @274 ]
+"1102
+[v _C1NCH0 `VEb  1 e 0 @2192 ]
+"1104
+[v _C1NCH1 `VEb  1 e 0 @2193 ]
+"1106
+[v _C1PCH0 `VEb  1 e 0 @2196 ]
+"1108
+[v _C1PCH1 `VEb  1 e 0 @2197 ]
+"1110
+[v _C1INTN `VEb  1 e 0 @2198 ]
+"1112
+[v _C1INTP `VEb  1 e 0 @2199 ]
+"1133
+[v _CM2CON0 `VEuc  1 e 1 @275 ]
+"1135
+[v _C2SYNC `VEb  1 e 0 @2200 ]
+"1136
+[v _C2HYS `VEb  1 e 0 @2201 ]
+"1137
+[v _C2SP `VEb  1 e 0 @2202 ]
+"1138
+[v _C2POL `VEb  1 e 0 @2204 ]
+"1139
+[v _C2OE `VEb  1 e 0 @2205 ]
+"1140
+[v _C2OUT `VEb  1 e 0 @2206 ]
+"1141
+[v _C2ON `VEb  1 e 0 @2207 ]
+"1158
+[v _CM2CON1 `VEuc  1 e 1 @276 ]
+"1161
+[v _C2NCH0 `VEb  1 e 0 @2208 ]
+"1163
+[v _C2NCH1 `VEb  1 e 0 @2209 ]
+"1165
+[v _C2PCH0 `VEb  1 e 0 @2212 ]
+"1167
+[v _C2PCH1 `VEb  1 e 0 @2213 ]
+"1169
+[v _C2INTN `VEb  1 e 0 @2214 ]
+"1171
+[v _C2INTP `VEb  1 e 0 @2215 ]
+"1193
+[v _CMOUT `VEuc  1 e 1 @277 ]
+"1195
+[v _MC1OUT `VEb  1 e 0 @2216 ]
+"1196
+[v _MC2OUT `VEb  1 e 0 @2217 ]
+"1208
+[v _BORCON `VEuc  1 e 1 @278 ]
+"1211
+[v _BORRDY `VEb  1 e 0 @2224 ]
+"1213
+[v _SBOREN `VEb  1 e 0 @2231 ]
+"1226
+[v _FVRCON `VEuc  1 e 1 @279 ]
+"1229
+[v _ADFVR0 `VEb  1 e 0 @2232 ]
+"1231
+[v _ADFVR1 `VEb  1 e 0 @2233 ]
+"1233
+[v _CDAFVR0 `VEb  1 e 0 @2234 ]
+"1235
+[v _CDAFVR1 `VEb  1 e 0 @2235 ]
+"1237
+[v _TSRNG `VEb  1 e 0 @2236 ]
+"1239
+[v _TSEN `VEb  1 e 0 @2237 ]
+"1241
+[v _FVRRDY `VEb  1 e 0 @2238 ]
+"1243
+[v _FVREN `VEb  1 e 0 @2239 ]
+"1265
+[v _DACCON0 `VEuc  1 e 1 @280 ]
+"1268
+[v _DACNSS `VEb  1 e 0 @2240 ]
+"1270
+[v _DACPSS0 `VEb  1 e 0 @2242 ]
+"1272
+[v _DACPSS1 `VEb  1 e 0 @2243 ]
+"1274
+[v _DACOE `VEb  1 e 0 @2245 ]
+"1276
+[v _DACLPS `VEb  1 e 0 @2246 ]
+"1278
+[v _DACEN `VEb  1 e 0 @2247 ]
+"1300
+[v _DACCON1 `VEuc  1 e 1 @281 ]
+"1303
+[v _DACR0 `VEb  1 e 0 @2248 ]
+"1305
+[v _DACR1 `VEb  1 e 0 @2249 ]
+"1307
+[v _DACR2 `VEb  1 e 0 @2250 ]
+"1309
+[v _DACR3 `VEb  1 e 0 @2251 ]
+"1311
+[v _DACR4 `VEb  1 e 0 @2252 ]
+"1330
+[v _SRCON0 `VEuc  1 e 1 @282 ]
+"1333
+[v _SRPR `VEb  1 e 0 @2256 ]
+"1335
+[v _SRPS `VEb  1 e 0 @2257 ]
+"1337
+[v _SRNQEN `VEb  1 e 0 @2258 ]
+"1339
+[v _SRQEN `VEb  1 e 0 @2259 ]
+"1341
+[v _SRCLK0 `VEb  1 e 0 @2260 ]
+"1343
+[v _SRCLK1 `VEb  1 e 0 @2261 ]
+"1345
+[v _SRCLK2 `VEb  1 e 0 @2262 ]
+"1347
+[v _SRLEN `VEb  1 e 0 @2263 ]
+"1369
+[v _SRCON1 `VEuc  1 e 1 @283 ]
+"1372
+[v _SRRC1E `VEb  1 e 0 @2264 ]
+"1373
+[v _SRRCKE `VEb  1 e 0 @2266 ]
+"1375
+[v _SRRPE `VEb  1 e 0 @2267 ]
+"1377
+[v _SRSC1E `VEb  1 e 0 @2268 ]
+"1379
+[v _SRSCKE `VEb  1 e 0 @2270 ]
+"1381
+[v _SRSPE `VEb  1 e 0 @2271 ]
+"1399
+[v _APFCON0 `VEuc  1 e 1 @285 ]
+"1401
+[v _TXCKSEL `VEb  1 e 0 @2282 ]
+"1402
+[v _T1GSEL `VEb  1 e 0 @2283 ]
+"1404
+[v _SSSEL `VEb  1 e 0 @2285 ]
+"1406
+[v _SDOSEL `VEb  1 e 0 @2286 ]
+"1407
+[v _RXDTSEL `VEb  1 e 0 @2287 ]
+"1424
+[v _APFCON1 `VEuc  1 e 1 @286 ]
+"1426
+[v _CCP2SEL `VEb  1 e 0 @2288 ]
+"1427
+[v _P2BSEL `VEb  1 e 0 @2289 ]
+"1428
+[v _P1CSEL `VEb  1 e 0 @2290 ]
+"1429
+[v _P1DSEL `VEb  1 e 0 @2291 ]
+"1447
+[v _ANSELA `VEuc  1 e 1 @396 ]
+"1449
+[v _ANSA0 `VEb  1 e 0 @3168 ]
+"1450
+[v _ANSA1 `VEb  1 e 0 @3169 ]
+"1451
+[v _ANSA2 `VEb  1 e 0 @3170 ]
+"1452
+[v _ANSA4 `VEb  1 e 0 @3172 ]
+"1473
+[v _ANSELC `VEuc  1 e 1 @398 ]
+"1475
+[v _ANSC0 `VEb  1 e 0 @3184 ]
+"1476
+[v _ANSC1 `VEb  1 e 0 @3185 ]
+"1477
+[v _ANSC2 `VEb  1 e 0 @3186 ]
+"1478
+[v _ANSC3 `VEb  1 e 0 @3187 ]
+"1500
+[v _EEADRL `VEuc  1 e 1 @401 ]
+"1504
+[v _EEADRH `VEuc  1 e 1 @402 ]
+"1515
+[v _EEADR `VEui  1 e 2 @401 ]
+"1519
+[v _EEDATL `VEuc  1 e 1 @403 ]
+"1520
+[v _EEDATA `VEuc  1 e 1 @403 ]
+"1524
+[v _EEDATH `VEuc  1 e 1 @404 ]
+"1535
+[v _EEDAT `VEui  1 e 2 @403 ]
+"1538
+[v _EECON1 `VEuc  1 e 1 @405 ]
+"1541
+[v _RD `VEb  1 e 0 @3240 ]
+"1543
+[v _WR `VEb  1 e 0 @3241 ]
+"1545
+[v _WREN `VEb  1 e 0 @3242 ]
+"1547
+[v _WRERR `VEb  1 e 0 @3243 ]
+"1549
+[v _FREE `VEb  1 e 0 @3244 ]
+"1551
+[v _LWLO `VEb  1 e 0 @3245 ]
+"1553
+[v _CFGS `VEb  1 e 0 @3246 ]
+"1555
+[v _EEPGD `VEb  1 e 0 @3247 ]
+"1572
+[v _EECON2 `VEuc  1 e 1 @406 ]
+"1576
+[v _RCREG `VEuc  1 e 1 @409 ]
+"1580
+[v _TXREG `VEuc  1 e 1 @410 ]
+"1584
+[v _SPBRGL `VEuc  1 e 1 @411 ]
+"1585
+[v _SPBRG `VEuc  1 e 1 @411 ]
+"1589
+[v _SPBRGH `VEuc  1 e 1 @412 ]
+"1594
+[v _RCSTA `VEuc  1 e 1 @413 ]
+"1597
+[v _RX9D `VEb  1 e 0 @3304 ]
+"1599
+[v _OERR `VEb  1 e 0 @3305 ]
+"1601
+[v _FERR `VEb  1 e 0 @3306 ]
+"1603
+[v _ADDEN `VEb  1 e 0 @3307 ]
+"1605
+[v _CREN `VEb  1 e 0 @3308 ]
+"1607
+[v _SREN `VEb  1 e 0 @3309 ]
+"1609
+[v _RX9 `VEb  1 e 0 @3310 ]
+"1611
+[v _SPEN `VEb  1 e 0 @3311 ]
+"1629
+[v _TXSTA `VEuc  1 e 1 @414 ]
+"1632
+[v _TX9D `VEb  1 e 0 @3312 ]
+"1634
+[v _TRMT `VEb  1 e 0 @3313 ]
+"1636
+[v _BRGH `VEb  1 e 0 @3314 ]
+"1638
+[v _SENDB `VEb  1 e 0 @3315 ]
+"1640
+[v _SYNC `VEb  1 e 0 @3316 ]
+"1642
+[v _TXEN `VEb  1 e 0 @3317 ]
+"1644
+[v _TX9 `VEb  1 e 0 @3318 ]
+"1646
+[v _CSRC `VEb  1 e 0 @3319 ]
+"1664
+[v _BAUDCON `VEuc  1 e 1 @415 ]
+"1667
+[v _ABDEN `VEb  1 e 0 @3320 ]
+"1669
+[v _WUE `VEb  1 e 0 @3321 ]
+"1671
+[v _BRG16 `VEb  1 e 0 @3323 ]
+"1673
+[v _SCKP `VEb  1 e 0 @3324 ]
+"1675
+[v _RCIDL `VEb  1 e 0 @3326 ]
+"1677
+[v _ABDOVF `VEb  1 e 0 @3327 ]
+"1699
+[v _WPUA `VEuc  1 e 1 @524 ]
+"1701
+[v _WPUA0 `VEb  1 e 0 @4192 ]
+"1702
+[v _WPUA1 `VEb  1 e 0 @4193 ]
+"1703
+[v _WPUA2 `VEb  1 e 0 @4194 ]
+"1704
+[v _WPUA3 `VEb  1 e 0 @4195 ]
+"1705
+[v _WPUA4 `VEb  1 e 0 @4196 ]
+"1706
+[v _WPUA5 `VEb  1 e 0 @4197 ]
+"1725
+[v _WPUC `VEuc  1 e 1 @526 ]
+"1727
+[v _WPUC0 `VEb  1 e 0 @4208 ]
+"1728
+[v _WPUC1 `VEb  1 e 0 @4209 ]
+"1729
+[v _WPUC2 `VEb  1 e 0 @4210 ]
+"1730
+[v _WPUC3 `VEb  1 e 0 @4211 ]
+"1731
+[v _WPUC4 `VEb  1 e 0 @4212 ]
+"1732
+[v _WPUC5 `VEb  1 e 0 @4213 ]
+"1747
+[v _SSP1BUF `VEuc  1 e 1 @529 ]
+"1748
+[v _SSPBUF `VEuc  1 e 1 @529 ]
+"1752
+[v _SSP1ADD `VEuc  1 e 1 @530 ]
+"1753
+[v _SSPADD `VEuc  1 e 1 @530 ]
+"1757
+[v _SSP1MSK `VEuc  1 e 1 @531 ]
+"1758
+[v _SSPMSK `VEuc  1 e 1 @531 ]
+"1762
+[v _SSP1STAT `VEuc  1 e 1 @532 ]
+"1763
+[v _SSPSTAT `VEuc  1 e 1 @532 ]
+"1765
+[v _BF `VEb  1 e 0 @4256 ]
+"1766
+[v _UA `VEb  1 e 0 @4257 ]
+"1767
+[v _R_nW `VEb  1 e 0 @4258 ]
+"1768
+[v _S `VEb  1 e 0 @4259 ]
+"1769
+[v _P `VEb  1 e 0 @4260 ]
+"1770
+[v _D_nA `VEb  1 e 0 @4261 ]
+"1771
+[v _CKE `VEb  1 e 0 @4262 ]
+"1772
+[v _SMP `VEb  1 e 0 @4263 ]
+"1789
+[v _SSP1CON1 `VEuc  1 e 1 @533 ]
+"1790
+[v _SSPCON1 `VEuc  1 e 1 @533 ]
+"1791
+[v _SSPCON `VEuc  1 e 1 @533 ]
+"1793
+[v _SSPM0 `VEb  1 e 0 @4264 ]
+"1794
+[v _SSPM1 `VEb  1 e 0 @4265 ]
+"1795
+[v _SSPM2 `VEb  1 e 0 @4266 ]
+"1796
+[v _SSPM3 `VEb  1 e 0 @4267 ]
+"1797
+[v _CKP `VEb  1 e 0 @4268 ]
+"1798
+[v _SSPEN `VEb  1 e 0 @4269 ]
+"1799
+[v _SSPOV `VEb  1 e 0 @4270 ]
+"1800
+[v _WCOL `VEb  1 e 0 @4271 ]
+"1820
+[v _SSP1CON2 `VEuc  1 e 1 @534 ]
+"1821
+[v _SSPCON2 `VEuc  1 e 1 @534 ]
+"1823
+[v _SEN `VEb  1 e 0 @4272 ]
+"1824
+[v _RSEN `VEb  1 e 0 @4273 ]
+"1825
+[v _PEN `VEb  1 e 0 @4274 ]
+"1826
+[v _RCEN `VEb  1 e 0 @4275 ]
+"1827
+[v _ACKEN `VEb  1 e 0 @4276 ]
+"1828
+[v _ACKDT `VEb  1 e 0 @4277 ]
+"1829
+[v _ACKSTAT `VEb  1 e 0 @4278 ]
+"1830
+[v _GCEN `VEb  1 e 0 @4279 ]
+"1847
+[v _SSP1CON3 `VEuc  1 e 1 @535 ]
+"1848
+[v _SSPCON3 `VEuc  1 e 1 @535 ]
+"1850
+[v _DHEN `VEb  1 e 0 @4280 ]
+"1851
+[v _AHEN `VEb  1 e 0 @4281 ]
+"1852
+[v _SBCDE `VEb  1 e 0 @4282 ]
+"1853
+[v _SDAHT `VEb  1 e 0 @4283 ]
+"1854
+[v _BOEN `VEb  1 e 0 @4284 ]
+"1855
+[v _SCIE `VEb  1 e 0 @4285 ]
+"1856
+[v _PCIE `VEb  1 e 0 @4286 ]
+"1857
+[v _ACKTIM `VEb  1 e 0 @4287 ]
+"1879
+[v _CCPR1L `VEuc  1 e 1 @657 ]
+"1883
+[v _CCPR1H `VEuc  1 e 1 @658 ]
+"1887
+[v _CCP1CON `VEuc  1 e 1 @659 ]
+"1889
+[v _CCP1M0 `VEb  1 e 0 @5272 ]
+"1890
+[v _CCP1M1 `VEb  1 e 0 @5273 ]
+"1891
+[v _CCP1M2 `VEb  1 e 0 @5274 ]
+"1892
+[v _CCP1M3 `VEb  1 e 0 @5275 ]
+"1893
+[v _DC1B0 `VEb  1 e 0 @5276 ]
+"1894
+[v _DC1B1 `VEb  1 e 0 @5277 ]
+"1895
+[v _P1M0 `VEb  1 e 0 @5278 ]
+"1896
+[v _P1M1 `VEb  1 e 0 @5279 ]
+"1918
+[v _PWM1CON `VEuc  1 e 1 @660 ]
+"1920
+[v _P1DC0 `VEb  1 e 0 @5280 ]
+"1921
+[v _P1DC1 `VEb  1 e 0 @5281 ]
+"1922
+[v _P1DC2 `VEb  1 e 0 @5282 ]
+"1923
+[v _P1DC3 `VEb  1 e 0 @5283 ]
+"1924
+[v _P1DC4 `VEb  1 e 0 @5284 ]
+"1925
+[v _P1DC5 `VEb  1 e 0 @5285 ]
+"1926
+[v _P1DC6 `VEb  1 e 0 @5286 ]
+"1927
+[v _P1RSEN `VEb  1 e 0 @5287 ]
+"1947
+[v _CCP1AS `VEuc  1 e 1 @661 ]
+"1948
+[v _ECCP1AS `VEuc  1 e 1 @661 ]
+"1950
+[v _PSS1BD0 `VEb  1 e 0 @5288 ]
+"1951
+[v _PSS1BD1 `VEb  1 e 0 @5289 ]
+"1952
+[v _PSS1AC0 `VEb  1 e 0 @5290 ]
+"1953
+[v _PSS1AC1 `VEb  1 e 0 @5291 ]
+"1954
+[v _CCP1AS0 `VEb  1 e 0 @5292 ]
+"1955
+[v _CCP1AS1 `VEb  1 e 0 @5293 ]
+"1956
+[v _CCP1AS2 `VEb  1 e 0 @5294 ]
+"1957
+[v _CCP1ASE `VEb  1 e 0 @5295 ]
+"1979
+[v _PSTR1CON `VEuc  1 e 1 @662 ]
+"1981
+[v _STR1A `VEb  1 e 0 @5296 ]
+"1982
+[v _STR1B `VEb  1 e 0 @5297 ]
+"1983
+[v _STR1C `VEb  1 e 0 @5298 ]
+"1984
+[v _STR1D `VEb  1 e 0 @5299 ]
+"1985
+[v _STR1SYNC `VEb  1 e 0 @5300 ]
+"1999
+[v _CCPR2L `VEuc  1 e 1 @664 ]
+"2003
+[v _CCPR2H `VEuc  1 e 1 @665 ]
+"2007
+[v _CCP2CON `VEuc  1 e 1 @666 ]
+"2009
+[v _CCP2M0 `VEb  1 e 0 @5328 ]
+"2010
+[v _CCP2M1 `VEb  1 e 0 @5329 ]
+"2011
+[v _CCP2M2 `VEb  1 e 0 @5330 ]
+"2012
+[v _CCP2M3 `VEb  1 e 0 @5331 ]
+"2013
+[v _DC2B0 `VEb  1 e 0 @5332 ]
+"2014
+[v _DC2B1 `VEb  1 e 0 @5333 ]
+"2015
+[v _P2M0 `VEb  1 e 0 @5334 ]
+"2016
+[v _P2M1 `VEb  1 e 0 @5335 ]
+"2038
+[v _PWM2CON `VEuc  1 e 1 @667 ]
+"2040
+[v _P2DC0 `VEb  1 e 0 @5336 ]
+"2041
+[v _P2DC1 `VEb  1 e 0 @5337 ]
+"2042
+[v _P2DC2 `VEb  1 e 0 @5338 ]
+"2043
+[v _P2DC3 `VEb  1 e 0 @5339 ]
+"2044
+[v _P2DC4 `VEb  1 e 0 @5340 ]
+"2045
+[v _P2DC5 `VEb  1 e 0 @5341 ]
+"2046
+[v _P2DC6 `VEb  1 e 0 @5342 ]
+"2047
+[v _P2RSEN `VEb  1 e 0 @5343 ]
+"2067
+[v _CCP2AS `VEuc  1 e 1 @668 ]
+"2069
+[v _PSS2BD0 `VEb  1 e 0 @5344 ]
+"2070
+[v _PSS2BD1 `VEb  1 e 0 @5345 ]
+"2071
+[v _PSS2AC0 `VEb  1 e 0 @5346 ]
+"2072
+[v _PSS2AC1 `VEb  1 e 0 @5347 ]
+"2073
+[v _CCP2AS0 `VEb  1 e 0 @5348 ]
+"2074
+[v _CCP2AS1 `VEb  1 e 0 @5349 ]
+"2075
+[v _CCP2AS2 `VEb  1 e 0 @5350 ]
+"2076
+[v _CCP2ASE `VEb  1 e 0 @5351 ]
+"2098
+[v _PSTR2CON `VEuc  1 e 1 @669 ]
+"2100
+[v _STR2A `VEb  1 e 0 @5352 ]
+"2101
+[v _STR2B `VEb  1 e 0 @5353 ]
+"2102
+[v _STR2C `VEb  1 e 0 @5354 ]
+"2103
+[v _STR2D `VEb  1 e 0 @5355 ]
+"2104
+[v _STR2SYNC `VEb  1 e 0 @5356 ]
+"2118
+[v _CCPTMRS `VEuc  1 e 1 @670 ]
+"2120
+[v _C1TSEL0 `VEb  1 e 0 @5360 ]
+"2121
+[v _C1TSEL1 `VEb  1 e 0 @5361 ]
+"2122
+[v _C2TSEL0 `VEb  1 e 0 @5362 ]
+"2123
+[v _C2TSEL1 `VEb  1 e 0 @5363 ]
+"2124
+[v _C3TSEL0 `VEb  1 e 0 @5364 ]
+"2125
+[v _C3TSEL1 `VEb  1 e 0 @5365 ]
+"2126
+[v _C4TSEL0 `VEb  1 e 0 @5366 ]
+"2127
+[v _C4TSEL1 `VEb  1 e 0 @5367 ]
+"2155
+[v _CCPR3L `VEuc  1 e 1 @785 ]
+"2159
+[v _CCPR3H `VEuc  1 e 1 @786 ]
+"2163
+[v _CCP3CON `VEuc  1 e 1 @787 ]
+"2165
+[v _CCP3M0 `VEb  1 e 0 @6296 ]
+"2166
+[v _CCP3M1 `VEb  1 e 0 @6297 ]
+"2167
+[v _CCP3M2 `VEb  1 e 0 @6298 ]
+"2168
+[v _CCP3M3 `VEb  1 e 0 @6299 ]
+"2169
+[v _DC3B0 `VEb  1 e 0 @6300 ]
+"2170
+[v _DC3B1 `VEb  1 e 0 @6301 ]
+"2189
+[v _CCPR4L `VEuc  1 e 1 @792 ]
+"2193
+[v _CCPR4H `VEuc  1 e 1 @793 ]
+"2197
+[v _CCP4CON `VEuc  1 e 1 @794 ]
+"2199
+[v _CCP4M0 `VEb  1 e 0 @6352 ]
+"2200
+[v _CCP4M1 `VEb  1 e 0 @6353 ]
+"2201
+[v _CCP4M2 `VEb  1 e 0 @6354 ]
+"2202
+[v _CCP4M3 `VEb  1 e 0 @6355 ]
+"2203
+[v _DC4B0 `VEb  1 e 0 @6356 ]
+"2204
+[v _DC4B1 `VEb  1 e 0 @6357 ]
+"2228
+[v _INLVLA `VEuc  1 e 1 @908 ]
+"2230
+[v _INLVLA0 `VEb  1 e 0 @7264 ]
+"2231
+[v _INLVLA1 `VEb  1 e 0 @7265 ]
+"2232
+[v _INLVLA2 `VEb  1 e 0 @7266 ]
+"2233
+[v _INLVLA3 `VEb  1 e 0 @7267 ]
+"2234
+[v _INLVLA4 `VEb  1 e 0 @7268 ]
+"2235
+[v _INLVLA5 `VEb  1 e 0 @7269 ]
+"2253
+[v _INLVLC `VEuc  1 e 1 @910 ]
+"2255
+[v _INLVLC0 `VEb  1 e 0 @7280 ]
+"2256
+[v _INLVLC1 `VEb  1 e 0 @7281 ]
+"2257
+[v _INLVLC2 `VEb  1 e 0 @7282 ]
+"2258
+[v _INLVLC3 `VEb  1 e 0 @7283 ]
+"2259
+[v _INLVLC4 `VEb  1 e 0 @7284 ]
+"2260
+[v _INLVLC5 `VEb  1 e 0 @7285 ]
+"2279
+[v _IOCAP `VEuc  1 e 1 @913 ]
+"2281
+[v _IOCAP0 `VEb  1 e 0 @7304 ]
+"2282
+[v _IOCAP1 `VEb  1 e 0 @7305 ]
+"2283
+[v _IOCAP2 `VEb  1 e 0 @7306 ]
+"2284
+[v _IOCAP3 `VEb  1 e 0 @7307 ]
+"2285
+[v _IOCAP4 `VEb  1 e 0 @7308 ]
+"2286
+[v _IOCAP5 `VEb  1 e 0 @7309 ]
+"2308
+[v _IOCAN `VEuc  1 e 1 @914 ]
+"2310
+[v _IOCAN0 `VEb  1 e 0 @7312 ]
+"2311
+[v _IOCAN1 `VEb  1 e 0 @7313 ]
+"2312
+[v _IOCAN2 `VEb  1 e 0 @7314 ]
+"2313
+[v _IOCAN3 `VEb  1 e 0 @7315 ]
+"2314
+[v _IOCAN4 `VEb  1 e 0 @7316 ]
+"2315
+[v _IOCAN5 `VEb  1 e 0 @7317 ]
+"2337
+[v _IOCAF `VEuc  1 e 1 @915 ]
+"2339
+[v _IOCAF0 `VEb  1 e 0 @7320 ]
+"2340
+[v _IOCAF1 `VEb  1 e 0 @7321 ]
+"2341
+[v _IOCAF2 `VEb  1 e 0 @7322 ]
+"2342
+[v _IOCAF3 `VEb  1 e 0 @7323 ]
+"2343
+[v _IOCAF4 `VEb  1 e 0 @7324 ]
+"2344
+[v _IOCAF5 `VEb  1 e 0 @7325 ]
+"2365
+[v _CLKRCON `VEuc  1 e 1 @922 ]
+"2367
+[v _CLKRDIV0 `VEb  1 e 0 @7376 ]
+"2368
+[v _CLKRDIV1 `VEb  1 e 0 @7377 ]
+"2369
+[v _CLKRDIV2 `VEb  1 e 0 @7378 ]
+"2370
+[v _CLKRDC0 `VEb  1 e 0 @7379 ]
+"2371
+[v _CLKRDC1 `VEb  1 e 0 @7380 ]
+"2372
+[v _CLKRSLR `VEb  1 e 0 @7381 ]
+"2373
+[v _CLKROE `VEb  1 e 0 @7382 ]
+"2374
+[v _CLKREN `VEb  1 e 0 @7383 ]
+"2395
+[v _MDCON `VEuc  1 e 1 @924 ]
+"2397
+[v _MDBIT `VEb  1 e 0 @7392 ]
+"2398
+[v _MDOUT `VEb  1 e 0 @7395 ]
+"2399
+[v _MDOPOL `VEb  1 e 0 @7396 ]
+"2400
+[v _MDSLR `VEb  1 e 0 @7397 ]
+"2401
+[v _MDOE `VEb  1 e 0 @7398 ]
+"2402
+[v _MDEN `VEb  1 e 0 @7399 ]
+"2418
+[v _MDSRC `VEuc  1 e 1 @925 ]
+"2420
+[v _MDMS0 `VEb  1 e 0 @7400 ]
+"2421
+[v _MDMS1 `VEb  1 e 0 @7401 ]
+"2422
+[v _MDMS2 `VEb  1 e 0 @7402 ]
+"2423
+[v _MDMS3 `VEb  1 e 0 @7403 ]
+"2424
+[v _MDMSODIS `VEb  1 e 0 @7407 ]
+"2442
+[v _MDCARL `VEuc  1 e 1 @926 ]
+"2444
+[v _MDCL0 `VEb  1 e 0 @7408 ]
+"2445
+[v _MDCL1 `VEb  1 e 0 @7409 ]
+"2446
+[v _MDCL2 `VEb  1 e 0 @7410 ]
+"2447
+[v _MDCL3 `VEb  1 e 0 @7411 ]
+"2448
+[v _MDCLSYNC `VEb  1 e 0 @7413 ]
+"2449
+[v _MDCLPOL `VEb  1 e 0 @7414 ]
+"2450
+[v _MDCLODIS `VEb  1 e 0 @7415 ]
+"2470
+[v _MDCARH `VEuc  1 e 1 @927 ]
+"2472
+[v _MDCH0 `VEb  1 e 0 @7416 ]
+"2473
+[v _MDCH1 `VEb  1 e 0 @7417 ]
+"2474
+[v _MDCH2 `VEb  1 e 0 @7418 ]
+"2475
+[v _MDCH3 `VEb  1 e 0 @7419 ]
+"2476
+[v _MDCHSYNC `VEb  1 e 0 @7421 ]
+"2477
+[v _MDCHPOL `VEb  1 e 0 @7422 ]
+"2478
+[v _MDCHODIS `VEb  1 e 0 @7423 ]
+"2503
+[v _TMR4 `VEuc  1 e 1 @1045 ]
+"2507
+[v _PR4 `VEuc  1 e 1 @1046 ]
+"2511
+[v _T4CON `VEuc  1 e 1 @1047 ]
+"2513
+[v _T4CKPS0 `VEb  1 e 0 @8376 ]
+"2514
+[v _T4CKPS1 `VEb  1 e 0 @8377 ]
+"2515
+[v _TMR4ON `VEb  1 e 0 @8378 ]
+"2516
+[v _T4OUTPS0 `VEb  1 e 0 @8379 ]
+"2517
+[v _T4OUTPS1 `VEb  1 e 0 @8380 ]
+"2518
+[v _T4OUTPS2 `VEb  1 e 0 @8381 ]
+"2519
+[v _T4OUTPS3 `VEb  1 e 0 @8382 ]
+"2540
+[v _TMR6 `VEuc  1 e 1 @1052 ]
+"2544
+[v _PR6 `VEuc  1 e 1 @1053 ]
+"2548
+[v _T6CON `VEuc  1 e 1 @1054 ]
+"2550
+[v _T6CKPS0 `VEb  1 e 0 @8432 ]
+"2551
+[v _T6CKPS1 `VEb  1 e 0 @8433 ]
+"2552
+[v _TMR6ON `VEb  1 e 0 @8434 ]
+"2553
+[v _T6OUTPS0 `VEb  1 e 0 @8435 ]
+"2554
+[v _T6OUTPS1 `VEb  1 e 0 @8436 ]
+"2555
+[v _T6OUTPS2 `VEb  1 e 0 @8437 ]
+"2556
+[v _T6OUTPS3 `VEb  1 e 0 @8438 ]
+"2582
+[v _STATUS_SHAD `VEuc  1 e 1 @4068 ]
+"2584
+[v _C_SHAD `VEb  1 e 0 @32544 ]
+"2585
+[v _DC_SHAD `VEb  1 e 0 @32545 ]
+"2586
+[v _Z_SHAD `VEb  1 e 0 @32546 ]
+"2598
+[v _WREG_SHAD `VEuc  1 e 1 @4069 ]
+"2602
+[v _BSR_SHAD `VEuc  1 e 1 @4070 ]
+"2613
+[v _PCLATH_SHAD `VEuc  1 e 1 @4071 ]
+"2624
+[v _FSR0L_SHAD `VEuc  1 e 1 @4072 ]
+"2628
+[v _FSR0H_SHAD `VEuc  1 e 1 @4073 ]
+"2632
+[v _FSR1L_SHAD `VEuc  1 e 1 @4074 ]
+"2636
+[v _FSR1H_SHAD `VEuc  1 e 1 @4075 ]
+"2641
+[v _STKPTR `VEuc  1 e 1 @4077 ]
+"2653
+[v _TOSL `VEuc  1 e 1 @4078 ]
+"2658
+[v _TOSH `VEuc  1 e 1 @4079 ]
+"20 C:\Dropbox\RoboCortex\arduino\KiwiRay\KiwiEmotion\KiwiEmotion.c
+[v _i2c_bytes `uc  1 e 1 0 ]
+"21
+[v _i2c_packet `[32]uc  1 e 32 0 ]
+"162 C:\Program\HI-TECH Software\PICC\9.83\include\pic16f1825.h
+[v _STATUSbits `VES36  1 e 1 @3 ]
+"209
+[v _BSRbits `VES67  1 e 1 @8 ]
+"224
+[v _PCLATHbits `VES83  1 e 1 @10 ]
+"258
+[v _INTCONbits `VES113  1 e 1 @11 ]
+"282
+[v _PORTAbits `VES147  1 e 1 @12 ]
+"306
+[v _PORTCbits `VES147  1 e 1 @14 ]
+"340
+[v _PIR1bits `VES147  1 e 1 @17 ]
+"364
+[v _PIR2bits `VES147  1 e 1 @18 ]
+"384
+[v _PIR3bits `VES257  1 e 1 @19 ]
+"430
+[v _T1CONbits `VES292  1 e 1 @24 ]
+"459
+[v _T1GCONbits `VES329  1 e 1 @25 ]
+"496
+[v _T2CONbits `VES366  1 e 1 @28 ]
+"523
+[v _CPSCON0bits `VES400  1 e 1 @30 ]
+"545
+[v _CPSCON1bits `VES428  1 e 1 @31 ]
+"579
+[v _TRISAbits `VES459  1 e 1 @140 ]
+"608
+[v _TRISCbits `VES459  1 e 1 @142 ]
+"643
+[v _PIE1bits `VES147  1 e 1 @145 ]
+"673
+[v _PIE2bits `VES147  1 e 1 @146 ]
+"693
+[v _PIE3bits `VES257  1 e 1 @147 ]
+"736
+[v _OPTION_REGbits `VES615  1 e 1 @149 ]
+"767
+[v _PCONbits `VES147  1 e 1 @150 ]
+"800
+[v _WDTCONbits `VES678  1 e 1 @151 ]
+"832
+[v _OSCTUNEbits `VES708  1 e 1 @152 ]
+"870
+[v _OSCCONbits `VES742  1 e 1 @153 ]
+"905
+[v _OSCSTATbits `VES147  1 e 1 @154 ]
+"965
+[v _ADCON0bits `VES818  1 e 1 @157 ]
+"1003
+[v _ADCON1bits `VES860  1 e 1 @158 ]
+"1035
+[v _LATAbits `VES459  1 e 1 @268 ]
+"1063
+[v _LATCbits `VES459  1 e 1 @270 ]
+"1095
+[v _CM1CON0bits `VES147  1 e 1 @273 ]
+"1129
+[v _CM1CON1bits `VES994  1 e 1 @274 ]
+"1154
+[v _CM2CON0bits `VES147  1 e 1 @275 ]
+"1188
+[v _CM2CON1bits `VES994  1 e 1 @276 ]
+"1203
+[v _CMOUTbits `VES1080  1 e 1 @277 ]
+"1221
+[v _BORCONbits `VES1093  1 e 1 @278 ]
+"1260
+[v _FVRCONbits `VES1121  1 e 1 @279 ]
+"1295
+[v _DACCON0bits `VES1121  1 e 1 @280 ]
+"1325
+[v _DACCON1bits `VES1187  1 e 1 @281 ]
+"1364
+[v _SRCON0bits `VES1221  1 e 1 @282 ]
+"1394
+[v _SRCON1bits `VES147  1 e 1 @283 ]
+"1420
+[v _APFCON0bits `VES147  1 e 1 @285 ]
+"1438
+[v _APFCON1bits `VES1302  1 e 1 @286 ]
+"1469
+[v _ANSELAbits `VES1327  1 e 1 @396 ]
+"1495
+[v _ANSELCbits `VES1360  1 e 1 @398 ]
+"1511
+[v _EEADRHbits `VES83  1 e 1 @402 ]
+"1531
+[v _EEDATHbits `VES1391  1 e 1 @404 ]
+"1568
+[v _EECON1bits `VES147  1 e 1 @405 ]
+"1624
+[v _RCSTAbits `VES147  1 e 1 @413 ]
+"1659
+[v _TXSTAbits `VES147  1 e 1 @414 ]
+"1690
+[v _BAUDCONbits `VES147  1 e 1 @415 ]
+"1721
+[v _WPUAbits `VES1538  1 e 1 @524 ]
+"1743
+[v _WPUCbits `VES257  1 e 1 @526 ]
+"1785
+[v _SSP1STATbits `VES147  1 e 1 @532 ]
+"1816
+[v _SSP1CON1bits `VES1635  1 e 1 @533 ]
+"1843
+[v _SSP1CON2bits `VES147  1 e 1 @534 ]
+"1870
+[v _SSP1CON3bits `VES147  1 e 1 @535 ]
+"1914
+[v _CCP1CONbits `VES292  1 e 1 @659 ]
+"1943
+[v _PWM1CONbits `VES1773  1 e 1 @660 ]
+"1975
+[v _CCP1ASbits `VES860  1 e 1 @661 ]
+"1995
+[v _PSTR1CONbits `VES1840  1 e 1 @662 ]
+"2034
+[v _CCP2CONbits `VES292  1 e 1 @666 ]
+"2063
+[v _PWM2CONbits `VES1773  1 e 1 @667 ]
+"2094
+[v _CCP2ASbits `VES860  1 e 1 @668 ]
+"2114
+[v _PSTR2CONbits `VES1840  1 e 1 @669 ]
+"2146
+[v _CCPTMRSbits `VES2008  1 e 1 @670 ]
+"2185
+[v _CCP3CONbits `VES2045  1 e 1 @787 ]
+"2219
+[v _CCP4CONbits `VES2045  1 e 1 @794 ]
+"2249
+[v _INLVLAbits `VES708  1 e 1 @908 ]
+"2274
+[v _INLVLCbits `VES708  1 e 1 @910 ]
+"2303
+[v _IOCAPbits `VES459  1 e 1 @913 ]
+"2332
+[v _IOCANbits `VES459  1 e 1 @914 ]
+"2361
+[v _IOCAFbits `VES459  1 e 1 @915 ]
+"2391
+[v _CLKRCONbits `VES2276  1 e 1 @922 ]
+"2414
+[v _MDCONbits `VES2307  1 e 1 @924 ]
+"2438
+[v _MDSRCbits `VES2333  1 e 1 @925 ]
+"2466
+[v _MDCARLbits `VES1635  1 e 1 @926 ]
+"2494
+[v _MDCARHbits `VES1635  1 e 1 @927 ]
+"2536
+[v _T4CONbits `VES366  1 e 1 @1047 ]
+"2573
+[v _T6CONbits `VES366  1 e 1 @1054 ]
+"2594
+[v _STATUS_SHADbits `VES2498  1 e 1 @4068 ]
+"2609
+[v _BSR_SHADbits `VES2509  1 e 1 @4070 ]
+"2620
+[v _PCLATH_SHADbits `VES83  1 e 1 @4071 ]
+"2648
+[v _STKPTRbits `VES2509  1 e 1 @4077 ]
+"2665
+[v _TOSHbits `VES83  1 e 1 @4079 ]
+"141 C:\Dropbox\RoboCortex\arduino\KiwiRay\KiwiEmotion\KiwiEmotion.c
+[v _main `(v  1 e 0 0 ]
+{
+"144
+[v main@n `uc  1 a 1 5 ]
+"142
+[v main@q `uc  1 a 1 4 ]
+"143
+[v main@rowix `uc  1 a 1 3 ]
+[v main@row `uc  1 a 1 2 ]
+"173
+} 0
+"110
+[v _setup `(v  1 e 0 0 ]
+{
+"111
+[v setup@n `uc  1 a 1 1 ]
+"139
+} 0
+"24
+[v _isr `I(i  1 e 2 0 ]
+{
+"25
+[v isr@data `uc  1 a 1 0 ]
+"62
+} 0

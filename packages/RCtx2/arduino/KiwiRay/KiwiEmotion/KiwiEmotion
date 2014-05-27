@@ -1,0 +1,17 @@
+#include "16f676.h"
+
+#define MUX_EN PORTC.2
+#define DSP_LE PORTC.3
+#define DSP_CK PORTC.4
+#define DSP_OE PORTC.5
+#define DSP_SD PORTA.4
+#define MUX_ST( n ) PORTA = ( PORTA & 0xF8 ) | n
+
+
+void setup( void ) {
+	ANSEL = 0b00000000;
+}
+
+void main( void ) {
+	setup();
+}

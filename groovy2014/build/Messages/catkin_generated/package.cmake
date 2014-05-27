@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "Messages")
+set(Messages_MAINTAINER "roboops <roboops@todo.todo>")
+set(Messages_DEPRECATED "")
+set(Messages_VERSION "0.0.0")
+set(Messages_BUILD_DEPENDS "message_generation" "roscpp" "rospy" "std_msgs")
+set(Messages_RUN_DEPENDS "message_runtime" "roscpp" "rospy" "std_msgs")
+set(Messages_BUILDTOOL_DEPENDS "catkin")

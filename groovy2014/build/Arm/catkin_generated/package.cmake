@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "Arm")
+set(Arm_MAINTAINER "roboops <roboops@todo.todo>")
+set(Arm_DEPRECATED "")
+set(Arm_VERSION "0.0.0")
+set(Arm_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(Arm_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(Arm_BUILDTOOL_DEPENDS "catkin")

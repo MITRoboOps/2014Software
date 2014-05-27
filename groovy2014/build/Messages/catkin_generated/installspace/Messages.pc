@@ -1,0 +1,8 @@
+prefix=/home/roboops/2014Software/groovy2014/install
+
+Name: Messages
+Description: Description of Messages
+Version: 0.0.0
+Cflags: -I/home/roboops/2014Software/groovy2014/install/include
+Libs: -L/home/roboops/2014Software/groovy2014/install/lib -lMessages
+Requires: message_runtime roscpp rospy std_msgs

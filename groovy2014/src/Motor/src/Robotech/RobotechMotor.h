@@ -17,15 +17,17 @@
 class RobotechMotor {
 
 private:
+ //   Serial* connection;
     Serial* connection;
 
-
+    int mode, maxRPM, stallOut, accelRate, decelRate;
 
 public:
 
+    bool velMode;
 
-
-    RobotechMotor();
+    //accel/decel should be on order 1500
+    RobotechMotor(int maxVelocity, int millisecs, int accel, int decel);
 
     std::string IntToStr(int x);
 
@@ -39,7 +41,9 @@ public:
     double getCurrent();
 
 
-    void setPosition(double pos);
+    void setAbsolutePosition(double pos);
+
+    void setRelativePosition(double pos);
 
     //takes in all ints
     void setVelocity(double vel);

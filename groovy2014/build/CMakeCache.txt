@@ -14,6 +14,12 @@
 # EXTERNAL cache entries
 ########################
 
+//Value Computed by CMake
+Arm_BINARY_DIR:STATIC=/home/roboops/2014Software/groovy2014/build/Arm
+
+//Value Computed by CMake
+Arm_SOURCE_DIR:STATIC=/home/roboops/2014Software/groovy2014/src/Arm
+
 //Build shared libraries (DLLs).
 BUILD_SHARED_LIBS:BOOL=ON
 
@@ -169,11 +175,32 @@ CMAKE_USE_RELATIVE_PATHS:BOOL=OFF
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Value Computed by CMake
+CommunicationCenter_BINARY_DIR:STATIC=/home/roboops/2014Software/groovy2014/build/CommunicationCenter
+
+//Value Computed by CMake
+CommunicationCenter_SOURCE_DIR:STATIC=/home/roboops/2014Software/groovy2014/src/CommunicationCenter
+
+//Value Computed by CMake
+ControlCenter_BINARY_DIR:STATIC=/home/roboops/2014Software/groovy2014/build/ControlCenter
+
+//Value Computed by CMake
+ControlCenter_SOURCE_DIR:STATIC=/home/roboops/2014Software/groovy2014/src/ControlCenter
+
 //Path to a program.
 DOXYGEN_EXECUTABLE:FILEPATH=/usr/bin/doxygen
 
 //Doxygen found
 DOXYGEN_FOUND:BOOL=TRUE
+
+//Value Computed by CMake
+DriveTrain_BINARY_DIR:STATIC=/home/roboops/2014Software/groovy2014/build/DriveTrain
+
+//Dependencies for target
+DriveTrain_LIB_DEPENDS:STATIC=
+
+//Value Computed by CMake
+DriveTrain_SOURCE_DIR:STATIC=/home/roboops/2014Software/groovy2014/src/DriveTrain
 
 //Path to a program.
 EMPY_EXECUTABLE:FILEPATH=/usr/bin/empy
@@ -200,6 +227,12 @@ LSB_FOUND:BOOL=TRUE
 LSB_RELEASE_EXECUTABLE:FILEPATH=/usr/bin/lsb_release
 
 //Value Computed by CMake
+Messages_BINARY_DIR:STATIC=/home/roboops/2014Software/groovy2014/build/Messages
+
+//Value Computed by CMake
+Messages_SOURCE_DIR:STATIC=/home/roboops/2014Software/groovy2014/src/Messages
+
+//Value Computed by CMake
 Motor_BINARY_DIR:STATIC=/home/roboops/2014Software/groovy2014/build/Motor
 
 //Value Computed by CMake
@@ -210,6 +243,9 @@ NOSETESTS:FILEPATH=/usr/bin/nosetests
 
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
+
+//Specify specific Python version to use ('major.minor' or 'major')
+PYTHON_VERSION:STRING=
 
 //Python version
 PYTHON_VERSION_XDOTY:STRING=2.7
@@ -244,6 +280,18 @@ catkin_DIR:PATH=/opt/ros/groovy/share/catkin/cmake
 //The directory containing a CMake configuration file for cpp_common.
 cpp_common_DIR:PATH=/opt/ros/groovy/share/cpp_common/cmake
 
+//The directory containing a CMake configuration file for gencpp.
+gencpp_DIR:PATH=/opt/ros/groovy/share/gencpp/cmake
+
+//The directory containing a CMake configuration file for genlisp.
+genlisp_DIR:PATH=/opt/ros/groovy/share/genlisp/cmake
+
+//The directory containing a CMake configuration file for genmsg.
+genmsg_DIR:PATH=/opt/ros/groovy/share/genmsg/cmake
+
+//The directory containing a CMake configuration file for genpy.
+genpy_DIR:PATH=/opt/ros/groovy/share/genpy/cmake
+
 //Value Computed by CMake
 gtest_BINARY_DIR:STATIC=/home/roboops/2014Software/groovy2014/build/gtest
 
@@ -271,6 +319,9 @@ gtest_main_LIB_DEPENDS:STATIC=general;-lpthread;general;gtest;
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/groovy/lib/libxmlrpcpp.so
+
+//The directory containing a CMake configuration file for message_generation.
+message_generation_DIR:PATH=/opt/ros/groovy/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/groovy/share/message_runtime/cmake
@@ -406,7 +457,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=3
+CMAKE_NUMBER_OF_LOCAL_GENERATORS:INTERNAL=7
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "CommunicationCenter")
+set(CommunicationCenter_MAINTAINER "roboops <roboops@todo.todo>")
+set(CommunicationCenter_DEPRECATED "")
+set(CommunicationCenter_VERSION "0.0.0")
+set(CommunicationCenter_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(CommunicationCenter_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(CommunicationCenter_BUILDTOOL_DEPENDS "catkin")

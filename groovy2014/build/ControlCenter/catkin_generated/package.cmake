@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "ControlCenter")
+set(ControlCenter_MAINTAINER "roboops <roboops@todo.todo>")
+set(ControlCenter_DEPRECATED "")
+set(ControlCenter_VERSION "0.0.0")
+set(ControlCenter_BUILD_DEPENDS "Messages" "roscpp" "rospy" "std_msgs")
+set(ControlCenter_RUN_DEPENDS "Messages" "roscpp" "rospy" "std_msgs")
+set(ControlCenter_BUILDTOOL_DEPENDS "catkin")
