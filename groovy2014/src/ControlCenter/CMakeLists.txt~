@@ -164,6 +164,6 @@ include_directories(
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(publisher src/TestPublisher.cpp)
+add_executable(publisher src/UDPServer.cpp)
 target_link_libraries(publisher ${catkin_LIBRARIES})
 add_dependencies(publisher ${catkin_EXPORTED_TARGETS})

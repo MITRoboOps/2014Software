@@ -11,7 +11,7 @@ int main(){
     bool testVelocity = true;
 
     cout << "successful run" << endl;
-    ServoMotor *robo = new ServoMotor(8000,3000,10000, 100);
+    ServoMotor *robo = new ServoMotor(8000,3000,500, 100);
     cout << "successful initialization" << endl;
 
 
@@ -29,15 +29,14 @@ int main(){
     }
 
     if(testVelocity){
-        cout << "set vel : -99" << endl;
-        robo->setVelocity(-99);
-        sleep(3);
-        cout << "set pos : 3500" << endl;
-        robo->setAbsolutePosition(3500);
+        robo->setAbsolutePosition(5000);
         sleep(1);
-        robo->setVelocity(10);
-        sleep(3);
-        robo->setAbsolutePosition(4000);
+        for(int i =0; i < 4000; i ++){
+            robo->setVelocity(20);
+            usleep(20*1000);
+        }
+
+        robo->setVelocity(0);
     }
 
 }

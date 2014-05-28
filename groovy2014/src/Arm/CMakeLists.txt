@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(Arm)
 
+
+
 ## Find catkin macros and libraries
 ## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
 ## is used, also find other catkin packages
@@ -80,10 +82,10 @@ find_package(catkin REQUIRED COMPONENTS
 ## CATKIN_DEPENDS: catkin_packages dependent projects also need
 ## DEPENDS: system dependencies of this project that dependent projects also need
 catkin_package(
-#  INCLUDE_DIRS include
-#  LIBRARIES Arm
-#  CATKIN_DEPENDS roscpp rospy std_msgs
-#  DEPENDS system_lib
+  INCLUDE_DIRS include
+  LIBRARIES Arm
+  CATKIN_DEPENDS roscpp rospy std_msgs
+  DEPENDS system_lib
 )
 
 ###########
@@ -161,3 +163,10 @@ include_directories(
 
 ## Add folders to be run by python nosetests
 # catkin_add_nosetests(test)
+
+include_directories(include ${catkin_INCLUDE_DIRS})
+
+add_executable(arm src/ArmNode.cpp src/ArmClass.cpp src/Actuator.cpp src/RobotechMotor.cpp src/Serial.cpp src/ServoMotor.cpp src/firgelli.C)
+target_link_libraries(arm ${catkin_LIBRARIES} usb-1.0)
+add_dependencies(arm ${catkin_EXPORTED_TARGETS})
+

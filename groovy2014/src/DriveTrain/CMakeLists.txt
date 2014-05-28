@@ -169,5 +169,5 @@ include_directories(include ${catkin_INCLUDE_DIRS})
 
 add_executable(driveTrain src/DriveTrainNode.cpp src/DriveTrainClass.cpp src/RobotechMotor.cpp src/Serial.cpp)
 target_link_libraries(driveTrain ${catkin_LIBRARIES})
-add_dependencies(driveTrain ${catkin_EXPORTED_TARGETS})
+add_dependencies(driveTrain ${catkin_EXPORTED_TARGETS} Messages_gencpp)
 

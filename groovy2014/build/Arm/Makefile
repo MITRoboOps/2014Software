@@ -147,130 +147,186 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Arm/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : Arm/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+Arm/CMakeFiles/arm.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/arm.dir/rule
+.PHONY : Arm/CMakeFiles/arm.dir/rule
 
 # Convenience name for target.
-roscpp_generate_messages_cpp: Arm/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
-.PHONY : roscpp_generate_messages_cpp
+arm: Arm/CMakeFiles/arm.dir/rule
+.PHONY : arm
 
 # fast build rule for target.
-roscpp_generate_messages_cpp/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make Arm/CMakeFiles/roscpp_generate_messages_cpp.dir/build
-.PHONY : roscpp_generate_messages_cpp/fast
+arm/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/build
+.PHONY : arm/fast
 
-# Convenience name for target.
-Arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : Arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+src/Actuator.o: src/Actuator.cpp.o
+.PHONY : src/Actuator.o
 
-# Convenience name for target.
-roscpp_generate_messages_lisp: Arm/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
-.PHONY : roscpp_generate_messages_lisp
+# target to build an object file
+src/Actuator.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/Actuator.cpp.o
+.PHONY : src/Actuator.cpp.o
 
-# fast build rule for target.
-roscpp_generate_messages_lisp/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make Arm/CMakeFiles/roscpp_generate_messages_lisp.dir/build
-.PHONY : roscpp_generate_messages_lisp/fast
+src/Actuator.i: src/Actuator.cpp.i
+.PHONY : src/Actuator.i
 
-# Convenience name for target.
-Arm/CMakeFiles/roscpp_generate_messages_py.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : Arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
+# target to preprocess a source file
+src/Actuator.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/Actuator.cpp.i
+.PHONY : src/Actuator.cpp.i
 
-# Convenience name for target.
-roscpp_generate_messages_py: Arm/CMakeFiles/roscpp_generate_messages_py.dir/rule
-.PHONY : roscpp_generate_messages_py
+src/Actuator.s: src/Actuator.cpp.s
+.PHONY : src/Actuator.s
 
-# fast build rule for target.
-roscpp_generate_messages_py/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/roscpp_generate_messages_py.dir/build.make Arm/CMakeFiles/roscpp_generate_messages_py.dir/build
-.PHONY : roscpp_generate_messages_py/fast
+# target to generate assembly for a file
+src/Actuator.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/Actuator.cpp.s
+.PHONY : src/Actuator.cpp.s
 
-# Convenience name for target.
-Arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : Arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+src/ArmClass.o: src/ArmClass.cpp.o
+.PHONY : src/ArmClass.o
 
-# Convenience name for target.
-rosgraph_msgs_generate_messages_cpp: Arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_cpp
+# target to build an object file
+src/ArmClass.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/ArmClass.cpp.o
+.PHONY : src/ArmClass.cpp.o
 
-# fast build rule for target.
-rosgraph_msgs_generate_messages_cpp/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make Arm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+src/ArmClass.i: src/ArmClass.cpp.i
+.PHONY : src/ArmClass.i
 
-# Convenience name for target.
-Arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : Arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+# target to preprocess a source file
+src/ArmClass.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/ArmClass.cpp.i
+.PHONY : src/ArmClass.cpp.i
 
-# Convenience name for target.
-rosgraph_msgs_generate_messages_lisp: Arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_lisp
+src/ArmClass.s: src/ArmClass.cpp.s
+.PHONY : src/ArmClass.s
 
-# fast build rule for target.
-rosgraph_msgs_generate_messages_lisp/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Arm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
-.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+# target to generate assembly for a file
+src/ArmClass.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/ArmClass.cpp.s
+.PHONY : src/ArmClass.cpp.s
 
-# Convenience name for target.
-Arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : Arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+src/ArmNode.o: src/ArmNode.cpp.o
+.PHONY : src/ArmNode.o
 
-# Convenience name for target.
-rosgraph_msgs_generate_messages_py: Arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
-.PHONY : rosgraph_msgs_generate_messages_py
+# target to build an object file
+src/ArmNode.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/ArmNode.cpp.o
+.PHONY : src/ArmNode.cpp.o
 
-# fast build rule for target.
-rosgraph_msgs_generate_messages_py/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make Arm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
-.PHONY : rosgraph_msgs_generate_messages_py/fast
+src/ArmNode.i: src/ArmNode.cpp.i
+.PHONY : src/ArmNode.i
 
-# Convenience name for target.
-Arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : Arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+# target to preprocess a source file
+src/ArmNode.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/ArmNode.cpp.i
+.PHONY : src/ArmNode.cpp.i
 
-# Convenience name for target.
-std_msgs_generate_messages_cpp: Arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
-.PHONY : std_msgs_generate_messages_cpp
+src/ArmNode.s: src/ArmNode.cpp.s
+.PHONY : src/ArmNode.s
 
-# fast build rule for target.
-std_msgs_generate_messages_cpp/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make Arm/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
-.PHONY : std_msgs_generate_messages_cpp/fast
+# target to generate assembly for a file
+src/ArmNode.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/ArmNode.cpp.s
+.PHONY : src/ArmNode.cpp.s
 
-# Convenience name for target.
-Arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : Arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+src/RobotechMotor.o: src/RobotechMotor.cpp.o
+.PHONY : src/RobotechMotor.o
 
-# Convenience name for target.
-std_msgs_generate_messages_lisp: Arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
-.PHONY : std_msgs_generate_messages_lisp
+# target to build an object file
+src/RobotechMotor.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/RobotechMotor.cpp.o
+.PHONY : src/RobotechMotor.cpp.o
 
-# fast build rule for target.
-std_msgs_generate_messages_lisp/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make Arm/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
-.PHONY : std_msgs_generate_messages_lisp/fast
+src/RobotechMotor.i: src/RobotechMotor.cpp.i
+.PHONY : src/RobotechMotor.i
 
-# Convenience name for target.
-Arm/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : Arm/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+# target to preprocess a source file
+src/RobotechMotor.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/RobotechMotor.cpp.i
+.PHONY : src/RobotechMotor.cpp.i
 
-# Convenience name for target.
-std_msgs_generate_messages_py: Arm/CMakeFiles/std_msgs_generate_messages_py.dir/rule
-.PHONY : std_msgs_generate_messages_py
+src/RobotechMotor.s: src/RobotechMotor.cpp.s
+.PHONY : src/RobotechMotor.s
 
-# fast build rule for target.
-std_msgs_generate_messages_py/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/std_msgs_generate_messages_py.dir/build.make Arm/CMakeFiles/std_msgs_generate_messages_py.dir/build
-.PHONY : std_msgs_generate_messages_py/fast
+# target to generate assembly for a file
+src/RobotechMotor.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/RobotechMotor.cpp.s
+.PHONY : src/RobotechMotor.cpp.s
+
+src/Serial.o: src/Serial.cpp.o
+.PHONY : src/Serial.o
+
+# target to build an object file
+src/Serial.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/Serial.cpp.o
+.PHONY : src/Serial.cpp.o
+
+src/Serial.i: src/Serial.cpp.i
+.PHONY : src/Serial.i
+
+# target to preprocess a source file
+src/Serial.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/Serial.cpp.i
+.PHONY : src/Serial.cpp.i
+
+src/Serial.s: src/Serial.cpp.s
+.PHONY : src/Serial.s
+
+# target to generate assembly for a file
+src/Serial.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/Serial.cpp.s
+.PHONY : src/Serial.cpp.s
+
+src/ServoMotor.o: src/ServoMotor.cpp.o
+.PHONY : src/ServoMotor.o
+
+# target to build an object file
+src/ServoMotor.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/ServoMotor.cpp.o
+.PHONY : src/ServoMotor.cpp.o
+
+src/ServoMotor.i: src/ServoMotor.cpp.i
+.PHONY : src/ServoMotor.i
+
+# target to preprocess a source file
+src/ServoMotor.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/ServoMotor.cpp.i
+.PHONY : src/ServoMotor.cpp.i
+
+src/ServoMotor.s: src/ServoMotor.cpp.s
+.PHONY : src/ServoMotor.s
+
+# target to generate assembly for a file
+src/ServoMotor.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/ServoMotor.cpp.s
+.PHONY : src/ServoMotor.cpp.s
+
+src/firgelli.o: src/firgelli.C.o
+.PHONY : src/firgelli.o
+
+# target to build an object file
+src/firgelli.C.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/firgelli.C.o
+.PHONY : src/firgelli.C.o
+
+src/firgelli.i: src/firgelli.C.i
+.PHONY : src/firgelli.i
+
+# target to preprocess a source file
+src/firgelli.C.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/firgelli.C.i
+.PHONY : src/firgelli.C.i
+
+src/firgelli.s: src/firgelli.C.s
+.PHONY : src/firgelli.s
+
+# target to generate assembly for a file
+src/firgelli.C.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/src/firgelli.C.s
+.PHONY : src/firgelli.C.s
 
 # Help Target
 help:
@@ -278,22 +334,35 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... arm"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
-	@echo "... roscpp_generate_messages_cpp"
-	@echo "... roscpp_generate_messages_lisp"
-	@echo "... roscpp_generate_messages_py"
-	@echo "... rosgraph_msgs_generate_messages_cpp"
-	@echo "... rosgraph_msgs_generate_messages_lisp"
-	@echo "... rosgraph_msgs_generate_messages_py"
-	@echo "... std_msgs_generate_messages_cpp"
-	@echo "... std_msgs_generate_messages_lisp"
-	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
+	@echo "... src/Actuator.o"
+	@echo "... src/Actuator.i"
+	@echo "... src/Actuator.s"
+	@echo "... src/ArmClass.o"
+	@echo "... src/ArmClass.i"
+	@echo "... src/ArmClass.s"
+	@echo "... src/ArmNode.o"
+	@echo "... src/ArmNode.i"
+	@echo "... src/ArmNode.s"
+	@echo "... src/RobotechMotor.o"
+	@echo "... src/RobotechMotor.i"
+	@echo "... src/RobotechMotor.s"
+	@echo "... src/Serial.o"
+	@echo "... src/Serial.i"
+	@echo "... src/Serial.s"
+	@echo "... src/ServoMotor.o"
+	@echo "... src/ServoMotor.i"
+	@echo "... src/ServoMotor.s"
+	@echo "... src/firgelli.o"
+	@echo "... src/firgelli.i"
+	@echo "... src/firgelli.s"
 .PHONY : help
 
 

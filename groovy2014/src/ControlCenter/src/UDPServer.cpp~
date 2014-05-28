@@ -38,7 +38,7 @@ void parseMessage(char* msg, int length){
 		if(msg[i] == 4) Amsg.stick = atoi(param);
 		if(msg[i] == 5) Amsg.claw = atoi(param);
 		if(msg[i] == 6) Amsg.thumb = atoi(param);
-		printf("%i from %s\n",DTmsg.leftVelocity,param);
+		printf("%i from %s which goes to %i\n",DTmsg.leftVelocity,param,atoi(param));
 	}
 
 }
@@ -94,6 +94,7 @@ int main(int argc, char **argv){
 		parseMessage(buf, len);
 		DTpub.publish(DTmsg);
 		Apub.publish(Amsg);
+		ros::spinOnce();
 		resetMessages();
 		
 		

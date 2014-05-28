@@ -6,7 +6,7 @@
 #include <string.h>
 #include <iostream>
 #include <Messages/DriveTrainMessage.h>
-#include "RobotechMotor.h"
+//#include "RobotechMotor.h"
 
 class DriveTrainClass {
 
@@ -36,8 +36,6 @@ public:
     RobotechMotor *FL;
 
 // Callbacks
-    void leftCallBack( const std_msgs::String::ConstPtr& msg );
-    void rightCallBack( const std_msgs::String::ConstPtr& msg );
     void callBack(const Messages::DriveTrainMessage::ConstPtr& msg);
 	
    

@@ -1,0 +1,5 @@
+<launch>
+  <node name="publisher" pkg="ControlCenter" type="publisher" />
+  <node name="driveTrain" pkg="DriveTrain" type="driveTrain" />
+  <node name="arm" pkg="Arm" type="arm" />
+</launch>

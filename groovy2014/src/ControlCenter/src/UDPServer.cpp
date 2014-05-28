@@ -31,13 +31,13 @@ void parseMessage(char* msg, int length){
 	if(msg[0] != 'C') return;
 	for(int i = 1; i < length; i+= 5){
 		memcpy(&param, msg + i + 1, 4);
-		if(msg[i] == 0) DTmsg.leftVelocity = atoi(param);
-		if(msg[i] == 1) DTmsg.rightVelocity = atoi(param);
-		if(msg[i] == 2) Amsg.armRot = atoi(param);
-		if(msg[i] == 3) Amsg.boom = atoi(param);
-		if(msg[i] == 4) Amsg.stick = atoi(param);
-		if(msg[i] == 5) Amsg.claw = atoi(param);
-		if(msg[i] == 6) Amsg.thumb = atoi(param);
+		if(msg[i] == '0') DTmsg.leftVelocity = atoi(param);
+		if(msg[i] == '1') DTmsg.rightVelocity = atoi(param);
+		if(msg[i] == '2') Amsg.armRot = atoi(param);
+		if(msg[i] == '3') Amsg.boom = atoi(param);
+		if(msg[i] == '4') Amsg.stick = atoi(param);
+		if(msg[i] == '5') Amsg.claw = atoi(param);
+		if(msg[i] == '6') Amsg.thumb = atoi(param);
 		printf("%i from %s which goes to %i\n",DTmsg.leftVelocity,param,atoi(param));
 	}
 
@@ -94,6 +94,7 @@ int main(int argc, char **argv){
 		parseMessage(buf, len);
 		DTpub.publish(DTmsg);
 		Apub.publish(Amsg);
+		ros::spinOnce();
 		resetMessages();
 		
 		

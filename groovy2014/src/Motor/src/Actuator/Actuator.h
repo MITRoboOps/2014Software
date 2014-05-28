@@ -48,6 +48,7 @@ public:
 
     std::string getStatusString();
 
+    int getMaxVel();
 
 };
 

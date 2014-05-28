@@ -3,6 +3,6 @@ prefix=/home/roboops/2014Software/groovy2014/install
 Name: Arm
 Description: Description of Arm
 Version: 0.0.0
-Cflags: 
-Libs: -L/home/roboops/2014Software/groovy2014/install/lib 
-Requires: 
+Cflags: -I/home/roboops/2014Software/groovy2014/install/include
+Libs: -L/home/roboops/2014Software/groovy2014/install/lib -lArm
+Requires: roscpp rospy std_msgs

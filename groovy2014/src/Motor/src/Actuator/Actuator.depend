@@ -6,8 +6,8 @@
 	<string.h>
 	<exception>
 
-1401074889 /home/roboops/2014Software/groovy2014/src/Motor/src/Actuator/Actuator.h
-	"firgelli6/firgelli.h"
+1401167343 /home/roboops/2014Software/groovy2014/src/Motor/src/Actuator/Actuator.h
+	"firgelli.h"
 	<string>
 
 1400300738 /home/roboops/2014Software/groovy2014/src/Motor/src/Actuator/firgelli6/firgelli.h
@@ -19,10 +19,13 @@
 	<stdlib.h>
 	<assert.h>
 
-1401076283 source:/home/roboops/2014Software/groovy2014/src/Motor/src/Actuator/testActuator.cpp
+1401178847 source:/home/roboops/2014Software/groovy2014/src/Motor/src/Actuator/testActuator.cpp
 	<stdio.h>
 	<stdlib.h>
 	<string.h>
 	<iostream>
 	"Actuator.h"
+
+1400300738 /home/roboops/2014Software/groovy2014/src/Motor/src/Actuator/firgelli.h
+	<libusb-1.0/libusb.h>
 
