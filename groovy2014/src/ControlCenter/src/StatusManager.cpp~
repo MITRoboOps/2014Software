@@ -1,0 +1,11 @@
+#include <iostream>
+#include <ctime>
+
+
+//global time
+std::clock_t initTime = std::clock();
+
+
+double getRunTime(){
+	return (std::clock() - initTime)/(double) CLOCKS_PER_SEC;
+}

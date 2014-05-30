@@ -7,10 +7,10 @@ class DriveTrainClass;
 
 DriveTrainClass::DriveTrainClass(std::string BLPath, std::string BRPath, std::string FLPath, std::string FRPath){
 
-	BR = new RobotechMotor(150, 100,1500,1500);
-	BL = new RobotechMotor(150, 100,1500,1500);
-	FR = new RobotechMotor(150, 100,1500,1500);
-	FL = new RobotechMotor(150, 100,1500,1500);
+	BR = new RobotechMotor(150, 100,4000,4000, 80);
+	BL = new RobotechMotor(150, 100,4000,4000, 80);
+	FR = new RobotechMotor(150, 100,4000,4000, 80);
+	FL = new RobotechMotor(150, 100,4000,4000, 80);
 
 	cout << "initialization successful" << endl;	
 	

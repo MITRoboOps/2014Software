@@ -11,6 +11,9 @@
 #include <sstream>
 #include <exception>
 #include <pthread.h>
+#include <thread>
+#include <mutex>
+#include <list>
 
 //class RobotechMotor;
 
@@ -20,14 +23,17 @@ private:
  //   Serial* connection;
     Serial* connection;
 
-    int mode, maxRPM, stallOut, accelRate, decelRate;
+    int mode, maxRPM, stallOut, accelRate, decelRate, maxAmps;
+
+    std::list<char*> statusMessages;
+    std::mutex getStatus;
 
 public:
 
     bool velMode;
 
     //accel/decel should be on order 1500
-    RobotechMotor(int maxVelocity, int millisecs, int accel, int decel);
+    RobotechMotor(int maxVelocity, int millisecs, int accel, int decel, int maxCurrent);
 
     std::string IntToStr(int x);
 
@@ -40,6 +46,7 @@ public:
     //Don't know for actuator
     double getCurrent();
 
+    double getBatteryVoltage();
 
     void setAbsolutePosition(double pos);
 
@@ -48,11 +55,27 @@ public:
     //takes in all ints
     void setVelocity(double vel);
 
-    void setCurrent(double current);
+    //Set Constant Parameters
 
-    bool getStatus();
+    void setMaxVelocity(int vel);
+    int getMaxVelocity();
 
-    std::string getStatusString();
+    void setMaxCurrent(int cur);
+    int getMaxCurrent();
+
+    void setAccel(int accel);
+    int getAccel();
+
+    void setDecel(int decel);
+    int getDecel();
+
+    void setWatchDogTime(int millisecs);
+    int getWatchDogTime();
+
+    void readValues();
+
+    char* getStatusMessage(char identifier);
+
 };
 
 

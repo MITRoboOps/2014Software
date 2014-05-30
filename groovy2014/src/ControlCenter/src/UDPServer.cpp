@@ -12,14 +12,27 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+#include <thread>
+#include <mutex>
+#include <iostream>
 #define BUFLEN 512
 #define PORT 9930
 
+
+
+//global connection variables
 char incomingMessage[BUFLEN];
 char param[4];
+int sockfd;
+struct sockaddr_in my_addr, cli_addr;
+
+//Linked List for all incoming messages (rover side)
+std::list<char*> messagesToClient;
+std::mutex getClientMessage;
+
+//Ros message types
 Messages::DriveTrainMessage DTmsg;
 Messages::ArmMessage Amsg;
-
 
 void err(char *str)
 {
@@ -38,6 +51,12 @@ void parseMessage(char* msg, int length){
 		if(msg[i] == '4') Amsg.stick = atoi(param);
 		if(msg[i] == '5') Amsg.claw = atoi(param);
 		if(msg[i] == '6') Amsg.thumb = atoi(param);
+		if(msg[i] == '7') {
+			Amsg.pan = atoi(param);
+			std::cout << "pan " << atoi(param) << std::endl;
+}
+		if(msg[i] == '8') Amsg.tilt = atoi(param);
+			
 		printf("%i from %s which goes to %i\n",DTmsg.leftVelocity,param,atoi(param));
 	}
 
@@ -53,6 +72,24 @@ void resetMessages(){
 	Amsg.thumb = 1000;
 }
 
+void outMessages(){
+	std::cout << "new thread" << std::endl;
+	while(1){
+		getClientMessage.lock();
+		if(messagesToClient.empty()){
+			getClientMessage.unlock();
+			std::chrono::milliseconds dura( 20 );
+			std::this_thread::sleep_for(dura); //20 millisecond sleep
+		}
+		else{
+			char* msg = messagesToClient.front();
+			messagesToClient.pop_front();
+			sendto(sockfd, msg , sizeof(msg), 0, (struct sockaddr*)&cli_addr, sizeof(cli_addr));
+			getClientMessage.unlock();
+		}
+	}
+}
+
 
 int main(int argc, char **argv){
 
@@ -65,8 +102,8 @@ int main(int argc, char **argv){
 	ros::Publisher DTpub = n.advertise<Messages::DriveTrainMessage>("DriveTrain", 1);
 	ros::Publisher Apub = n.advertise<Messages::ArmMessage>("Arm", 1);
 
-	struct sockaddr_in my_addr, cli_addr;
-	int sockfd, i;
+	
+	int i;
 	socklen_t slen=sizeof(cli_addr);
 	char buf[BUFLEN];
 	int len =0;
@@ -86,11 +123,16 @@ int main(int argc, char **argv){
 	else
 		printf("Server : bind() successful\n");
 
+	std::thread outMessagesThread(outMessages);
+	
 	while(ros::ok()){
 		len = recvfrom(sockfd, buf, BUFLEN, 0, (struct sockaddr*)&cli_addr, &slen);
 		if (len==-1) err("recvfrom()");
 		printf("Received packet from %s:%d\nData: %s Length : %i\n\n",
 		       inet_ntoa(cli_addr.sin_addr), ntohs(cli_addr.sin_port),buf, len);
+		/*getClientMessage.lock();
+		messagesToClient.push_back(buf);
+		getClientMessage.unlock();*/ //sends message back to client
 		parseMessage(buf, len);
 		DTpub.publish(DTmsg);
 		Apub.publish(Amsg);
@@ -104,4 +146,7 @@ int main(int argc, char **argv){
 	close(sockfd);
 	return 0;
 }
+
+
+
 

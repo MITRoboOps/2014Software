@@ -6,7 +6,7 @@ import struct
 
 
 class ArmMessage(genpy.Message):
-  _md5sum = "0afb720915b4dd2dd9afa9c28e4fc9cc"
+  _md5sum = "4a95d4dd02485539899d20930a9f169a"
   _type = "Messages/ArmMessage"
   _has_header = False #flag to mark the presence of a Header object
   _full_text = """int32 thumb
@@ -14,10 +14,12 @@ int32 claw
 int32 stick
 int32 boom
 int32 armRot
+int32 pan
+int32 tilt
 
 """
-  __slots__ = ['thumb','claw','stick','boom','armRot']
-  _slot_types = ['int32','int32','int32','int32','int32']
+  __slots__ = ['thumb','claw','stick','boom','armRot','pan','tilt']
+  _slot_types = ['int32','int32','int32','int32','int32','int32','int32']
 
   def __init__(self, *args, **kwds):
     """
@@ -27,7 +29,7 @@ int32 armRot
     changes.  You cannot mix in-order arguments and keyword arguments.
 
     The available fields are:
-       thumb,claw,stick,boom,armRot
+       thumb,claw,stick,boom,armRot,pan,tilt
 
     :param args: complete set of field values, in .msg order
     :param kwds: use keyword arguments corresponding to message field names
@@ -46,12 +48,18 @@ int32 armRot
         self.boom = 0
       if self.armRot is None:
         self.armRot = 0
+      if self.pan is None:
+        self.pan = 0
+      if self.tilt is None:
+        self.tilt = 0
     else:
       self.thumb = 0
       self.claw = 0
       self.stick = 0
       self.boom = 0
       self.armRot = 0
+      self.pan = 0
+      self.tilt = 0
 
   def _get_types(self):
     """
@@ -66,7 +74,7 @@ int32 armRot
     """
     try:
       _x = self
-      buff.write(_struct_5i.pack(_x.thumb, _x.claw, _x.stick, _x.boom, _x.armRot))
+      buff.write(_struct_7i.pack(_x.thumb, _x.claw, _x.stick, _x.boom, _x.armRot, _x.pan, _x.tilt))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -79,8 +87,8 @@ int32 armRot
       end = 0
       _x = self
       start = end
-      end += 20
-      (_x.thumb, _x.claw, _x.stick, _x.boom, _x.armRot,) = _struct_5i.unpack(str[start:end])
+      end += 28
+      (_x.thumb, _x.claw, _x.stick, _x.boom, _x.armRot, _x.pan, _x.tilt,) = _struct_7i.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
@@ -94,7 +102,7 @@ int32 armRot
     """
     try:
       _x = self
-      buff.write(_struct_5i.pack(_x.thumb, _x.claw, _x.stick, _x.boom, _x.armRot))
+      buff.write(_struct_7i.pack(_x.thumb, _x.claw, _x.stick, _x.boom, _x.armRot, _x.pan, _x.tilt))
     except struct.error as se: self._check_types(struct.error("%s: '%s' when writing '%s'" % (type(se), str(se), str(_x))))
     except TypeError as te: self._check_types(ValueError("%s: '%s' when writing '%s'" % (type(te), str(te), str(_x))))
 
@@ -108,11 +116,11 @@ int32 armRot
       end = 0
       _x = self
       start = end
-      end += 20
-      (_x.thumb, _x.claw, _x.stick, _x.boom, _x.armRot,) = _struct_5i.unpack(str[start:end])
+      end += 28
+      (_x.thumb, _x.claw, _x.stick, _x.boom, _x.armRot, _x.pan, _x.tilt,) = _struct_7i.unpack(str[start:end])
       return self
     except struct.error as e:
       raise genpy.DeserializationError(e) #most likely buffer underfill
 
 _struct_I = genpy.struct_I
-_struct_5i = struct.Struct("<5i")
+_struct_7i = struct.Struct("<7i")

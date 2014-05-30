@@ -147,32 +147,32 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-DriveTrainAndArm/CMakeFiles/arm1.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/arm1.dir/rule
-.PHONY : DriveTrainAndArm/CMakeFiles/arm1.dir/rule
+DriveTrainAndArm/CMakeFiles/Arm.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/Arm.dir/rule
+.PHONY : DriveTrainAndArm/CMakeFiles/Arm.dir/rule
 
 # Convenience name for target.
-arm1: DriveTrainAndArm/CMakeFiles/arm1.dir/rule
-.PHONY : arm1
+Arm: DriveTrainAndArm/CMakeFiles/Arm.dir/rule
+.PHONY : Arm
 
 # fast build rule for target.
-arm1/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/build
-.PHONY : arm1/fast
+Arm/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/build
+.PHONY : Arm/fast
 
 # Convenience name for target.
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/driveTrain1.dir/rule
-.PHONY : DriveTrainAndArm/CMakeFiles/driveTrain1.dir/rule
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule
+.PHONY : DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule
 
 # Convenience name for target.
-driveTrain1: DriveTrainAndArm/CMakeFiles/driveTrain1.dir/rule
-.PHONY : driveTrain1
+DriveTrain: DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule
+.PHONY : DriveTrain
 
 # fast build rule for target.
-driveTrain1/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build
-.PHONY : driveTrain1/fast
+DriveTrain/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build
+.PHONY : DriveTrain/fast
 
 # Convenience name for target.
 DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
@@ -300,36 +300,60 @@ std_msgs_generate_messages_py/fast:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_py.dir/build.make DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_py.dir/build
 .PHONY : std_msgs_generate_messages_py/fast
 
-src/Actuator.o: src/Actuator.cpp.o
-.PHONY : src/Actuator.o
+src/Actuator/Actuator.o: src/Actuator/Actuator.cpp.o
+.PHONY : src/Actuator/Actuator.o
 
 # target to build an object file
-src/Actuator.cpp.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/Actuator.cpp.o
-.PHONY : src/Actuator.cpp.o
+src/Actuator/Actuator.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/Actuator.cpp.o
+.PHONY : src/Actuator/Actuator.cpp.o
 
-src/Actuator.i: src/Actuator.cpp.i
-.PHONY : src/Actuator.i
+src/Actuator/Actuator.i: src/Actuator/Actuator.cpp.i
+.PHONY : src/Actuator/Actuator.i
 
 # target to preprocess a source file
-src/Actuator.cpp.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/Actuator.cpp.i
-.PHONY : src/Actuator.cpp.i
+src/Actuator/Actuator.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/Actuator.cpp.i
+.PHONY : src/Actuator/Actuator.cpp.i
 
-src/Actuator.s: src/Actuator.cpp.s
-.PHONY : src/Actuator.s
+src/Actuator/Actuator.s: src/Actuator/Actuator.cpp.s
+.PHONY : src/Actuator/Actuator.s
 
 # target to generate assembly for a file
-src/Actuator.cpp.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/Actuator.cpp.s
-.PHONY : src/Actuator.cpp.s
+src/Actuator/Actuator.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/Actuator.cpp.s
+.PHONY : src/Actuator/Actuator.cpp.s
+
+src/Actuator/firgelli.o: src/Actuator/firgelli.C.o
+.PHONY : src/Actuator/firgelli.o
+
+# target to build an object file
+src/Actuator/firgelli.C.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o
+.PHONY : src/Actuator/firgelli.C.o
+
+src/Actuator/firgelli.i: src/Actuator/firgelli.C.i
+.PHONY : src/Actuator/firgelli.i
+
+# target to preprocess a source file
+src/Actuator/firgelli.C.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.i
+.PHONY : src/Actuator/firgelli.C.i
+
+src/Actuator/firgelli.s: src/Actuator/firgelli.C.s
+.PHONY : src/Actuator/firgelli.s
+
+# target to generate assembly for a file
+src/Actuator/firgelli.C.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.s
+.PHONY : src/Actuator/firgelli.C.s
 
 src/ArmClass.o: src/ArmClass.cpp.o
 .PHONY : src/ArmClass.o
 
 # target to build an object file
 src/ArmClass.cpp.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/ArmClass.cpp.o
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o
 .PHONY : src/ArmClass.cpp.o
 
 src/ArmClass.i: src/ArmClass.cpp.i
@@ -337,7 +361,7 @@ src/ArmClass.i: src/ArmClass.cpp.i
 
 # target to preprocess a source file
 src/ArmClass.cpp.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/ArmClass.cpp.i
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.i
 .PHONY : src/ArmClass.cpp.i
 
 src/ArmClass.s: src/ArmClass.cpp.s
@@ -345,7 +369,7 @@ src/ArmClass.s: src/ArmClass.cpp.s
 
 # target to generate assembly for a file
 src/ArmClass.cpp.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/ArmClass.cpp.s
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.s
 .PHONY : src/ArmClass.cpp.s
 
 src/ArmNode.o: src/ArmNode.cpp.o
@@ -353,7 +377,7 @@ src/ArmNode.o: src/ArmNode.cpp.o
 
 # target to build an object file
 src/ArmNode.cpp.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/ArmNode.cpp.o
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o
 .PHONY : src/ArmNode.cpp.o
 
 src/ArmNode.i: src/ArmNode.cpp.i
@@ -361,7 +385,7 @@ src/ArmNode.i: src/ArmNode.cpp.i
 
 # target to preprocess a source file
 src/ArmNode.cpp.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/ArmNode.cpp.i
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.i
 .PHONY : src/ArmNode.cpp.i
 
 src/ArmNode.s: src/ArmNode.cpp.s
@@ -369,7 +393,7 @@ src/ArmNode.s: src/ArmNode.cpp.s
 
 # target to generate assembly for a file
 src/ArmNode.cpp.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/ArmNode.cpp.s
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.s
 .PHONY : src/ArmNode.cpp.s
 
 src/DriveTrainClass.o: src/DriveTrainClass.cpp.o
@@ -377,7 +401,7 @@ src/DriveTrainClass.o: src/DriveTrainClass.cpp.o
 
 # target to build an object file
 src/DriveTrainClass.cpp.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/DriveTrainClass.cpp.o
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/DriveTrainClass.cpp.o
 .PHONY : src/DriveTrainClass.cpp.o
 
 src/DriveTrainClass.i: src/DriveTrainClass.cpp.i
@@ -385,7 +409,7 @@ src/DriveTrainClass.i: src/DriveTrainClass.cpp.i
 
 # target to preprocess a source file
 src/DriveTrainClass.cpp.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/DriveTrainClass.cpp.i
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/DriveTrainClass.cpp.i
 .PHONY : src/DriveTrainClass.cpp.i
 
 src/DriveTrainClass.s: src/DriveTrainClass.cpp.s
@@ -393,7 +417,7 @@ src/DriveTrainClass.s: src/DriveTrainClass.cpp.s
 
 # target to generate assembly for a file
 src/DriveTrainClass.cpp.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/DriveTrainClass.cpp.s
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/DriveTrainClass.cpp.s
 .PHONY : src/DriveTrainClass.cpp.s
 
 src/DriveTrainNode.o: src/DriveTrainNode.cpp.o
@@ -401,7 +425,7 @@ src/DriveTrainNode.o: src/DriveTrainNode.cpp.o
 
 # target to build an object file
 src/DriveTrainNode.cpp.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/DriveTrainNode.cpp.o
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/DriveTrainNode.cpp.o
 .PHONY : src/DriveTrainNode.cpp.o
 
 src/DriveTrainNode.i: src/DriveTrainNode.cpp.i
@@ -409,7 +433,7 @@ src/DriveTrainNode.i: src/DriveTrainNode.cpp.i
 
 # target to preprocess a source file
 src/DriveTrainNode.cpp.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/DriveTrainNode.cpp.i
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/DriveTrainNode.cpp.i
 .PHONY : src/DriveTrainNode.cpp.i
 
 src/DriveTrainNode.s: src/DriveTrainNode.cpp.s
@@ -417,110 +441,86 @@ src/DriveTrainNode.s: src/DriveTrainNode.cpp.s
 
 # target to generate assembly for a file
 src/DriveTrainNode.cpp.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/DriveTrainNode.cpp.s
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/DriveTrainNode.cpp.s
 .PHONY : src/DriveTrainNode.cpp.s
 
-src/RobotechMotor.o: src/RobotechMotor.cpp.o
-.PHONY : src/RobotechMotor.o
+src/Robotech/RobotechMotor.o: src/Robotech/RobotechMotor.cpp.o
+.PHONY : src/Robotech/RobotechMotor.o
 
 # target to build an object file
-src/RobotechMotor.cpp.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/RobotechMotor.cpp.o
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/RobotechMotor.cpp.o
-.PHONY : src/RobotechMotor.cpp.o
+src/Robotech/RobotechMotor.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/RobotechMotor.cpp.o
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/Robotech/RobotechMotor.cpp.o
+.PHONY : src/Robotech/RobotechMotor.cpp.o
 
-src/RobotechMotor.i: src/RobotechMotor.cpp.i
-.PHONY : src/RobotechMotor.i
+src/Robotech/RobotechMotor.i: src/Robotech/RobotechMotor.cpp.i
+.PHONY : src/Robotech/RobotechMotor.i
 
 # target to preprocess a source file
-src/RobotechMotor.cpp.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/RobotechMotor.cpp.i
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/RobotechMotor.cpp.i
-.PHONY : src/RobotechMotor.cpp.i
+src/Robotech/RobotechMotor.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/RobotechMotor.cpp.i
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/Robotech/RobotechMotor.cpp.i
+.PHONY : src/Robotech/RobotechMotor.cpp.i
 
-src/RobotechMotor.s: src/RobotechMotor.cpp.s
-.PHONY : src/RobotechMotor.s
+src/Robotech/RobotechMotor.s: src/Robotech/RobotechMotor.cpp.s
+.PHONY : src/Robotech/RobotechMotor.s
 
 # target to generate assembly for a file
-src/RobotechMotor.cpp.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/RobotechMotor.cpp.s
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/RobotechMotor.cpp.s
-.PHONY : src/RobotechMotor.cpp.s
+src/Robotech/RobotechMotor.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/RobotechMotor.cpp.s
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/Robotech/RobotechMotor.cpp.s
+.PHONY : src/Robotech/RobotechMotor.cpp.s
 
-src/Serial.o: src/Serial.cpp.o
-.PHONY : src/Serial.o
+src/Robotech/Serial.o: src/Robotech/Serial.cpp.o
+.PHONY : src/Robotech/Serial.o
 
 # target to build an object file
-src/Serial.cpp.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/Serial.cpp.o
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/Serial.cpp.o
-.PHONY : src/Serial.cpp.o
+src/Robotech/Serial.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/Serial.cpp.o
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/Robotech/Serial.cpp.o
+.PHONY : src/Robotech/Serial.cpp.o
 
-src/Serial.i: src/Serial.cpp.i
-.PHONY : src/Serial.i
+src/Robotech/Serial.i: src/Robotech/Serial.cpp.i
+.PHONY : src/Robotech/Serial.i
 
 # target to preprocess a source file
-src/Serial.cpp.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/Serial.cpp.i
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/Serial.cpp.i
-.PHONY : src/Serial.cpp.i
+src/Robotech/Serial.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/Serial.cpp.i
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/Robotech/Serial.cpp.i
+.PHONY : src/Robotech/Serial.cpp.i
 
-src/Serial.s: src/Serial.cpp.s
-.PHONY : src/Serial.s
+src/Robotech/Serial.s: src/Robotech/Serial.cpp.s
+.PHONY : src/Robotech/Serial.s
 
 # target to generate assembly for a file
-src/Serial.cpp.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/Serial.cpp.s
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/src/Serial.cpp.s
-.PHONY : src/Serial.cpp.s
+src/Robotech/Serial.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/Serial.cpp.s
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/Robotech/Serial.cpp.s
+.PHONY : src/Robotech/Serial.cpp.s
 
-src/ServoMotor.o: src/ServoMotor.cpp.o
-.PHONY : src/ServoMotor.o
+src/Servo/ServoMotor.o: src/Servo/ServoMotor.cpp.o
+.PHONY : src/Servo/ServoMotor.o
 
 # target to build an object file
-src/ServoMotor.cpp.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/ServoMotor.cpp.o
-.PHONY : src/ServoMotor.cpp.o
+src/Servo/ServoMotor.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Servo/ServoMotor.cpp.o
+.PHONY : src/Servo/ServoMotor.cpp.o
 
-src/ServoMotor.i: src/ServoMotor.cpp.i
-.PHONY : src/ServoMotor.i
-
-# target to preprocess a source file
-src/ServoMotor.cpp.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/ServoMotor.cpp.i
-.PHONY : src/ServoMotor.cpp.i
-
-src/ServoMotor.s: src/ServoMotor.cpp.s
-.PHONY : src/ServoMotor.s
-
-# target to generate assembly for a file
-src/ServoMotor.cpp.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/ServoMotor.cpp.s
-.PHONY : src/ServoMotor.cpp.s
-
-src/firgelli.o: src/firgelli.C.o
-.PHONY : src/firgelli.o
-
-# target to build an object file
-src/firgelli.C.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/firgelli.C.o
-.PHONY : src/firgelli.C.o
-
-src/firgelli.i: src/firgelli.C.i
-.PHONY : src/firgelli.i
+src/Servo/ServoMotor.i: src/Servo/ServoMotor.cpp.i
+.PHONY : src/Servo/ServoMotor.i
 
 # target to preprocess a source file
-src/firgelli.C.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/firgelli.C.i
-.PHONY : src/firgelli.C.i
+src/Servo/ServoMotor.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Servo/ServoMotor.cpp.i
+.PHONY : src/Servo/ServoMotor.cpp.i
 
-src/firgelli.s: src/firgelli.C.s
-.PHONY : src/firgelli.s
+src/Servo/ServoMotor.s: src/Servo/ServoMotor.cpp.s
+.PHONY : src/Servo/ServoMotor.s
 
 # target to generate assembly for a file
-src/firgelli.C.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/src/firgelli.C.s
-.PHONY : src/firgelli.C.s
+src/Servo/ServoMotor.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Servo/ServoMotor.cpp.s
+.PHONY : src/Servo/ServoMotor.cpp.s
 
 # Help Target
 help:
@@ -528,8 +528,8 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... arm1"
-	@echo "... driveTrain1"
+	@echo "... Arm"
+	@echo "... DriveTrain"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -546,9 +546,12 @@ help:
 	@echo "... std_msgs_generate_messages_lisp"
 	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
-	@echo "... src/Actuator.o"
-	@echo "... src/Actuator.i"
-	@echo "... src/Actuator.s"
+	@echo "... src/Actuator/Actuator.o"
+	@echo "... src/Actuator/Actuator.i"
+	@echo "... src/Actuator/Actuator.s"
+	@echo "... src/Actuator/firgelli.o"
+	@echo "... src/Actuator/firgelli.i"
+	@echo "... src/Actuator/firgelli.s"
 	@echo "... src/ArmClass.o"
 	@echo "... src/ArmClass.i"
 	@echo "... src/ArmClass.s"
@@ -561,18 +564,15 @@ help:
 	@echo "... src/DriveTrainNode.o"
 	@echo "... src/DriveTrainNode.i"
 	@echo "... src/DriveTrainNode.s"
-	@echo "... src/RobotechMotor.o"
-	@echo "... src/RobotechMotor.i"
-	@echo "... src/RobotechMotor.s"
-	@echo "... src/Serial.o"
-	@echo "... src/Serial.i"
-	@echo "... src/Serial.s"
-	@echo "... src/ServoMotor.o"
-	@echo "... src/ServoMotor.i"
-	@echo "... src/ServoMotor.s"
-	@echo "... src/firgelli.o"
-	@echo "... src/firgelli.i"
-	@echo "... src/firgelli.s"
+	@echo "... src/Robotech/RobotechMotor.o"
+	@echo "... src/Robotech/RobotechMotor.i"
+	@echo "... src/Robotech/RobotechMotor.s"
+	@echo "... src/Robotech/Serial.o"
+	@echo "... src/Robotech/Serial.i"
+	@echo "... src/Robotech/Serial.s"
+	@echo "... src/Servo/ServoMotor.o"
+	@echo "... src/Servo/ServoMotor.i"
+	@echo "... src/Servo/ServoMotor.s"
 .PHONY : help
 
 

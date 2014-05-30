@@ -61,14 +61,18 @@ struct ArmMessage_
     , claw(0)
     , stick(0)
     , boom(0)
-    , armRot(0)  {
+    , armRot(0)
+    , pan(0)
+    , tilt(0)  {
     }
   ArmMessage_(const ContainerAllocator& _alloc)
     : thumb(0)
     , claw(0)
     , stick(0)
     , boom(0)
-    , armRot(0)  {
+    , armRot(0)
+    , pan(0)
+    , tilt(0)  {
     }
 
 
@@ -87,6 +91,12 @@ struct ArmMessage_
 
    typedef int32_t _armRot_type;
   _armRot_type armRot;
+
+   typedef int32_t _pan_type;
+  _pan_type pan;
+
+   typedef int32_t _tilt_type;
+  _tilt_type tilt;
 
 
 
@@ -166,12 +176,12 @@ struct MD5Sum< ::Messages::ArmMessage_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "0afb720915b4dd2dd9afa9c28e4fc9cc";
+    return "4a95d4dd02485539899d20930a9f169a";
   }
 
   static const char* value(const ::Messages::ArmMessage_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x0afb720915b4dd2dULL;
-  static const uint64_t static_value2 = 0xd9afa9c28e4fc9ccULL;
+  static const uint64_t static_value1 = 0x4a95d4dd02485539ULL;
+  static const uint64_t static_value2 = 0x899d20930a9f169aULL;
 };
 
 template<class ContainerAllocator>
@@ -195,6 +205,8 @@ int32 claw\n\
 int32 stick\n\
 int32 boom\n\
 int32 armRot\n\
+int32 pan\n\
+int32 tilt\n\
 ";
   }
 
@@ -218,6 +230,8 @@ namespace serialization
       stream.next(m.stick);
       stream.next(m.boom);
       stream.next(m.armRot);
+      stream.next(m.pan);
+      stream.next(m.tilt);
     }
 
     ROS_DECLARE_ALLINONE_SERIALIZER;
@@ -246,6 +260,10 @@ struct Printer< ::Messages::ArmMessage_<ContainerAllocator> >
     Printer<int32_t>::stream(s, indent + "  ", v.boom);
     s << indent << "armRot: ";
     Printer<int32_t>::stream(s, indent + "  ", v.armRot);
+    s << indent << "pan: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.pan);
+    s << indent << "tilt: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.tilt);
   }
 };
 

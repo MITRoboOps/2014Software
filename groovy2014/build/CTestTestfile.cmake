@@ -7,7 +7,4 @@
 SUBDIRS(gtest)
 SUBDIRS(DriveTrainAndArm)
 SUBDIRS(Messages)
-SUBDIRS(Arm)
 SUBDIRS(ControlCenter)
-SUBDIRS(DriveTrain)
-SUBDIRS(Motor)

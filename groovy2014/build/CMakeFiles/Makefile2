@@ -87,7 +87,7 @@ clean: CMakeFiles/clean_test_results.dir/clean
 CMakeFiles/doxygen.dir/all:
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/depend
 	$(MAKE) -f CMakeFiles/doxygen.dir/build.make CMakeFiles/doxygen.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  23
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  19
 	@echo "Built target doxygen"
 .PHONY : CMakeFiles/doxygen.dir/all
 
@@ -196,7 +196,7 @@ gtest/preinstall:
 gtest/CMakeFiles/gtest.dir/all:
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest.dir/build.make gtest/CMakeFiles/gtest.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  32
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  20
 	@echo "Built target gtest"
 .PHONY : gtest/CMakeFiles/gtest.dir/all
 
@@ -227,7 +227,7 @@ clean: gtest/CMakeFiles/gtest.dir/clean
 gtest/CMakeFiles/gtest_main.dir/all: gtest/CMakeFiles/gtest.dir/all
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/depend
 	$(MAKE) -f gtest/CMakeFiles/gtest_main.dir/build.make gtest/CMakeFiles/gtest_main.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  33
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  21
 	@echo "Built target gtest_main"
 .PHONY : gtest/CMakeFiles/gtest_main.dir/all
 
@@ -255,13 +255,13 @@ clean: gtest/CMakeFiles/gtest_main.dir/clean
 # Directory level rules for directory DriveTrainAndArm
 
 # Convenience name for "all" pass in the directory.
-DriveTrainAndArm/all: DriveTrainAndArm/CMakeFiles/arm1.dir/all
-DriveTrainAndArm/all: DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all
+DriveTrainAndArm/all: DriveTrainAndArm/CMakeFiles/Arm.dir/all
+DriveTrainAndArm/all: DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all
 .PHONY : DriveTrainAndArm/all
 
 # Convenience name for "clean" pass in the directory.
-DriveTrainAndArm/clean: DriveTrainAndArm/CMakeFiles/arm1.dir/clean
-DriveTrainAndArm/clean: DriveTrainAndArm/CMakeFiles/driveTrain1.dir/clean
+DriveTrainAndArm/clean: DriveTrainAndArm/CMakeFiles/Arm.dir/clean
+DriveTrainAndArm/clean: DriveTrainAndArm/CMakeFiles/DriveTrain.dir/clean
 DriveTrainAndArm/clean: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_cpp.dir/clean
 DriveTrainAndArm/clean: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_lisp.dir/clean
 DriveTrainAndArm/clean: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_py.dir/clean
@@ -278,90 +278,90 @@ DriveTrainAndArm/preinstall:
 .PHONY : DriveTrainAndArm/preinstall
 
 #=============================================================================
-# Target rules for target DriveTrainAndArm/CMakeFiles/arm1.dir
+# Target rules for target DriveTrainAndArm/CMakeFiles/Arm.dir
 
 # All Build rule for target.
-DriveTrainAndArm/CMakeFiles/arm1.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-DriveTrainAndArm/CMakeFiles/arm1.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-DriveTrainAndArm/CMakeFiles/arm1.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_py.dir/all
-DriveTrainAndArm/CMakeFiles/arm1.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-DriveTrainAndArm/CMakeFiles/arm1.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-DriveTrainAndArm/CMakeFiles/arm1.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-DriveTrainAndArm/CMakeFiles/arm1.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-DriveTrainAndArm/CMakeFiles/arm1.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-DriveTrainAndArm/CMakeFiles/arm1.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/depend
-	$(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  16 17 18 19 20 21 22
-	@echo "Built target arm1"
-.PHONY : DriveTrainAndArm/CMakeFiles/arm1.dir/all
+DriveTrainAndArm/CMakeFiles/Arm.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+DriveTrainAndArm/CMakeFiles/Arm.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+DriveTrainAndArm/CMakeFiles/Arm.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_py.dir/all
+DriveTrainAndArm/CMakeFiles/Arm.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+DriveTrainAndArm/CMakeFiles/Arm.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+DriveTrainAndArm/CMakeFiles/Arm.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+DriveTrainAndArm/CMakeFiles/Arm.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+DriveTrainAndArm/CMakeFiles/Arm.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+DriveTrainAndArm/CMakeFiles/Arm.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_py.dir/all
+	$(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/depend
+	$(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  1 2 3 4 5 6 7
+	@echo "Built target Arm"
+.PHONY : DriveTrainAndArm/CMakeFiles/Arm.dir/all
 
 # Include target in all.
-all: DriveTrainAndArm/CMakeFiles/arm1.dir/all
+all: DriveTrainAndArm/CMakeFiles/Arm.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-DriveTrainAndArm/CMakeFiles/arm1.dir/rule: cmake_check_build_system
+DriveTrainAndArm/CMakeFiles/Arm.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roboops/2014Software/groovy2014/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/arm1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/Arm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roboops/2014Software/groovy2014/build/CMakeFiles 0
-.PHONY : DriveTrainAndArm/CMakeFiles/arm1.dir/rule
+.PHONY : DriveTrainAndArm/CMakeFiles/Arm.dir/rule
 
 # Convenience name for target.
-arm1: DriveTrainAndArm/CMakeFiles/arm1.dir/rule
-.PHONY : arm1
+Arm: DriveTrainAndArm/CMakeFiles/Arm.dir/rule
+.PHONY : Arm
 
 # clean rule for target.
-DriveTrainAndArm/CMakeFiles/arm1.dir/clean:
-	$(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/clean
-.PHONY : DriveTrainAndArm/CMakeFiles/arm1.dir/clean
+DriveTrainAndArm/CMakeFiles/Arm.dir/clean:
+	$(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/clean
+.PHONY : DriveTrainAndArm/CMakeFiles/Arm.dir/clean
 
 # clean rule for target.
-clean: DriveTrainAndArm/CMakeFiles/arm1.dir/clean
+clean: DriveTrainAndArm/CMakeFiles/Arm.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Target rules for target DriveTrainAndArm/CMakeFiles/driveTrain1.dir
+# Target rules for target DriveTrainAndArm/CMakeFiles/DriveTrain.dir
 
 # All Build rule for target.
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_py.dir/all
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_py.dir/all
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all: Messages/CMakeFiles/Messages_gencpp.dir/all
-	$(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/depend
-	$(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  28 29 30 31
-	@echo "Built target driveTrain1"
-.PHONY : DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_cpp.dir/all
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_lisp.dir/all
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_py.dir/all
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_py.dir/all
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all: Messages/CMakeFiles/Messages_gencpp.dir/all
+	$(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/depend
+	$(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  8 9 10 11
+	@echo "Built target DriveTrain"
+.PHONY : DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all
 
 # Include target in all.
-all: DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all
+all: DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/rule: cmake_check_build_system
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roboops/2014Software/groovy2014/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/driveTrain1.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/DriveTrain.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/roboops/2014Software/groovy2014/build/CMakeFiles 0
-.PHONY : DriveTrainAndArm/CMakeFiles/driveTrain1.dir/rule
+.PHONY : DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule
 
 # Convenience name for target.
-driveTrain1: DriveTrainAndArm/CMakeFiles/driveTrain1.dir/rule
-.PHONY : driveTrain1
+DriveTrain: DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule
+.PHONY : DriveTrain
 
 # clean rule for target.
-DriveTrainAndArm/CMakeFiles/driveTrain1.dir/clean:
-	$(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/clean
-.PHONY : DriveTrainAndArm/CMakeFiles/driveTrain1.dir/clean
+DriveTrainAndArm/CMakeFiles/DriveTrain.dir/clean:
+	$(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/clean
+.PHONY : DriveTrainAndArm/CMakeFiles/DriveTrain.dir/clean
 
 # clean rule for target.
-clean: DriveTrainAndArm/CMakeFiles/driveTrain1.dir/clean
+clean: DriveTrainAndArm/CMakeFiles/DriveTrain.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -699,9 +699,9 @@ clean: Messages/CMakeFiles/Messages_gencpp.dir/clean
 # Target rules for target Messages/CMakeFiles/Messages_generate_messages.dir
 
 # All Build rule for target.
-Messages/CMakeFiles/Messages_generate_messages.dir/all: Messages/CMakeFiles/Messages_generate_messages_lisp.dir/all
-Messages/CMakeFiles/Messages_generate_messages.dir/all: Messages/CMakeFiles/Messages_generate_messages_cpp.dir/all
 Messages/CMakeFiles/Messages_generate_messages.dir/all: Messages/CMakeFiles/Messages_generate_messages_py.dir/all
+Messages/CMakeFiles/Messages_generate_messages.dir/all: Messages/CMakeFiles/Messages_generate_messages_cpp.dir/all
+Messages/CMakeFiles/Messages_generate_messages.dir/all: Messages/CMakeFiles/Messages_generate_messages_lisp.dir/all
 	$(MAKE) -f Messages/CMakeFiles/Messages_generate_messages.dir/build.make Messages/CMakeFiles/Messages_generate_messages.dir/depend
 	$(MAKE) -f Messages/CMakeFiles/Messages_generate_messages.dir/build.make Messages/CMakeFiles/Messages_generate_messages.dir/build
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles 
@@ -739,7 +739,7 @@ clean: Messages/CMakeFiles/Messages_generate_messages.dir/clean
 Messages/CMakeFiles/Messages_generate_messages_cpp.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 	$(MAKE) -f Messages/CMakeFiles/Messages_generate_messages_cpp.dir/build.make Messages/CMakeFiles/Messages_generate_messages_cpp.dir/depend
 	$(MAKE) -f Messages/CMakeFiles/Messages_generate_messages_cpp.dir/build.make Messages/CMakeFiles/Messages_generate_messages_cpp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  2 3
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  12 13
 	@echo "Built target Messages_generate_messages_cpp"
 .PHONY : Messages/CMakeFiles/Messages_generate_messages_cpp.dir/all
 
@@ -770,7 +770,7 @@ clean: Messages/CMakeFiles/Messages_generate_messages_cpp.dir/clean
 Messages/CMakeFiles/Messages_generate_messages_lisp.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 	$(MAKE) -f Messages/CMakeFiles/Messages_generate_messages_lisp.dir/build.make Messages/CMakeFiles/Messages_generate_messages_lisp.dir/depend
 	$(MAKE) -f Messages/CMakeFiles/Messages_generate_messages_lisp.dir/build.make Messages/CMakeFiles/Messages_generate_messages_lisp.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  4 5
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  14 15
 	@echo "Built target Messages_generate_messages_lisp"
 .PHONY : Messages/CMakeFiles/Messages_generate_messages_lisp.dir/all
 
@@ -801,7 +801,7 @@ clean: Messages/CMakeFiles/Messages_generate_messages_lisp.dir/clean
 Messages/CMakeFiles/Messages_generate_messages_py.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(MAKE) -f Messages/CMakeFiles/Messages_generate_messages_py.dir/build.make Messages/CMakeFiles/Messages_generate_messages_py.dir/depend
 	$(MAKE) -f Messages/CMakeFiles/Messages_generate_messages_py.dir/build.make Messages/CMakeFiles/Messages_generate_messages_py.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  6 7 8
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  16 17 18
 	@echo "Built target Messages_generate_messages_py"
 .PHONY : Messages/CMakeFiles/Messages_generate_messages_py.dir/all
 
@@ -888,64 +888,6 @@ clean: Messages/CMakeFiles/Messages_genpy.dir/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory Arm
-
-# Convenience name for "all" pass in the directory.
-Arm/all: Arm/CMakeFiles/arm.dir/all
-.PHONY : Arm/all
-
-# Convenience name for "clean" pass in the directory.
-Arm/clean: Arm/CMakeFiles/arm.dir/clean
-.PHONY : Arm/clean
-
-# Convenience name for "preinstall" pass in the directory.
-Arm/preinstall:
-.PHONY : Arm/preinstall
-
-#=============================================================================
-# Target rules for target Arm/CMakeFiles/arm.dir
-
-# All Build rule for target.
-Arm/CMakeFiles/arm.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-Arm/CMakeFiles/arm.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-Arm/CMakeFiles/arm.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_py.dir/all
-Arm/CMakeFiles/arm.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-Arm/CMakeFiles/arm.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-Arm/CMakeFiles/arm.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-Arm/CMakeFiles/arm.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-Arm/CMakeFiles/arm.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-Arm/CMakeFiles/arm.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_py.dir/all
-	$(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/depend
-	$(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  9 10 11 12 13 14 15
-	@echo "Built target arm"
-.PHONY : Arm/CMakeFiles/arm.dir/all
-
-# Include target in all.
-all: Arm/CMakeFiles/arm.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-Arm/CMakeFiles/arm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roboops/2014Software/groovy2014/build/CMakeFiles 7
-	$(MAKE) -f CMakeFiles/Makefile2 Arm/CMakeFiles/arm.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roboops/2014Software/groovy2014/build/CMakeFiles 0
-.PHONY : Arm/CMakeFiles/arm.dir/rule
-
-# Convenience name for target.
-arm: Arm/CMakeFiles/arm.dir/rule
-.PHONY : arm
-
-# clean rule for target.
-Arm/CMakeFiles/arm.dir/clean:
-	$(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/clean
-.PHONY : Arm/CMakeFiles/arm.dir/clean
-
-# clean rule for target.
-clean: Arm/CMakeFiles/arm.dir/clean
-.PHONY : clean
-
-#=============================================================================
 # Directory level rules for directory ControlCenter
 
 # Convenience name for "all" pass in the directory.
@@ -969,13 +911,13 @@ ControlCenter/CMakeFiles/publisher.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_g
 ControlCenter/CMakeFiles/publisher.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_py.dir/all
 ControlCenter/CMakeFiles/publisher.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
 ControlCenter/CMakeFiles/publisher.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-ControlCenter/CMakeFiles/publisher.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-ControlCenter/CMakeFiles/publisher.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
 ControlCenter/CMakeFiles/publisher.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
+ControlCenter/CMakeFiles/publisher.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
+ControlCenter/CMakeFiles/publisher.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
 ControlCenter/CMakeFiles/publisher.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_py.dir/all
 	$(MAKE) -f ControlCenter/CMakeFiles/publisher.dir/build.make ControlCenter/CMakeFiles/publisher.dir/depend
 	$(MAKE) -f ControlCenter/CMakeFiles/publisher.dir/build.make ControlCenter/CMakeFiles/publisher.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  34
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  22
 	@echo "Built target publisher"
 .PHONY : ControlCenter/CMakeFiles/publisher.dir/all
 
@@ -1002,117 +944,6 @@ ControlCenter/CMakeFiles/publisher.dir/clean:
 # clean rule for target.
 clean: ControlCenter/CMakeFiles/publisher.dir/clean
 .PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory DriveTrain
-
-# Convenience name for "all" pass in the directory.
-DriveTrain/all: DriveTrain/CMakeFiles/DriveTrain.dir/all
-DriveTrain/all: DriveTrain/CMakeFiles/driveTrain.dir/all
-.PHONY : DriveTrain/all
-
-# Convenience name for "clean" pass in the directory.
-DriveTrain/clean: DriveTrain/CMakeFiles/DriveTrain.dir/clean
-DriveTrain/clean: DriveTrain/CMakeFiles/driveTrain.dir/clean
-.PHONY : DriveTrain/clean
-
-# Convenience name for "preinstall" pass in the directory.
-DriveTrain/preinstall:
-.PHONY : DriveTrain/preinstall
-
-#=============================================================================
-# Target rules for target DriveTrain/CMakeFiles/DriveTrain.dir
-
-# All Build rule for target.
-DriveTrain/CMakeFiles/DriveTrain.dir/all:
-	$(MAKE) -f DriveTrain/CMakeFiles/DriveTrain.dir/build.make DriveTrain/CMakeFiles/DriveTrain.dir/depend
-	$(MAKE) -f DriveTrain/CMakeFiles/DriveTrain.dir/build.make DriveTrain/CMakeFiles/DriveTrain.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  1
-	@echo "Built target DriveTrain"
-.PHONY : DriveTrain/CMakeFiles/DriveTrain.dir/all
-
-# Include target in all.
-all: DriveTrain/CMakeFiles/DriveTrain.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-DriveTrain/CMakeFiles/DriveTrain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roboops/2014Software/groovy2014/build/CMakeFiles 1
-	$(MAKE) -f CMakeFiles/Makefile2 DriveTrain/CMakeFiles/DriveTrain.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roboops/2014Software/groovy2014/build/CMakeFiles 0
-.PHONY : DriveTrain/CMakeFiles/DriveTrain.dir/rule
-
-# Convenience name for target.
-DriveTrain: DriveTrain/CMakeFiles/DriveTrain.dir/rule
-.PHONY : DriveTrain
-
-# clean rule for target.
-DriveTrain/CMakeFiles/DriveTrain.dir/clean:
-	$(MAKE) -f DriveTrain/CMakeFiles/DriveTrain.dir/build.make DriveTrain/CMakeFiles/DriveTrain.dir/clean
-.PHONY : DriveTrain/CMakeFiles/DriveTrain.dir/clean
-
-# clean rule for target.
-clean: DriveTrain/CMakeFiles/DriveTrain.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target DriveTrain/CMakeFiles/driveTrain.dir
-
-# All Build rule for target.
-DriveTrain/CMakeFiles/driveTrain.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_cpp.dir/all
-DriveTrain/CMakeFiles/driveTrain.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_lisp.dir/all
-DriveTrain/CMakeFiles/driveTrain.dir/all: DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_py.dir/all
-DriveTrain/CMakeFiles/driveTrain.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/all
-DriveTrain/CMakeFiles/driveTrain.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/all
-DriveTrain/CMakeFiles/driveTrain.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_lisp.dir/all
-DriveTrain/CMakeFiles/driveTrain.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_cpp.dir/all
-DriveTrain/CMakeFiles/driveTrain.dir/all: DriveTrainAndArm/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/all
-DriveTrain/CMakeFiles/driveTrain.dir/all: DriveTrainAndArm/CMakeFiles/std_msgs_generate_messages_py.dir/all
-DriveTrain/CMakeFiles/driveTrain.dir/all: Messages/CMakeFiles/Messages_gencpp.dir/all
-	$(MAKE) -f DriveTrain/CMakeFiles/driveTrain.dir/build.make DriveTrain/CMakeFiles/driveTrain.dir/depend
-	$(MAKE) -f DriveTrain/CMakeFiles/driveTrain.dir/build.make DriveTrain/CMakeFiles/driveTrain.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles  24 25 26 27
-	@echo "Built target driveTrain"
-.PHONY : DriveTrain/CMakeFiles/driveTrain.dir/all
-
-# Include target in all.
-all: DriveTrain/CMakeFiles/driveTrain.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-DriveTrain/CMakeFiles/driveTrain.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roboops/2014Software/groovy2014/build/CMakeFiles 6
-	$(MAKE) -f CMakeFiles/Makefile2 DriveTrain/CMakeFiles/driveTrain.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/roboops/2014Software/groovy2014/build/CMakeFiles 0
-.PHONY : DriveTrain/CMakeFiles/driveTrain.dir/rule
-
-# Convenience name for target.
-driveTrain: DriveTrain/CMakeFiles/driveTrain.dir/rule
-.PHONY : driveTrain
-
-# clean rule for target.
-DriveTrain/CMakeFiles/driveTrain.dir/clean:
-	$(MAKE) -f DriveTrain/CMakeFiles/driveTrain.dir/build.make DriveTrain/CMakeFiles/driveTrain.dir/clean
-.PHONY : DriveTrain/CMakeFiles/driveTrain.dir/clean
-
-# clean rule for target.
-clean: DriveTrain/CMakeFiles/driveTrain.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Directory level rules for directory Motor
-
-# Convenience name for "all" pass in the directory.
-Motor/all:
-.PHONY : Motor/all
-
-# Convenience name for "clean" pass in the directory.
-Motor/clean:
-.PHONY : Motor/clean
-
-# Convenience name for "preinstall" pass in the directory.
-Motor/preinstall:
-.PHONY : Motor/preinstall
 
 #=============================================================================
 # Special targets to cleanup operation of make.

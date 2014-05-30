@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1401250965 source:/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Robotech/Serial.cpp
+	"../../include/Serial.h"
+
+1400468882 /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/include/Serial.h
+	<string>
+	<boost/asio.hpp>
+
+1401400608 source:/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Robotech/TestSerial/TestSerial.cpp
+	"../../../include/Serial.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+

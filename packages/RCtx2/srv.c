@@ -883,6 +883,7 @@ int main( int argc, char *argv[] ) {
   }
   for( l = l_min; l < l_max + 1; l++ ) {
 	  for( n = 0; n < cap_count; n++ ) {
+		sleep(3);
 	  	if( cap[ n ].load_order == l ) {
 		    cap_w = cap[ n ].w;
 		    cap_h = cap[ n ].h;

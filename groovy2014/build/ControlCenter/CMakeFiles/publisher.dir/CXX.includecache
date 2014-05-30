@@ -35,6 +35,12 @@ stdlib.h
 -
 string.h
 -
+thread
+-
+mutex
+-
+iostream
+-
 
 /opt/ros/groovy/include/XmlRpcDecl.h
 ros/macros.h

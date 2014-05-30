@@ -3,3 +3,5 @@ int32 claw
 int32 stick
 int32 boom
 int32 armRot
+int32 pan
+int32 tilt

@@ -225,30 +225,30 @@ gtest_main/fast:
 .PHONY : gtest_main/fast
 
 #=============================================================================
-# Target rules for targets named arm1
+# Target rules for targets named Arm
 
 # Build rule for target.
-arm1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arm1
-.PHONY : arm1
+Arm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Arm
+.PHONY : Arm
 
 # fast build rule for target.
-arm1/fast:
-	$(MAKE) -f DriveTrainAndArm/CMakeFiles/arm1.dir/build.make DriveTrainAndArm/CMakeFiles/arm1.dir/build
-.PHONY : arm1/fast
+Arm/fast:
+	$(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/build
+.PHONY : Arm/fast
 
 #=============================================================================
-# Target rules for targets named driveTrain1
+# Target rules for targets named DriveTrain
 
 # Build rule for target.
-driveTrain1: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 driveTrain1
-.PHONY : driveTrain1
+DriveTrain: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DriveTrain
+.PHONY : DriveTrain
 
 # fast build rule for target.
-driveTrain1/fast:
-	$(MAKE) -f DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build.make DriveTrainAndArm/CMakeFiles/driveTrain1.dir/build
-.PHONY : driveTrain1/fast
+DriveTrain/fast:
+	$(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build
+.PHONY : DriveTrain/fast
 
 #=============================================================================
 # Target rules for targets named roscpp_generate_messages_cpp
@@ -459,19 +459,6 @@ Messages_genpy/fast:
 .PHONY : Messages_genpy/fast
 
 #=============================================================================
-# Target rules for targets named arm
-
-# Build rule for target.
-arm: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 arm
-.PHONY : arm
-
-# fast build rule for target.
-arm/fast:
-	$(MAKE) -f Arm/CMakeFiles/arm.dir/build.make Arm/CMakeFiles/arm.dir/build
-.PHONY : arm/fast
-
-#=============================================================================
 # Target rules for targets named publisher
 
 # Build rule for target.
@@ -483,32 +470,6 @@ publisher: cmake_check_build_system
 publisher/fast:
 	$(MAKE) -f ControlCenter/CMakeFiles/publisher.dir/build.make ControlCenter/CMakeFiles/publisher.dir/build
 .PHONY : publisher/fast
-
-#=============================================================================
-# Target rules for targets named DriveTrain
-
-# Build rule for target.
-DriveTrain: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 DriveTrain
-.PHONY : DriveTrain
-
-# fast build rule for target.
-DriveTrain/fast:
-	$(MAKE) -f DriveTrain/CMakeFiles/DriveTrain.dir/build.make DriveTrain/CMakeFiles/DriveTrain.dir/build
-.PHONY : DriveTrain/fast
-
-#=============================================================================
-# Target rules for targets named driveTrain
-
-# Build rule for target.
-driveTrain: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 driveTrain
-.PHONY : driveTrain
-
-# fast build rule for target.
-driveTrain/fast:
-	$(MAKE) -f DriveTrain/CMakeFiles/driveTrain.dir/build.make DriveTrain/CMakeFiles/driveTrain.dir/build
-.PHONY : driveTrain/fast
 
 # Help Target
 help:
@@ -529,8 +490,8 @@ help:
 	@echo "... tests"
 	@echo "... gtest"
 	@echo "... gtest_main"
-	@echo "... arm1"
-	@echo "... driveTrain1"
+	@echo "... Arm"
+	@echo "... DriveTrain"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... roscpp_generate_messages_py"
@@ -547,10 +508,7 @@ help:
 	@echo "... Messages_generate_messages_py"
 	@echo "... Messages_genlisp"
 	@echo "... Messages_genpy"
-	@echo "... arm"
 	@echo "... publisher"
-	@echo "... DriveTrain"
-	@echo "... driveTrain"
 .PHONY : help
 
 

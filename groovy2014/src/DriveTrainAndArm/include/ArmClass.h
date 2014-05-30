@@ -15,6 +15,8 @@ class ArmClass {
 
 private:
 
+	int thumbCH, panCH, tiltCH;
+
 	// Node Handler
 	ros::NodeHandle nh;
 
@@ -26,13 +28,13 @@ private:
 
 public:
 
-	ArmClass(int clawRank, int clawMinPos, int clawMaxPos, int clawMaxVel, int stickRank, int stickMinPos, int stickMaxPos, int stickMaxVel, int thumbMaxClosedPosition, int thumbMaxOpenedPosition, int thumbMaxVel, const char* thumbPath, int boomMaxVel, int boomAccel, int boomDecel, std::string boomPath, int armRotMaxVel, int armRotAccel, int armRotDecel, std::string armRotPath, int watchDogStallTime);
+	ArmClass(int clawRank, int clawMinPos, int clawMaxPos, int clawMaxVel, int stickRank, int stickMinPos, int stickMaxPos, int stickMaxVel, int* servoMaxOpenedPositions, int* servoMaxClosedPositions, int* servoMaxVels, int thumbChannel, int panChannel, int tiltChannel, const char* servoPath, int boomMaxVel, int boomAccel, int boomDecel, int boomMaxAmps, std::string boomPath, int armRotMaxVel, int armRotAccel, int armRotDecel, int armRotMaxAmps, std::string armRotPath,  int watchDog, int servoWatchDog);
 
 	RobotechMotor *boom;
 	RobotechMotor *armRot;
 	Actuator *claw;
 	Actuator *stick;
-	ServoMotor *thumb;
+	ServoMotor *servo;
 
 	void callBack(const Messages::ArmMessage::ConstPtr& msg);
 

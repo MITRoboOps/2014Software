@@ -9,4 +9,8 @@
           BOOM
           ARMROT-VAL
           ARMROT
+          PAN-VAL
+          PAN
+          TILT-VAL
+          TILT
 ))

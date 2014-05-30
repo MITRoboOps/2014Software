@@ -164,12 +164,12 @@ include_directories(
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(driveTrain1 src/DriveTrainNode.cpp src/DriveTrainClass.cpp src/RobotechMotor.cpp src/Serial.cpp)
-target_link_libraries(driveTrain1 ${catkin_LIBRARIES})
-add_dependencies(driveTrain1 ${catkin_EXPORTED_TARGETS} Messages_gencpp)
+add_executable(DriveTrain src/DriveTrainNode.cpp src/DriveTrainClass.cpp src/Robotech/RobotechMotor.cpp src/Robotech/Serial.cpp)
+target_link_libraries(DriveTrain ${catkin_LIBRARIES})
+add_dependencies(DriveTrain ${catkin_EXPORTED_TARGETS} Messages_gencpp)
 
-add_executable(arm1 src/ArmNode.cpp src/ArmClass.cpp src/Actuator.cpp src/RobotechMotor.cpp src/Serial.cpp src/ServoMotor.cpp src/firgelli.C)
-target_link_libraries(arm1 ${catkin_LIBRARIES} usb-1.0)
-add_dependencies(arm1 ${catkin_EXPORTED_TARGETS})
+add_executable(Arm src/ArmNode.cpp src/ArmClass.cpp src/Actuator/Actuator.cpp src/Robotech/RobotechMotor.cpp src/Robotech/Serial.cpp src/Servo/ServoMotor.cpp src/Actuator/firgelli.C)
+target_link_libraries(Arm ${catkin_LIBRARIES} usb-1.0)
+add_dependencies(Arm ${catkin_EXPORTED_TARGETS})
 
 
