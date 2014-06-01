@@ -57,7 +57,8 @@ struct ArmMessage_
   typedef ArmMessage_<ContainerAllocator> Type;
 
   ArmMessage_()
-    : thumb(0)
+    : command(0)
+    , thumb(0)
     , claw(0)
     , stick(0)
     , boom(0)
@@ -66,7 +67,8 @@ struct ArmMessage_
     , tilt(0)  {
     }
   ArmMessage_(const ContainerAllocator& _alloc)
-    : thumb(0)
+    : command(0)
+    , thumb(0)
     , claw(0)
     , stick(0)
     , boom(0)
@@ -76,6 +78,9 @@ struct ArmMessage_
     }
 
 
+
+   typedef int32_t _command_type;
+  _command_type command;
 
    typedef int32_t _thumb_type;
   _thumb_type thumb;
@@ -176,12 +181,12 @@ struct MD5Sum< ::Messages::ArmMessage_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "4a95d4dd02485539899d20930a9f169a";
+    return "4614ce691507468218fe21642c3bab91";
   }
 
   static const char* value(const ::Messages::ArmMessage_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x4a95d4dd02485539ULL;
-  static const uint64_t static_value2 = 0x899d20930a9f169aULL;
+  static const uint64_t static_value1 = 0x4614ce6915074682ULL;
+  static const uint64_t static_value2 = 0x18fe21642c3bab91ULL;
 };
 
 template<class ContainerAllocator>
@@ -200,7 +205,8 @@ struct Definition< ::Messages::ArmMessage_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "int32 thumb\n\
+    return "int32 command\n\
+int32 thumb\n\
 int32 claw\n\
 int32 stick\n\
 int32 boom\n\
@@ -225,6 +231,7 @@ namespace serialization
   {
     template<typename Stream, typename T> inline static void allInOne(Stream& stream, T m)
     {
+      stream.next(m.command);
       stream.next(m.thumb);
       stream.next(m.claw);
       stream.next(m.stick);
@@ -250,6 +257,8 @@ struct Printer< ::Messages::ArmMessage_<ContainerAllocator> >
 {
   template<typename Stream> static void stream(Stream& s, const std::string& indent, const ::Messages::ArmMessage_<ContainerAllocator>& v)
   {
+    s << indent << "command: ";
+    Printer<int32_t>::stream(s, indent + "  ", v.command);
     s << indent << "thumb: ";
     Printer<int32_t>::stream(s, indent + "  ", v.thumb);
     s << indent << "claw: ";

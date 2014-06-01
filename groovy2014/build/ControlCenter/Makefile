@@ -147,25 +147,101 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-ControlCenter/CMakeFiles/publisher.dir/rule:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 ControlCenter/CMakeFiles/publisher.dir/rule
-.PHONY : ControlCenter/CMakeFiles/publisher.dir/rule
+ControlCenter/CMakeFiles/NavigationServer.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 ControlCenter/CMakeFiles/NavigationServer.dir/rule
+.PHONY : ControlCenter/CMakeFiles/NavigationServer.dir/rule
 
 # Convenience name for target.
-publisher: ControlCenter/CMakeFiles/publisher.dir/rule
-.PHONY : publisher
+NavigationServer: ControlCenter/CMakeFiles/NavigationServer.dir/rule
+.PHONY : NavigationServer
 
 # fast build rule for target.
-publisher/fast:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/publisher.dir/build.make ControlCenter/CMakeFiles/publisher.dir/build
-.PHONY : publisher/fast
+NavigationServer/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/NavigationServer.dir/build.make ControlCenter/CMakeFiles/NavigationServer.dir/build
+.PHONY : NavigationServer/fast
+
+# Convenience name for target.
+ControlCenter/CMakeFiles/PilotServer.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 ControlCenter/CMakeFiles/PilotServer.dir/rule
+.PHONY : ControlCenter/CMakeFiles/PilotServer.dir/rule
+
+# Convenience name for target.
+PilotServer: ControlCenter/CMakeFiles/PilotServer.dir/rule
+.PHONY : PilotServer
+
+# fast build rule for target.
+PilotServer/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/PilotServer.dir/build.make ControlCenter/CMakeFiles/PilotServer.dir/build
+.PHONY : PilotServer/fast
+
+# Convenience name for target.
+ControlCenter/CMakeFiles/StatusManager.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 ControlCenter/CMakeFiles/StatusManager.dir/rule
+.PHONY : ControlCenter/CMakeFiles/StatusManager.dir/rule
+
+# Convenience name for target.
+StatusManager: ControlCenter/CMakeFiles/StatusManager.dir/rule
+.PHONY : StatusManager
+
+# fast build rule for target.
+StatusManager/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/StatusManager.dir/build.make ControlCenter/CMakeFiles/StatusManager.dir/build
+.PHONY : StatusManager/fast
+
+src/StatusManager.o: src/StatusManager.cpp.o
+.PHONY : src/StatusManager.o
+
+# target to build an object file
+src/StatusManager.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/StatusManager.dir/build.make ControlCenter/CMakeFiles/StatusManager.dir/src/StatusManager.cpp.o
+.PHONY : src/StatusManager.cpp.o
+
+src/StatusManager.i: src/StatusManager.cpp.i
+.PHONY : src/StatusManager.i
+
+# target to preprocess a source file
+src/StatusManager.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/StatusManager.dir/build.make ControlCenter/CMakeFiles/StatusManager.dir/src/StatusManager.cpp.i
+.PHONY : src/StatusManager.cpp.i
+
+src/StatusManager.s: src/StatusManager.cpp.s
+.PHONY : src/StatusManager.s
+
+# target to generate assembly for a file
+src/StatusManager.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/StatusManager.dir/build.make ControlCenter/CMakeFiles/StatusManager.dir/src/StatusManager.cpp.s
+.PHONY : src/StatusManager.cpp.s
+
+src/TCPServer.o: src/TCPServer.cpp.o
+.PHONY : src/TCPServer.o
+
+# target to build an object file
+src/TCPServer.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/NavigationServer.dir/build.make ControlCenter/CMakeFiles/NavigationServer.dir/src/TCPServer.cpp.o
+.PHONY : src/TCPServer.cpp.o
+
+src/TCPServer.i: src/TCPServer.cpp.i
+.PHONY : src/TCPServer.i
+
+# target to preprocess a source file
+src/TCPServer.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/NavigationServer.dir/build.make ControlCenter/CMakeFiles/NavigationServer.dir/src/TCPServer.cpp.i
+.PHONY : src/TCPServer.cpp.i
+
+src/TCPServer.s: src/TCPServer.cpp.s
+.PHONY : src/TCPServer.s
+
+# target to generate assembly for a file
+src/TCPServer.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/NavigationServer.dir/build.make ControlCenter/CMakeFiles/NavigationServer.dir/src/TCPServer.cpp.s
+.PHONY : src/TCPServer.cpp.s
 
 src/UDPServer.o: src/UDPServer.cpp.o
 .PHONY : src/UDPServer.o
 
 # target to build an object file
 src/UDPServer.cpp.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/publisher.dir/build.make ControlCenter/CMakeFiles/publisher.dir/src/UDPServer.cpp.o
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/PilotServer.dir/build.make ControlCenter/CMakeFiles/PilotServer.dir/src/UDPServer.cpp.o
 .PHONY : src/UDPServer.cpp.o
 
 src/UDPServer.i: src/UDPServer.cpp.i
@@ -173,7 +249,7 @@ src/UDPServer.i: src/UDPServer.cpp.i
 
 # target to preprocess a source file
 src/UDPServer.cpp.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/publisher.dir/build.make ControlCenter/CMakeFiles/publisher.dir/src/UDPServer.cpp.i
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/PilotServer.dir/build.make ControlCenter/CMakeFiles/PilotServer.dir/src/UDPServer.cpp.i
 .PHONY : src/UDPServer.cpp.i
 
 src/UDPServer.s: src/UDPServer.cpp.s
@@ -181,7 +257,7 @@ src/UDPServer.s: src/UDPServer.cpp.s
 
 # target to generate assembly for a file
 src/UDPServer.cpp.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/publisher.dir/build.make ControlCenter/CMakeFiles/publisher.dir/src/UDPServer.cpp.s
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f ControlCenter/CMakeFiles/PilotServer.dir/build.make ControlCenter/CMakeFiles/PilotServer.dir/src/UDPServer.cpp.s
 .PHONY : src/UDPServer.cpp.s
 
 # Help Target
@@ -190,14 +266,22 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
+	@echo "... NavigationServer"
+	@echo "... PilotServer"
+	@echo "... StatusManager"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
 	@echo "... install/strip"
 	@echo "... list_install_components"
-	@echo "... publisher"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... src/StatusManager.o"
+	@echo "... src/StatusManager.i"
+	@echo "... src/StatusManager.s"
+	@echo "... src/TCPServer.o"
+	@echo "... src/TCPServer.i"
+	@echo "... src/TCPServer.s"
 	@echo "... src/UDPServer.o"
 	@echo "... src/UDPServer.i"
 	@echo "... src/UDPServer.s"

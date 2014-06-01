@@ -244,6 +244,132 @@ Messages_genpy/fast:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Messages/CMakeFiles/Messages_genpy.dir/build.make Messages/CMakeFiles/Messages_genpy.dir/build
 .PHONY : Messages_genpy/fast
 
+# Convenience name for target.
+Messages/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Messages/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : Messages/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_cpp: Messages/CMakeFiles/roscpp_generate_messages_cpp.dir/rule
+.PHONY : roscpp_generate_messages_cpp
+
+# fast build rule for target.
+roscpp_generate_messages_cpp/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Messages/CMakeFiles/roscpp_generate_messages_cpp.dir/build.make Messages/CMakeFiles/roscpp_generate_messages_cpp.dir/build
+.PHONY : roscpp_generate_messages_cpp/fast
+
+# Convenience name for target.
+Messages/CMakeFiles/roscpp_generate_messages_lisp.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Messages/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : Messages/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_lisp: Messages/CMakeFiles/roscpp_generate_messages_lisp.dir/rule
+.PHONY : roscpp_generate_messages_lisp
+
+# fast build rule for target.
+roscpp_generate_messages_lisp/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Messages/CMakeFiles/roscpp_generate_messages_lisp.dir/build.make Messages/CMakeFiles/roscpp_generate_messages_lisp.dir/build
+.PHONY : roscpp_generate_messages_lisp/fast
+
+# Convenience name for target.
+Messages/CMakeFiles/roscpp_generate_messages_py.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Messages/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : Messages/CMakeFiles/roscpp_generate_messages_py.dir/rule
+
+# Convenience name for target.
+roscpp_generate_messages_py: Messages/CMakeFiles/roscpp_generate_messages_py.dir/rule
+.PHONY : roscpp_generate_messages_py
+
+# fast build rule for target.
+roscpp_generate_messages_py/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Messages/CMakeFiles/roscpp_generate_messages_py.dir/build.make Messages/CMakeFiles/roscpp_generate_messages_py.dir/build
+.PHONY : roscpp_generate_messages_py/fast
+
+# Convenience name for target.
+Messages/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Messages/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : Messages/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_cpp: Messages/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_cpp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_cpp/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Messages/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build.make Messages/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+Messages/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Messages/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : Messages/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_lisp: Messages/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_lisp
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_lisp/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Messages/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build.make Messages/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir/build
+.PHONY : rosgraph_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+Messages/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Messages/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : Messages/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+rosgraph_msgs_generate_messages_py: Messages/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/rule
+.PHONY : rosgraph_msgs_generate_messages_py
+
+# fast build rule for target.
+rosgraph_msgs_generate_messages_py/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Messages/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build.make Messages/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/build
+.PHONY : rosgraph_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+Messages/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Messages/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : Messages/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_cpp: Messages/CMakeFiles/std_msgs_generate_messages_cpp.dir/rule
+.PHONY : std_msgs_generate_messages_cpp
+
+# fast build rule for target.
+std_msgs_generate_messages_cpp/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Messages/CMakeFiles/std_msgs_generate_messages_cpp.dir/build.make Messages/CMakeFiles/std_msgs_generate_messages_cpp.dir/build
+.PHONY : std_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+Messages/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Messages/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : Messages/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_lisp: Messages/CMakeFiles/std_msgs_generate_messages_lisp.dir/rule
+.PHONY : std_msgs_generate_messages_lisp
+
+# fast build rule for target.
+std_msgs_generate_messages_lisp/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Messages/CMakeFiles/std_msgs_generate_messages_lisp.dir/build.make Messages/CMakeFiles/std_msgs_generate_messages_lisp.dir/build
+.PHONY : std_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+Messages/CMakeFiles/std_msgs_generate_messages_py.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 Messages/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : Messages/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+std_msgs_generate_messages_py: Messages/CMakeFiles/std_msgs_generate_messages_py.dir/rule
+.PHONY : std_msgs_generate_messages_py
+
+# fast build rule for target.
+std_msgs_generate_messages_py/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f Messages/CMakeFiles/std_msgs_generate_messages_py.dir/build.make Messages/CMakeFiles/std_msgs_generate_messages_py.dir/build
+.PHONY : std_msgs_generate_messages_py/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -263,6 +389,15 @@ help:
 	@echo "... install/strip"
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
+	@echo "... roscpp_generate_messages_cpp"
+	@echo "... roscpp_generate_messages_lisp"
+	@echo "... roscpp_generate_messages_py"
+	@echo "... rosgraph_msgs_generate_messages_cpp"
+	@echo "... rosgraph_msgs_generate_messages_lisp"
+	@echo "... rosgraph_msgs_generate_messages_py"
+	@echo "... std_msgs_generate_messages_cpp"
+	@echo "... std_msgs_generate_messages_lisp"
+	@echo "... std_msgs_generate_messages_py"
 	@echo "... test"
 .PHONY : help
 

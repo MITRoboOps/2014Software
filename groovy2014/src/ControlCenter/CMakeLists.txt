@@ -164,6 +164,14 @@ include_directories(
 
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(publisher src/UDPServer.cpp)
-target_link_libraries(publisher ${catkin_LIBRARIES})
-add_dependencies(publisher ${catkin_EXPORTED_TARGETS})
+add_executable(PilotServer src/UDPServer.cpp)
+target_link_libraries(PilotServer ${catkin_LIBRARIES})
+add_dependencies(PilotServer ${catkin_EXPORTED_TARGETS})
+
+add_executable(NavigationServer src/TCPServer.cpp)
+target_link_libraries(NavigationServer ${catkin_LIBRARIES})
+add_dependencies(NavigationServer ${catkin_EXPORTED_TARGETS})
+
+add_executable(StatusManager src/StatusManager.cpp)
+target_link_libraries(StatusManager ${catkin_LIBRARIES})
+add_dependencies(StatusManager ${catkin_EXPORTED_TARGETS})

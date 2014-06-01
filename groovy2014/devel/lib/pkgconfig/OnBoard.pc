@@ -1,0 +1,8 @@
+prefix=/home/roboops/2014Software/groovy2014/devel
+
+Name: OnBoard
+Description: Description of OnBoard
+Version: 0.0.0
+Cflags: -I/home/roboops/2014Software/groovy2014/src/OnBoard/include
+Libs: -L/home/roboops/2014Software/groovy2014/devel/lib -lDriveTrainAndArm
+Requires: roscpp rospy std_msgs

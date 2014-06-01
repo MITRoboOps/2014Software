@@ -49,6 +49,13 @@ find_package(catkin REQUIRED COMPONENTS
    FILES
    ArmMessage.msg
    DriveTrainMessage.msg
+   ArmStatusMessage.msg
+   DriveTrainStatusMessage.msg
+   NavigationMessage.msg
+   PilotMessage.msg
+   GPSMessage.msg
+   CameraBoomMessage.msg
+   CameraBoomStatus.msg
  )
 
 ## Generate services in the 'srv' folder

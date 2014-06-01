@@ -1,0 +1,255 @@
+#include "../../include/RobotechMotor.h"
+
+
+
+
+
+using namespace std;
+
+//Mode 0 : closed loop speed
+//Mode 1 : count position mode (for setting absolute position)
+//Mode 2 : relative position mode
+
+RobotechMotor::RobotechMotor(int maxVelocity, int millisecs, int accel, int decel, int maxCurrent, bool isOpenLoopVelocity, std::string pathToUsb){
+    mode = -1;
+    maxRPM = maxVelocity;
+    stallOut = millisecs;
+    accelRate = accel;
+    decelRate = decel;
+    if(maxCurrent < 0) maxAmps = 100;
+    else maxAmps = maxCurrent;
+    isOpenLoopVel = isOpenLoopVelocity;
+    path = pathToUsb;
+}
+
+std::string RobotechMotor::IntToStr(int x){
+        std::ostringstream out;
+        out << x;
+        return out.str();
+}
+
+
+bool RobotechMotor::connectToDevice(){
+    int numTries = 0;
+    int numberToTry = 5;
+    while(numTries < numberToTry)
+    try{
+        connection = new Serial(path,115200);
+        numTries = numberToTry;
+        } catch (exception& e) {
+			std::cout << "Connection failed. Retrying " << numberToTry - numTries << " more times." << endl;
+			if(numTries == numberToTry) return false;
+			numTries++;
+			usleep (3000*1000);
+		}
+
+  //  connection->writeString("%EERST 321654987");
+    setMaxVelocity(maxRPM);
+    setMaxCurrent(maxAmps);
+    setAccel(accelRate);
+    setDecel(decelRate);
+    setWatchDogTime(stallOut);
+    connection->writeString("^ECHOF 1\r"); //echo off
+
+    thread readValuesThread(&RobotechMotor::readValues,this);
+    readValuesThread.detach();
+
+
+    return true;
+
+
+}
+
+void RobotechMotor::readValues(){
+
+    while(1){
+        string msg = connection->readLine();
+        char *msgArray = new char[msg.length() + 1];
+        strcpy(msgArray,msg.c_str());
+        if(msgArray[0] != '+'){
+            getStatus.lock();
+            statusMessages.push_back(msgArray);
+            getStatus.unlock();
+        }
+    }
+
+}
+
+char* RobotechMotor::getStatusMessage(char* identifier){
+    getStatus.lock();
+    while(!statusMessages.empty()){
+        char* msg = statusMessages.back();
+        statusMessages.pop_back();
+        bool msgMatches = true;
+        for(int i =0; i < sizeof(*identifier); i++){
+            if(msg[i] != identifier[i]) msgMatches = false;
+            cout << msg[i] << " " << identifier[i] << " " << i << endl;
+        }
+        cout << msg << endl;
+        if(msgMatches){
+            statusMessages.clear();
+            getStatus.unlock();
+            return msg;
+        }
+
+    }
+    getStatus.unlock();
+    return "";
+
+}
+
+
+//returns count
+int RobotechMotor::getPosition(){
+    connection->writeString("?CB 1");
+    char* msg = getStatusMessage("CB");
+    char* value = new char[sizeof(msg)-3];
+    memcpy(value, msg + 3, sizeof(value));
+
+    return atoi(value);
+}
+
+//returns RPMS
+int RobotechMotor::getVelocity(){
+    connection->writeString("?BS 1");
+    char* msg = getStatusMessage("BS");
+    char* value = new char[sizeof(msg)-3];
+    memcpy(value, msg + 3, sizeof(value));
+    cout << value << endl;
+
+    return atoi(value);
+}
+
+//NOTE: This value is 10* the current
+int RobotechMotor::getCurrent(){
+   // connection->writeString("# C");
+    connection->writeString("?A 1");
+    char* msg = getStatusMessage("A");
+    char* value = new char[sizeof(msg)-2];
+    memcpy(value, msg + 2, sizeof(value));
+    cout << value << endl;
+
+    return atoi(value);
+}
+
+
+int* RobotechMotor::getTemp(){
+    connection->writeString("?T");
+    char* msg = getStatusMessage("T");
+    char* value = new char[sizeof(msg)-2];
+    memcpy(value, msg + 2, sizeof(value));
+    cout << "Temp " <<  value << endl;
+
+    return NULL;
+}
+
+int RobotechMotor::getBatteryVoltage(){
+    connection->writeString("?V 1");
+    char* msg = getStatusMessage("V");
+    int start = 0;
+    for(int i = 0; i < sizeof(msg); i++){
+        if(msg[i] == ':'){
+            start = i +1;
+            break;
+
+        }
+    }
+    char* volt = new char[sizeof(msg) - start];
+    memcpy(volt, msg + start, sizeof(volt));
+    return atoi(volt);
+}
+
+
+void RobotechMotor::setAbsolutePosition(double pos){
+    if(! mode == 1){
+        connection->writeString("^MMOD 1 3\r");//position count mode
+        mode = 1;
+    }
+
+    int actualPos = (int) (pos + 0.5);
+    cout << actualPos << endl;
+    string toString = IntToStr(actualPos);
+    connection->writeString("!p 1 "+toString+"\r");
+
+}
+
+void RobotechMotor::setRelativePosition(double pos){
+    if(! mode == 2){
+        connection->writeString("^MMOD 1 2\r");//position count mode
+        mode = 2;
+    }
+
+    int actualPos = (int) (pos + 0.5);
+    cout << actualPos << endl;
+    string toString = IntToStr(actualPos);
+    connection->writeString("!g 1 "+toString+"\r");
+
+}
+
+//takes in all ints
+void RobotechMotor::setVelocity(double vel){
+    if(! mode == 0){
+        mode = 0;
+        if(isOpenLoopVel) connection->writeString("^MMOD 0\r");//open loop
+        else connection->writeString("^MMOD 1\r");
+    }
+    int actualVel = (int) (vel + 0.5);
+    string toString = IntToStr(actualVel);
+    cout << toString << endl;
+    connection->writeString("!g 1 "+toString+"\r");
+}
+
+void RobotechMotor::setMaxVelocity(int vel){
+    connection->writeString("^MXRPM 1 " + IntToStr(vel) + "\r"); //set max speed
+    maxRPM = vel;
+}
+int RobotechMotor::getMaxVelocity(){return maxRPM;}
+
+void RobotechMotor::setMaxCurrent(int cur){
+    connection->writeString("^ALIM 1 " + IntToStr(cur * 10) + "\r");
+    //connection->writeString("^ALIM 10\r");
+    maxAmps = cur;
+}
+int RobotechMotor::getMaxCurrent(){return maxAmps;}
+
+void RobotechMotor::setAccel(int accel){
+    connection->writeString("^MAC 1 "+ IntToStr(accel) + "\r"); //set acceleration
+    accelRate = accel;
+}
+int RobotechMotor::getAccel(){return accelRate;}
+
+void RobotechMotor::setDecel(int decel){
+    connection->writeString("^MDEC 1 " + IntToStr(decel) + "\r"); //set deceleration
+    decelRate = decel;
+}
+int RobotechMotor::getDecel(){return decelRate;}
+
+void RobotechMotor::setWatchDogTime(int millisecs) {
+    connection->writeString("^RWD " + IntToStr(millisecs) + "\r");
+    stallOut = millisecs;
+    }
+int RobotechMotor::getWatchDogTime() {return stallOut;}
+
+void RobotechMotor::resetCounter(){
+    connection->writeString("^MMOD 0");
+    connection->writeString("!c 0");
+
+}
+
+void RobotechMotor::setPGain(int gain){
+    connection->writeString("^KP " + IntToStr(gain)+"\r");
+}
+void RobotechMotor::setIGain(int gain){
+    connection->writeString("^KI " + IntToStr(gain)+"\r");
+}
+void RobotechMotor::setDGain(int gain){
+    connection->writeString("^KD " + IntToStr(gain)+"\r");
+}
+
+void RobotechMotor::changeToOpenLoopVel(){
+    isOpenLoopVel =true;
+}
+
+void RobotechMotor::setMaxPositionModeVelocity(int vel){
+    connection->writeString("^MVEL 1 " + IntToStr(vel) + "\r"); //position mode velocity default
+}

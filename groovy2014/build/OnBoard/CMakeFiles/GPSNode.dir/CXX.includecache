@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/roboops/2014Software/groovy2014/src/OnBoard/src/Robotech/../../include/Serial.h
+string
+-
+boost/asio.hpp
+-
+
+/home/roboops/2014Software/groovy2014/src/OnBoard/src/Robotech/Serial.cpp
+../../include/Serial.h
+/home/roboops/2014Software/groovy2014/src/OnBoard/src/Robotech/../../include/Serial.h
+

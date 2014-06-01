@@ -1,0 +1,63 @@
+# depslib dependency file v1.0
+1401579554 source:/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/Actuator.cpp
+	"../../include/Actuator.h"
+
+1401576703 /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/include/Actuator.h
+	"firgelli.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<exception>
+	<iostream>
+
+1400300738 /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/include/firgelli.h
+	<libusb-1.0/libusb.h>
+
+1401576992 source:/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.C
+	"../../include/firgelli.h"
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+
+1401579599 source:/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/testActuator.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+	"../../include/Actuator.h"
+
+1401578159 source:/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.cpp
+	"../../include/firgelli.h"
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	<exception>
+
+1401656021 source:/home/roboops/2014Software/groovy2014/src/OnBoard/src/Actuator/Actuator.cpp
+	"../../include/Actuator.h"
+
+1401576703 /home/roboops/2014Software/groovy2014/src/OnBoard/include/Actuator.h
+	"firgelli.h"
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<exception>
+	<iostream>
+
+1400300738 /home/roboops/2014Software/groovy2014/src/OnBoard/include/firgelli.h
+	<libusb-1.0/libusb.h>
+
+1401578159 source:/home/roboops/2014Software/groovy2014/src/OnBoard/src/Actuator/firgelli.cpp
+	"../../include/firgelli.h"
+	<stdio.h>
+	<stdlib.h>
+	<assert.h>
+	<exception>
+
+1401664471 source:/home/roboops/2014Software/groovy2014/src/OnBoard/src/Actuator/testActuator.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+	"../../include/Actuator.h"
+

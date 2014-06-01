@@ -5,8 +5,8 @@ DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/Actuator.cpp.o: /home/roboops/2
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/Actuator.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/../../include/firgelli.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/Actuator.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/Actuator.cpp
 
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/../../include/firgelli.h
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.C
+DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/../../include/firgelli.h
+DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.cpp
 
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/include/Actuator.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/include/ArmClass.h
@@ -33,7 +33,6 @@ DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/ros/message.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/ros/message_event.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/ros/message_forward.h
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/ros/message_operations.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/ros/message_traits.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/ros/names.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/ros/node_handle.h
@@ -69,7 +68,6 @@ DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/ros/wall_timer.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/ros/wall_timer_options.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/rosconsole/macros_generated.h
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmClass.cpp.o: /opt/ros/groovy/include/std_msgs/String.h
 
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/include/Actuator.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/include/ArmClass.h
@@ -96,7 +94,6 @@ DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/r
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/ros/message.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/ros/message_event.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/ros/message_forward.h
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/ros/message_operations.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/ros/message_traits.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/ros/names.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/ros/node_handle.h
@@ -132,7 +129,6 @@ DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/r
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/ros/wall_timer.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/ros/wall_timer_options.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/rosconsole/macros_generated.h
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.o: /opt/ros/groovy/include/std_msgs/String.h
 
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/RobotechMotor.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Robotech/../../include/RobotechMotor.h
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/RobotechMotor.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Robotech/../../include/Serial.h

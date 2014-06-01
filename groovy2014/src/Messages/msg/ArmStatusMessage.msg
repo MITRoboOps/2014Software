@@ -1,0 +1,9 @@
+int32 boomCurrent
+int32 armRotCurrent
+int32 thumbPosition
+int32 clawPosition
+int32 stickPosition
+int32 boomPosition
+int32 armRotPosition
+int32 panPosition
+int32 tiltPosition

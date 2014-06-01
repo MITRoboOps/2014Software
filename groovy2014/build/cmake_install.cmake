@@ -85,9 +85,9 @@ ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unsp
 IF(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   INCLUDE("/home/roboops/2014Software/groovy2014/build/gtest/cmake_install.cmake")
-  INCLUDE("/home/roboops/2014Software/groovy2014/build/DriveTrainAndArm/cmake_install.cmake")
   INCLUDE("/home/roboops/2014Software/groovy2014/build/Messages/cmake_install.cmake")
   INCLUDE("/home/roboops/2014Software/groovy2014/build/ControlCenter/cmake_install.cmake")
+  INCLUDE("/home/roboops/2014Software/groovy2014/build/OnBoard/cmake_install.cmake")
 
 ENDIF(NOT CMAKE_INSTALL_LOCAL_ONLY)
 

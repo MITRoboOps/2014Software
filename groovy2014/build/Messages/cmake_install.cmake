@@ -36,6 +36,13 @@ IF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspeci
   FILE(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/Messages/msg" TYPE FILE FILES
     "/home/roboops/2014Software/groovy2014/src/Messages/msg/ArmMessage.msg"
     "/home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainMessage.msg"
+    "/home/roboops/2014Software/groovy2014/src/Messages/msg/ArmStatusMessage.msg"
+    "/home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainStatusMessage.msg"
+    "/home/roboops/2014Software/groovy2014/src/Messages/msg/NavigationMessage.msg"
+    "/home/roboops/2014Software/groovy2014/src/Messages/msg/PilotMessage.msg"
+    "/home/roboops/2014Software/groovy2014/src/Messages/msg/GPSMessage.msg"
+    "/home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomMessage.msg"
+    "/home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomStatus.msg"
     )
 ENDIF(NOT CMAKE_INSTALL_COMPONENT OR "${CMAKE_INSTALL_COMPONENT}" STREQUAL "Unspecified")
 

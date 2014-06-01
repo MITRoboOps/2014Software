@@ -1,0 +1,5 @@
+int32 timeUp
+int32 batteryVoltage
+int32 latitude
+int32 longitude
+int32 chargeUsed

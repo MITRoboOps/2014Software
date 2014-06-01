@@ -1,0 +1,7 @@
+set(_CATKIN_CURRENT_PACKAGE "OnBoard")
+set(OnBoard_MAINTAINER "roboops <roboops@todo.todo>")
+set(OnBoard_DEPRECATED "")
+set(OnBoard_VERSION "0.0.0")
+set(OnBoard_BUILD_DEPENDS "roscpp" "rospy" "std_msgs")
+set(OnBoard_RUN_DEPENDS "roscpp" "rospy" "std_msgs")
+set(OnBoard_BUILDTOOL_DEPENDS "catkin")

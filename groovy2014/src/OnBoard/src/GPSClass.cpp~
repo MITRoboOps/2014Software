@@ -1,0 +1,54 @@
+#include "Serial.h"
+#include <ros/ros.h>
+#include <ros/node_handle.h>
+#include <Messages/GPSMessage.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <iostream>
+#define BAUD_RATE 38400
+
+
+int main( int argc, char **argv){
+
+	ros::init(argc,argv,"GPSNode");
+	
+	Serial* gps;
+
+	// Node Handler
+	ros::NodeHandle nh;
+
+	//Messages
+	Messages::GPSMessage msg;
+	msg.roll = 0;
+	msg.pich = 0;
+	msg.yaw = 0;
+	msg.latitude = 0;
+	msg.longitutde = 0;
+
+
+	// Publishers
+	ros::Publisher statusPublisher = n.hadvertise<Messages::GPSMessage>("GPS", 1);;
+
+	int numTries = 0;
+	int numberToTry = 5;
+	while(numTries < numberToTry)
+		try{
+			gps = new Serial("/dev/ttyUSB8",BAUD_RATE);
+			numTries = numberToTry;
+		} catch (exception& e) {
+			std::cout << "Connection failed. Retrying " << numberToTry - numTries << " more times." << endl;
+			if(numTries == numberToTry) return false;
+				numTries++;
+				usleep (3000*1000);
+			}
+
+	while(ros::ok(){
+		std::string output = gps->readLine();
+		//parseMessage
+
+		statusPublisher.publish(msg);
+		ros::spinOnce();
+	}
+	
+}

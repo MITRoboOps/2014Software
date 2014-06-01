@@ -1,0 +1,5 @@
+int32 BLCurrent
+int32 FLCurrent
+int32 BRCurrent
+int32 FRCurrent
+int32 Voltage1

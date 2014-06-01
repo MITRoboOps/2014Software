@@ -161,6 +161,20 @@ Arm/fast:
 .PHONY : Arm/fast
 
 # Convenience name for target.
+DriveTrainAndArm/CMakeFiles/CameraBoom.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/CameraBoom.dir/rule
+.PHONY : DriveTrainAndArm/CMakeFiles/CameraBoom.dir/rule
+
+# Convenience name for target.
+CameraBoom: DriveTrainAndArm/CMakeFiles/CameraBoom.dir/rule
+.PHONY : CameraBoom
+
+# fast build rule for target.
+CameraBoom/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build
+.PHONY : CameraBoom/fast
+
+# Convenience name for target.
 DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule
 .PHONY : DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule
@@ -173,6 +187,20 @@ DriveTrain: DriveTrainAndArm/CMakeFiles/DriveTrain.dir/rule
 DriveTrain/fast:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build
 .PHONY : DriveTrain/fast
+
+# Convenience name for target.
+DriveTrainAndArm/CMakeFiles/GPSNode.dir/rule:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f CMakeFiles/Makefile2 DriveTrainAndArm/CMakeFiles/GPSNode.dir/rule
+.PHONY : DriveTrainAndArm/CMakeFiles/GPSNode.dir/rule
+
+# Convenience name for target.
+GPSNode: DriveTrainAndArm/CMakeFiles/GPSNode.dir/rule
+.PHONY : GPSNode
+
+# fast build rule for target.
+GPSNode/fast:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/GPSNode.dir/build.make DriveTrainAndArm/CMakeFiles/GPSNode.dir/build
+.PHONY : GPSNode/fast
 
 # Convenience name for target.
 DriveTrainAndArm/CMakeFiles/roscpp_generate_messages_cpp.dir/rule:
@@ -306,6 +334,7 @@ src/Actuator/Actuator.o: src/Actuator/Actuator.cpp.o
 # target to build an object file
 src/Actuator/Actuator.cpp.o:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/Actuator.cpp.o
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/Actuator/Actuator.cpp.o
 .PHONY : src/Actuator/Actuator.cpp.o
 
 src/Actuator/Actuator.i: src/Actuator/Actuator.cpp.i
@@ -314,6 +343,7 @@ src/Actuator/Actuator.i: src/Actuator/Actuator.cpp.i
 # target to preprocess a source file
 src/Actuator/Actuator.cpp.i:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/Actuator.cpp.i
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/Actuator/Actuator.cpp.i
 .PHONY : src/Actuator/Actuator.cpp.i
 
 src/Actuator/Actuator.s: src/Actuator/Actuator.cpp.s
@@ -322,31 +352,35 @@ src/Actuator/Actuator.s: src/Actuator/Actuator.cpp.s
 # target to generate assembly for a file
 src/Actuator/Actuator.cpp.s:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/Actuator.cpp.s
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/Actuator/Actuator.cpp.s
 .PHONY : src/Actuator/Actuator.cpp.s
 
-src/Actuator/firgelli.o: src/Actuator/firgelli.C.o
+src/Actuator/firgelli.o: src/Actuator/firgelli.cpp.o
 .PHONY : src/Actuator/firgelli.o
 
 # target to build an object file
-src/Actuator/firgelli.C.o:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o
-.PHONY : src/Actuator/firgelli.C.o
+src/Actuator/firgelli.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/Actuator/firgelli.cpp.o
+.PHONY : src/Actuator/firgelli.cpp.o
 
-src/Actuator/firgelli.i: src/Actuator/firgelli.C.i
+src/Actuator/firgelli.i: src/Actuator/firgelli.cpp.i
 .PHONY : src/Actuator/firgelli.i
 
 # target to preprocess a source file
-src/Actuator/firgelli.C.i:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.i
-.PHONY : src/Actuator/firgelli.C.i
+src/Actuator/firgelli.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.i
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/Actuator/firgelli.cpp.i
+.PHONY : src/Actuator/firgelli.cpp.i
 
-src/Actuator/firgelli.s: src/Actuator/firgelli.C.s
+src/Actuator/firgelli.s: src/Actuator/firgelli.cpp.s
 .PHONY : src/Actuator/firgelli.s
 
 # target to generate assembly for a file
-src/Actuator/firgelli.C.s:
-	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.s
-.PHONY : src/Actuator/firgelli.C.s
+src/Actuator/firgelli.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.s
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/Actuator/firgelli.cpp.s
+.PHONY : src/Actuator/firgelli.cpp.s
 
 src/ArmClass.o: src/ArmClass.cpp.o
 .PHONY : src/ArmClass.o
@@ -396,6 +430,54 @@ src/ArmNode.cpp.s:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/ArmNode.cpp.s
 .PHONY : src/ArmNode.cpp.s
 
+src/CameraBoomClass.o: src/CameraBoomClass.cpp.o
+.PHONY : src/CameraBoomClass.o
+
+# target to build an object file
+src/CameraBoomClass.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/CameraBoomClass.cpp.o
+.PHONY : src/CameraBoomClass.cpp.o
+
+src/CameraBoomClass.i: src/CameraBoomClass.cpp.i
+.PHONY : src/CameraBoomClass.i
+
+# target to preprocess a source file
+src/CameraBoomClass.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/CameraBoomClass.cpp.i
+.PHONY : src/CameraBoomClass.cpp.i
+
+src/CameraBoomClass.s: src/CameraBoomClass.cpp.s
+.PHONY : src/CameraBoomClass.s
+
+# target to generate assembly for a file
+src/CameraBoomClass.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/CameraBoomClass.cpp.s
+.PHONY : src/CameraBoomClass.cpp.s
+
+src/CameraBoomNode.o: src/CameraBoomNode.cpp.o
+.PHONY : src/CameraBoomNode.o
+
+# target to build an object file
+src/CameraBoomNode.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/CameraBoomNode.cpp.o
+.PHONY : src/CameraBoomNode.cpp.o
+
+src/CameraBoomNode.i: src/CameraBoomNode.cpp.i
+.PHONY : src/CameraBoomNode.i
+
+# target to preprocess a source file
+src/CameraBoomNode.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/CameraBoomNode.cpp.i
+.PHONY : src/CameraBoomNode.cpp.i
+
+src/CameraBoomNode.s: src/CameraBoomNode.cpp.s
+.PHONY : src/CameraBoomNode.s
+
+# target to generate assembly for a file
+src/CameraBoomNode.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/CameraBoom.dir/build.make DriveTrainAndArm/CMakeFiles/CameraBoom.dir/src/CameraBoomNode.cpp.s
+.PHONY : src/CameraBoomNode.cpp.s
+
 src/DriveTrainClass.o: src/DriveTrainClass.cpp.o
 .PHONY : src/DriveTrainClass.o
 
@@ -444,6 +526,30 @@ src/DriveTrainNode.cpp.s:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/DriveTrainNode.cpp.s
 .PHONY : src/DriveTrainNode.cpp.s
 
+src/GPSNode.o: src/GPSNode.cpp.o
+.PHONY : src/GPSNode.o
+
+# target to build an object file
+src/GPSNode.cpp.o:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/GPSNode.dir/build.make DriveTrainAndArm/CMakeFiles/GPSNode.dir/src/GPSNode.cpp.o
+.PHONY : src/GPSNode.cpp.o
+
+src/GPSNode.i: src/GPSNode.cpp.i
+.PHONY : src/GPSNode.i
+
+# target to preprocess a source file
+src/GPSNode.cpp.i:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/GPSNode.dir/build.make DriveTrainAndArm/CMakeFiles/GPSNode.dir/src/GPSNode.cpp.i
+.PHONY : src/GPSNode.cpp.i
+
+src/GPSNode.s: src/GPSNode.cpp.s
+.PHONY : src/GPSNode.s
+
+# target to generate assembly for a file
+src/GPSNode.cpp.s:
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/GPSNode.dir/build.make DriveTrainAndArm/CMakeFiles/GPSNode.dir/src/GPSNode.cpp.s
+.PHONY : src/GPSNode.cpp.s
+
 src/Robotech/RobotechMotor.o: src/Robotech/RobotechMotor.cpp.o
 .PHONY : src/Robotech/RobotechMotor.o
 
@@ -478,6 +584,7 @@ src/Robotech/Serial.o: src/Robotech/Serial.cpp.o
 src/Robotech/Serial.cpp.o:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/Serial.cpp.o
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/Robotech/Serial.cpp.o
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/GPSNode.dir/build.make DriveTrainAndArm/CMakeFiles/GPSNode.dir/src/Robotech/Serial.cpp.o
 .PHONY : src/Robotech/Serial.cpp.o
 
 src/Robotech/Serial.i: src/Robotech/Serial.cpp.i
@@ -487,6 +594,7 @@ src/Robotech/Serial.i: src/Robotech/Serial.cpp.i
 src/Robotech/Serial.cpp.i:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/Serial.cpp.i
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/Robotech/Serial.cpp.i
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/GPSNode.dir/build.make DriveTrainAndArm/CMakeFiles/GPSNode.dir/src/Robotech/Serial.cpp.i
 .PHONY : src/Robotech/Serial.cpp.i
 
 src/Robotech/Serial.s: src/Robotech/Serial.cpp.s
@@ -496,6 +604,7 @@ src/Robotech/Serial.s: src/Robotech/Serial.cpp.s
 src/Robotech/Serial.cpp.s:
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/Serial.cpp.s
 	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/DriveTrain.dir/build.make DriveTrainAndArm/CMakeFiles/DriveTrain.dir/src/Robotech/Serial.cpp.s
+	cd /home/roboops/2014Software/groovy2014/build && $(MAKE) -f DriveTrainAndArm/CMakeFiles/GPSNode.dir/build.make DriveTrainAndArm/CMakeFiles/GPSNode.dir/src/Robotech/Serial.cpp.s
 .PHONY : src/Robotech/Serial.cpp.s
 
 src/Servo/ServoMotor.o: src/Servo/ServoMotor.cpp.o
@@ -529,7 +638,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... Arm"
+	@echo "... CameraBoom"
 	@echo "... DriveTrain"
+	@echo "... GPSNode"
 	@echo "... edit_cache"
 	@echo "... install"
 	@echo "... install/local"
@@ -558,12 +669,21 @@ help:
 	@echo "... src/ArmNode.o"
 	@echo "... src/ArmNode.i"
 	@echo "... src/ArmNode.s"
+	@echo "... src/CameraBoomClass.o"
+	@echo "... src/CameraBoomClass.i"
+	@echo "... src/CameraBoomClass.s"
+	@echo "... src/CameraBoomNode.o"
+	@echo "... src/CameraBoomNode.i"
+	@echo "... src/CameraBoomNode.s"
 	@echo "... src/DriveTrainClass.o"
 	@echo "... src/DriveTrainClass.i"
 	@echo "... src/DriveTrainClass.s"
 	@echo "... src/DriveTrainNode.o"
 	@echo "... src/DriveTrainNode.i"
 	@echo "... src/DriveTrainNode.s"
+	@echo "... src/GPSNode.o"
+	@echo "... src/GPSNode.i"
+	@echo "... src/GPSNode.s"
 	@echo "... src/Robotech/RobotechMotor.o"
 	@echo "... src/Robotech/RobotechMotor.i"
 	@echo "... src/Robotech/RobotechMotor.s"

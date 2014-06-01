@@ -1,0 +1,66 @@
+# depslib dependency file v1.0
+1401598695 source:/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Robotech/RobotechMotor.cpp
+	"../../include/RobotechMotor.h"
+
+1401575381 /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/include/RobotechMotor.h
+	"Serial.h"
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	"stdlib.h"
+	<iostream>
+	<cmath>
+	<sstream>
+	<exception>
+	<pthread.h>
+	<thread>
+	<mutex>
+	<list>
+
+1400468882 /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/include/Serial.h
+	<string>
+	<boost/asio.hpp>
+
+1401250965 source:/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Robotech/Serial.cpp
+	"../../include/Serial.h"
+
+1401599087 source:/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Robotech/RobotechMotorTest.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+	"../../include/RobotechMotor.h"
+
+1401658328 source:/home/roboops/2014Software/groovy2014/src/OnBoard/src/Robotech/RobotechMotor.cpp
+	"../../include/RobotechMotor.h"
+
+1401645000 /home/roboops/2014Software/groovy2014/src/OnBoard/include/RobotechMotor.h
+	"Serial.h"
+	<string>
+	<stdio.h>
+	<stdlib.h>
+	"stdlib.h"
+	<iostream>
+	<cmath>
+	<sstream>
+	<exception>
+	<pthread.h>
+	<thread>
+	<mutex>
+	<list>
+	<exception>
+
+1400468882 /home/roboops/2014Software/groovy2014/src/OnBoard/include/Serial.h
+	<string>
+	<boost/asio.hpp>
+
+1401658520 source:/home/roboops/2014Software/groovy2014/src/OnBoard/src/Robotech/RobotechMotorTest.cpp
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<iostream>
+	"../../include/RobotechMotor.h"
+
+1401657469 source:/home/roboops/2014Software/groovy2014/src/OnBoard/src/Robotech/Serial.cpp
+	"../../include/Serial.h"
+

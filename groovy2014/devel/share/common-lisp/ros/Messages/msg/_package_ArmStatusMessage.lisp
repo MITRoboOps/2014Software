@@ -1,0 +1,20 @@
+(cl:in-package Messages-msg)
+(cl:export '(BOOMCURRENT-VAL
+          BOOMCURRENT
+          ARMROTCURRENT-VAL
+          ARMROTCURRENT
+          THUMBPOSITION-VAL
+          THUMBPOSITION
+          CLAWPOSITION-VAL
+          CLAWPOSITION
+          STICKPOSITION-VAL
+          STICKPOSITION
+          BOOMPOSITION-VAL
+          BOOMPOSITION
+          ARMROTPOSITION-VAL
+          ARMROTPOSITION
+          PANPOSITION-VAL
+          PANPOSITION
+          TILTPOSITION-VAL
+          TILTPOSITION
+))

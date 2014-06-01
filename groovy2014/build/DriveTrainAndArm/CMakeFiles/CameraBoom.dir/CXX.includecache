@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/../../include/Actuator.h
+firgelli.h
+/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/../../include/firgelli.h
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+exception
+-
+iostream
+-
+
+/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/../../include/firgelli.h
+libusb-1.0/libusb.h
+-
+
+/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/Actuator.cpp
+../../include/Actuator.h
+/home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/../../include/Actuator.h
+

@@ -1,6 +1,6 @@
 # generated from genmsg/cmake/pkg-genmsg.cmake.em
 
-message(STATUS "Messages: 2 messages, 0 services")
+message(STATUS "Messages: 9 messages, 0 services")
 
 set(MSG_I_FLAGS "-IMessages:/home/roboops/2014Software/groovy2014/src/Messages/msg;-Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg")
 
@@ -24,7 +24,49 @@ _generate_msg_cpp(Messages
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/Messages
 )
 _generate_msg_cpp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/Messages
+)
+_generate_msg_cpp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/ArmStatusMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/Messages
+)
+_generate_msg_cpp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/PilotMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/Messages
+)
+_generate_msg_cpp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainStatusMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/Messages
+)
+_generate_msg_cpp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/GPSMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/Messages
+)
+_generate_msg_cpp(Messages
   "/home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/Messages
+)
+_generate_msg_cpp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/Messages
+)
+_generate_msg_cpp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/NavigationMessage.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/Messages
@@ -59,7 +101,49 @@ _generate_msg_lisp(Messages
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/Messages
 )
 _generate_msg_lisp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/Messages
+)
+_generate_msg_lisp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/ArmStatusMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/Messages
+)
+_generate_msg_lisp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/PilotMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/Messages
+)
+_generate_msg_lisp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainStatusMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/Messages
+)
+_generate_msg_lisp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/GPSMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/Messages
+)
+_generate_msg_lisp(Messages
   "/home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/Messages
+)
+_generate_msg_lisp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/Messages
+)
+_generate_msg_lisp(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/NavigationMessage.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/Messages
@@ -94,7 +178,49 @@ _generate_msg_py(Messages
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/Messages
 )
 _generate_msg_py(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/Messages
+)
+_generate_msg_py(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/ArmStatusMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/Messages
+)
+_generate_msg_py(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/PilotMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/Messages
+)
+_generate_msg_py(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainStatusMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/Messages
+)
+_generate_msg_py(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/GPSMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/Messages
+)
+_generate_msg_py(Messages
   "/home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainMessage.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/Messages
+)
+_generate_msg_py(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomStatus.msg"
+  "${MSG_I_FLAGS}"
+  ""
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/Messages
+)
+_generate_msg_py(Messages
+  "/home/roboops/2014Software/groovy2014/src/Messages/msg/NavigationMessage.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/Messages

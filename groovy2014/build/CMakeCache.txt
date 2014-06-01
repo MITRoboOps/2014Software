@@ -249,6 +249,12 @@ Motor_SOURCE_DIR:STATIC=/home/roboops/2014Software/groovy2014/src/Motor
 //Path to a program.
 NOSETESTS:FILEPATH=/usr/bin/nosetests
 
+//Value Computed by CMake
+OnBoard_BINARY_DIR:STATIC=/home/roboops/2014Software/groovy2014/build/OnBoard
+
+//Value Computed by CMake
+OnBoard_SOURCE_DIR:STATIC=/home/roboops/2014Software/groovy2014/src/OnBoard
+
 //Path to a program.
 PYTHON_EXECUTABLE:FILEPATH=/usr/bin/python
 

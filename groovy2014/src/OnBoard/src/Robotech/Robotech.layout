@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="../../include/RobotechMotor.h" open="1" top="0" tabpos="7">
+		<Cursor position="896" topLine="1" />
+	</File>
+	<File name="RobotechMotor.cpp" open="1" top="1" tabpos="4">
+		<Cursor position="5516" topLine="208" />
+	</File>
+	<File name="RobotechMotorTest.cpp" open="1" top="0" tabpos="5">
+		<Cursor position="532" topLine="6" />
+	</File>
+	<File name="Serial.cpp" open="1" top="0" tabpos="6">
+		<Cursor position="879" topLine="9" />
+	</File>
+</CodeBlocks_layout_file>

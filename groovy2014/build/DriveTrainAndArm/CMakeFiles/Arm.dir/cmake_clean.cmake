@@ -5,7 +5,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Arm.dir/src/Robotech/RobotechMotor.cpp.o"
   "CMakeFiles/Arm.dir/src/Robotech/Serial.cpp.o"
   "CMakeFiles/Arm.dir/src/Servo/ServoMotor.cpp.o"
-  "CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o"
+  "CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o"
   "/home/roboops/2014Software/groovy2014/devel/lib/DriveTrainAndArm/Arm.pdb"
   "/home/roboops/2014Software/groovy2014/devel/lib/DriveTrainAndArm/Arm"
 )

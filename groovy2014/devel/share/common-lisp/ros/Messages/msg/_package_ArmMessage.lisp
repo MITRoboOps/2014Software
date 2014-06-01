@@ -1,5 +1,7 @@
 (cl:in-package Messages-msg)
-(cl:export '(THUMB-VAL
+(cl:export '(COMMAND-VAL
+          COMMAND
+          THUMB-VAL
           THUMB
           CLAW-VAL
           CLAW

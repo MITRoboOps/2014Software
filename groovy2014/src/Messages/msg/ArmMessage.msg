@@ -1,3 +1,4 @@
+int32 command
 int32 thumb
 int32 claw
 int32 stick

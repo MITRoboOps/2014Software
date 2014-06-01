@@ -184,28 +184,28 @@ DriveTrainAndArm/CMakeFiles/Arm.dir/src/Servo/ServoMotor.cpp.o.provides: DriveTr
 
 DriveTrainAndArm/CMakeFiles/Arm.dir/src/Servo/ServoMotor.cpp.o.provides.build: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Servo/ServoMotor.cpp.o
 
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o: DriveTrainAndArm/CMakeFiles/Arm.dir/flags.make
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.C
+DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o: DriveTrainAndArm/CMakeFiles/Arm.dir/flags.make
+DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o: /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.cpp
 	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_7)
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o"
-	cd /home/roboops/2014Software/groovy2014/build/DriveTrainAndArm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o -c /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.C
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o"
+	cd /home/roboops/2014Software/groovy2014/build/DriveTrainAndArm && /usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o -c /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.cpp
 
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Arm.dir/src/Actuator/firgelli.C.i"
-	cd /home/roboops/2014Software/groovy2014/build/DriveTrainAndArm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.C > CMakeFiles/Arm.dir/src/Actuator/firgelli.C.i
+DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.i"
+	cd /home/roboops/2014Software/groovy2014/build/DriveTrainAndArm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.cpp > CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.i
 
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Arm.dir/src/Actuator/firgelli.C.s"
-	cd /home/roboops/2014Software/groovy2014/build/DriveTrainAndArm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.C -o CMakeFiles/Arm.dir/src/Actuator/firgelli.C.s
+DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.s"
+	cd /home/roboops/2014Software/groovy2014/build/DriveTrainAndArm && /usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /home/roboops/2014Software/groovy2014/src/DriveTrainAndArm/src/Actuator/firgelli.cpp -o CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.s
 
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o.requires:
-.PHONY : DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o.requires
+DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o.requires:
+.PHONY : DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o.requires
 
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o.provides: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o.requires
-	$(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o.provides.build
-.PHONY : DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o.provides
+DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o.provides: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o.requires
+	$(MAKE) -f DriveTrainAndArm/CMakeFiles/Arm.dir/build.make DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o.provides.build
+.PHONY : DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o.provides
 
-DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o.provides.build: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o
+DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o.provides.build: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o
 
 # Object files for target Arm
 Arm_OBJECTS = \
@@ -215,7 +215,7 @@ Arm_OBJECTS = \
 "CMakeFiles/Arm.dir/src/Robotech/RobotechMotor.cpp.o" \
 "CMakeFiles/Arm.dir/src/Robotech/Serial.cpp.o" \
 "CMakeFiles/Arm.dir/src/Servo/ServoMotor.cpp.o" \
-"CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o"
+"CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o"
 
 # External object files for target Arm
 Arm_EXTERNAL_OBJECTS =
@@ -226,7 +226,7 @@ Arm_EXTERNAL_OBJECTS =
 /home/roboops/2014Software/groovy2014/devel/lib/DriveTrainAndArm/Arm: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/RobotechMotor.cpp.o
 /home/roboops/2014Software/groovy2014/devel/lib/DriveTrainAndArm/Arm: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/Serial.cpp.o
 /home/roboops/2014Software/groovy2014/devel/lib/DriveTrainAndArm/Arm: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Servo/ServoMotor.cpp.o
-/home/roboops/2014Software/groovy2014/devel/lib/DriveTrainAndArm/Arm: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o
+/home/roboops/2014Software/groovy2014/devel/lib/DriveTrainAndArm/Arm: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o
 /home/roboops/2014Software/groovy2014/devel/lib/DriveTrainAndArm/Arm: /opt/ros/groovy/lib/libroscpp.so
 /home/roboops/2014Software/groovy2014/devel/lib/DriveTrainAndArm/Arm: /usr/lib/libboost_signals-mt.so
 /home/roboops/2014Software/groovy2014/devel/lib/DriveTrainAndArm/Arm: /usr/lib/libboost_filesystem-mt.so
@@ -256,7 +256,7 @@ DriveTrainAndArm/CMakeFiles/Arm.dir/requires: DriveTrainAndArm/CMakeFiles/Arm.di
 DriveTrainAndArm/CMakeFiles/Arm.dir/requires: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/RobotechMotor.cpp.o.requires
 DriveTrainAndArm/CMakeFiles/Arm.dir/requires: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Robotech/Serial.cpp.o.requires
 DriveTrainAndArm/CMakeFiles/Arm.dir/requires: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Servo/ServoMotor.cpp.o.requires
-DriveTrainAndArm/CMakeFiles/Arm.dir/requires: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.C.o.requires
+DriveTrainAndArm/CMakeFiles/Arm.dir/requires: DriveTrainAndArm/CMakeFiles/Arm.dir/src/Actuator/firgelli.cpp.o.requires
 .PHONY : DriveTrainAndArm/CMakeFiles/Arm.dir/requires
 
 DriveTrainAndArm/CMakeFiles/Arm.dir/clean:

@@ -1,5 +1,7 @@
 <launch>
-  <node name="publisher" pkg="ControlCenter" type="publisher" />
-  <node name="driveTrain" pkg="DriveTrain" type="driveTrain" />
-  <node name="arm" pkg="Arm" type="arm" />
+  <node name="PilotServer" pkg="ControlCenter" type="PilotServer" />
+  <node name="DriveTrain" pkg="OnBoard" type="DriveTrain" />
+  <node name="Arm" pkg="OnBoard" type="Arm" />
+  <node name="StatusManager" pkg="ControlCenter" type="StatusManager" />
+  <node name="GPSNode" pkg="OnBoard" type="GPSNode" />
 </launch>

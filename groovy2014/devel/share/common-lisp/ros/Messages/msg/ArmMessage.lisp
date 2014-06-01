@@ -7,7 +7,12 @@
 ;//! \htmlinclude ArmMessage.msg.html
 
 (cl:defclass <ArmMessage> (roslisp-msg-protocol:ros-message)
-  ((thumb
+  ((command
+    :reader command
+    :initarg :command
+    :type cl:integer
+    :initform 0)
+   (thumb
     :reader thumb
     :initarg :thumb
     :type cl:integer
@@ -52,6 +57,11 @@
   (cl:unless (cl:typep m 'ArmMessage)
     (roslisp-msg-protocol:msg-deprecation-warning "using old message class name Messages-msg:<ArmMessage> is deprecated: use Messages-msg:ArmMessage instead.")))
 
+(cl:ensure-generic-function 'command-val :lambda-list '(m))
+(cl:defmethod command-val ((m <ArmMessage>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Messages-msg:command-val is deprecated.  Use Messages-msg:command instead.")
+  (command m))
+
 (cl:ensure-generic-function 'thumb-val :lambda-list '(m))
 (cl:defmethod thumb-val ((m <ArmMessage>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader Messages-msg:thumb-val is deprecated.  Use Messages-msg:thumb instead.")
@@ -88,6 +98,12 @@
   (tilt m))
 (cl:defmethod roslisp-msg-protocol:serialize ((msg <ArmMessage>) ostream)
   "Serializes a message object of type '<ArmMessage>"
+  (cl:let* ((signed (cl:slot-value msg 'command)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
+    (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 16) unsigned) ostream)
+    (cl:write-byte (cl:ldb (cl:byte 8 24) unsigned) ostream)
+    )
   (cl:let* ((signed (cl:slot-value msg 'thumb)) (unsigned (cl:if (cl:< signed 0) (cl:+ signed 4294967296) signed)))
     (cl:write-byte (cl:ldb (cl:byte 8 0) unsigned) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) unsigned) ostream)
@@ -133,6 +149,12 @@
 )
 (cl:defmethod roslisp-msg-protocol:deserialize ((msg <ArmMessage>) istream)
   "Deserializes a message object of type '<ArmMessage>"
+    (cl:let ((unsigned 0))
+      (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 16) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:ldb (cl:byte 8 24) unsigned) (cl:read-byte istream))
+      (cl:setf (cl:slot-value msg 'command) (cl:if (cl:< unsigned 2147483648) unsigned (cl:- unsigned 4294967296))))
     (cl:let ((unsigned 0))
       (cl:setf (cl:ldb (cl:byte 8 0) unsigned) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) unsigned) (cl:read-byte istream))
@@ -185,18 +207,19 @@
   "Messages/ArmMessage")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<ArmMessage>)))
   "Returns md5sum for a message object of type '<ArmMessage>"
-  "4a95d4dd02485539899d20930a9f169a")
+  "4614ce691507468218fe21642c3bab91")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'ArmMessage)))
   "Returns md5sum for a message object of type 'ArmMessage"
-  "4a95d4dd02485539899d20930a9f169a")
+  "4614ce691507468218fe21642c3bab91")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<ArmMessage>)))
   "Returns full string definition for message of type '<ArmMessage>"
-  (cl:format cl:nil "int32 thumb~%int32 claw~%int32 stick~%int32 boom~%int32 armRot~%int32 pan~%int32 tilt~%~%~%"))
+  (cl:format cl:nil "int32 command~%int32 thumb~%int32 claw~%int32 stick~%int32 boom~%int32 armRot~%int32 pan~%int32 tilt~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'ArmMessage)))
   "Returns full string definition for message of type 'ArmMessage"
-  (cl:format cl:nil "int32 thumb~%int32 claw~%int32 stick~%int32 boom~%int32 armRot~%int32 pan~%int32 tilt~%~%~%"))
+  (cl:format cl:nil "int32 command~%int32 thumb~%int32 claw~%int32 stick~%int32 boom~%int32 armRot~%int32 pan~%int32 tilt~%~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <ArmMessage>))
   (cl:+ 0
+     4
      4
      4
      4
@@ -208,6 +231,7 @@
 (cl:defmethod roslisp-msg-protocol:ros-message-to-list ((msg <ArmMessage>))
   "Converts a ROS message object to a list"
   (cl:list 'ArmMessage
+    (cl:cons ':command (command msg))
     (cl:cons ':thumb (thumb msg))
     (cl:cons ':claw (claw msg))
     (cl:cons ':stick (stick msg))

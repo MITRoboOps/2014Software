@@ -43,7 +43,14 @@ CMAKE_BINARY_DIR = /home/roboops/2014Software/groovy2014/build
 include Messages/CMakeFiles/Messages_generate_messages_py.dir/progress.make
 
 Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_ArmMessage.py
+Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_CameraBoomMessage.py
+Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_ArmStatusMessage.py
+Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_PilotMessage.py
+Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_DriveTrainStatusMessage.py
+Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_GPSMessage.py
 Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_DriveTrainMessage.py
+Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_CameraBoomStatus.py
+Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_NavigationMessage.py
 Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py
 
 /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_ArmMessage.py: /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
@@ -52,22 +59,78 @@ Messages/CMakeFiles/Messages_generate_messages_py: /home/roboops/2014Software/gr
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG Messages/ArmMessage"
 	cd /home/roboops/2014Software/groovy2014/build/Messages && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roboops/2014Software/groovy2014/src/Messages/msg/ArmMessage.msg -IMessages:/home/roboops/2014Software/groovy2014/src/Messages/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p Messages -o /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg
 
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_CameraBoomMessage.py: /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_CameraBoomMessage.py: /home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomMessage.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG Messages/CameraBoomMessage"
+	cd /home/roboops/2014Software/groovy2014/build/Messages && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomMessage.msg -IMessages:/home/roboops/2014Software/groovy2014/src/Messages/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p Messages -o /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg
+
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_ArmStatusMessage.py: /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_ArmStatusMessage.py: /home/roboops/2014Software/groovy2014/src/Messages/msg/ArmStatusMessage.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_3)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG Messages/ArmStatusMessage"
+	cd /home/roboops/2014Software/groovy2014/build/Messages && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roboops/2014Software/groovy2014/src/Messages/msg/ArmStatusMessage.msg -IMessages:/home/roboops/2014Software/groovy2014/src/Messages/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p Messages -o /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg
+
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_PilotMessage.py: /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_PilotMessage.py: /home/roboops/2014Software/groovy2014/src/Messages/msg/PilotMessage.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_4)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG Messages/PilotMessage"
+	cd /home/roboops/2014Software/groovy2014/build/Messages && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roboops/2014Software/groovy2014/src/Messages/msg/PilotMessage.msg -IMessages:/home/roboops/2014Software/groovy2014/src/Messages/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p Messages -o /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg
+
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_DriveTrainStatusMessage.py: /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_DriveTrainStatusMessage.py: /home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainStatusMessage.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG Messages/DriveTrainStatusMessage"
+	cd /home/roboops/2014Software/groovy2014/build/Messages && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainStatusMessage.msg -IMessages:/home/roboops/2014Software/groovy2014/src/Messages/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p Messages -o /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg
+
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_GPSMessage.py: /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_GPSMessage.py: /home/roboops/2014Software/groovy2014/src/Messages/msg/GPSMessage.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_6)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG Messages/GPSMessage"
+	cd /home/roboops/2014Software/groovy2014/build/Messages && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roboops/2014Software/groovy2014/src/Messages/msg/GPSMessage.msg -IMessages:/home/roboops/2014Software/groovy2014/src/Messages/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p Messages -o /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg
+
 /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_DriveTrainMessage.py: /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_DriveTrainMessage.py: /home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainMessage.msg
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG Messages/DriveTrainMessage"
 	cd /home/roboops/2014Software/groovy2014/build/Messages && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roboops/2014Software/groovy2014/src/Messages/msg/DriveTrainMessage.msg -IMessages:/home/roboops/2014Software/groovy2014/src/Messages/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p Messages -o /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg
 
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_CameraBoomStatus.py: /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_CameraBoomStatus.py: /home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomStatus.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_8)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG Messages/CameraBoomStatus"
+	cd /home/roboops/2014Software/groovy2014/build/Messages && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roboops/2014Software/groovy2014/src/Messages/msg/CameraBoomStatus.msg -IMessages:/home/roboops/2014Software/groovy2014/src/Messages/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p Messages -o /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg
+
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_NavigationMessage.py: /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_NavigationMessage.py: /home/roboops/2014Software/groovy2014/src/Messages/msg/NavigationMessage.msg
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_9)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python from MSG Messages/NavigationMessage"
+	cd /home/roboops/2014Software/groovy2014/build/Messages && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/roboops/2014Software/groovy2014/src/Messages/msg/NavigationMessage.msg -IMessages:/home/roboops/2014Software/groovy2014/src/Messages/msg -Istd_msgs:/opt/ros/groovy/share/std_msgs/cmake/../msg -p Messages -o /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg
+
 /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py: /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py
 /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_ArmMessage.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_CameraBoomMessage.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_ArmStatusMessage.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_PilotMessage.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_DriveTrainStatusMessage.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_GPSMessage.py
 /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_DriveTrainMessage.py
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_3)
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_CameraBoomStatus.py
+/home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_NavigationMessage.py
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/roboops/2014Software/groovy2014/build/CMakeFiles $(CMAKE_PROGRESS_10)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Generating Python msg __init__.py for Messages"
 	cd /home/roboops/2014Software/groovy2014/build/Messages && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/groovy/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg --initpy
 
 Messages_generate_messages_py: Messages/CMakeFiles/Messages_generate_messages_py
 Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_ArmMessage.py
+Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_CameraBoomMessage.py
+Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_ArmStatusMessage.py
+Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_PilotMessage.py
+Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_DriveTrainStatusMessage.py
+Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_GPSMessage.py
 Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_DriveTrainMessage.py
+Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_CameraBoomStatus.py
+Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/_NavigationMessage.py
 Messages_generate_messages_py: /home/roboops/2014Software/groovy2014/devel/lib/python2.7/dist-packages/Messages/msg/__init__.py
 Messages_generate_messages_py: Messages/CMakeFiles/Messages_generate_messages_py.dir/build.make
 .PHONY : Messages_generate_messages_py

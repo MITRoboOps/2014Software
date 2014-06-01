@@ -1,0 +1,30 @@
+#include "Serial.h"
+#include <ros/ros.h>
+#include <ros/node_handle.h>
+#include <Messages/ArmStatusMessage.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <iostream>
+
+class ArmClass {
+
+private:
+
+	Serial* gps;
+
+	// Node Handler
+	ros::NodeHandle nh;
+
+	// Publishers
+	ros::Publisher statusPublisher;
+
+public:
+
+	GPSClass();
+
+	void publishStatusMessage();
+
+	void resetStatusMessage();
+
+};
