@@ -1,0 +1,43 @@
+# General ignores
+*.o
+*.d
+*.elf
+*.eep
+*.hex
+*.map
+*.res
+/sam/bin/
+.dropbox
+.vagrant
+/work/
+/bin/cli.rc
+/bin/srv.rc
+/bin/espeak-data/
+/temp/
+
+# Ignores for windows
+desktop.ini
+/include/espeak/
+/include/videoinput.h
+/include/x264.h
+/include/ffmpeg/
+/include/SDL/
+/lib-w32/
+/bin/*.exe
+/bin/*.dll
+/bin/*.bat
+/bin/std*.txt
+
+# Ignores for linux/os x
+/lib-linux/
+/lib-osx/
+/bin/cli
+/bin/srv
+
+#specific ignores
+.cproject
+.project
+arduino/KiwiRay/.cproject
+arduino/KiwiRay/.project
+arduino/KiwiRay/arduino
+bin/*.local

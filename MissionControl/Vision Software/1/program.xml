@@ -1,0 +1,1477 @@
+<!-- Saved on Monday May 26 2014 16:21:27 -->
+<!-- Storage version 1 -->
+<storage
+	storage_format="1"
+	date="04:21 pm  -  Mon May 26 2014"
+	version="1.3.1.1315">
+<boa_info>
+<system>
+<hardware
+	wince_ram="total 191 MB, ramdisk 16 MB"
+	system_memory="total 191 MB, available 147 MB"
+	sensor_info="1280 x 960, 24 bpp"
+	digital_io="1 inputs, 2 outputs"/>
+<software
+	fw="version 1.3.1.1315, May 23 2014 01:44:47"
+	os="version 6.0.0, 03/07/13  09:46p"
+	server="192.168.0.50:4500"/>
+</system>
+<program
+	image_size_uom="bytes"
+	total_image_count="2">
+<images
+	total_image_size="7372800"/>
+</program>
+</boa_info>
+<tolerances/>
+<system_mgr>
+<gui_update_effort
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="50"/>
+</gui_update_effort>
+<report_template
+	type="258"
+	flags="8392723">
+<value
+	type="7"
+	s="&lt;!-- BOA web report formating page.  --&gt;
+&lt;!-- Use it to design web report accessible on the device&apos;s web server --&gt;
+&lt;!-- Use &lt;sherlock acqA.image/&gt; to display sherlock&apos;s image --&gt;
+&lt;!-- Use &lt;sherlock &quot;property name&quot;/&gt; to display values --&gt;
+
+&lt;img src=&lt;sherlock acqA.image/&gt; width=160 height=120 /&gt;
+&lt;table&gt;
+ &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Name&lt;/th&gt; &lt;th&gt;Value&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt;
+  &lt;tbody&gt;
+   &lt;tr&gt;&lt;td&gt;Program running&lt;/td&gt;&lt;td&gt;&lt;sherlock System.running/&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;Run count&lt;/td&gt;&lt;td&gt;&lt;sherlock System.run_count/&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;Last run time&lt;/td&gt;&lt;td&gt;&lt;sherlock System.run_time/&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;Runs per seconds&lt;/td&gt;&lt;td&gt;&lt;sherlock System.runs_per_sec/&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;Program pass&lt;/td&gt;&lt;td&gt;&lt;sherlock System.pass/&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+"/>
+</report_template>
+</system_mgr>
+<values_order
+	type="7"
+	size="0"/>
+<variables/>
+<timers/>
+<cameras>
+<camera>
+<partial_scan
+	type="257"
+	flags="142606483">
+<value
+	type="2"
+	i="0"/>
+</partial_scan>
+<rotate
+	type="257"
+	flags="142606483">
+<value
+	type="2"
+	i="0"/>
+</rotate>
+<trigger
+	type="257"
+	flags="142606483">
+<value
+	type="2"
+	i="0"/>
+</trigger>
+<trigger_freq
+	type="257"
+	flags="142606355">
+<value
+	type="4"
+	d="10"/>
+</trigger_freq>
+<trigger_delay
+	type="257"
+	flags="8388627">
+<value
+	type="4"
+	d="0"/>
+</trigger_delay>
+<buffer_count
+	type="257"
+	flags="142606355">
+<value
+	type="2"
+	i="2"/>
+</buffer_count>
+<trigger_debounce
+	type="257"
+	flags="142606355">
+<value
+	type="4"
+	d="1"/>
+</trigger_debounce>
+<trigger_polarity
+	type="257"
+	flags="142606483">
+<value
+	type="2"
+	i="1"/>
+</trigger_polarity>
+<exposure
+	type="257"
+	flags="8388627">
+<value
+	type="2"
+	i="8000"/>
+</exposure>
+<brightness
+	type="257"
+	flags="8388627">
+<value
+	type="4"
+	d="18.9638"/>
+</brightness>
+<contrast
+	type="257"
+	flags="8388627">
+<value
+	type="4"
+	d="0"/>
+</contrast>
+<strobe_polarity
+	type="257"
+	flags="142606483">
+<value
+	type="2"
+	i="0"/>
+</strobe_polarity>
+<strobe_delay
+	type="257"
+	flags="8388627">
+<value
+	type="2"
+	i="63"/>
+</strobe_delay>
+<strobe_duration
+	type="257"
+	flags="8388627">
+<value
+	type="2"
+	i="1000"/>
+</strobe_duration>
+<strobe_enable
+	type="256"
+	flags="8388627">
+<value
+	type="1"
+	b="1"/>
+</strobe_enable>
+<timeout
+	type="257"
+	flags="8388627">
+<value
+	type="4"
+	d="-1"/>
+</timeout>
+</camera>
+</cameras>
+<values_order
+	type="7"
+	size="0"/>
+<calibrations/>
+<values_order
+	type="7"
+	size="0"/>
+<alignments/>
+<serialPorts>
+<port>
+<portData>
+<parent_sys_plugin
+	type="264"
+	flags="0">
+<value
+	type="6"
+	ui64="3922496"/>
+</parent_sys_plugin>
+<baud_rate
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="7"/>
+</baud_rate>
+<data_bits
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="3"/>
+</data_bits>
+<parity
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="0"/>
+</parity>
+<stop_bits
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="0"/>
+</stop_bits>
+<flow_control
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="0"/>
+</flow_control>
+<name
+	type="258"
+	flags="2">
+<value
+	type="7"
+	s="COM3"/>
+</name>
+<handle
+	type="277"
+	flags="2684373003">
+<value
+	type="6"
+	ui64="7755808"/>
+</handle>
+</portData>
+</port>
+</serialPorts>
+<values_order
+	type="7"
+	size="0"/>
+<tcpConnections>
+<tcpClient>
+<connData>
+<parent_sys_plugin
+	type="264"
+	flags="0">
+<value
+	type="6"
+	ui64="3924448"/>
+</parent_sys_plugin>
+<isServer
+	type="256"
+	flags="2">
+<value
+	type="1"
+	b="0"/>
+</isServer>
+<ipv4_address
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="192.168.1.10"/>
+</ipv4_address>
+<port
+	type="257"
+	flags="8388627">
+<value
+	type="2"
+	i="1024"/>
+</port>
+<name
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="ServerTCPIP"/>
+</name>
+<handle
+	type="274"
+	flags="2684373003">
+<value
+	type="6"
+	ui64="1345024"/>
+</handle>
+</connData>
+</tcpClient>
+</tcpConnections>
+<values_order
+	type="7"
+	size="0"/>
+<modbusConnections/>
+<values_order
+	type="7"
+	size="0"/>
+<ftpConnections>
+<connData>
+<parent_sys_plugin
+	type="264"
+	flags="0">
+<value
+	type="6"
+	ui64="7745536"/>
+</parent_sys_plugin>
+<name
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="Server"/>
+</name>
+<address
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="192.168.1.10"/>
+</address>
+<port
+	type="257"
+	flags="8388627">
+<value
+	type="2"
+	i="21"/>
+</port>
+<login
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="roboops"/>
+</login>
+<password
+	type="258"
+	flags="8912915">
+<value
+	type="7"
+	s="roboops2014"/>
+</password>
+<handle
+	type="280"
+	flags="2684373003">
+<value
+	type="6"
+	ui64="1354272"/>
+</handle>
+</connData>
+</ftpConnections>
+<values_order
+	type="7"
+	size="0"/>
+<clConnections/>
+<values_order
+	type="7"
+	size="0"/>
+<gefanucConnections/>
+<values_order
+	type="7"
+	size="0"/>
+<netShares/>
+<values_order
+	type="7"
+	size="0"/>
+<colorDatabases/>
+<program>
+<subroutine>
+<instructions>
+<instr
+	id="1334752"
+	pluginId="ipeSystemSub">
+<name
+	flags="8388626">
+<value
+	type="7"
+	s="main"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="6"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="14159.7"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+</instr>
+<instr
+	id="1333472"
+	pluginId="recvLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="ReceiveLine"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="62244.6"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s="Receives message via TCPIP to compare"/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<ascii_term_char
+	flags="8388663">
+<value
+	type="2"
+	i="46"/>
+</ascii_term_char>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="-1"/>
+</timeout>
+<max_chars_to_receive
+	flags="8388663">
+<value
+	type="2"
+	i="16"/>
+</max_chars_to_receive>
+<bytes_recv
+	flags="606076939">
+<value
+	type="3"
+	ui="0"/>
+</bytes_recv>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</result>
+<incomplete
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</incomplete>
+<text
+	flags="606076939">
+<value
+	type="7"
+	s=""/>
+</text>
+</instr>
+<instr
+	id="35390464"
+	pluginId="ipeSystemIf">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="ifNameRequested"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="2"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.518799"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s="If the message &quot;name.&quot; is sent, respond with the camera name"/>
+</comment>
+<code
+	flags="8396839">
+<value
+	type="7"
+	s="VEngine.ReceiveLine.text==&quot;name.&quot;"/>
+</code>
+</instr>
+<instr
+	id="35422880"
+	pluginId="sendLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="rightCamSendName"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.701904"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<text
+	flags="8388663">
+<value
+	type="7"
+	s="right\n"/>
+</text>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="5000"/>
+</timeout>
+<bytes_sent
+	flags="606076939">
+<value
+	type="3"
+	ui="6"/>
+</bytes_sent>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</result>
+</instr>
+<instr
+	id="11712992"
+	pluginId="ipeAcqImgCam">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="AcquireImage"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="0"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="14.8621"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s="Image acquired from camera"/>
+</comment>
+<cam
+	flags="142606391">
+<value
+	type="7"
+	s="cam0"/>
+</cam>
+<image
+	flags="2684370955">
+<value
+	type="6"
+	ui64="11713472"/>
+</image>
+<arrival_time
+	flags="606076939">
+<value
+	type="4"
+	d="2.89121e+09"/>
+</arrival_time>
+<image_number
+	flags="606076939">
+<value
+	type="2"
+	i="49"/>
+</image_number>
+<status
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</status>
+</instr>
+<instr
+	id="11715552"
+	pluginId="ipeSystemIfElse">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="SendImage"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="0"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="220.673"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s="If message &quot;send.&quot; was received, receive the name of the image to be saved via FTP"/>
+</comment>
+<code
+	flags="8396839">
+<value
+	type="7"
+	s="VEngine.ReceiveLine.text==&quot;send.&quot;"/>
+</code>
+</instr>
+<instr
+	id="11720448"
+	pluginId="ipeSystemIfElseTrue">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="IfTrue"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="49166"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="219.879"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+</instr>
+<instr
+	id="11724352"
+	pluginId="recvLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="nameImage"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.823975"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<ascii_term_char
+	flags="8388663">
+<value
+	type="2"
+	i="46"/>
+</ascii_term_char>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="-1"/>
+</timeout>
+<max_chars_to_receive
+	flags="8388663">
+<value
+	type="2"
+	i="20"/>
+</max_chars_to_receive>
+<bytes_recv
+	flags="606076939">
+<value
+	type="3"
+	ui="5"/>
+</bytes_recv>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</result>
+<incomplete
+	flags="606076939">
+<value
+	type="1"
+	b="0"/>
+</incomplete>
+<text
+	flags="606076939">
+<value
+	type="7"
+	s="name."/>
+</text>
+</instr>
+<instr
+	id="11726080"
+	pluginId="ipeFtpLogImage">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="LogImage"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="0"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="217.56"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="Server.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<image
+	flags="2155888679"
+	supplier="AcquireImage.image">
+<value
+	type="6"
+	ui64="0"/>
+</image>
+<dir
+	flags="8388659">
+<value
+	type="7"
+	s=""/>
+</dir>
+<start_index
+	flags="8388659">
+<value
+	type="2"
+	i="0"/>
+</start_index>
+<end_index
+	flags="8388659">
+<value
+	type="2"
+	i="0"/>
+</end_index>
+<name_base
+	flags="8388659"
+	supplier="nameImage.text">
+<value
+	type="7"
+	s="image"/>
+</name_base>
+<image_format
+	flags="8388787">
+<value
+	type="2"
+	i="0"/>
+</image_format>
+<compression_value
+	flags="8388659">
+<value
+	type="2"
+	i="-1"/>
+</compression_value>
+<name_digits
+	flags="8388659">
+<value
+	type="2"
+	i="0"/>
+</name_digits>
+<conn_timeout
+	flags="8388659">
+<value
+	type="2"
+	i="1000"/>
+</conn_timeout>
+<current_index
+	flags="606076939"
+	receiver="LogImage.start_index">
+<value
+	type="2"
+	i="0"/>
+</current_index>
+</instr>
+<instr
+	id="11712416"
+	pluginId="sendLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="SendLine"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="1.15967"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<text
+	flags="8388663">
+<value
+	type="7"
+	s="Sent Image\n"/>
+</text>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="2000"/>
+</timeout>
+<bytes_sent
+	flags="606076939">
+<value
+	type="3"
+	ui="11"/>
+</bytes_sent>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</result>
+</instr>
+<instr
+	id="13162432"
+	pluginId="ipeSystemIfElseFalse">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="IfFalse"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="49166"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.0305176"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+</instr>
+<instr
+	id="13125440"
+	pluginId="sendLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="SendNo"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.976562"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<text
+	flags="8388663">
+<value
+	type="7"
+	s="No\n"/>
+</text>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="2000"/>
+</timeout>
+<bytes_sent
+	flags="606076939">
+<value
+	type="3"
+	ui="3"/>
+</bytes_sent>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</result>
+</instr>
+<instr
+	id="13138432"
+	pluginId="ipeSystemImgWnd">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="image_windowA"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="6658"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="11.7493"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s="Image shown via image window, can be taken out after program runs on rover"/>
+</comment>
+<image_update
+	flags="8388787">
+<value
+	type="2"
+	i="1"/>
+</image_update>
+<clear_when_not_updating
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</clear_when_not_updating>
+<show_overlay_graphics
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</show_overlay_graphics>
+<output_graphics
+	flags="41943091">
+<value
+	type="2"
+	i="15"/>
+</output_graphics>
+<suppress_graphics
+	flags="2147483648">
+<value
+	type="1"
+	b="0"/>
+</suppress_graphics>
+<image
+	flags="2156150823"
+	supplier="AcquireImage.image">
+<value
+	type="6"
+	ui64="0"/>
+</image>
+<calibration
+	flags="35">
+<value
+	type="6"
+	ui64="0"/>
+</calibration>
+<overlay_data
+	flags="0">
+<value
+	type="17"
+	size="0"
+	buf=""/>
+</overlay_data>
+<window_position
+	flags="0">
+<value
+	type="17"
+	size="95"
+	buf="AAAAAgAAAC4B2dDLAAEAAAAAAAD/////AAACogAAAnwAAAAA/////wAAAqIAAAJ8AAAAAAAAP/AAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAD/////AAACogAAAnw="/>
+</window_position>
+<color_show_mono_rois
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</color_show_mono_rois>
+</instr>
+</instructions>
+<structure
+	root="1334752">
+<branch
+	parent="1334752"
+	child0="1333472"
+	child1="35390464"
+	child2="11712992"
+	child3="11715552"
+	child4="13138432"/>
+<branch
+	parent="35390464"
+	child0="35422880"/>
+<branch
+	parent="11715552"
+	child0="11720448"
+	child1="13162432"/>
+<branch
+	parent="11720448"
+	child0="11724352"
+	child1="11726080"
+	child2="11712416"/>
+<branch
+	parent="13162432"
+	child0="13125440"/>
+</structure>
+</subroutine>
+<subroutine>
+<instructions>
+<instr
+	id="23058432"
+	pluginId="ipeSystemSub">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="onPass"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="8194"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.274658"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<event_name
+	type="258"
+	flags="0">
+<value
+	type="7"
+	s="pass"/>
+</event_name>
+</instr>
+</instructions>
+<structure
+	root="23058432"/>
+</subroutine>
+<subroutine>
+<instructions>
+<instr
+	id="23031360"
+	pluginId="ipeSystemSub">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="onFail"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="8194"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="20959.9"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<event_name
+	type="258"
+	flags="0">
+<value
+	type="7"
+	s="fail"/>
+</event_name>
+</instr>
+<instr
+	id="12799840"
+	pluginId="sendLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="tcpip_send_lineB"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="20959.6"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<text
+	flags="8388663">
+<value
+	type="7"
+	s="NOPE"/>
+</text>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="2000"/>
+</timeout>
+<bytes_sent
+	flags="606076939">
+<value
+	type="3"
+	ui="0"/>
+</bytes_sent>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="0"/>
+</result>
+</instr>
+</instructions>
+<structure
+	root="23031360">
+<branch
+	parent="23031360"
+	child0="12799840"/>
+</structure>
+</subroutine>
+</program>
+<extra_program_data
+	vm="AAAACAAAAAADAAAAEgB3AGEAdABjAGgAXwBwAG8AcwAAAAgAAAAAAAAAACgAcAByAG8AZwByAGEAbQBfAHQAYQBiAF8AZwBlAG8AbQBlAHQAcgB5AAAACwAAAAADAAAACABtAGEAaQBuAAAADABvAG4AUABhAHMAcwAAAAwAbwBuAEYAYQBpAGwAAAAUAG0AYQByAGsAZQByAF8AcABvAHMAAAAIAAAAAAA="/>
+</storage>

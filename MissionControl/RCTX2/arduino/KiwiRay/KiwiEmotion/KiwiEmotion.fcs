@@ -1,0 +1,17 @@
+
+CC5X Version 3.4E, Copyright (c) B Knudsen Data.
+* FUNCTION CALL STRUCTURE
+
+F: soft_i2c               :#0 
+
+F: setup                  :#1 
+
+F: main                   :#0 
+    setup                 : #1 
+
+
+ L1  soft_i2c
+
+ L0  main
+ L1    setup
+

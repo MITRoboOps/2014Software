@@ -1,0 +1,11 @@
+CC5X Version 3.4E, Copyright (c) B Knudsen Data, Norway 1992-2010
+ --> FREE edition, 8-16 bit int, 24 bit float, 32k code, reduced optim.
+KiwiEmotion.c:
+ 21. Nov 2011  18:13
+
+#include <int16cxx.h>
+                     ^------
+Error[1] C:\Projects\KiwiEmotion.c 1 : Unable to open file '16F1825.h'
+ (The file name or path can be wrong (Also consider option -cif))
+
+Error options: -ew: no warning details  -ed: no error details  -eL: list details

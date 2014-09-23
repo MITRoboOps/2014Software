@@ -1,0 +1,106 @@
+﻿<Window x:Class="spotterGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="1006.625" Width="2100">
+
+    <Grid IsHitTestVisible="True" IsManipulationEnabled="True" ShowGridLines="True" UseLayoutRounding="False" Margin="0,0,2,-2" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition MinWidth="204" Width="348*"/>
+            <ColumnDefinition Width="348*"/>
+            <ColumnDefinition Width="348*"/>
+            <ColumnDefinition Width="348*"/>
+            <ColumnDefinition Width="348*"/>
+            <ColumnDefinition Width="348*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.9*"/>
+            <RowDefinition Height="0.1*"/>
+        </Grid.RowDefinitions>
+        <Grid.Background>
+            <ImageBrush Opacity="0.9">
+                <ImageBrush.RelativeTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </ImageBrush.RelativeTransform>
+            </ImageBrush>
+        </Grid.Background>
+
+
+        <Grid Margin="67,37,80,51" Grid.Row="1">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="10*"/>
+                    <RowDefinition Height="37*"/>
+                </Grid.RowDefinitions>
+            </Grid>
+        </Grid>
+        <Grid HorizontalAlignment="Left" VerticalAlignment="Top" Width="566" Grid.Column="1" Margin="19,10,0,0" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <WrapPanel Grid.Column="4" Grid.Row="1" FlowDirection="RightToLeft" Height="138" Grid.ColumnSpan="2" Margin="10,0,-9,-40">
+            <WrapPanel Height="36" Orientation="Horizontal">
+                <Button Content="Show a Picture&#xA;" Width="120" HorizontalContentAlignment="Center" HorizontalAlignment="Center" Click="showButton_Click"/>
+                <Button Content="Request Image" Click="RequestPhoto_R" Width="120" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+                <Button Content="Connect" Name="backup" Click="Send_Name" Width="120" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+                <Button Name="startStopButton" Content="Click for Recent" Click="StartOrStop" Width="120" HorizontalContentAlignment="Center" HorizontalAlignment="Center"/>
+                <Slider Width="221" Name="freqSlider" ValueChanged="Slider_ValueChanged"/>
+
+            </WrapPanel>
+            <Label/>
+            <Label Content="Label"/>
+        </WrapPanel>
+        <Image Grid.ColumnSpan="2" Name="left_image"/>
+        <CheckBox Name="continous_request" Content="Continous Request" Checked="CheckBox_Checked" Height="32" VerticalAlignment="Bottom" Margin="10,0,28,31" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+
+        <CheckBox Name="tab" Content="Not continuous" Checked="not_continous" Height="32" VerticalAlignment="Bottom" Margin="10,0,28,0" Grid.Row="1" RenderTransformOrigin="0.5,0.5">
+            <CheckBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+
+                    <TranslateTransform/>
+                </TransformGroup>
+            </CheckBox.RenderTransform>
+        </CheckBox>
+        <Grid Grid.Column="2" Margin="192,257,56,523">
+            <Grid Margin="-190,-254,-403,-524">
+                <Image x:Name="middle_image"/>
+
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Column="5" Margin="213,247,35,533"/>
+        <Grid Grid.Column="6" Margin="130,51,50,6" Grid.Row="1">
+            <Label x:Name="name_time_r" Content="Right Name"/>
+
+        </Grid>
+        <Grid Grid.ColumnSpan="2" Grid.Column="4" Margin="0,-13,0,0">
+            <Grid Margin="21,-56,91,40">
+                <Grid Margin="0,60,0,-60">
+                    <Image x:Name="myImage1" Margin="-15,76,-90,-40" />
+                   
+
+                </Grid>
+
+            </Grid>
+
+        </Grid>
+        <Grid Grid.Column="3" Margin="184,51,127,21" Grid.Row="1">
+            <Label x:Name="name_time_f" Content="Front Name" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+
+        </Grid>
+        <Label x:Name="name_time_l" Content="Left Name" Grid.Column="1" HorizontalAlignment="Left" Margin="194,66,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

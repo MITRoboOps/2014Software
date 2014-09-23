@@ -1,0 +1,12741 @@
+<!-- Saved on Sunday June 1 2014 20:33:26 -->
+<!-- Storage version 1 -->
+<storage
+	storage_format="1"
+	date="08:33 pm  -  Sun June 1 2014"
+	version="1.3.1.1315">
+<boa_info>
+<system>
+<hardware
+	wince_ram="total 191 MB, ramdisk 16 MB"
+	system_memory="total 191 MB, available 126 MB"
+	sensor_info="1280 x 960, 24 bpp"
+	digital_io="1 inputs, 2 outputs"/>
+<software
+	fw="version 1.3.1.1315, May 23 2014 01:44:47"
+	os="version 6.0.0, 03/07/13  09:46p"
+	server="192.168.0.50:4500"/>
+</system>
+<program
+	image_size_uom="bytes"
+	total_image_count="8">
+<images
+	total_image_size="17203202"/>
+</program>
+</boa_info>
+<tolerances/>
+<system_mgr>
+<gui_update_effort
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="50"/>
+</gui_update_effort>
+<report_template
+	type="258"
+	flags="8392723">
+<value
+	type="7"
+	s="&lt;!-- BOA web report formating page.  --&gt;
+&lt;!-- Use it to design web report accessible on the device&apos;s web server --&gt;
+&lt;!-- Use &lt;sherlock acqA.image/&gt; to display sherlock&apos;s image --&gt;
+&lt;!-- Use &lt;sherlock &quot;property name&quot;/&gt; to display values --&gt;
+
+&lt;img src=&lt;sherlock acqA.image/&gt; width=160 height=120 /&gt;
+&lt;table&gt;
+ &lt;thead&gt; &lt;tr&gt; &lt;th&gt;Name&lt;/th&gt; &lt;th&gt;Value&lt;/th&gt; &lt;/tr&gt; &lt;/thead&gt;
+  &lt;tbody&gt;
+   &lt;tr&gt;&lt;td&gt;Program running&lt;/td&gt;&lt;td&gt;&lt;sherlock System.running/&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;Run count&lt;/td&gt;&lt;td&gt;&lt;sherlock System.run_count/&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;Last run time&lt;/td&gt;&lt;td&gt;&lt;sherlock System.run_time/&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;Runs per seconds&lt;/td&gt;&lt;td&gt;&lt;sherlock System.runs_per_sec/&gt;&lt;/td&gt;&lt;/tr&gt;
+   &lt;tr&gt;&lt;td&gt;Program pass&lt;/td&gt;&lt;td&gt;&lt;sherlock System.pass/&gt;&lt;/td&gt;&lt;/tr&gt;
+ &lt;/tbody&gt;
+&lt;/table&gt;
+"/>
+</report_template>
+</system_mgr>
+<values_order
+	type="7"
+	size="0"/>
+<variables/>
+<timers/>
+<cameras>
+<camera>
+<partial_scan
+	type="257"
+	flags="142606483">
+<value
+	type="2"
+	i="0"/>
+</partial_scan>
+<rotate
+	type="257"
+	flags="142606483">
+<value
+	type="2"
+	i="0"/>
+</rotate>
+<trigger
+	type="257"
+	flags="142606483">
+<value
+	type="2"
+	i="2"/>
+</trigger>
+<trigger_freq
+	type="257"
+	flags="142606355">
+<value
+	type="4"
+	d="10"/>
+</trigger_freq>
+<trigger_delay
+	type="257"
+	flags="8388627">
+<value
+	type="4"
+	d="0"/>
+</trigger_delay>
+<buffer_count
+	type="257"
+	flags="142606355">
+<value
+	type="2"
+	i="2"/>
+</buffer_count>
+<trigger_debounce
+	type="257"
+	flags="142606355">
+<value
+	type="4"
+	d="1"/>
+</trigger_debounce>
+<trigger_polarity
+	type="257"
+	flags="142606483">
+<value
+	type="2"
+	i="1"/>
+</trigger_polarity>
+<exposure
+	type="257"
+	flags="8388627">
+<value
+	type="2"
+	i="40000"/>
+</exposure>
+<brightness
+	type="257"
+	flags="8388627">
+<value
+	type="4"
+	d="13.9785"/>
+</brightness>
+<contrast
+	type="257"
+	flags="8388627">
+<value
+	type="4"
+	d="0"/>
+</contrast>
+<strobe_polarity
+	type="257"
+	flags="142606483">
+<value
+	type="2"
+	i="0"/>
+</strobe_polarity>
+<strobe_delay
+	type="257"
+	flags="8388627">
+<value
+	type="2"
+	i="63"/>
+</strobe_delay>
+<strobe_duration
+	type="257"
+	flags="8388627">
+<value
+	type="2"
+	i="1000"/>
+</strobe_duration>
+<strobe_enable
+	type="256"
+	flags="8388627">
+<value
+	type="1"
+	b="1"/>
+</strobe_enable>
+<timeout
+	type="257"
+	flags="8388627">
+<value
+	type="4"
+	d="-1"/>
+</timeout>
+</camera>
+</cameras>
+<values_order
+	type="7"
+	size="0"/>
+<calibrations/>
+<values_order
+	type="7"
+	size="0"/>
+<alignments/>
+<serialPorts>
+<port>
+<portData>
+<parent_sys_plugin
+	type="264"
+	flags="0">
+<value
+	type="6"
+	ui64="3922560"/>
+</parent_sys_plugin>
+<baud_rate
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="7"/>
+</baud_rate>
+<data_bits
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="3"/>
+</data_bits>
+<parity
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="0"/>
+</parity>
+<stop_bits
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="0"/>
+</stop_bits>
+<flow_control
+	type="257"
+	flags="8388755">
+<value
+	type="2"
+	i="0"/>
+</flow_control>
+<name
+	type="258"
+	flags="2">
+<value
+	type="7"
+	s="COM3"/>
+</name>
+<handle
+	type="277"
+	flags="2684373003">
+<value
+	type="6"
+	ui64="7755808"/>
+</handle>
+</portData>
+</port>
+</serialPorts>
+<values_order
+	type="7"
+	size="0"/>
+<tcpConnections>
+<tcpClient>
+<connData>
+<parent_sys_plugin
+	type="264"
+	flags="0">
+<value
+	type="6"
+	ui64="3924512"/>
+</parent_sys_plugin>
+<isServer
+	type="256"
+	flags="2">
+<value
+	type="1"
+	b="0"/>
+</isServer>
+<ipv4_address
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="192.168.0.101"/>
+</ipv4_address>
+<port
+	type="257"
+	flags="8388627">
+<value
+	type="2"
+	i="1024"/>
+</port>
+<name
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="ServerTCPIP"/>
+</name>
+<handle
+	type="274"
+	flags="2684373003">
+<value
+	type="6"
+	ui64="3893376"/>
+</handle>
+</connData>
+</tcpClient>
+</tcpConnections>
+<values_order
+	type="7"
+	size="0"/>
+<modbusConnections/>
+<values_order
+	type="7"
+	size="0"/>
+<ftpConnections>
+<connData>
+<parent_sys_plugin
+	type="264"
+	flags="0">
+<value
+	type="6"
+	ui64="7745536"/>
+</parent_sys_plugin>
+<name
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="Server"/>
+</name>
+<address
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="192.168.0.101"/>
+</address>
+<port
+	type="257"
+	flags="8388627">
+<value
+	type="2"
+	i="21"/>
+</port>
+<login
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="test"/>
+</login>
+<password
+	type="258"
+	flags="8912915">
+<value
+	type="7"
+	s="test"/>
+</password>
+<handle
+	type="280"
+	flags="2684373003">
+<value
+	type="6"
+	ui64="7757504"/>
+</handle>
+</connData>
+</ftpConnections>
+<values_order
+	type="7"
+	size="0"/>
+<clConnections/>
+<values_order
+	type="7"
+	size="0"/>
+<gefanucConnections/>
+<values_order
+	type="7"
+	size="0"/>
+<netShares/>
+<values_order
+	type="7"
+	size="2"
+	e0="colorsIndoors"
+	e1="trained_colorsA"/>
+<colorDatabases>
+<database>
+<parent_sys_plugin
+	type="264"
+	flags="0">
+<value
+	type="6"
+	ui64="7752768"/>
+</parent_sys_plugin>
+<pluginViewId
+	type="258"
+	flags="0">
+<value
+	type="7"
+	s="ipeColorDatabaseView"/>
+</pluginViewId>
+<name
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="colorsIndoors"/>
+</name>
+<handle
+	type="282"
+	flags="2684373003">
+<value
+	type="6"
+	ui64="11715200"/>
+</handle>
+<color_classifier
+	type="0"
+	flags="2147483648">
+<value
+	type="6"
+	ui64="11725760"/>
+</color_classifier>
+</database>
+<cc>
+<color
+	name="yellow"
+	r="255"
+	g="252"
+	b="70"/>
+<color
+	name="yellow"
+	r="250"
+	g="238"
+	b="56"/>
+<color
+	name="yellow"
+	r="246"
+	g="255"
+	b="52"/>
+<color
+	name="yellow"
+	r="230"
+	g="217"
+	b="49"/>
+<color
+	name="yellow"
+	r="214"
+	g="206"
+	b="48"/>
+<color
+	name="yellow"
+	r="204"
+	g="192"
+	b="48"/>
+<color
+	name="yellow"
+	r="193"
+	g="178"
+	b="46"/>
+<color
+	name="yellow"
+	r="185"
+	g="176"
+	b="44"/>
+<color
+	name="yellow"
+	r="177"
+	g="155"
+	b="44"/>
+<color
+	name="yellow"
+	r="169"
+	g="146"
+	b="44"/>
+<color
+	name="yellow"
+	r="255"
+	g="242"
+	b="68"/>
+<color
+	name="yellow"
+	r="255"
+	g="235"
+	b="62"/>
+<color
+	name="yellow"
+	r="255"
+	g="217"
+	b="56"/>
+<color
+	name="yellow"
+	r="255"
+	g="204"
+	b="51"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="90"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="99"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="97"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="95"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="88"/>
+<color
+	name="yellow"
+	r="255"
+	g="242"
+	b="59"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="83"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="77"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="65"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="73"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="75"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="78"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="81"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="84"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="63"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="67"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="69"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="70"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="60"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="59"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="57"/>
+<color
+	name="yellow"
+	r="255"
+	g="251"
+	b="43"/>
+<color
+	name="yellow"
+	r="250"
+	g="243"
+	b="41"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="55"/>
+<color
+	name="yellow"
+	r="255"
+	g="245"
+	b="41"/>
+<color
+	name="yellow"
+	r="245"
+	g="227"
+	b="39"/>
+<color
+	name="yellow"
+	r="255"
+	g="249"
+	b="49"/>
+<color
+	name="yellow"
+	r="255"
+	g="249"
+	b="43"/>
+<color
+	name="yellow"
+	r="255"
+	g="249"
+	b="40"/>
+<color
+	name="yellow"
+	r="246"
+	g="215"
+	b="37"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="46"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="50"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="53"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="49"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="45"/>
+<color
+	name="yellow"
+	r="255"
+	g="253"
+	b="42"/>
+<color
+	name="yellow"
+	r="255"
+	g="255"
+	b="42"/>
+<color
+	name="yellow"
+	r="255"
+	g="243"
+	b="42"/>
+<color
+	name="yellow"
+	r="255"
+	g="231"
+	b="42"/>
+<color
+	name="yellow"
+	r="255"
+	g="231"
+	b="40"/>
+<color
+	name="yellow"
+	r="255"
+	g="237"
+	b="39"/>
+<color
+	name="yellow"
+	r="255"
+	g="222"
+	b="36"/>
+<color
+	name="yellow"
+	r="246"
+	g="196"
+	b="34"/>
+<color
+	name="orange"
+	r="246"
+	g="127"
+	b="24"/>
+<color
+	name="orange"
+	r="237"
+	g="116"
+	b="22"/>
+<color
+	name="orange"
+	r="225"
+	g="104"
+	b="20"/>
+<color
+	name="orange"
+	r="213"
+	g="106"
+	b="21"/>
+<color
+	name="orange"
+	r="212"
+	g="103"
+	b="22"/>
+<color
+	name="orange"
+	r="211"
+	g="105"
+	b="21"/>
+<color
+	name="orange"
+	r="208"
+	g="102"
+	b="21"/>
+<color
+	name="orange"
+	r="206"
+	g="108"
+	b="23"/>
+<color
+	name="orange"
+	r="218"
+	g="111"
+	b="26"/>
+<color
+	name="orange"
+	r="231"
+	g="124"
+	b="29"/>
+<color
+	name="orange"
+	r="228"
+	g="111"
+	b="23"/>
+<color
+	name="orange"
+	r="227"
+	g="116"
+	b="21"/>
+<color
+	name="orange"
+	r="221"
+	g="104"
+	b="19"/>
+<color
+	name="orange"
+	r="217"
+	g="102"
+	b="20"/>
+<color
+	name="orange"
+	r="218"
+	g="105"
+	b="18"/>
+<color
+	name="orange"
+	r="215"
+	g="101"
+	b="16"/>
+<color
+	name="orange"
+	r="211"
+	g="102"
+	b="18"/>
+<color
+	name="orange"
+	r="219"
+	g="106"
+	b="20"/>
+<color
+	name="orange"
+	r="226"
+	g="110"
+	b="23"/>
+<color
+	name="orange"
+	r="211"
+	g="97"
+	b="20"/>
+<color
+	name="orange"
+	r="222"
+	g="101"
+	b="18"/>
+<color
+	name="orange"
+	r="226"
+	g="101"
+	b="17"/>
+<color
+	name="orange"
+	r="221"
+	g="95"
+	b="17"/>
+<color
+	name="orange"
+	r="217"
+	g="100"
+	b="18"/>
+<color
+	name="orange"
+	r="219"
+	g="101"
+	b="19"/>
+<color
+	name="orange"
+	r="222"
+	g="106"
+	b="20"/>
+<color
+	name="orange"
+	r="208"
+	g="92"
+	b="17"/>
+<color
+	name="orange"
+	r="215"
+	g="95"
+	b="18"/>
+<color
+	name="orange"
+	r="218"
+	g="96"
+	b="19"/>
+<color
+	name="orange"
+	r="223"
+	g="99"
+	b="16"/>
+<color
+	name="orange"
+	r="224"
+	g="103"
+	b="17"/>
+<color
+	name="orange"
+	r="220"
+	g="100"
+	b="19"/>
+<color
+	name="orange"
+	r="216"
+	g="105"
+	b="18"/>
+<color
+	name="orange"
+	r="214"
+	g="102"
+	b="18"/>
+<color
+	name="orange"
+	r="213"
+	g="106"
+	b="18"/>
+<color
+	name="orange"
+	r="205"
+	g="87"
+	b="15"/>
+<color
+	name="orange"
+	r="212"
+	g="92"
+	b="16"/>
+<color
+	name="orange"
+	r="219"
+	g="95"
+	b="18"/>
+<color
+	name="orange"
+	r="226"
+	g="95"
+	b="17"/>
+<color
+	name="orange"
+	r="224"
+	g="95"
+	b="16"/>
+<color
+	name="orange"
+	r="222"
+	g="97"
+	b="17"/>
+<color
+	name="orange"
+	r="218"
+	g="99"
+	b="18"/>
+<color
+	name="orange"
+	r="215"
+	g="100"
+	b="18"/>
+<color
+	name="orange"
+	r="210"
+	g="98"
+	b="18"/>
+<color
+	name="orange"
+	r="205"
+	g="100"
+	b="18"/>
+<color
+	name="orange"
+	r="192"
+	g="87"
+	b="14"/>
+<color
+	name="orange"
+	r="198"
+	g="93"
+	b="15"/>
+<color
+	name="orange"
+	r="204"
+	g="90"
+	b="17"/>
+<color
+	name="orange"
+	r="211"
+	g="91"
+	b="17"/>
+<color
+	name="orange"
+	r="213"
+	g="94"
+	b="17"/>
+<color
+	name="orange"
+	r="208"
+	g="94"
+	b="18"/>
+<color
+	name="orange"
+	r="203"
+	g="98"
+	b="18"/>
+<color
+	name="orange"
+	r="202"
+	g="95"
+	b="18"/>
+<color
+	name="orange"
+	r="201"
+	g="98"
+	b="17"/>
+<color
+	name="orange"
+	r="179"
+	g="83"
+	b="18"/>
+<color
+	name="orange"
+	r="185"
+	g="86"
+	b="18"/>
+<color
+	name="orange"
+	r="189"
+	g="83"
+	b="19"/>
+<color
+	name="orange"
+	r="194"
+	g="87"
+	b="18"/>
+<color
+	name="orange"
+	r="199"
+	g="87"
+	b="18"/>
+<color
+	name="orange"
+	r="205"
+	g="89"
+	b="17"/>
+<color
+	name="orange"
+	r="198"
+	g="87"
+	b="17"/>
+<color
+	name="orange"
+	r="191"
+	g="89"
+	b="17"/>
+<color
+	name="orange"
+	r="194"
+	g="87"
+	b="17"/>
+<color
+	name="orange"
+	r="198"
+	g="91"
+	b="17"/>
+<color
+	name="orange"
+	r="166"
+	g="83"
+	b="22"/>
+<color
+	name="orange"
+	r="171"
+	g="87"
+	b="21"/>
+<color
+	name="orange"
+	r="178"
+	g="88"
+	b="20"/>
+<color
+	name="orange"
+	r="183"
+	g="88"
+	b="19"/>
+<color
+	name="orange"
+	r="188"
+	g="91"
+	b="18"/>
+<color
+	name="orange"
+	r="182"
+	g="85"
+	b="17"/>
+<color
+	name="orange"
+	r="185"
+	g="86"
+	b="17"/>
+<color
+	name="orange"
+	r="188"
+	g="89"
+	b="16"/>
+<color
+	name="orange"
+	r="153"
+	g="80"
+	b="24"/>
+<color
+	name="orange"
+	r="158"
+	g="83"
+	b="24"/>
+<color
+	name="orange"
+	r="160"
+	g="81"
+	b="24"/>
+<color
+	name="orange"
+	r="163"
+	g="85"
+	b="24"/>
+<color
+	name="orange"
+	r="167"
+	g="87"
+	b="25"/>
+<color
+	name="orange"
+	r="172"
+	g="87"
+	b="23"/>
+<color
+	name="orange"
+	r="173"
+	g="83"
+	b="22"/>
+<color
+	name="orange"
+	r="174"
+	g="84"
+	b="21"/>
+<color
+	name="orange"
+	r="176"
+	g="83"
+	b="20"/>
+<color
+	name="orange"
+	r="178"
+	g="84"
+	b="19"/>
+<color
+	name="orange"
+	r="136"
+	g="80"
+	b="27"/>
+<color
+	name="orange"
+	r="143"
+	g="85"
+	b="27"/>
+<color
+	name="orange"
+	r="148"
+	g="82"
+	b="28"/>
+<color
+	name="orange"
+	r="154"
+	g="86"
+	b="29"/>
+<color
+	name="orange"
+	r="158"
+	g="86"
+	b="31"/>
+<color
+	name="orange"
+	r="163"
+	g="90"
+	b="29"/>
+<color
+	name="orange"
+	r="167"
+	g="86"
+	b="27"/>
+<color
+	name="orange"
+	r="171"
+	g="87"
+	b="25"/>
+<color
+	name="orange"
+	r="169"
+	g="83"
+	b="24"/>
+<color
+	name="orange"
+	r="168"
+	g="83"
+	b="22"/>
+<color
+	name="blue"
+	r="66"
+	g="93"
+	b="76"/>
+<color
+	name="blue"
+	r="67"
+	g="97"
+	b="77"/>
+<color
+	name="blue"
+	r="69"
+	g="100"
+	b="79"/>
+<color
+	name="blue"
+	r="72"
+	g="103"
+	b="84"/>
+<color
+	name="blue"
+	r="77"
+	g="107"
+	b="89"/>
+<color
+	name="blue"
+	r="86"
+	g="121"
+	b="90"/>
+<color
+	name="blue"
+	r="90"
+	g="115"
+	b="87"/>
+<color
+	name="blue"
+	r="94"
+	g="118"
+	b="84"/>
+<color
+	name="blue"
+	r="99"
+	g="117"
+	b="85"/>
+<color
+	name="blue"
+	r="103"
+	g="116"
+	b="85"/>
+<color
+	name="blue"
+	r="108"
+	g="114"
+	b="86"/>
+<color
+	name="blue"
+	r="102"
+	g="113"
+	b="86"/>
+<color
+	name="blue"
+	r="97"
+	g="112"
+	b="84"/>
+<color
+	name="blue"
+	r="89"
+	g="113"
+	b="82"/>
+<color
+	name="blue"
+	r="81"
+	g="106"
+	b="80"/>
+<color
+	name="blue"
+	r="71"
+	g="100"
+	b="79"/>
+<color
+	name="blue"
+	r="65"
+	g="91"
+	b="66"/>
+<color
+	name="blue"
+	r="65"
+	g="92"
+	b="71"/>
+<color
+	name="blue"
+	r="67"
+	g="94"
+	b="76"/>
+<color
+	name="blue"
+	r="70"
+	g="96"
+	b="78"/>
+<color
+	name="blue"
+	r="73"
+	g="99"
+	b="81"/>
+<color
+	name="blue"
+	r="77"
+	g="103"
+	b="83"/>
+<color
+	name="blue"
+	r="79"
+	g="109"
+	b="85"/>
+<color
+	name="blue"
+	r="82"
+	g="111"
+	b="88"/>
+<color
+	name="blue"
+	r="86"
+	g="113"
+	b="92"/>
+<color
+	name="blue"
+	r="91"
+	g="119"
+	b="92"/>
+<color
+	name="blue"
+	r="93"
+	g="119"
+	b="92"/>
+<color
+	name="blue"
+	r="96"
+	g="126"
+	b="94"/>
+<color
+	name="blue"
+	r="92"
+	g="122"
+	b="97"/>
+<color
+	name="blue"
+	r="89"
+	g="123"
+	b="91"/>
+<color
+	name="blue"
+	r="86"
+	g="116"
+	b="86"/>
+<color
+	name="blue"
+	r="83"
+	g="105"
+	b="83"/>
+<color
+	name="blue"
+	r="74"
+	g="99"
+	b="81"/>
+<color
+	name="blue"
+	r="64"
+	g="84"
+	b="65"/>
+<color
+	name="blue"
+	r="64"
+	g="88"
+	b="69"/>
+<color
+	name="blue"
+	r="66"
+	g="91"
+	b="73"/>
+<color
+	name="blue"
+	r="70"
+	g="91"
+	b="78"/>
+<color
+	name="blue"
+	r="72"
+	g="98"
+	b="79"/>
+<color
+	name="blue"
+	r="73"
+	g="102"
+	b="81"/>
+<color
+	name="blue"
+	r="75"
+	g="104"
+	b="84"/>
+<color
+	name="blue"
+	r="79"
+	g="106"
+	b="87"/>
+<color
+	name="blue"
+	r="83"
+	g="112"
+	b="90"/>
+<color
+	name="blue"
+	r="83"
+	g="118"
+	b="93"/>
+<color
+	name="blue"
+	r="84"
+	g="121"
+	b="95"/>
+<color
+	name="blue"
+	r="83"
+	g="128"
+	b="97"/>
+<color
+	name="blue"
+	r="82"
+	g="122"
+	b="93"/>
+<color
+	name="blue"
+	r="83"
+	g="124"
+	b="90"/>
+<color
+	name="blue"
+	r="85"
+	g="109"
+	b="85"/>
+<color
+	name="blue"
+	r="78"
+	g="100"
+	b="80"/>
+<color
+	name="blue"
+	r="66"
+	g="86"
+	b="65"/>
+<color
+	name="blue"
+	r="66"
+	g="85"
+	b="67"/>
+<color
+	name="blue"
+	r="65"
+	g="87"
+	b="70"/>
+<color
+	name="blue"
+	r="65"
+	g="89"
+	b="72"/>
+<color
+	name="blue"
+	r="68"
+	g="91"
+	b="75"/>
+<color
+	name="blue"
+	r="72"
+	g="97"
+	b="76"/>
+<color
+	name="blue"
+	r="74"
+	g="98"
+	b="77"/>
+<color
+	name="blue"
+	r="77"
+	g="99"
+	b="80"/>
+<color
+	name="blue"
+	r="78"
+	g="103"
+	b="83"/>
+<color
+	name="blue"
+	r="80"
+	g="108"
+	b="88"/>
+<color
+	name="blue"
+	r="81"
+	g="110"
+	b="94"/>
+<color
+	name="blue"
+	r="83"
+	g="113"
+	b="95"/>
+<color
+	name="blue"
+	r="81"
+	g="114"
+	b="97"/>
+<color
+	name="blue"
+	r="79"
+	g="115"
+	b="95"/>
+<color
+	name="blue"
+	r="82"
+	g="110"
+	b="94"/>
+<color
+	name="blue"
+	r="84"
+	g="108"
+	b="86"/>
+<color
+	name="red"
+	r="219"
+	g="72"
+	b="25"/>
+<color
+	name="red"
+	r="214"
+	g="70"
+	b="23"/>
+<color
+	name="red"
+	r="214"
+	g="61"
+	b="21"/>
+<color
+	name="red"
+	r="214"
+	g="66"
+	b="21"/>
+<color
+	name="red"
+	r="212"
+	g="63"
+	b="21"/>
+<color
+	name="red"
+	r="211"
+	g="65"
+	b="19"/>
+<color
+	name="red"
+	r="208"
+	g="64"
+	b="18"/>
+<color
+	name="red"
+	r="205"
+	g="66"
+	b="18"/>
+<color
+	name="red"
+	r="213"
+	g="64"
+	b="19"/>
+<color
+	name="red"
+	r="230"
+	g="69"
+	b="19"/>
+<color
+	name="red"
+	r="238"
+	g="68"
+	b="19"/>
+<color
+	name="red"
+	r="230"
+	g="73"
+	b="20"/>
+<color
+	name="red"
+	r="224"
+	g="73"
+	b="19"/>
+<color
+	name="red"
+	r="224"
+	g="66"
+	b="18"/>
+<color
+	name="red"
+	r="223"
+	g="66"
+	b="17"/>
+<color
+	name="red"
+	r="216"
+	g="63"
+	b="17"/>
+<color
+	name="red"
+	r="210"
+	g="64"
+	b="17"/>
+<color
+	name="red"
+	r="214"
+	g="64"
+	b="17"/>
+<color
+	name="red"
+	r="218"
+	g="68"
+	b="18"/>
+<color
+	name="red"
+	r="220"
+	g="66"
+	b="19"/>
+<color
+	name="red"
+	r="228"
+	g="66"
+	b="20"/>
+<color
+	name="red"
+	r="234"
+	g="67"
+	b="19"/>
+<color
+	name="red"
+	r="241"
+	g="69"
+	b="18"/>
+<color
+	name="red"
+	r="235"
+	g="69"
+	b="18"/>
+<color
+	name="red"
+	r="234"
+	g="64"
+	b="18"/>
+<color
+	name="red"
+	r="233"
+	g="64"
+	b="18"/>
+<color
+	name="red"
+	r="221"
+	g="59"
+	b="17"/>
+<color
+	name="red"
+	r="209"
+	g="61"
+	b="17"/>
+<color
+	name="red"
+	r="220"
+	g="60"
+	b="17"/>
+<color
+	name="red"
+	r="232"
+	g="66"
+	b="18"/>
+<color
+	name="red"
+	r="222"
+	g="66"
+	b="18"/>
+<color
+	name="red"
+	r="226"
+	g="64"
+	b="18"/>
+<color
+	name="red"
+	r="230"
+	g="70"
+	b="19"/>
+<color
+	name="green"
+	r="57"
+	g="68"
+	b="25"/>
+<color
+	name="green"
+	r="56"
+	g="79"
+	b="29"/>
+<color
+	name="green"
+	r="56"
+	g="74"
+	b="29"/>
+</cc>
+<database>
+<parent_sys_plugin
+	type="264"
+	flags="0">
+<value
+	type="6"
+	ui64="7752768"/>
+</parent_sys_plugin>
+<pluginViewId
+	type="258"
+	flags="0">
+<value
+	type="7"
+	s="ipeColorDatabaseView"/>
+</pluginViewId>
+<name
+	type="258"
+	flags="8388627">
+<value
+	type="7"
+	s="trained_colorsA"/>
+</name>
+<handle
+	type="282"
+	flags="2684373003">
+<value
+	type="6"
+	ui64="15582592"/>
+</handle>
+<color_classifier
+	type="0"
+	flags="2147483648">
+<value
+	type="6"
+	ui64="15583712"/>
+</color_classifier>
+</database>
+<cc>
+<color
+	name="orange"
+	r="140"
+	g="91"
+	b="53"/>
+<color
+	name="orange"
+	r="146"
+	g="96"
+	b="53"/>
+<color
+	name="orange"
+	r="154"
+	g="107"
+	b="55"/>
+<color
+	name="orange"
+	r="153"
+	g="103"
+	b="55"/>
+<color
+	name="orange"
+	r="153"
+	g="104"
+	b="56"/>
+<color
+	name="orange"
+	r="154"
+	g="102"
+	b="55"/>
+<color
+	name="orange"
+	r="156"
+	g="104"
+	b="56"/>
+<color
+	name="orange"
+	r="159"
+	g="103"
+	b="58"/>
+<color
+	name="orange"
+	r="147"
+	g="100"
+	b="51"/>
+<color
+	name="orange"
+	r="144"
+	g="96"
+	b="50"/>
+<color
+	name="orange"
+	r="147"
+	g="100"
+	b="48"/>
+<color
+	name="orange"
+	r="147"
+	g="99"
+	b="47"/>
+<color
+	name="orange"
+	r="152"
+	g="93"
+	b="40"/>
+<color
+	name="orange"
+	r="159"
+	g="104"
+	b="52"/>
+<color
+	name="orange"
+	r="157"
+	g="104"
+	b="51"/>
+<color
+	name="orange"
+	r="143"
+	g="93"
+	b="54"/>
+<color
+	name="orange"
+	r="155"
+	g="97"
+	b="55"/>
+<color
+	name="orange"
+	r="155"
+	g="93"
+	b="54"/>
+<color
+	name="orange"
+	r="153"
+	g="96"
+	b="54"/>
+<color
+	name="orange"
+	r="162"
+	g="103"
+	b="57"/>
+<color
+	name="orange"
+	r="151"
+	g="99"
+	b="52"/>
+<color
+	name="orange"
+	r="144"
+	g="96"
+	b="49"/>
+<color
+	name="orange"
+	r="145"
+	g="95"
+	b="50"/>
+<color
+	name="orange"
+	r="146"
+	g="97"
+	b="50"/>
+<color
+	name="orange"
+	r="146"
+	g="97"
+	b="49"/>
+<color
+	name="orange"
+	r="147"
+	g="99"
+	b="48"/>
+<color
+	name="orange"
+	r="158"
+	g="93"
+	b="45"/>
+<color
+	name="orange"
+	r="156"
+	g="93"
+	b="39"/>
+<color
+	name="orange"
+	r="144"
+	g="94"
+	b="55"/>
+<color
+	name="orange"
+	r="152"
+	g="98"
+	b="61"/>
+<color
+	name="orange"
+	r="155"
+	g="99"
+	b="57"/>
+<color
+	name="orange"
+	r="156"
+	g="102"
+	b="57"/>
+<color
+	name="orange"
+	r="157"
+	g="101"
+	b="60"/>
+<color
+	name="orange"
+	r="155"
+	g="104"
+	b="59"/>
+<color
+	name="orange"
+	r="153"
+	g="102"
+	b="57"/>
+<color
+	name="orange"
+	r="153"
+	g="100"
+	b="57"/>
+<color
+	name="orange"
+	r="158"
+	g="103"
+	b="56"/>
+<color
+	name="orange"
+	r="160"
+	g="106"
+	b="58"/>
+<color
+	name="orange"
+	r="161"
+	g="103"
+	b="60"/>
+<color
+	name="orange"
+	r="161"
+	g="105"
+	b="54"/>
+<color
+	name="orange"
+	r="149"
+	g="97"
+	b="49"/>
+<color
+	name="orange"
+	r="149"
+	g="98"
+	b="50"/>
+<color
+	name="orange"
+	r="148"
+	g="101"
+	b="48"/>
+<color
+	name="orange"
+	r="154"
+	g="96"
+	b="39"/>
+<color
+	name="orange"
+	r="164"
+	g="110"
+	b="54"/>
+<color
+	name="orange"
+	r="146"
+	g="93"
+	b="55"/>
+<color
+	name="orange"
+	r="149"
+	g="97"
+	b="57"/>
+<color
+	name="orange"
+	r="151"
+	g="98"
+	b="60"/>
+<color
+	name="orange"
+	r="153"
+	g="100"
+	b="58"/>
+<color
+	name="orange"
+	r="158"
+	g="100"
+	b="56"/>
+<color
+	name="orange"
+	r="156"
+	g="100"
+	b="58"/>
+<color
+	name="orange"
+	r="159"
+	g="104"
+	b="57"/>
+<color
+	name="orange"
+	r="151"
+	g="100"
+	b="52"/>
+<color
+	name="orange"
+	r="149"
+	g="99"
+	b="49"/>
+<color
+	name="orange"
+	r="154"
+	g="91"
+	b="40"/>
+<color
+	name="orange"
+	r="151"
+	g="95"
+	b="39"/>
+<color
+	name="orange"
+	r="151"
+	g="96"
+	b="39"/>
+<color
+	name="orange"
+	r="152"
+	g="95"
+	b="39"/>
+<color
+	name="orange"
+	r="159"
+	g="92"
+	b="40"/>
+<color
+	name="orange"
+	r="161"
+	g="93"
+	b="40"/>
+<color
+	name="orange"
+	r="163"
+	g="95"
+	b="40"/>
+<color
+	name="orange"
+	r="166"
+	g="119"
+	b="50"/>
+<color
+	name="orange"
+	r="147"
+	g="94"
+	b="55"/>
+<color
+	name="orange"
+	r="149"
+	g="99"
+	b="57"/>
+<color
+	name="orange"
+	r="151"
+	g="98"
+	b="59"/>
+<color
+	name="orange"
+	r="154"
+	g="101"
+	b="58"/>
+<color
+	name="orange"
+	r="154"
+	g="101"
+	b="57"/>
+<color
+	name="orange"
+	r="155"
+	g="104"
+	b="54"/>
+<color
+	name="orange"
+	r="156"
+	g="99"
+	b="56"/>
+<color
+	name="orange"
+	r="156"
+	g="103"
+	b="55"/>
+<color
+	name="orange"
+	r="157"
+	g="101"
+	b="57"/>
+<color
+	name="orange"
+	r="153"
+	g="106"
+	b="51"/>
+<color
+	name="orange"
+	r="153"
+	g="97"
+	b="40"/>
+<color
+	name="orange"
+	r="159"
+	g="96"
+	b="39"/>
+<color
+	name="orange"
+	r="160"
+	g="98"
+	b="39"/>
+<color
+	name="orange"
+	r="150"
+	g="95"
+	b="55"/>
+<color
+	name="orange"
+	r="152"
+	g="97"
+	b="56"/>
+<color
+	name="orange"
+	r="155"
+	g="103"
+	b="53"/>
+<color
+	name="orange"
+	r="158"
+	g="95"
+	b="41"/>
+<color
+	name="orange"
+	r="159"
+	g="104"
+	b="43"/>
+<color
+	name="orange"
+	r="153"
+	g="91"
+	b="44"/>
+<color
+	name="orange"
+	r="153"
+	g="92"
+	b="43"/>
+<color
+	name="orange"
+	r="153"
+	g="98"
+	b="43"/>
+<color
+	name="orange"
+	r="148"
+	g="93"
+	b="54"/>
+<color
+	name="orange"
+	r="152"
+	g="102"
+	b="51"/>
+<color
+	name="orange"
+	r="153"
+	g="100"
+	b="54"/>
+<color
+	name="orange"
+	r="159"
+	g="106"
+	b="51"/>
+<color
+	name="orange"
+	r="155"
+	g="100"
+	b="54"/>
+<color
+	name="orange"
+	r="153"
+	g="101"
+	b="52"/>
+<color
+	name="orange"
+	r="158"
+	g="104"
+	b="41"/>
+<color
+	name="orange"
+	r="161"
+	g="105"
+	b="41"/>
+<color
+	name="orange"
+	r="166"
+	g="114"
+	b="44"/>
+<color
+	name="orange"
+	r="160"
+	g="106"
+	b="43"/>
+<color
+	name="orange"
+	r="147"
+	g="91"
+	b="53"/>
+<color
+	name="orange"
+	r="150"
+	g="95"
+	b="52"/>
+<color
+	name="orange"
+	r="150"
+	g="96"
+	b="52"/>
+<color
+	name="orange"
+	r="150"
+	g="100"
+	b="51"/>
+<color
+	name="orange"
+	r="153"
+	g="94"
+	b="41"/>
+<color
+	name="orange"
+	r="153"
+	g="93"
+	b="39"/>
+<color
+	name="orange"
+	r="150"
+	g="96"
+	b="40"/>
+<color
+	name="orange"
+	r="147"
+	g="92"
+	b="52"/>
+<color
+	name="orange"
+	r="150"
+	g="98"
+	b="51"/>
+<color
+	name="orange"
+	r="150"
+	g="102"
+	b="51"/>
+<color
+	name="orange"
+	r="164"
+	g="111"
+	b="44"/>
+<color
+	name="orange"
+	r="157"
+	g="97"
+	b="39"/>
+<color
+	name="orange"
+	r="155"
+	g="92"
+	b="38"/>
+<color
+	name="orange"
+	r="152"
+	g="97"
+	b="38"/>
+<color
+	name="orange"
+	r="154"
+	g="95"
+	b="39"/>
+<color
+	name="orange"
+	r="147"
+	g="89"
+	b="48"/>
+<color
+	name="orange"
+	r="149"
+	g="99"
+	b="47"/>
+<color
+	name="orange"
+	r="149"
+	g="95"
+	b="48"/>
+<color
+	name="orange"
+	r="164"
+	g="95"
+	b="47"/>
+<color
+	name="orange"
+	r="155"
+	g="92"
+	b="42"/>
+<color
+	name="orange"
+	r="156"
+	g="92"
+	b="40"/>
+<color
+	name="orange"
+	r="158"
+	g="93"
+	b="39"/>
+<color
+	name="orange"
+	r="156"
+	g="94"
+	b="39"/>
+<color
+	name="orange"
+	r="154"
+	g="93"
+	b="41"/>
+<color
+	name="orange"
+	r="155"
+	g="96"
+	b="41"/>
+<color
+	name="orange"
+	r="147"
+	g="93"
+	b="45"/>
+<color
+	name="orange"
+	r="151"
+	g="101"
+	b="47"/>
+<color
+	name="orange"
+	r="153"
+	g="102"
+	b="43"/>
+<color
+	name="orange"
+	r="152"
+	g="97"
+	b="43"/>
+<color
+	name="orange"
+	r="151"
+	g="98"
+	b="45"/>
+<color
+	name="orange"
+	r="152"
+	g="101"
+	b="48"/>
+<color
+	name="orange"
+	r="155"
+	g="95"
+	b="41"/>
+<color
+	name="orange"
+	r="155"
+	g="100"
+	b="42"/>
+<color
+	name="orange"
+	r="149"
+	g="96"
+	b="46"/>
+<color
+	name="orange"
+	r="148"
+	g="95"
+	b="46"/>
+<color
+	name="orange"
+	r="150"
+	g="95"
+	b="42"/>
+<color
+	name="orange"
+	r="151"
+	g="97"
+	b="47"/>
+<color
+	name="orange"
+	r="148"
+	g="93"
+	b="44"/>
+<color
+	name="orange"
+	r="147"
+	g="94"
+	b="43"/>
+<color
+	name="orange"
+	r="150"
+	g="91"
+	b="43"/>
+<color
+	name="orange"
+	r="159"
+	g="93"
+	b="43"/>
+<color
+	name="orange"
+	r="148"
+	g="96"
+	b="42"/>
+<color
+	name="orange"
+	r="147"
+	g="97"
+	b="43"/>
+<color
+	name="orange"
+	r="151"
+	g="95"
+	b="44"/>
+<color
+	name="orange"
+	r="155"
+	g="94"
+	b="43"/>
+<color
+	name="orange"
+	r="148"
+	g="98"
+	b="45"/>
+<color
+	name="orange"
+	r="148"
+	g="97"
+	b="44"/>
+<color
+	name="orange"
+	r="153"
+	g="101"
+	b="43"/>
+<color
+	name="orange"
+	r="151"
+	g="99"
+	b="48"/>
+<color
+	name="orange"
+	r="151"
+	g="99"
+	b="46"/>
+<color
+	name="orange"
+	r="155"
+	g="104"
+	b="44"/>
+<color
+	name="orange"
+	r="155"
+	g="106"
+	b="47"/>
+<color
+	name="orange"
+	r="156"
+	g="96"
+	b="41"/>
+<color
+	name="orange"
+	r="160"
+	g="96"
+	b="41"/>
+<color
+	name="orange"
+	r="154"
+	g="106"
+	b="45"/>
+<color
+	name="orange"
+	r="154"
+	g="104"
+	b="47"/>
+<color
+	name="orange"
+	r="153"
+	g="100"
+	b="45"/>
+<color
+	name="orange"
+	r="162"
+	g="97"
+	b="41"/>
+<color
+	name="orange"
+	r="160"
+	g="94"
+	b="41"/>
+<color
+	name="orange"
+	r="158"
+	g="108"
+	b="47"/>
+<color
+	name="orange"
+	r="157"
+	g="115"
+	b="49"/>
+<color
+	name="orange"
+	r="153"
+	g="102"
+	b="48"/>
+<color
+	name="orange"
+	r="168"
+	g="113"
+	b="53"/>
+<color
+	name="orange"
+	r="162"
+	g="98"
+	b="40"/>
+<color
+	name="orange"
+	r="163"
+	g="101"
+	b="41"/>
+<color
+	name="orange"
+	r="172"
+	g="120"
+	b="47"/>
+<color
+	name="orange"
+	r="161"
+	g="111"
+	b="50"/>
+<color
+	name="orange"
+	r="161"
+	g="114"
+	b="52"/>
+<color
+	name="orange"
+	r="157"
+	g="111"
+	b="50"/>
+<color
+	name="orange"
+	r="153"
+	g="106"
+	b="47"/>
+<color
+	name="orange"
+	r="155"
+	g="99"
+	b="43"/>
+<color
+	name="orange"
+	r="151"
+	g="102"
+	b="47"/>
+<color
+	name="orange"
+	r="164"
+	g="113"
+	b="54"/>
+<color
+	name="orange"
+	r="163"
+	g="109"
+	b="49"/>
+<color
+	name="orange"
+	r="159"
+	g="110"
+	b="49"/>
+<color
+	name="orange"
+	r="164"
+	g="97"
+	b="43"/>
+<color
+	name="orange"
+	r="168"
+	g="98"
+	b="42"/>
+<color
+	name="orange"
+	r="173"
+	g="124"
+	b="52"/>
+<color
+	name="orange"
+	r="169"
+	g="99"
+	b="56"/>
+<color
+	name="orange"
+	r="165"
+	g="117"
+	b="52"/>
+<color
+	name="orange"
+	r="165"
+	g="119"
+	b="53"/>
+<color
+	name="orange"
+	r="161"
+	g="117"
+	b="55"/>
+<color
+	name="orange"
+	r="161"
+	g="117"
+	b="56"/>
+<color
+	name="orange"
+	r="162"
+	g="122"
+	b="53"/>
+<color
+	name="orange"
+	r="154"
+	g="108"
+	b="47"/>
+<color
+	name="orange"
+	r="155"
+	g="103"
+	b="44"/>
+<color
+	name="orange"
+	r="155"
+	g="98"
+	b="41"/>
+<color
+	name="orange"
+	r="152"
+	g="104"
+	b="47"/>
+<color
+	name="orange"
+	r="167"
+	g="121"
+	b="54"/>
+<color
+	name="orange"
+	r="165"
+	g="114"
+	b="53"/>
+<color
+	name="orange"
+	r="164"
+	g="113"
+	b="52"/>
+<color
+	name="orange"
+	r="159"
+	g="107"
+	b="44"/>
+<color
+	name="orange"
+	r="175"
+	g="127"
+	b="54"/>
+<color
+	name="orange"
+	r="177"
+	g="131"
+	b="55"/>
+<color
+	name="orange"
+	r="163"
+	g="108"
+	b="54"/>
+<color
+	name="orange"
+	r="165"
+	g="120"
+	b="53"/>
+<color
+	name="orange"
+	r="162"
+	g="120"
+	b="54"/>
+<color
+	name="orange"
+	r="162"
+	g="116"
+	b="56"/>
+<color
+	name="orange"
+	r="162"
+	g="115"
+	b="53"/>
+<color
+	name="orange"
+	r="158"
+	g="109"
+	b="51"/>
+<color
+	name="orange"
+	r="153"
+	g="102"
+	b="47"/>
+<color
+	name="orange"
+	r="157"
+	g="102"
+	b="42"/>
+<color
+	name="orange"
+	r="177"
+	g="128"
+	b="56"/>
+<color
+	name="orange"
+	r="171"
+	g="101"
+	b="45"/>
+<color
+	name="orange"
+	r="170"
+	g="99"
+	b="44"/>
+<color
+	name="orange"
+	r="170"
+	g="121"
+	b="55"/>
+<color
+	name="orange"
+	r="169"
+	g="122"
+	b="54"/>
+<color
+	name="orange"
+	r="168"
+	g="120"
+	b="53"/>
+<color
+	name="orange"
+	r="167"
+	g="128"
+	b="54"/>
+<color
+	name="orange"
+	r="165"
+	g="119"
+	b="56"/>
+<color
+	name="orange"
+	r="163"
+	g="116"
+	b="54"/>
+<color
+	name="orange"
+	r="160"
+	g="112"
+	b="52"/>
+<color
+	name="orange"
+	r="157"
+	g="108"
+	b="49"/>
+<color
+	name="orange"
+	r="155"
+	g="111"
+	b="48"/>
+<color
+	name="orange"
+	r="159"
+	g="113"
+	b="51"/>
+<color
+	name="orange"
+	r="179"
+	g="126"
+	b="55"/>
+<color
+	name="orange"
+	r="180"
+	g="131"
+	b="57"/>
+<color
+	name="orange"
+	r="178"
+	g="128"
+	b="59"/>
+<color
+	name="orange"
+	r="176"
+	g="127"
+	b="55"/>
+<color
+	name="orange"
+	r="168"
+	g="119"
+	b="52"/>
+<color
+	name="orange"
+	r="164"
+	g="115"
+	b="51"/>
+<color
+	name="orange"
+	r="161"
+	g="115"
+	b="50"/>
+<color
+	name="orange"
+	r="155"
+	g="106"
+	b="48"/>
+<color
+	name="orange"
+	r="157"
+	g="107"
+	b="47"/>
+<color
+	name="orange"
+	r="162"
+	g="115"
+	b="50"/>
+<color
+	name="orange"
+	r="158"
+	g="111"
+	b="50"/>
+<color
+	name="orange"
+	r="178"
+	g="118"
+	b="52"/>
+<color
+	name="orange"
+	r="179"
+	g="123"
+	b="54"/>
+<color
+	name="orange"
+	r="180"
+	g="127"
+	b="55"/>
+<color
+	name="orange"
+	r="180"
+	g="128"
+	b="56"/>
+<color
+	name="orange"
+	r="180"
+	g="124"
+	b="53"/>
+<color
+	name="orange"
+	r="161"
+	g="95"
+	b="45"/>
+<color
+	name="orange"
+	r="162"
+	g="111"
+	b="50"/>
+<color
+	name="orange"
+	r="176"
+	g="119"
+	b="54"/>
+<color
+	name="orange"
+	r="179"
+	g="129"
+	b="53"/>
+<color
+	name="orange"
+	r="179"
+	g="125"
+	b="53"/>
+<color
+	name="orange"
+	r="180"
+	g="128"
+	b="52"/>
+<color
+	name="orange"
+	r="178"
+	g="117"
+	b="53"/>
+<color
+	name="orange"
+	r="179"
+	g="118"
+	b="54"/>
+<color
+	name="orange"
+	r="180"
+	g="120"
+	b="52"/>
+<color
+	name="orange"
+	r="168"
+	g="99"
+	b="47"/>
+<color
+	name="orange"
+	r="167"
+	g="96"
+	b="52"/>
+<color
+	name="orange"
+	r="162"
+	g="116"
+	b="50"/>
+<color
+	name="orange"
+	r="159"
+	g="107"
+	b="49"/>
+<color
+	name="orange"
+	r="176"
+	g="117"
+	b="53"/>
+<color
+	name="orange"
+	r="172"
+	g="110"
+	b="48"/>
+<color
+	name="orange"
+	r="153"
+	g="99"
+	b="50"/>
+<color
+	name="orange"
+	r="167"
+	g="112"
+	b="55"/>
+<color
+	name="orange"
+	r="153"
+	g="99"
+	b="45"/>
+<color
+	name="orange"
+	r="157"
+	g="97"
+	b="43"/>
+<color
+	name="orange"
+	r="158"
+	g="95"
+	b="43"/>
+<color
+	name="orange"
+	r="174"
+	g="103"
+	b="46"/>
+<color
+	name="orange"
+	r="175"
+	g="101"
+	b="47"/>
+<color
+	name="orange"
+	r="176"
+	g="98"
+	b="49"/>
+<color
+	name="orange"
+	r="167"
+	g="114"
+	b="53"/>
+<color
+	name="orange"
+	r="167"
+	g="116"
+	b="54"/>
+<color
+	name="orange"
+	r="168"
+	g="116"
+	b="57"/>
+<color
+	name="orange"
+	r="170"
+	g="119"
+	b="56"/>
+<color
+	name="orange"
+	r="167"
+	g="116"
+	b="56"/>
+<color
+	name="orange"
+	r="165"
+	g="116"
+	b="51"/>
+<color
+	name="orange"
+	r="160"
+	g="110"
+	b="47"/>
+<color
+	name="orange"
+	r="159"
+	g="107"
+	b="47"/>
+<color
+	name="orange"
+	r="155"
+	g="101"
+	b="44"/>
+<color
+	name="orange"
+	r="157"
+	g="103"
+	b="46"/>
+<color
+	name="orange"
+	r="158"
+	g="97"
+	b="41"/>
+<color
+	name="orange"
+	r="172"
+	g="116"
+	b="52"/>
+<color
+	name="orange"
+	r="169"
+	g="118"
+	b="54"/>
+<color
+	name="orange"
+	r="166"
+	g="113"
+	b="51"/>
+<color
+	name="orange"
+	r="156"
+	g="100"
+	b="43"/>
+<color
+	name="orange"
+	r="157"
+	g="100"
+	b="41"/>
+<color
+	name="orange"
+	r="166"
+	g="97"
+	b="47"/>
+<color
+	name="orange"
+	r="153"
+	g="100"
+	b="47"/>
+<color
+	name="orange"
+	r="155"
+	g="102"
+	b="46"/>
+<color
+	name="orange"
+	r="157"
+	g="105"
+	b="44"/>
+<color
+	name="orange"
+	r="161"
+	g="99"
+	b="41"/>
+<color
+	name="orange"
+	r="163"
+	g="103"
+	b="41"/>
+<color
+	name="orange"
+	r="165"
+	g="106"
+	b="41"/>
+<color
+	name="orange"
+	r="155"
+	g="104"
+	b="48"/>
+<color
+	name="orange"
+	r="157"
+	g="106"
+	b="49"/>
+<color
+	name="orange"
+	r="161"
+	g="108"
+	b="50"/>
+<color
+	name="orange"
+	r="166"
+	g="106"
+	b="43"/>
+<color
+	name="orange"
+	r="166"
+	g="101"
+	b="41"/>
+<color
+	name="orange"
+	r="165"
+	g="95"
+	b="43"/>
+<color
+	name="orange"
+	r="161"
+	g="112"
+	b="51"/>
+<color
+	name="orange"
+	r="159"
+	g="109"
+	b="48"/>
+<color
+	name="orange"
+	r="163"
+	g="108"
+	b="43"/>
+<color
+	name="orange"
+	r="155"
+	g="100"
+	b="46"/>
+<color
+	name="orange"
+	r="162"
+	g="112"
+	b="50"/>
+<color
+	name="orange"
+	r="178"
+	g="103"
+	b="53"/>
+<color
+	name="orange"
+	r="180"
+	g="106"
+	b="53"/>
+<color
+	name="orange"
+	r="169"
+	g="114"
+	b="53"/>
+<color
+	name="orange"
+	r="174"
+	g="112"
+	b="51"/>
+<color
+	name="orange"
+	r="178"
+	g="105"
+	b="50"/>
+<color
+	name="orange"
+	r="178"
+	g="110"
+	b="51"/>
+<color
+	name="orange"
+	r="175"
+	g="101"
+	b="56"/>
+<color
+	name="orange"
+	r="172"
+	g="100"
+	b="53"/>
+<color
+	name="orange"
+	r="172"
+	g="101"
+	b="48"/>
+<color
+	name="orange"
+	r="172"
+	g="99"
+	b="53"/>
+<color
+	name="orange"
+	r="175"
+	g="103"
+	b="52"/>
+<color
+	name="orange"
+	r="178"
+	g="105"
+	b="53"/>
+<color
+	name="orange"
+	r="177"
+	g="103"
+	b="53"/>
+<color
+	name="orange"
+	r="178"
+	g="105"
+	b="56"/>
+<color
+	name="orange"
+	r="175"
+	g="113"
+	b="52"/>
+<color
+	name="orange"
+	r="178"
+	g="112"
+	b="55"/>
+<color
+	name="orange"
+	r="182"
+	g="107"
+	b="54"/>
+<color
+	name="orange"
+	r="180"
+	g="107"
+	b="51"/>
+<color
+	name="orange"
+	r="176"
+	g="111"
+	b="51"/>
+<color
+	name="orange"
+	r="177"
+	g="112"
+	b="52"/>
+<color
+	name="orange"
+	r="180"
+	g="106"
+	b="54"/>
+<color
+	name="orange"
+	r="168"
+	g="99"
+	b="51"/>
+<color
+	name="orange"
+	r="176"
+	g="103"
+	b="51"/>
+<color
+	name="orange"
+	r="178"
+	g="107"
+	b="52"/>
+<color
+	name="orange"
+	r="178"
+	g="108"
+	b="52"/>
+<color
+	name="orange"
+	r="173"
+	g="105"
+	b="58"/>
+<color
+	name="orange"
+	r="179"
+	g="107"
+	b="55"/>
+<color
+	name="orange"
+	r="173"
+	g="115"
+	b="58"/>
+<color
+	name="orange"
+	r="182"
+	g="118"
+	b="59"/>
+<color
+	name="orange"
+	r="165"
+	g="110"
+	b="51"/>
+<color
+	name="orange"
+	r="169"
+	g="106"
+	b="60"/>
+<color
+	name="orange"
+	r="183"
+	g="112"
+	b="59"/>
+<color
+	name="orange"
+	r="184"
+	g="113"
+	b="59"/>
+<color
+	name="orange"
+	r="178"
+	g="110"
+	b="53"/>
+<color
+	name="orange"
+	r="168"
+	g="99"
+	b="49"/>
+<color
+	name="orange"
+	r="181"
+	g="116"
+	b="58"/>
+<color
+	name="orange"
+	r="181"
+	g="114"
+	b="60"/>
+<color
+	name="orange"
+	r="177"
+	g="110"
+	b="53"/>
+<color
+	name="orange"
+	r="181"
+	g="111"
+	b="55"/>
+<color
+	name="orange"
+	r="175"
+	g="103"
+	b="55"/>
+<color
+	name="orange"
+	r="161"
+	g="108"
+	b="49"/>
+<color
+	name="orange"
+	r="174"
+	g="105"
+	b="55"/>
+<color
+	name="orange"
+	r="168"
+	g="114"
+	b="54"/>
+<color
+	name="orange"
+	r="178"
+	g="109"
+	b="55"/>
+<color
+	name="orange"
+	r="174"
+	g="105"
+	b="56"/>
+<color
+	name="orange"
+	r="168"
+	g="107"
+	b="45"/>
+<color
+	name="orange"
+	r="177"
+	g="116"
+	b="56"/>
+<color
+	name="orange"
+	r="170"
+	g="106"
+	b="60"/>
+<color
+	name="orange"
+	r="177"
+	g="106"
+	b="51"/>
+<color
+	name="orange"
+	r="175"
+	g="103"
+	b="50"/>
+<color
+	name="orange"
+	r="166"
+	g="97"
+	b="45"/>
+<color
+	name="orange"
+	r="172"
+	g="102"
+	b="47"/>
+<color
+	name="orange"
+	r="171"
+	g="99"
+	b="48"/>
+<color
+	name="orange"
+	r="184"
+	g="111"
+	b="58"/>
+<color
+	name="orange"
+	r="180"
+	g="109"
+	b="57"/>
+<color
+	name="orange"
+	r="173"
+	g="107"
+	b="47"/>
+<color
+	name="orange"
+	r="165"
+	g="112"
+	b="49"/>
+<color
+	name="orange"
+	r="166"
+	g="108"
+	b="43"/>
+<color
+	name="orange"
+	r="167"
+	g="104"
+	b="43"/>
+<color
+	name="orange"
+	r="177"
+	g="110"
+	b="62"/>
+<color
+	name="orange"
+	r="180"
+	g="114"
+	b="56"/>
+<color
+	name="orange"
+	r="174"
+	g="109"
+	b="60"/>
+<color
+	name="orange"
+	r="170"
+	g="100"
+	b="46"/>
+<color
+	name="orange"
+	r="168"
+	g="103"
+	b="43"/>
+<color
+	name="orange"
+	r="170"
+	g="97"
+	b="46"/>
+<color
+	name="orange"
+	r="173"
+	g="103"
+	b="48"/>
+<color
+	name="orange"
+	r="178"
+	g="110"
+	b="55"/>
+<color
+	name="orange"
+	r="177"
+	g="105"
+	b="57"/>
+<color
+	name="orange"
+	r="176"
+	g="104"
+	b="59"/>
+<color
+	name="orange"
+	r="178"
+	g="107"
+	b="57"/>
+<color
+	name="orange"
+	r="159"
+	g="104"
+	b="51"/>
+<color
+	name="orange"
+	r="167"
+	g="112"
+	b="52"/>
+<color
+	name="orange"
+	r="172"
+	g="105"
+	b="56"/>
+<color
+	name="orange"
+	r="174"
+	g="114"
+	b="54"/>
+<color
+	name="orange"
+	r="176"
+	g="113"
+	b="55"/>
+<color
+	name="orange"
+	r="177"
+	g="110"
+	b="60"/>
+<color
+	name="orange"
+	r="176"
+	g="117"
+	b="60"/>
+<color
+	name="orange"
+	r="178"
+	g="112"
+	b="60"/>
+<color
+	name="orange"
+	r="180"
+	g="115"
+	b="59"/>
+<color
+	name="orange"
+	r="181"
+	g="113"
+	b="60"/>
+<color
+	name="orange"
+	r="175"
+	g="111"
+	b="62"/>
+<color
+	name="orange"
+	r="176"
+	g="112"
+	b="61"/>
+<color
+	name="orange"
+	r="176"
+	g="109"
+	b="60"/>
+<color
+	name="orange"
+	r="172"
+	g="113"
+	b="61"/>
+<color
+	name="orange"
+	r="171"
+	g="117"
+	b="60"/>
+<color
+	name="orange"
+	r="174"
+	g="103"
+	b="48"/>
+<color
+	name="orange"
+	r="175"
+	g="101"
+	b="49"/>
+<color
+	name="orange"
+	r="177"
+	g="104"
+	b="51"/>
+<color
+	name="orange"
+	r="178"
+	g="108"
+	b="58"/>
+<color
+	name="orange"
+	r="179"
+	g="107"
+	b="58"/>
+<color
+	name="orange"
+	r="180"
+	g="113"
+	b="59"/>
+<color
+	name="orange"
+	r="180"
+	g="108"
+	b="59"/>
+<color
+	name="orange"
+	r="176"
+	g="111"
+	b="55"/>
+<color
+	name="orange"
+	r="168"
+	g="112"
+	b="59"/>
+<color
+	name="orange"
+	r="174"
+	g="109"
+	b="59"/>
+<color
+	name="orange"
+	r="157"
+	g="101"
+	b="44"/>
+<color
+	name="orange"
+	r="170"
+	g="104"
+	b="57"/>
+<color
+	name="orange"
+	r="180"
+	g="112"
+	b="57"/>
+<color
+	name="orange"
+	r="180"
+	g="109"
+	b="60"/>
+<color
+	name="orange"
+	r="180"
+	g="111"
+	b="60"/>
+<color
+	name="orange"
+	r="176"
+	g="113"
+	b="59"/>
+<color
+	name="orange"
+	r="171"
+	g="108"
+	b="61"/>
+<color
+	name="orange"
+	r="173"
+	g="109"
+	b="62"/>
+<color
+	name="orange"
+	r="174"
+	g="115"
+	b="59"/>
+<color
+	name="orange"
+	r="169"
+	g="111"
+	b="58"/>
+<color
+	name="orange"
+	r="175"
+	g="113"
+	b="60"/>
+<color
+	name="orange"
+	r="176"
+	g="114"
+	b="57"/>
+<color
+	name="orange"
+	r="164"
+	g="106"
+	b="43"/>
+<color
+	name="orange"
+	r="163"
+	g="106"
+	b="41"/>
+<color
+	name="orange"
+	r="167"
+	g="99"
+	b="44"/>
+<color
+	name="orange"
+	r="174"
+	g="104"
+	b="47"/>
+<color
+	name="orange"
+	r="175"
+	g="104"
+	b="49"/>
+<color
+	name="orange"
+	r="171"
+	g="101"
+	b="54"/>
+<color
+	name="orange"
+	r="169"
+	g="99"
+	b="54"/>
+<color
+	name="orange"
+	r="174"
+	g="103"
+	b="56"/>
+<color
+	name="orange"
+	r="176"
+	g="109"
+	b="57"/>
+<color
+	name="orange"
+	r="180"
+	g="106"
+	b="59"/>
+<color
+	name="orange"
+	r="179"
+	g="110"
+	b="59"/>
+<color
+	name="orange"
+	r="180"
+	g="110"
+	b="59"/>
+<color
+	name="orange"
+	r="182"
+	g="111"
+	b="59"/>
+<color
+	name="orange"
+	r="180"
+	g="111"
+	b="57"/>
+<color
+	name="orange"
+	r="178"
+	g="109"
+	b="57"/>
+<color
+	name="orange"
+	r="172"
+	g="107"
+	b="58"/>
+<color
+	name="orange"
+	r="174"
+	g="112"
+	b="57"/>
+<color
+	name="orange"
+	r="173"
+	g="108"
+	b="61"/>
+<color
+	name="orange"
+	r="178"
+	g="111"
+	b="57"/>
+<color
+	name="orange"
+	r="170"
+	g="114"
+	b="47"/>
+<color
+	name="orange"
+	r="170"
+	g="118"
+	b="48"/>
+<color
+	name="orange"
+	r="170"
+	g="122"
+	b="54"/>
+<color
+	name="orange"
+	r="172"
+	g="127"
+	b="50"/>
+<color
+	name="orange"
+	r="166"
+	g="118"
+	b="48"/>
+<color
+	name="orange"
+	r="179"
+	g="115"
+	b="59"/>
+<color
+	name="orange"
+	r="178"
+	g="111"
+	b="61"/>
+<color
+	name="orange"
+	r="178"
+	g="114"
+	b="60"/>
+<color
+	name="orange"
+	r="179"
+	g="113"
+	b="58"/>
+<color
+	name="orange"
+	r="177"
+	g="114"
+	b="59"/>
+<color
+	name="orange"
+	r="172"
+	g="111"
+	b="62"/>
+<color
+	name="orange"
+	r="171"
+	g="114"
+	b="61"/>
+<color
+	name="orange"
+	r="174"
+	g="110"
+	b="61"/>
+<color
+	name="orange"
+	r="176"
+	g="113"
+	b="57"/>
+<color
+	name="orange"
+	r="168"
+	g="123"
+	b="52"/>
+<color
+	name="orange"
+	r="171"
+	g="128"
+	b="55"/>
+<color
+	name="orange"
+	r="174"
+	g="122"
+	b="51"/>
+<color
+	name="orange"
+	r="174"
+	g="105"
+	b="51"/>
+<color
+	name="orange"
+	r="174"
+	g="111"
+	b="58"/>
+<color
+	name="orange"
+	r="178"
+	g="112"
+	b="57"/>
+<color
+	name="orange"
+	r="174"
+	g="112"
+	b="58"/>
+<color
+	name="orange"
+	r="172"
+	g="110"
+	b="60"/>
+<color
+	name="orange"
+	r="171"
+	g="111"
+	b="59"/>
+<color
+	name="orange"
+	r="176"
+	g="109"
+	b="58"/>
+<color
+	name="orange"
+	r="176"
+	g="107"
+	b="57"/>
+<color
+	name="orange"
+	r="177"
+	g="110"
+	b="57"/>
+<color
+	name="orange"
+	r="159"
+	g="104"
+	b="45"/>
+<color
+	name="orange"
+	r="166"
+	g="113"
+	b="44"/>
+<color
+	name="orange"
+	r="165"
+	g="112"
+	b="47"/>
+<color
+	name="orange"
+	r="167"
+	g="115"
+	b="46"/>
+<color
+	name="orange"
+	r="168"
+	g="116"
+	b="47"/>
+<color
+	name="orange"
+	r="163"
+	g="105"
+	b="41"/>
+<color
+	name="orange"
+	r="162"
+	g="106"
+	b="43"/>
+<color
+	name="orange"
+	r="163"
+	g="108"
+	b="45"/>
+<color
+	name="orange"
+	r="171"
+	g="118"
+	b="52"/>
+<color
+	name="orange"
+	r="168"
+	g="107"
+	b="58"/>
+<color
+	name="orange"
+	r="174"
+	g="110"
+	b="56"/>
+<color
+	name="orange"
+	r="175"
+	g="114"
+	b="56"/>
+<color
+	name="orange"
+	r="169"
+	g="112"
+	b="57"/>
+<color
+	name="orange"
+	r="173"
+	g="114"
+	b="57"/>
+<color
+	name="orange"
+	r="171"
+	g="114"
+	b="57"/>
+<color
+	name="orange"
+	r="173"
+	g="112"
+	b="58"/>
+<color
+	name="orange"
+	r="176"
+	g="110"
+	b="59"/>
+<color
+	name="orange"
+	r="178"
+	g="114"
+	b="57"/>
+<color
+	name="orange"
+	r="165"
+	g="99"
+	b="43"/>
+<color
+	name="orange"
+	r="156"
+	g="102"
+	b="45"/>
+<color
+	name="orange"
+	r="174"
+	g="116"
+	b="47"/>
+<color
+	name="orange"
+	r="174"
+	g="122"
+	b="48"/>
+<color
+	name="orange"
+	r="174"
+	g="120"
+	b="50"/>
+<color
+	name="orange"
+	r="168"
+	g="108"
+	b="43"/>
+<color
+	name="orange"
+	r="165"
+	g="101"
+	b="41"/>
+<color
+	name="orange"
+	r="177"
+	g="116"
+	b="51"/>
+<color
+	name="orange"
+	r="174"
+	g="116"
+	b="53"/>
+<color
+	name="orange"
+	r="171"
+	g="114"
+	b="50"/>
+<color
+	name="orange"
+	r="172"
+	g="100"
+	b="46"/>
+<color
+	name="orange"
+	r="171"
+	g="98"
+	b="46"/>
+<color
+	name="orange"
+	r="170"
+	g="101"
+	b="48"/>
+<color
+	name="orange"
+	r="168"
+	g="97"
+	b="49"/>
+<color
+	name="orange"
+	r="171"
+	g="101"
+	b="52"/>
+<color
+	name="orange"
+	r="172"
+	g="110"
+	b="58"/>
+<color
+	name="orange"
+	r="180"
+	g="109"
+	b="55"/>
+<color
+	name="orange"
+	r="157"
+	g="98"
+	b="41"/>
+<color
+	name="orange"
+	r="157"
+	g="102"
+	b="40"/>
+<color
+	name="orange"
+	r="158"
+	g="101"
+	b="40"/>
+<color
+	name="orange"
+	r="160"
+	g="105"
+	b="42"/>
+<color
+	name="orange"
+	r="170"
+	g="112"
+	b="47"/>
+<color
+	name="orange"
+	r="167"
+	g="110"
+	b="45"/>
+<color
+	name="orange"
+	r="163"
+	g="110"
+	b="45"/>
+<color
+	name="orange"
+	r="167"
+	g="109"
+	b="44"/>
+<color
+	name="orange"
+	r="168"
+	g="118"
+	b="46"/>
+<color
+	name="orange"
+	r="173"
+	g="114"
+	b="48"/>
+<color
+	name="orange"
+	r="172"
+	g="121"
+	b="56"/>
+<color
+	name="orange"
+	r="166"
+	g="110"
+	b="43"/>
+<color
+	name="orange"
+	r="165"
+	g="104"
+	b="41"/>
+<color
+	name="orange"
+	r="162"
+	g="110"
+	b="48"/>
+<color
+	name="orange"
+	r="171"
+	g="112"
+	b="59"/>
+<color
+	name="orange"
+	r="168"
+	g="111"
+	b="55"/>
+<color
+	name="orange"
+	r="171"
+	g="116"
+	b="54"/>
+<color
+	name="orange"
+	r="158"
+	g="98"
+	b="41"/>
+<color
+	name="orange"
+	r="162"
+	g="104"
+	b="42"/>
+<color
+	name="orange"
+	r="165"
+	g="112"
+	b="50"/>
+<color
+	name="orange"
+	r="163"
+	g="112"
+	b="48"/>
+<color
+	name="orange"
+	r="169"
+	g="114"
+	b="47"/>
+<color
+	name="orange"
+	r="171"
+	g="113"
+	b="48"/>
+<color
+	name="orange"
+	r="173"
+	g="116"
+	b="48"/>
+<color
+	name="orange"
+	r="174"
+	g="119"
+	b="51"/>
+<color
+	name="orange"
+	r="172"
+	g="118"
+	b="49"/>
+<color
+	name="orange"
+	r="164"
+	g="108"
+	b="43"/>
+<color
+	name="orange"
+	r="166"
+	g="98"
+	b="42"/>
+<color
+	name="orange"
+	r="166"
+	g="101"
+	b="42"/>
+<color
+	name="orange"
+	r="173"
+	g="103"
+	b="51"/>
+<color
+	name="orange"
+	r="172"
+	g="102"
+	b="54"/>
+<color
+	name="orange"
+	r="169"
+	g="112"
+	b="55"/>
+<color
+	name="orange"
+	r="174"
+	g="105"
+	b="53"/>
+<color
+	name="orange"
+	r="158"
+	g="101"
+	b="43"/>
+<color
+	name="orange"
+	r="160"
+	g="101"
+	b="43"/>
+<color
+	name="orange"
+	r="164"
+	g="108"
+	b="45"/>
+<color
+	name="orange"
+	r="164"
+	g="111"
+	b="48"/>
+<color
+	name="orange"
+	r="165"
+	g="114"
+	b="48"/>
+<color
+	name="orange"
+	r="168"
+	g="120"
+	b="50"/>
+<color
+	name="orange"
+	r="170"
+	g="118"
+	b="51"/>
+<color
+	name="orange"
+	r="171"
+	g="121"
+	b="52"/>
+<color
+	name="orange"
+	r="172"
+	g="121"
+	b="52"/>
+<color
+	name="orange"
+	r="169"
+	g="117"
+	b="53"/>
+<color
+	name="orange"
+	r="166"
+	g="116"
+	b="50"/>
+<color
+	name="orange"
+	r="168"
+	g="112"
+	b="47"/>
+<color
+	name="orange"
+	r="171"
+	g="117"
+	b="48"/>
+<color
+	name="orange"
+	r="168"
+	g="112"
+	b="45"/>
+<color
+	name="orange"
+	r="166"
+	g="103"
+	b="42"/>
+<color
+	name="orange"
+	r="165"
+	g="102"
+	b="41"/>
+<color
+	name="orange"
+	r="165"
+	g="104"
+	b="42"/>
+<color
+	name="orange"
+	r="170"
+	g="111"
+	b="49"/>
+<color
+	name="orange"
+	r="170"
+	g="112"
+	b="56"/>
+<color
+	name="orange"
+	r="170"
+	g="114"
+	b="55"/>
+<color
+	name="orange"
+	r="157"
+	g="94"
+	b="43"/>
+<color
+	name="orange"
+	r="166"
+	g="112"
+	b="47"/>
+<color
+	name="orange"
+	r="167"
+	g="114"
+	b="50"/>
+<color
+	name="orange"
+	r="174"
+	g="119"
+	b="52"/>
+<color
+	name="orange"
+	r="174"
+	g="123"
+	b="52"/>
+<color
+	name="orange"
+	r="174"
+	g="124"
+	b="52"/>
+<color
+	name="orange"
+	r="170"
+	g="124"
+	b="51"/>
+<color
+	name="orange"
+	r="169"
+	g="118"
+	b="51"/>
+<color
+	name="orange"
+	r="168"
+	g="108"
+	b="46"/>
+<color
+	name="orange"
+	r="167"
+	g="111"
+	b="50"/>
+<color
+	name="orange"
+	r="168"
+	g="114"
+	b="49"/>
+<color
+	name="orange"
+	r="169"
+	g="114"
+	b="50"/>
+<color
+	name="orange"
+	r="172"
+	g="103"
+	b="53"/>
+<color
+	name="orange"
+	r="171"
+	g="113"
+	b="55"/>
+<color
+	name="orange"
+	r="169"
+	g="117"
+	b="48"/>
+<color
+	name="orange"
+	r="169"
+	g="111"
+	b="45"/>
+<color
+	name="orange"
+	r="174"
+	g="123"
+	b="54"/>
+<color
+	name="orange"
+	r="173"
+	g="131"
+	b="53"/>
+<color
+	name="orange"
+	r="172"
+	g="128"
+	b="52"/>
+<color
+	name="orange"
+	r="171"
+	g="131"
+	b="51"/>
+<color
+	name="orange"
+	r="169"
+	g="122"
+	b="50"/>
+<color
+	name="orange"
+	r="168"
+	g="119"
+	b="49"/>
+<color
+	name="orange"
+	r="166"
+	g="110"
+	b="47"/>
+<color
+	name="orange"
+	r="168"
+	g="110"
+	b="50"/>
+<color
+	name="orange"
+	r="170"
+	g="117"
+	b="51"/>
+<color
+	name="orange"
+	r="171"
+	g="112"
+	b="53"/>
+<color
+	name="orange"
+	r="170"
+	g="115"
+	b="52"/>
+<color
+	name="orange"
+	r="166"
+	g="113"
+	b="49"/>
+<color
+	name="orange"
+	r="168"
+	g="113"
+	b="50"/>
+<color
+	name="orange"
+	r="169"
+	g="112"
+	b="49"/>
+<color
+	name="orange"
+	r="168"
+	g="111"
+	b="47"/>
+<color
+	name="orange"
+	r="173"
+	g="119"
+	b="54"/>
+<color
+	name="orange"
+	r="174"
+	g="120"
+	b="54"/>
+<color
+	name="orange"
+	r="173"
+	g="128"
+	b="55"/>
+<color
+	name="orange"
+	r="173"
+	g="126"
+	b="54"/>
+<color
+	name="orange"
+	r="173"
+	g="126"
+	b="53"/>
+<color
+	name="orange"
+	r="173"
+	g="125"
+	b="51"/>
+<color
+	name="orange"
+	r="170"
+	g="122"
+	b="50"/>
+<color
+	name="orange"
+	r="167"
+	g="116"
+	b="49"/>
+<color
+	name="orange"
+	r="162"
+	g="106"
+	b="46"/>
+<color
+	name="orange"
+	r="170"
+	g="105"
+	b="45"/>
+<color
+	name="orange"
+	r="170"
+	g="99"
+	b="54"/>
+<color
+	name="orange"
+	r="172"
+	g="105"
+	b="52"/>
+<color
+	name="orange"
+	r="160"
+	g="106"
+	b="45"/>
+<color
+	name="orange"
+	r="165"
+	g="110"
+	b="47"/>
+<color
+	name="orange"
+	r="171"
+	g="120"
+	b="50"/>
+<color
+	name="orange"
+	r="171"
+	g="117"
+	b="53"/>
+<color
+	name="orange"
+	r="172"
+	g="117"
+	b="51"/>
+<color
+	name="orange"
+	r="171"
+	g="114"
+	b="49"/>
+<color
+	name="orange"
+	r="171"
+	g="116"
+	b="47"/>
+<color
+	name="orange"
+	r="172"
+	g="110"
+	b="45"/>
+<color
+	name="orange"
+	r="173"
+	g="110"
+	b="47"/>
+<color
+	name="orange"
+	r="172"
+	g="112"
+	b="49"/>
+<color
+	name="orange"
+	r="172"
+	g="118"
+	b="51"/>
+<color
+	name="orange"
+	r="173"
+	g="114"
+	b="54"/>
+<color
+	name="orange"
+	r="173"
+	g="118"
+	b="56"/>
+<color
+	name="orange"
+	r="172"
+	g="122"
+	b="55"/>
+<color
+	name="orange"
+	r="172"
+	g="120"
+	b="54"/>
+<color
+	name="orange"
+	r="173"
+	g="123"
+	b="52"/>
+<color
+	name="orange"
+	r="169"
+	g="116"
+	b="51"/>
+<color
+	name="orange"
+	r="166"
+	g="115"
+	b="49"/>
+<color
+	name="orange"
+	r="169"
+	g="109"
+	b="45"/>
+<color
+	name="orange"
+	r="165"
+	g="106"
+	b="44"/>
+<color
+	name="orange"
+	r="173"
+	g="108"
+	b="46"/>
+<color
+	name="orange"
+	r="172"
+	g="107"
+	b="45"/>
+<color
+	name="orange"
+	r="171"
+	g="110"
+	b="47"/>
+<color
+	name="orange"
+	r="171"
+	g="111"
+	b="55"/>
+<color
+	name="orange"
+	r="172"
+	g="113"
+	b="55"/>
+<color
+	name="orange"
+	r="176"
+	g="113"
+	b="50"/>
+<color
+	name="orange"
+	r="174"
+	g="117"
+	b="51"/>
+<color
+	name="orange"
+	r="174"
+	g="114"
+	b="50"/>
+<color
+	name="orange"
+	r="175"
+	g="112"
+	b="49"/>
+<color
+	name="orange"
+	r="172"
+	g="113"
+	b="51"/>
+<color
+	name="orange"
+	r="166"
+	g="108"
+	b="49"/>
+<color
+	name="orange"
+	r="170"
+	g="109"
+	b="47"/>
+<color
+	name="orange"
+	r="174"
+	g="101"
+	b="50"/>
+<color
+	name="orange"
+	r="176"
+	g="106"
+	b="49"/>
+<color
+	name="orange"
+	r="171"
+	g="111"
+	b="51"/>
+<color
+	name="orange"
+	r="172"
+	g="114"
+	b="52"/>
+<color
+	name="orange"
+	r="174"
+	g="120"
+	b="52"/>
+<color
+	name="orange"
+	r="173"
+	g="111"
+	b="51"/>
+<color
+	name="orange"
+	r="177"
+	g="112"
+	b="48"/>
+<color
+	name="orange"
+	r="174"
+	g="110"
+	b="47"/>
+<color
+	name="orange"
+	r="171"
+	g="109"
+	b="48"/>
+<color
+	name="orange"
+	r="168"
+	g="110"
+	b="48"/>
+<color
+	name="orange"
+	r="170"
+	g="108"
+	b="45"/>
+<color
+	name="orange"
+	r="172"
+	g="109"
+	b="49"/>
+<color
+	name="orange"
+	r="170"
+	g="113"
+	b="51"/>
+<color
+	name="orange"
+	r="159"
+	g="103"
+	b="43"/>
+<color
+	name="orange"
+	r="169"
+	g="110"
+	b="53"/>
+<color
+	name="orange"
+	r="174"
+	g="110"
+	b="50"/>
+<color
+	name="orange"
+	r="175"
+	g="107"
+	b="48"/>
+<color
+	name="orange"
+	r="179"
+	g="109"
+	b="48"/>
+<color
+	name="orange"
+	r="172"
+	g="105"
+	b="49"/>
+<color
+	name="orange"
+	r="164"
+	g="95"
+	b="53"/>
+<color
+	name="orange"
+	r="165"
+	g="97"
+	b="47"/>
+<color
+	name="orange"
+	r="173"
+	g="105"
+	b="51"/>
+<color
+	name="orange"
+	r="171"
+	g="102"
+	b="51"/>
+<color
+	name="orange"
+	r="161"
+	g="107"
+	b="53"/>
+<color
+	name="orange"
+	r="174"
+	g="108"
+	b="48"/>
+<color
+	name="orange"
+	r="176"
+	g="109"
+	b="48"/>
+<color
+	name="orange"
+	r="173"
+	g="107"
+	b="49"/>
+<color
+	name="orange"
+	r="174"
+	g="107"
+	b="58"/>
+<color
+	name="orange"
+	r="172"
+	g="112"
+	b="56"/>
+<color
+	name="orange"
+	r="166"
+	g="101"
+	b="59"/>
+<color
+	name="orange"
+	r="157"
+	g="95"
+	b="40"/>
+<color
+	name="orange"
+	r="168"
+	g="109"
+	b="49"/>
+<color
+	name="orange"
+	r="166"
+	g="114"
+	b="55"/>
+<color
+	name="orange"
+	r="165"
+	g="108"
+	b="57"/>
+<color
+	name="orange"
+	r="164"
+	g="108"
+	b="53"/>
+<color
+	name="orange"
+	r="171"
+	g="102"
+	b="52"/>
+<color
+	name="orange"
+	r="174"
+	g="107"
+	b="52"/>
+<color
+	name="orange"
+	r="172"
+	g="107"
+	b="51"/>
+<color
+	name="orange"
+	r="176"
+	g="107"
+	b="52"/>
+<color
+	name="orange"
+	r="176"
+	g="105"
+	b="54"/>
+<color
+	name="orange"
+	r="176"
+	g="105"
+	b="53"/>
+<color
+	name="orange"
+	r="176"
+	g="103"
+	b="57"/>
+<color
+	name="orange"
+	r="176"
+	g="107"
+	b="55"/>
+<color
+	name="orange"
+	r="167"
+	g="97"
+	b="50"/>
+<color
+	name="orange"
+	r="168"
+	g="99"
+	b="53"/>
+<color
+	name="orange"
+	r="166"
+	g="99"
+	b="57"/>
+<color
+	name="orange"
+	r="159"
+	g="97"
+	b="43"/>
+<color
+	name="orange"
+	r="156"
+	g="93"
+	b="43"/>
+<color
+	name="orange"
+	r="154"
+	g="96"
+	b="43"/>
+<color
+	name="orange"
+	r="155"
+	g="98"
+	b="44"/>
+<color
+	name="orange"
+	r="162"
+	g="108"
+	b="53"/>
+<color
+	name="orange"
+	r="161"
+	g="109"
+	b="54"/>
+<color
+	name="orange"
+	r="168"
+	g="108"
+	b="51"/>
+<color
+	name="orange"
+	r="174"
+	g="107"
+	b="57"/>
+<color
+	name="orange"
+	r="175"
+	g="109"
+	b="51"/>
+<color
+	name="orange"
+	r="174"
+	g="111"
+	b="53"/>
+<color
+	name="orange"
+	r="174"
+	g="108"
+	b="54"/>
+<color
+	name="orange"
+	r="173"
+	g="110"
+	b="55"/>
+<color
+	name="orange"
+	r="173"
+	g="106"
+	b="56"/>
+<color
+	name="orange"
+	r="163"
+	g="105"
+	b="56"/>
+<color
+	name="orange"
+	r="164"
+	g="103"
+	b="60"/>
+<color
+	name="orange"
+	r="163"
+	g="106"
+	b="58"/>
+<color
+	name="orange"
+	r="158"
+	g="99"
+	b="56"/>
+<color
+	name="orange"
+	r="157"
+	g="98"
+	b="43"/>
+<color
+	name="orange"
+	r="163"
+	g="106"
+	b="53"/>
+<color
+	name="orange"
+	r="162"
+	g="110"
+	b="52"/>
+<color
+	name="orange"
+	r="166"
+	g="108"
+	b="51"/>
+<color
+	name="orange"
+	r="174"
+	g="106"
+	b="54"/>
+<color
+	name="orange"
+	r="173"
+	g="105"
+	b="54"/>
+<color
+	name="orange"
+	r="170"
+	g="103"
+	b="57"/>
+<color
+	name="orange"
+	r="161"
+	g="103"
+	b="56"/>
+<color
+	name="orange"
+	r="161"
+	g="102"
+	b="58"/>
+<color
+	name="orange"
+	r="162"
+	g="100"
+	b="58"/>
+<color
+	name="orange"
+	r="155"
+	g="99"
+	b="54"/>
+<color
+	name="orange"
+	r="156"
+	g="95"
+	b="54"/>
+<color
+	name="orange"
+	r="164"
+	g="97"
+	b="52"/>
+<color
+	name="orange"
+	r="162"
+	g="93"
+	b="45"/>
+<color
+	name="orange"
+	r="160"
+	g="95"
+	b="43"/>
+<color
+	name="orange"
+	r="162"
+	g="95"
+	b="45"/>
+<color
+	name="orange"
+	r="166"
+	g="98"
+	b="48"/>
+<color
+	name="orange"
+	r="170"
+	g="103"
+	b="48"/>
+<color
+	name="orange"
+	r="171"
+	g="111"
+	b="53"/>
+<color
+	name="orange"
+	r="173"
+	g="108"
+	b="51"/>
+<color
+	name="orange"
+	r="176"
+	g="109"
+	b="51"/>
+<color
+	name="orange"
+	r="173"
+	g="110"
+	b="52"/>
+<color
+	name="orange"
+	r="167"
+	g="110"
+	b="54"/>
+<color
+	name="orange"
+	r="167"
+	g="111"
+	b="56"/>
+<color
+	name="orange"
+	r="163"
+	g="106"
+	b="50"/>
+<color
+	name="orange"
+	r="171"
+	g="108"
+	b="50"/>
+<color
+	name="orange"
+	r="170"
+	g="106"
+	b="58"/>
+<color
+	name="orange"
+	r="165"
+	g="100"
+	b="59"/>
+<color
+	name="orange"
+	r="161"
+	g="100"
+	b="59"/>
+<color
+	name="orange"
+	r="162"
+	g="99"
+	b="56"/>
+<color
+	name="orange"
+	r="155"
+	g="96"
+	b="56"/>
+<color
+	name="orange"
+	r="159"
+	g="98"
+	b="43"/>
+<color
+	name="orange"
+	r="163"
+	g="95"
+	b="43"/>
+<color
+	name="orange"
+	r="161"
+	g="96"
+	b="42"/>
+<color
+	name="orange"
+	r="165"
+	g="108"
+	b="48"/>
+<color
+	name="orange"
+	r="164"
+	g="107"
+	b="49"/>
+<color
+	name="orange"
+	r="177"
+	g="108"
+	b="52"/>
+<color
+	name="orange"
+	r="175"
+	g="106"
+	b="51"/>
+<color
+	name="orange"
+	r="174"
+	g="109"
+	b="53"/>
+<color
+	name="orange"
+	r="170"
+	g="99"
+	b="51"/>
+<color
+	name="orange"
+	r="173"
+	g="101"
+	b="51"/>
+<color
+	name="orange"
+	r="168"
+	g="97"
+	b="51"/>
+<color
+	name="orange"
+	r="171"
+	g="104"
+	b="58"/>
+<color
+	name="orange"
+	r="173"
+	g="103"
+	b="57"/>
+<color
+	name="orange"
+	r="169"
+	g="97"
+	b="56"/>
+<color
+	name="orange"
+	r="167"
+	g="100"
+	b="56"/>
+<color
+	name="orange"
+	r="168"
+	g="101"
+	b="58"/>
+<color
+	name="orange"
+	r="163"
+	g="96"
+	b="54"/>
+<color
+	name="orange"
+	r="169"
+	g="100"
+	b="55"/>
+<color
+	name="orange"
+	r="164"
+	g="99"
+	b="56"/>
+<color
+	name="orange"
+	r="161"
+	g="99"
+	b="56"/>
+<color
+	name="orange"
+	r="166"
+	g="97"
+	b="49"/>
+<color
+	name="orange"
+	r="160"
+	g="95"
+	b="51"/>
+<color
+	name="orange"
+	r="170"
+	g="101"
+	b="50"/>
+<color
+	name="orange"
+	r="168"
+	g="100"
+	b="51"/>
+<color
+	name="orange"
+	r="166"
+	g="94"
+	b="51"/>
+<color
+	name="orange"
+	r="157"
+	g="96"
+	b="45"/>
+<color
+	name="orange"
+	r="165"
+	g="98"
+	b="44"/>
+<color
+	name="orange"
+	r="163"
+	g="96"
+	b="43"/>
+<color
+	name="orange"
+	r="170"
+	g="106"
+	b="49"/>
+<color
+	name="orange"
+	r="170"
+	g="105"
+	b="48"/>
+<color
+	name="orange"
+	r="171"
+	g="107"
+	b="51"/>
+<color
+	name="orange"
+	r="173"
+	g="112"
+	b="53"/>
+<color
+	name="orange"
+	r="167"
+	g="108"
+	b="56"/>
+<color
+	name="orange"
+	r="167"
+	g="106"
+	b="58"/>
+<color
+	name="orange"
+	r="168"
+	g="109"
+	b="56"/>
+<color
+	name="orange"
+	r="169"
+	g="108"
+	b="55"/>
+<color
+	name="orange"
+	r="170"
+	g="109"
+	b="54"/>
+<color
+	name="orange"
+	r="165"
+	g="107"
+	b="55"/>
+<color
+	name="orange"
+	r="166"
+	g="105"
+	b="57"/>
+<color
+	name="orange"
+	r="169"
+	g="105"
+	b="58"/>
+<color
+	name="orange"
+	r="166"
+	g="102"
+	b="58"/>
+<color
+	name="orange"
+	r="163"
+	g="106"
+	b="56"/>
+<color
+	name="orange"
+	r="165"
+	g="109"
+	b="55"/>
+<color
+	name="orange"
+	r="168"
+	g="109"
+	b="58"/>
+<color
+	name="orange"
+	r="166"
+	g="104"
+	b="58"/>
+<color
+	name="orange"
+	r="165"
+	g="107"
+	b="56"/>
+<color
+	name="orange"
+	r="159"
+	g="104"
+	b="54"/>
+<color
+	name="orange"
+	r="165"
+	g="111"
+	b="52"/>
+<color
+	name="orange"
+	r="165"
+	g="109"
+	b="51"/>
+<color
+	name="orange"
+	r="170"
+	g="105"
+	b="50"/>
+<color
+	name="orange"
+	r="172"
+	g="107"
+	b="53"/>
+<color
+	name="orange"
+	r="172"
+	g="108"
+	b="53"/>
+<color
+	name="orange"
+	r="168"
+	g="106"
+	b="56"/>
+<color
+	name="orange"
+	r="171"
+	g="110"
+	b="56"/>
+<color
+	name="orange"
+	r="160"
+	g="104"
+	b="56"/>
+<color
+	name="orange"
+	r="165"
+	g="100"
+	b="56"/>
+<color
+	name="orange"
+	r="166"
+	g="99"
+	b="54"/>
+<color
+	name="orange"
+	r="168"
+	g="101"
+	b="53"/>
+<color
+	name="orange"
+	r="167"
+	g="98"
+	b="50"/>
+<color
+	name="orange"
+	r="163"
+	g="94"
+	b="48"/>
+<color
+	name="orange"
+	r="160"
+	g="93"
+	b="47"/>
+<color
+	name="orange"
+	r="167"
+	g="103"
+	b="51"/>
+<color
+	name="orange"
+	r="169"
+	g="107"
+	b="50"/>
+<color
+	name="orange"
+	r="170"
+	g="107"
+	b="53"/>
+<color
+	name="orange"
+	r="167"
+	g="108"
+	b="54"/>
+<color
+	name="orange"
+	r="169"
+	g="111"
+	b="56"/>
+<color
+	name="orange"
+	r="171"
+	g="109"
+	b="58"/>
+<color
+	name="orange"
+	r="173"
+	g="109"
+	b="56"/>
+<color
+	name="orange"
+	r="173"
+	g="108"
+	b="55"/>
+<color
+	name="orange"
+	r="174"
+	g="110"
+	b="55"/>
+<color
+	name="orange"
+	r="171"
+	g="107"
+	b="56"/>
+<color
+	name="orange"
+	r="169"
+	g="104"
+	b="56"/>
+<color
+	name="orange"
+	r="166"
+	g="107"
+	b="56"/>
+<color
+	name="orange"
+	r="163"
+	g="104"
+	b="54"/>
+<color
+	name="orange"
+	r="164"
+	g="104"
+	b="57"/>
+<color
+	name="orange"
+	r="162"
+	g="106"
+	b="55"/>
+<color
+	name="orange"
+	r="163"
+	g="103"
+	b="55"/>
+<color
+	name="orange"
+	r="161"
+	g="101"
+	b="56"/>
+<color
+	name="orange"
+	r="160"
+	g="102"
+	b="54"/>
+<color
+	name="orange"
+	r="159"
+	g="101"
+	b="45"/>
+<color
+	name="orange"
+	r="158"
+	g="97"
+	b="45"/>
+<color
+	name="orange"
+	r="157"
+	g="102"
+	b="52"/>
+<color
+	name="orange"
+	r="167"
+	g="102"
+	b="55"/>
+<color
+	name="orange"
+	r="161"
+	g="97"
+	b="45"/>
+<color
+	name="orange"
+	r="163"
+	g="109"
+	b="46"/>
+<color
+	name="orange"
+	r="166"
+	g="107"
+	b="47"/>
+<color
+	name="orange"
+	r="169"
+	g="102"
+	b="52"/>
+<color
+	name="orange"
+	r="170"
+	g="104"
+	b="52"/>
+<color
+	name="orange"
+	r="168"
+	g="102"
+	b="50"/>
+<color
+	name="orange"
+	r="171"
+	g="108"
+	b="56"/>
+<color
+	name="orange"
+	r="175"
+	g="108"
+	b="56"/>
+<color
+	name="orange"
+	r="177"
+	g="109"
+	b="55"/>
+<color
+	name="orange"
+	r="169"
+	g="105"
+	b="54"/>
+<color
+	name="orange"
+	r="164"
+	g="101"
+	b="54"/>
+<color
+	name="orange"
+	r="162"
+	g="94"
+	b="54"/>
+<color
+	name="orange"
+	r="166"
+	g="101"
+	b="54"/>
+<color
+	name="orange"
+	r="165"
+	g="102"
+	b="56"/>
+<color
+	name="orange"
+	r="164"
+	g="98"
+	b="54"/>
+<color
+	name="orange"
+	r="164"
+	g="97"
+	b="54"/>
+<color
+	name="orange"
+	r="156"
+	g="100"
+	b="54"/>
+<color
+	name="orange"
+	r="160"
+	g="97"
+	b="53"/>
+<color
+	name="orange"
+	r="161"
+	g="94"
+	b="54"/>
+<color
+	name="orange"
+	r="170"
+	g="103"
+	b="54"/>
+<color
+	name="orange"
+	r="169"
+	g="102"
+	b="56"/>
+<color
+	name="orange"
+	r="169"
+	g="102"
+	b="54"/>
+<color
+	name="orange"
+	r="162"
+	g="97"
+	b="45"/>
+<color
+	name="orange"
+	r="162"
+	g="97"
+	b="47"/>
+<color
+	name="orange"
+	r="167"
+	g="106"
+	b="51"/>
+<color
+	name="orange"
+	r="163"
+	g="109"
+	b="51"/>
+<color
+	name="orange"
+	r="164"
+	g="106"
+	b="51"/>
+<color
+	name="orange"
+	r="167"
+	g="106"
+	b="54"/>
+<color
+	name="orange"
+	r="169"
+	g="107"
+	b="54"/>
+<color
+	name="orange"
+	r="172"
+	g="111"
+	b="56"/>
+<color
+	name="orange"
+	r="173"
+	g="109"
+	b="58"/>
+<color
+	name="orange"
+	r="174"
+	g="113"
+	b="55"/>
+<color
+	name="orange"
+	r="171"
+	g="108"
+	b="53"/>
+<color
+	name="orange"
+	r="167"
+	g="110"
+	b="53"/>
+<color
+	name="orange"
+	r="164"
+	g="103"
+	b="54"/>
+<color
+	name="orange"
+	r="159"
+	g="103"
+	b="54"/>
+<color
+	name="orange"
+	r="158"
+	g="95"
+	b="53"/>
+<color
+	name="orange"
+	r="160"
+	g="95"
+	b="53"/>
+<color
+	name="orange"
+	r="159"
+	g="97"
+	b="54"/>
+<color
+	name="orange"
+	r="160"
+	g="97"
+	b="54"/>
+<color
+	name="orange"
+	r="166"
+	g="102"
+	b="56"/>
+<color
+	name="orange"
+	r="161"
+	g="107"
+	b="48"/>
+<color
+	name="orange"
+	r="166"
+	g="110"
+	b="48"/>
+<color
+	name="orange"
+	r="167"
+	g="106"
+	b="48"/>
+<color
+	name="orange"
+	r="161"
+	g="104"
+	b="45"/>
+<color
+	name="orange"
+	r="166"
+	g="106"
+	b="45"/>
+<color
+	name="orange"
+	r="161"
+	g="102"
+	b="48"/>
+<color
+	name="orange"
+	r="170"
+	g="107"
+	b="54"/>
+<color
+	name="orange"
+	r="171"
+	g="105"
+	b="55"/>
+<color
+	name="orange"
+	r="172"
+	g="107"
+	b="54"/>
+<color
+	name="orange"
+	r="167"
+	g="106"
+	b="52"/>
+<color
+	name="orange"
+	r="153"
+	g="98"
+	b="52"/>
+<color
+	name="orange"
+	r="166"
+	g="98"
+	b="53"/>
+<color
+	name="orange"
+	r="160"
+	g="94"
+	b="47"/>
+<color
+	name="orange"
+	r="159"
+	g="93"
+	b="47"/>
+<color
+	name="orange"
+	r="162"
+	g="95"
+	b="51"/>
+<color
+	name="orange"
+	r="159"
+	g="101"
+	b="52"/>
+<color
+	name="orange"
+	r="169"
+	g="103"
+	b="46"/>
+<color
+	name="orange"
+	r="168"
+	g="101"
+	b="47"/>
+<color
+	name="orange"
+	r="163"
+	g="99"
+	b="42"/>
+<color
+	name="orange"
+	r="158"
+	g="104"
+	b="48"/>
+<color
+	name="orange"
+	r="166"
+	g="104"
+	b="51"/>
+<color
+	name="orange"
+	r="169"
+	g="106"
+	b="53"/>
+<color
+	name="orange"
+	r="169"
+	g="108"
+	b="53"/>
+<color
+	name="orange"
+	r="166"
+	g="104"
+	b="54"/>
+<color
+	name="orange"
+	r="164"
+	g="106"
+	b="53"/>
+<color
+	name="orange"
+	r="164"
+	g="104"
+	b="54"/>
+<color
+	name="orange"
+	r="162"
+	g="101"
+	b="56"/>
+<color
+	name="orange"
+	r="160"
+	g="100"
+	b="55"/>
+<color
+	name="orange"
+	r="155"
+	g="93"
+	b="50"/>
+<color
+	name="orange"
+	r="152"
+	g="100"
+	b="51"/>
+<color
+	name="orange"
+	r="158"
+	g="94"
+	b="45"/>
+<color
+	name="orange"
+	r="162"
+	g="102"
+	b="52"/>
+<color
+	name="orange"
+	r="162"
+	g="105"
+	b="49"/>
+<color
+	name="orange"
+	r="156"
+	g="103"
+	b="48"/>
+<color
+	name="orange"
+	r="159"
+	g="103"
+	b="45"/>
+<color
+	name="orange"
+	r="160"
+	g="107"
+	b="46"/>
+<color
+	name="orange"
+	r="166"
+	g="108"
+	b="46"/>
+<color
+	name="orange"
+	r="169"
+	g="106"
+	b="48"/>
+<color
+	name="orange"
+	r="164"
+	g="105"
+	b="44"/>
+<color
+	name="orange"
+	r="161"
+	g="103"
+	b="46"/>
+<color
+	name="orange"
+	r="161"
+	g="98"
+	b="44"/>
+<color
+	name="orange"
+	r="169"
+	g="104"
+	b="52"/>
+<color
+	name="orange"
+	r="166"
+	g="105"
+	b="53"/>
+<color
+	name="orange"
+	r="161"
+	g="99"
+	b="54"/>
+<color
+	name="orange"
+	r="151"
+	g="97"
+	b="50"/>
+<color
+	name="orange"
+	r="156"
+	g="95"
+	b="50"/>
+<color
+	name="orange"
+	r="156"
+	g="91"
+	b="49"/>
+<color
+	name="orange"
+	r="158"
+	g="92"
+	b="49"/>
+<color
+	name="orange"
+	r="157"
+	g="92"
+	b="46"/>
+<color
+	name="orange"
+	r="157"
+	g="90"
+	b="47"/>
+<color
+	name="orange"
+	r="162"
+	g="97"
+	b="50"/>
+<color
+	name="orange"
+	r="165"
+	g="99"
+	b="52"/>
+<color
+	name="orange"
+	r="166"
+	g="101"
+	b="50"/>
+<color
+	name="orange"
+	r="157"
+	g="95"
+	b="52"/>
+<color
+	name="orange"
+	r="159"
+	g="95"
+	b="51"/>
+<color
+	name="orange"
+	r="161"
+	g="96"
+	b="47"/>
+<color
+	name="orange"
+	r="159"
+	g="102"
+	b="47"/>
+<color
+	name="orange"
+	r="159"
+	g="104"
+	b="47"/>
+<color
+	name="orange"
+	r="170"
+	g="104"
+	b="46"/>
+<color
+	name="orange"
+	r="172"
+	g="104"
+	b="47"/>
+<color
+	name="orange"
+	r="169"
+	g="104"
+	b="49"/>
+<color
+	name="orange"
+	r="163"
+	g="102"
+	b="43"/>
+<color
+	name="orange"
+	r="165"
+	g="101"
+	b="45"/>
+<color
+	name="orange"
+	r="167"
+	g="102"
+	b="47"/>
+<color
+	name="orange"
+	r="168"
+	g="99"
+	b="45"/>
+<color
+	name="orange"
+	r="169"
+	g="101"
+	b="48"/>
+<color
+	name="orange"
+	r="160"
+	g="104"
+	b="48"/>
+<color
+	name="orange"
+	r="161"
+	g="100"
+	b="46"/>
+<color
+	name="orange"
+	r="164"
+	g="102"
+	b="51"/>
+<color
+	name="orange"
+	r="166"
+	g="102"
+	b="53"/>
+<color
+	name="orange"
+	r="166"
+	g="108"
+	b="53"/>
+<color
+	name="orange"
+	r="162"
+	g="100"
+	b="52"/>
+<color
+	name="orange"
+	r="158"
+	g="100"
+	b="51"/>
+<color
+	name="orange"
+	r="155"
+	g="102"
+	b="49"/>
+<color
+	name="orange"
+	r="155"
+	g="102"
+	b="50"/>
+<color
+	name="orange"
+	r="155"
+	g="98"
+	b="50"/>
+<color
+	name="orange"
+	r="155"
+	g="93"
+	b="48"/>
+<color
+	name="orange"
+	r="155"
+	g="100"
+	b="49"/>
+<color
+	name="orange"
+	r="157"
+	g="93"
+	b="44"/>
+<color
+	name="orange"
+	r="156"
+	g="91"
+	b="45"/>
+<color
+	name="orange"
+	r="161"
+	g="95"
+	b="49"/>
+<color
+	name="orange"
+	r="162"
+	g="98"
+	b="54"/>
+<color
+	name="orange"
+	r="164"
+	g="104"
+	b="52"/>
+<color
+	name="orange"
+	r="155"
+	g="101"
+	b="50"/>
+<color
+	name="orange"
+	r="157"
+	g="97"
+	b="51"/>
+<color
+	name="orange"
+	r="157"
+	g="102"
+	b="50"/>
+<color
+	name="orange"
+	r="158"
+	g="102"
+	b="51"/>
+<color
+	name="orange"
+	r="160"
+	g="102"
+	b="53"/>
+<color
+	name="orange"
+	r="162"
+	g="105"
+	b="50"/>
+<color
+	name="orange"
+	r="157"
+	g="100"
+	b="47"/>
+<color
+	name="orange"
+	r="161"
+	g="102"
+	b="43"/>
+<color
+	name="orange"
+	r="161"
+	g="104"
+	b="46"/>
+<color
+	name="orange"
+	r="162"
+	g="106"
+	b="48"/>
+<color
+	name="orange"
+	r="162"
+	g="111"
+	b="46"/>
+<color
+	name="orange"
+	r="169"
+	g="105"
+	b="45"/>
+<color
+	name="orange"
+	r="170"
+	g="103"
+	b="45"/>
+<color
+	name="orange"
+	r="171"
+	g="107"
+	b="47"/>
+<color
+	name="orange"
+	r="168"
+	g="105"
+	b="50"/>
+<color
+	name="orange"
+	r="164"
+	g="100"
+	b="43"/>
+<color
+	name="orange"
+	r="163"
+	g="99"
+	b="46"/>
+<color
+	name="orange"
+	r="163"
+	g="100"
+	b="44"/>
+<color
+	name="orange"
+	r="162"
+	g="100"
+	b="43"/>
+<color
+	name="orange"
+	r="166"
+	g="104"
+	b="49"/>
+<color
+	name="orange"
+	r="168"
+	g="105"
+	b="47"/>
+<color
+	name="orange"
+	r="158"
+	g="99"
+	b="50"/>
+<color
+	name="orange"
+	r="164"
+	g="101"
+	b="49"/>
+<color
+	name="orange"
+	r="164"
+	g="96"
+	b="49"/>
+<color
+	name="orange"
+	r="164"
+	g="99"
+	b="50"/>
+<color
+	name="orange"
+	r="165"
+	g="97"
+	b="51"/>
+<color
+	name="orange"
+	r="166"
+	g="100"
+	b="52"/>
+<color
+	name="orange"
+	r="163"
+	g="97"
+	b="53"/>
+<color
+	name="orange"
+	r="157"
+	g="93"
+	b="51"/>
+<color
+	name="orange"
+	r="157"
+	g="93"
+	b="52"/>
+<color
+	name="orange"
+	r="156"
+	g="98"
+	b="52"/>
+<color
+	name="orange"
+	r="156"
+	g="96"
+	b="54"/>
+<color
+	name="orange"
+	r="154"
+	g="95"
+	b="52"/>
+<color
+	name="orange"
+	r="154"
+	g="91"
+	b="50"/>
+<color
+	name="orange"
+	r="149"
+	g="91"
+	b="49"/>
+<color
+	name="orange"
+	r="148"
+	g="89"
+	b="49"/>
+<color
+	name="orange"
+	r="148"
+	g="92"
+	b="48"/>
+<color
+	name="orange"
+	r="155"
+	g="96"
+	b="47"/>
+<color
+	name="orange"
+	r="152"
+	g="94"
+	b="50"/>
+<color
+	name="orange"
+	r="153"
+	g="92"
+	b="51"/>
+<color
+	name="orange"
+	r="154"
+	g="90"
+	b="46"/>
+<color
+	name="orange"
+	r="155"
+	g="93"
+	b="47"/>
+<color
+	name="orange"
+	r="156"
+	g="95"
+	b="46"/>
+<color
+	name="orange"
+	r="154"
+	g="94"
+	b="45"/>
+<color
+	name="orange"
+	r="157"
+	g="95"
+	b="45"/>
+<color
+	name="orange"
+	r="155"
+	g="93"
+	b="45"/>
+<color
+	name="orange"
+	r="153"
+	g="90"
+	b="46"/>
+<color
+	name="orange"
+	r="155"
+	g="91"
+	b="45"/>
+<color
+	name="orange"
+	r="161"
+	g="92"
+	b="48"/>
+<color
+	name="orange"
+	r="163"
+	g="96"
+	b="48"/>
+<color
+	name="orange"
+	r="157"
+	g="98"
+	b="50"/>
+<color
+	name="orange"
+	r="163"
+	g="99"
+	b="52"/>
+<color
+	name="orange"
+	r="164"
+	g="102"
+	b="52"/>
+<color
+	name="orange"
+	r="164"
+	g="101"
+	b="52"/>
+<color
+	name="orange"
+	r="156"
+	g="92"
+	b="49"/>
+<color
+	name="orange"
+	r="154"
+	g="96"
+	b="48"/>
+<color
+	name="orange"
+	r="155"
+	g="96"
+	b="50"/>
+<color
+	name="orange"
+	r="158"
+	g="97"
+	b="51"/>
+<color
+	name="orange"
+	r="162"
+	g="99"
+	b="49"/>
+<color
+	name="orange"
+	r="164"
+	g="99"
+	b="48"/>
+<color
+	name="orange"
+	r="158"
+	g="99"
+	b="46"/>
+<color
+	name="orange"
+	r="157"
+	g="99"
+	b="45"/>
+<color
+	name="orange"
+	r="157"
+	g="98"
+	b="46"/>
+<color
+	name="orange"
+	r="163"
+	g="105"
+	b="47"/>
+<color
+	name="orange"
+	r="165"
+	g="102"
+	b="44"/>
+<color
+	name="orange"
+	r="168"
+	g="103"
+	b="44"/>
+<color
+	name="orange"
+	r="169"
+	g="101"
+	b="44"/>
+<color
+	name="orange"
+	r="171"
+	g="103"
+	b="46"/>
+<color
+	name="orange"
+	r="164"
+	g="96"
+	b="44"/>
+<color
+	name="orange"
+	r="164"
+	g="99"
+	b="46"/>
+<color
+	name="orange"
+	r="165"
+	g="100"
+	b="47"/>
+<color
+	name="orange"
+	r="163"
+	g="95"
+	b="47"/>
+<color
+	name="orange"
+	r="162"
+	g="99"
+	b="45"/>
+<color
+	name="orange"
+	r="160"
+	g="99"
+	b="43"/>
+<color
+	name="orange"
+	r="166"
+	g="98"
+	b="47"/>
+<color
+	name="orange"
+	r="167"
+	g="101"
+	b="47"/>
+<color
+	name="orange"
+	r="164"
+	g="101"
+	b="50"/>
+<color
+	name="orange"
+	r="162"
+	g="103"
+	b="51"/>
+<color
+	name="orange"
+	r="160"
+	g="100"
+	b="53"/>
+<color
+	name="orange"
+	r="159"
+	g="103"
+	b="52"/>
+<color
+	name="orange"
+	r="160"
+	g="97"
+	b="49"/>
+<color
+	name="orange"
+	r="156"
+	g="99"
+	b="49"/>
+<color
+	name="orange"
+	r="157"
+	g="100"
+	b="51"/>
+<color
+	name="orange"
+	r="158"
+	g="95"
+	b="49"/>
+<color
+	name="orange"
+	r="164"
+	g="104"
+	b="48"/>
+<color
+	name="orange"
+	r="163"
+	g="100"
+	b="47"/>
+<color
+	name="orange"
+	r="161"
+	g="99"
+	b="51"/>
+<color
+	name="orange"
+	r="160"
+	g="98"
+	b="53"/>
+<color
+	name="orange"
+	r="159"
+	g="97"
+	b="53"/>
+<color
+	name="orange"
+	r="157"
+	g="100"
+	b="52"/>
+<color
+	name="orange"
+	r="153"
+	g="103"
+	b="52"/>
+<color
+	name="orange"
+	r="154"
+	g="97"
+	b="53"/>
+<color
+	name="orange"
+	r="155"
+	g="100"
+	b="53"/>
+<color
+	name="orange"
+	r="158"
+	g="100"
+	b="54"/>
+<color
+	name="orange"
+	r="157"
+	g="98"
+	b="54"/>
+<color
+	name="orange"
+	r="156"
+	g="96"
+	b="53"/>
+<color
+	name="orange"
+	r="158"
+	g="98"
+	b="53"/>
+<color
+	name="orange"
+	r="161"
+	g="104"
+	b="53"/>
+<color
+	name="orange"
+	r="158"
+	g="99"
+	b="54"/>
+<color
+	name="orange"
+	r="155"
+	g="99"
+	b="52"/>
+<color
+	name="orange"
+	r="154"
+	g="94"
+	b="50"/>
+<color
+	name="orange"
+	r="152"
+	g="93"
+	b="48"/>
+<color
+	name="orange"
+	r="151"
+	g="95"
+	b="49"/>
+<color
+	name="orange"
+	r="151"
+	g="92"
+	b="50"/>
+<color
+	name="orange"
+	r="151"
+	g="93"
+	b="48"/>
+<color
+	name="orange"
+	r="151"
+	g="92"
+	b="47"/>
+<color
+	name="orange"
+	r="151"
+	g="95"
+	b="46"/>
+<color
+	name="orange"
+	r="150"
+	g="93"
+	b="45"/>
+<color
+	name="orange"
+	r="150"
+	g="97"
+	b="45"/>
+<color
+	name="orange"
+	r="152"
+	g="95"
+	b="48"/>
+<color
+	name="orange"
+	r="150"
+	g="96"
+	b="49"/>
+<color
+	name="orange"
+	r="151"
+	g="95"
+	b="50"/>
+<color
+	name="orange"
+	r="152"
+	g="93"
+	b="45"/>
+<color
+	name="orange"
+	r="153"
+	g="93"
+	b="46"/>
+<color
+	name="orange"
+	r="153"
+	g="95"
+	b="44"/>
+<color
+	name="orange"
+	r="153"
+	g="94"
+	b="42"/>
+<color
+	name="orange"
+	r="153"
+	g="96"
+	b="45"/>
+<color
+	name="orange"
+	r="156"
+	g="100"
+	b="48"/>
+<color
+	name="orange"
+	r="157"
+	g="97"
+	b="48"/>
+<color
+	name="orange"
+	r="156"
+	g="95"
+	b="48"/>
+<color
+	name="orange"
+	r="155"
+	g="95"
+	b="46"/>
+<color
+	name="orange"
+	r="153"
+	g="99"
+	b="46"/>
+<color
+	name="orange"
+	r="155"
+	g="96"
+	b="45"/>
+<color
+	name="orange"
+	r="158"
+	g="97"
+	b="46"/>
+<color
+	name="orange"
+	r="159"
+	g="95"
+	b="47"/>
+<color
+	name="orange"
+	r="160"
+	g="98"
+	b="47"/>
+<color
+	name="orange"
+	r="159"
+	g="96"
+	b="49"/>
+<color
+	name="orange"
+	r="160"
+	g="97"
+	b="51"/>
+<color
+	name="orange"
+	r="162"
+	g="99"
+	b="51"/>
+<color
+	name="orange"
+	r="162"
+	g="100"
+	b="51"/>
+<color
+	name="orange"
+	r="163"
+	g="104"
+	b="52"/>
+<color
+	name="orange"
+	r="163"
+	g="101"
+	b="54"/>
+<color
+	name="orange"
+	r="164"
+	g="104"
+	b="51"/>
+<color
+	name="orange"
+	r="161"
+	g="101"
+	b="49"/>
+<color
+	name="orange"
+	r="158"
+	g="100"
+	b="48"/>
+<color
+	name="orange"
+	r="155"
+	g="95"
+	b="48"/>
+<color
+	name="orange"
+	r="152"
+	g="96"
+	b="47"/>
+<color
+	name="orange"
+	r="153"
+	g="95"
+	b="47"/>
+<color
+	name="orange"
+	r="154"
+	g="99"
+	b="48"/>
+<color
+	name="orange"
+	r="153"
+	g="96"
+	b="49"/>
+<color
+	name="orange"
+	r="152"
+	g="96"
+	b="51"/>
+<color
+	name="orange"
+	r="153"
+	g="99"
+	b="49"/>
+<color
+	name="orange"
+	r="154"
+	g="99"
+	b="47"/>
+<color
+	name="orange"
+	r="156"
+	g="104"
+	b="48"/>
+<color
+	name="orange"
+	r="158"
+	g="102"
+	b="49"/>
+<color
+	name="orange"
+	r="160"
+	g="107"
+	b="50"/>
+<color
+	name="orange"
+	r="161"
+	g="101"
+	b="51"/>
+<color
+	name="orange"
+	r="160"
+	g="99"
+	b="48"/>
+<color
+	name="orange"
+	r="159"
+	g="100"
+	b="46"/>
+<color
+	name="orange"
+	r="158"
+	g="99"
+	b="44"/>
+<color
+	name="orange"
+	r="157"
+	g="97"
+	b="46"/>
+<color
+	name="orange"
+	r="159"
+	g="99"
+	b="49"/>
+<color
+	name="orange"
+	r="161"
+	g="102"
+	b="50"/>
+<color
+	name="orange"
+	r="160"
+	g="104"
+	b="51"/>
+<color
+	name="orange"
+	r="160"
+	g="110"
+	b="48"/>
+<color
+	name="orange"
+	r="162"
+	g="106"
+	b="45"/>
+<color
+	name="orange"
+	r="163"
+	g="103"
+	b="48"/>
+<color
+	name="orange"
+	r="163"
+	g="104"
+	b="45"/>
+<color
+	name="orange"
+	r="165"
+	g="103"
+	b="43"/>
+<color
+	name="orange"
+	r="168"
+	g="107"
+	b="43"/>
+<color
+	name="orange"
+	r="167"
+	g="104"
+	b="44"/>
+<color
+	name="orange"
+	r="167"
+	g="104"
+	b="46"/>
+<color
+	name="orange"
+	r="168"
+	g="102"
+	b="48"/>
+<color
+	name="orange"
+	r="168"
+	g="107"
+	b="46"/>
+<color
+	name="orange"
+	r="167"
+	g="101"
+	b="45"/>
+<color
+	name="orange"
+	r="166"
+	g="103"
+	b="45"/>
+<color
+	name="orange"
+	r="165"
+	g="102"
+	b="46"/>
+<color
+	name="orange"
+	r="164"
+	g="105"
+	b="47"/>
+<color
+	name="orange"
+	r="163"
+	g="100"
+	b="49"/>
+<color
+	name="orange"
+	r="162"
+	g="102"
+	b="46"/>
+<color
+	name="orange"
+	r="161"
+	g="100"
+	b="44"/>
+<color
+	name="orange"
+	r="160"
+	g="102"
+	b="44"/>
+<color
+	name="orange"
+	r="162"
+	g="102"
+	b="45"/>
+<color
+	name="orange"
+	r="165"
+	g="106"
+	b="46"/>
+<color
+	name="orange"
+	r="166"
+	g="101"
+	b="48"/>
+<color
+	name="orange"
+	r="167"
+	g="102"
+	b="48"/>
+<color
+	name="orange"
+	r="165"
+	g="103"
+	b="48"/>
+<color
+	name="orange"
+	r="164"
+	g="108"
+	b="47"/>
+<color
+	name="blue"
+	r="24"
+	g="35"
+	b="58"/>
+<color
+	name="blue"
+	r="36"
+	g="48"
+	b="72"/>
+<color
+	name="blue"
+	r="36"
+	g="47"
+	b="71"/>
+<color
+	name="blue"
+	r="36"
+	g="47"
+	b="66"/>
+<color
+	name="blue"
+	r="35"
+	g="48"
+	b="64"/>
+<color
+	name="blue"
+	r="36"
+	g="46"
+	b="60"/>
+<color
+	name="blue"
+	r="21"
+	g="36"
+	b="54"/>
+<color
+	name="blue"
+	r="25"
+	g="41"
+	b="60"/>
+<color
+	name="blue"
+	r="33"
+	g="50"
+	b="70"/>
+<color
+	name="blue"
+	r="36"
+	g="49"
+	b="70"/>
+<color
+	name="blue"
+	r="34"
+	g="48"
+	b="71"/>
+<color
+	name="blue"
+	r="32"
+	g="48"
+	b="64"/>
+<color
+	name="blue"
+	r="36"
+	g="46"
+	b="64"/>
+<color
+	name="blue"
+	r="27"
+	g="42"
+	b="64"/>
+<color
+	name="blue"
+	r="33"
+	g="47"
+	b="69"/>
+<color
+	name="blue"
+	r="34"
+	g="45"
+	b="70"/>
+<color
+	name="blue"
+	r="34"
+	g="47"
+	b="71"/>
+<color
+	name="blue"
+	r="34"
+	g="50"
+	b="68"/>
+<color
+	name="blue"
+	r="34"
+	g="51"
+	b="70"/>
+<color
+	name="blue"
+	r="34"
+	g="48"
+	b="72"/>
+<color
+	name="blue"
+	r="33"
+	g="46"
+	b="67"/>
+<color
+	name="blue"
+	r="24"
+	g="31"
+	b="52"/>
+<color
+	name="blue"
+	r="34"
+	g="46"
+	b="68"/>
+<color
+	name="blue"
+	r="34"
+	g="45"
+	b="68"/>
+<color
+	name="blue"
+	r="34"
+	g="47"
+	b="67"/>
+<color
+	name="blue"
+	r="34"
+	g="50"
+	b="66"/>
+<color
+	name="blue"
+	r="34"
+	g="48"
+	b="67"/>
+<color
+	name="blue"
+	r="34"
+	g="49"
+	b="68"/>
+<color
+	name="blue"
+	r="23"
+	g="31"
+	b="52"/>
+<color
+	name="blue"
+	r="26"
+	g="36"
+	b="62"/>
+<color
+	name="blue"
+	r="32"
+	g="48"
+	b="66"/>
+<color
+	name="blue"
+	r="22"
+	g="33"
+	b="54"/>
+<color
+	name="blue"
+	r="27"
+	g="40"
+	b="62"/>
+<color
+	name="blue"
+	r="32"
+	g="41"
+	b="64"/>
+<color
+	name="blue"
+	r="22"
+	g="29"
+	b="46"/>
+<color
+	name="blue"
+	r="26"
+	g="37"
+	b="61"/>
+<color
+	name="blue"
+	r="34"
+	g="41"
+	b="60"/>
+<color
+	name="blue"
+	r="34"
+	g="42"
+	b="55"/>
+<color
+	name="blue"
+	r="26"
+	g="35"
+	b="58"/>
+<color
+	name="blue"
+	r="18"
+	g="25"
+	b="42"/>
+<color
+	name="blue"
+	r="26"
+	g="32"
+	b="51"/>
+<color
+	name="blue"
+	r="26"
+	g="33"
+	b="49"/>
+<color
+	name="blue"
+	r="15"
+	g="23"
+	b="38"/>
+<color
+	name="blue"
+	r="28"
+	g="35"
+	b="53"/>
+<color
+	name="blue"
+	r="32"
+	g="39"
+	b="58"/>
+<color
+	name="blue"
+	r="26"
+	g="33"
+	b="55"/>
+<color
+	name="blue"
+	r="32"
+	g="39"
+	b="57"/>
+<color
+	name="blue"
+	r="26"
+	g="33"
+	b="43"/>
+<color
+	name="blue"
+	r="30"
+	g="38"
+	b="50"/>
+<color
+	name="blue"
+	r="17"
+	g="27"
+	b="42"/>
+<color
+	name="blue"
+	r="16"
+	g="21"
+	b="34"/>
+<color
+	name="blue"
+	r="24"
+	g="31"
+	b="46"/>
+<color
+	name="blue"
+	r="30"
+	g="39"
+	b="62"/>
+<color
+	name="blue"
+	r="28"
+	g="34"
+	b="47"/>
+<color
+	name="blue"
+	r="32"
+	g="39"
+	b="53"/>
+<color
+	name="blue"
+	r="15"
+	g="23"
+	b="36"/>
+<color
+	name="blue"
+	r="15"
+	g="22"
+	b="29"/>
+<color
+	name="blue"
+	r="16"
+	g="21"
+	b="31"/>
+<color
+	name="blue"
+	r="19"
+	g="27"
+	b="44"/>
+<color
+	name="blue"
+	r="22"
+	g="29"
+	b="44"/>
+<color
+	name="blue"
+	r="17"
+	g="28"
+	b="38"/>
+<color
+	name="blue"
+	r="27"
+	g="42"
+	b="61"/>
+<color
+	name="blue"
+	r="15"
+	g="21"
+	b="33"/>
+<color
+	name="blue"
+	r="19"
+	g="32"
+	b="44"/>
+<color
+	name="blue"
+	r="16"
+	g="20"
+	b="32"/>
+<color
+	name="blue"
+	r="32"
+	g="39"
+	b="55"/>
+<color
+	name="blue"
+	r="30"
+	g="37"
+	b="56"/>
+<color
+	name="blue"
+	r="22"
+	g="28"
+	b="35"/>
+<color
+	name="blue"
+	r="30"
+	g="40"
+	b="66"/>
+<color
+	name="blue"
+	r="25"
+	g="30"
+	b="41"/>
+<color
+	name="blue"
+	r="30"
+	g="37"
+	b="53"/>
+<color
+	name="blue"
+	r="21"
+	g="32"
+	b="33"/>
+<color
+	name="blue"
+	r="22"
+	g="30"
+	b="33"/>
+<color
+	name="blue"
+	r="31"
+	g="37"
+	b="54"/>
+<color
+	name="blue"
+	r="30"
+	g="46"
+	b="60"/>
+<color
+	name="blue"
+	r="29"
+	g="44"
+	b="60"/>
+<color
+	name="blue"
+	r="27"
+	g="46"
+	b="47"/>
+<color
+	name="blue"
+	r="34"
+	g="41"
+	b="62"/>
+<color
+	name="blue"
+	r="34"
+	g="42"
+	b="66"/>
+<color
+	name="blue"
+	r="33"
+	g="46"
+	b="61"/>
+<color
+	name="blue"
+	r="32"
+	g="41"
+	b="63"/>
+<color
+	name="blue"
+	r="31"
+	g="41"
+	b="65"/>
+<color
+	name="blue"
+	r="34"
+	g="41"
+	b="58"/>
+<color
+	name="blue"
+	r="33"
+	g="41"
+	b="58"/>
+<color
+	name="blue"
+	r="32"
+	g="42"
+	b="57"/>
+<color
+	name="blue"
+	r="36"
+	g="43"
+	b="61"/>
+<color
+	name="blue"
+	r="37"
+	g="44"
+	b="60"/>
+<color
+	name="blue"
+	r="35"
+	g="46"
+	b="59"/>
+<color
+	name="blue"
+	r="35"
+	g="47"
+	b="63"/>
+<color
+	name="blue"
+	r="29"
+	g="39"
+	b="63"/>
+<color
+	name="blue"
+	r="36"
+	g="47"
+	b="63"/>
+<color
+	name="blue"
+	r="36"
+	g="45"
+	b="64"/>
+<color
+	name="blue"
+	r="36"
+	g="44"
+	b="63"/>
+<color
+	name="blue"
+	r="32"
+	g="44"
+	b="55"/>
+<color
+	name="blue"
+	r="33"
+	g="42"
+	b="53"/>
+<color
+	name="blue"
+	r="21"
+	g="36"
+	b="45"/>
+<color
+	name="blue"
+	r="32"
+	g="41"
+	b="53"/>
+<color
+	name="blue"
+	r="34"
+	g="41"
+	b="55"/>
+<color
+	name="blue"
+	r="35"
+	g="42"
+	b="57"/>
+<color
+	name="blue"
+	r="33"
+	g="46"
+	b="62"/>
+<color
+	name="blue"
+	r="21"
+	g="37"
+	b="47"/>
+<color
+	name="blue"
+	r="26"
+	g="33"
+	b="47"/>
+<color
+	name="blue"
+	r="32"
+	g="43"
+	b="66"/>
+<color
+	name="blue"
+	r="30"
+	g="39"
+	b="60"/>
+<color
+	name="blue"
+	r="26"
+	g="33"
+	b="45"/>
+<color
+	name="blue"
+	r="32"
+	g="40"
+	b="54"/>
+<color
+	name="blue"
+	r="34"
+	g="41"
+	b="57"/>
+<color
+	name="blue"
+	r="31"
+	g="48"
+	b="64"/>
+<color
+	name="blue"
+	r="34"
+	g="44"
+	b="66"/>
+<color
+	name="blue"
+	r="34"
+	g="43"
+	b="64"/>
+<color
+	name="blue"
+	r="32"
+	g="44"
+	b="66"/>
+<color
+	name="blue"
+	r="32"
+	g="44"
+	b="60"/>
+<color
+	name="blue"
+	r="32"
+	g="46"
+	b="64"/>
+<color
+	name="blue"
+	r="35"
+	g="43"
+	b="63"/>
+<color
+	name="blue"
+	r="34"
+	g="44"
+	b="60"/>
+<color
+	name="blue"
+	r="34"
+	g="47"
+	b="64"/>
+<color
+	name="blue"
+	r="27"
+	g="40"
+	b="65"/>
+<color
+	name="blue"
+	r="27"
+	g="38"
+	b="63"/>
+<color
+	name="blue"
+	r="35"
+	g="44"
+	b="59"/>
+<color
+	name="blue"
+	r="34"
+	g="43"
+	b="59"/>
+<color
+	name="blue"
+	r="34"
+	g="43"
+	b="61"/>
+<color
+	name="blue"
+	r="34"
+	g="45"
+	b="63"/>
+<color
+	name="blue"
+	r="34"
+	g="44"
+	b="64"/>
+<color
+	name="blue"
+	r="30"
+	g="39"
+	b="53"/>
+<color
+	name="blue"
+	r="30"
+	g="43"
+	b="54"/>
+<color
+	name="blue"
+	r="33"
+	g="44"
+	b="58"/>
+<color
+	name="blue"
+	r="33"
+	g="40"
+	b="60"/>
+<color
+	name="blue"
+	r="32"
+	g="44"
+	b="63"/>
+<color
+	name="blue"
+	r="29"
+	g="41"
+	b="62"/>
+<color
+	name="blue"
+	r="28"
+	g="35"
+	b="48"/>
+<color
+	name="blue"
+	r="30"
+	g="37"
+	b="51"/>
+<color
+	name="blue"
+	r="32"
+	g="42"
+	b="55"/>
+<color
+	name="blue"
+	r="33"
+	g="40"
+	b="57"/>
+<color
+	name="blue"
+	r="29"
+	g="41"
+	b="66"/>
+<color
+	name="blue"
+	r="29"
+	g="41"
+	b="64"/>
+<color
+	name="blue"
+	r="30"
+	g="44"
+	b="68"/>
+<color
+	name="blue"
+	r="30"
+	g="44"
+	b="67"/>
+<color
+	name="blue"
+	r="32"
+	g="45"
+	b="64"/>
+<color
+	name="blue"
+	r="30"
+	g="46"
+	b="64"/>
+<color
+	name="blue"
+	r="30"
+	g="43"
+	b="66"/>
+<color
+	name="blue"
+	r="29"
+	g="43"
+	b="67"/>
+<color
+	name="blue"
+	r="30"
+	g="46"
+	b="62"/>
+<color
+	name="blue"
+	r="29"
+	g="46"
+	b="64"/>
+<color
+	name="blue"
+	r="29"
+	g="43"
+	b="65"/>
+<color
+	name="blue"
+	r="29"
+	g="44"
+	b="62"/>
+<color
+	name="blue"
+	r="30"
+	g="44"
+	b="65"/>
+<color
+	name="blue"
+	r="32"
+	g="43"
+	b="64"/>
+<color
+	name="blue"
+	r="30"
+	g="43"
+	b="64"/>
+<color
+	name="blue"
+	r="29"
+	g="42"
+	b="62"/>
+<color
+	name="blue"
+	r="30"
+	g="45"
+	b="61"/>
+<color
+	name="blue"
+	r="32"
+	g="43"
+	b="62"/>
+<color
+	name="blue"
+	r="31"
+	g="45"
+	b="62"/>
+<color
+	name="blue"
+	r="30"
+	g="41"
+	b="63"/>
+<color
+	name="blue"
+	r="30"
+	g="42"
+	b="61"/>
+<color
+	name="blue"
+	r="29"
+	g="42"
+	b="61"/>
+<color
+	name="blue"
+	r="29"
+	g="36"
+	b="59"/>
+<color
+	name="blue"
+	r="31"
+	g="38"
+	b="55"/>
+<color
+	name="blue"
+	r="29"
+	g="37"
+	b="56"/>
+<color
+	name="blue"
+	r="30"
+	g="38"
+	b="56"/>
+<color
+	name="blue"
+	r="30"
+	g="40"
+	b="55"/>
+<color
+	name="blue"
+	r="30"
+	g="39"
+	b="46"/>
+<color
+	name="blue"
+	r="39"
+	g="53"
+	b="49"/>
+<color
+	name="blue"
+	r="37"
+	g="55"
+	b="52"/>
+<color
+	name="blue"
+	r="38"
+	g="56"
+	b="52"/>
+<color
+	name="blue"
+	r="37"
+	g="53"
+	b="52"/>
+<color
+	name="blue"
+	r="39"
+	g="53"
+	b="52"/>
+<color
+	name="blue"
+	r="38"
+	g="54"
+	b="52"/>
+<color
+	name="blue"
+	r="28"
+	g="48"
+	b="43"/>
+<color
+	name="blue"
+	r="38"
+	g="53"
+	b="50"/>
+<color
+	name="blue"
+	r="40"
+	g="55"
+	b="50"/>
+<color
+	name="blue"
+	r="36"
+	g="54"
+	b="46"/>
+<color
+	name="blue"
+	r="24"
+	g="31"
+	b="42"/>
+<color
+	name="blue"
+	r="23"
+	g="38"
+	b="46"/>
+<color
+	name="blue"
+	r="39"
+	g="60"
+	b="49"/>
+<color
+	name="blue"
+	r="38"
+	g="56"
+	b="50"/>
+<color
+	name="blue"
+	r="37"
+	g="56"
+	b="47"/>
+<color
+	name="blue"
+	r="36"
+	g="59"
+	b="46"/>
+<color
+	name="blue"
+	r="35"
+	g="54"
+	b="45"/>
+<color
+	name="blue"
+	r="37"
+	g="60"
+	b="50"/>
+<color
+	name="blue"
+	r="37"
+	g="59"
+	b="49"/>
+<color
+	name="blue"
+	r="38"
+	g="56"
+	b="48"/>
+<color
+	name="blue"
+	r="38"
+	g="54"
+	b="47"/>
+<color
+	name="blue"
+	r="38"
+	g="55"
+	b="49"/>
+<color
+	name="blue"
+	r="34"
+	g="45"
+	b="47"/>
+<color
+	name="blue"
+	r="30"
+	g="41"
+	b="41"/>
+<color
+	name="blue"
+	r="32"
+	g="43"
+	b="47"/>
+<color
+	name="blue"
+	r="29"
+	g="45"
+	b="41"/>
+<color
+	name="blue"
+	r="29"
+	g="50"
+	b="49"/>
+<color
+	name="blue"
+	r="33"
+	g="48"
+	b="43"/>
+<color
+	name="blue"
+	r="30"
+	g="41"
+	b="39"/>
+<color
+	name="blue"
+	r="28"
+	g="42"
+	b="39"/>
+<color
+	name="blue"
+	r="30"
+	g="52"
+	b="53"/>
+<color
+	name="blue"
+	r="34"
+	g="49"
+	b="45"/>
+<color
+	name="blue"
+	r="32"
+	g="45"
+	b="43"/>
+<color
+	name="blue"
+	r="33"
+	g="41"
+	b="47"/>
+<color
+	name="blue"
+	r="33"
+	g="51"
+	b="54"/>
+<color
+	name="blue"
+	r="28"
+	g="40"
+	b="39"/>
+<color
+	name="blue"
+	r="33"
+	g="54"
+	b="55"/>
+<color
+	name="blue"
+	r="28"
+	g="39"
+	b="41"/>
+<color
+	name="blue"
+	r="36"
+	g="49"
+	b="49"/>
+<color
+	name="blue"
+	r="23"
+	g="38"
+	b="39"/>
+<color
+	name="blue"
+	r="26"
+	g="41"
+	b="39"/>
+<color
+	name="blue"
+	r="24"
+	g="34"
+	b="34"/>
+<color
+	name="blue"
+	r="24"
+	g="33"
+	b="35"/>
+<color
+	name="blue"
+	r="29"
+	g="48"
+	b="44"/>
+<color
+	name="blue"
+	r="35"
+	g="54"
+	b="47"/>
+<color
+	name="blue"
+	r="28"
+	g="36"
+	b="39"/>
+<color
+	name="blue"
+	r="34"
+	g="47"
+	b="50"/>
+<color
+	name="blue"
+	r="33"
+	g="53"
+	b="47"/>
+<color
+	name="blue"
+	r="21"
+	g="37"
+	b="40"/>
+<color
+	name="blue"
+	r="36"
+	g="51"
+	b="47"/>
+<color
+	name="blue"
+	r="33"
+	g="54"
+	b="48"/>
+<color
+	name="blue"
+	r="34"
+	g="57"
+	b="49"/>
+<color
+	name="blue"
+	r="36"
+	g="52"
+	b="51"/>
+<color
+	name="blue"
+	r="24"
+	g="31"
+	b="34"/>
+<color
+	name="blue"
+	r="36"
+	g="57"
+	b="50"/>
+<color
+	name="blue"
+	r="35"
+	g="54"
+	b="50"/>
+<color
+	name="blue"
+	r="34"
+	g="52"
+	b="50"/>
+<color
+	name="blue"
+	r="20"
+	g="30"
+	b="31"/>
+<color
+	name="blue"
+	r="22"
+	g="32"
+	b="33"/>
+<color
+	name="blue"
+	r="34"
+	g="47"
+	b="46"/>
+<color
+	name="blue"
+	r="36"
+	g="56"
+	b="48"/>
+<color
+	name="blue"
+	r="36"
+	g="55"
+	b="50"/>
+<color
+	name="blue"
+	r="29"
+	g="46"
+	b="48"/>
+<color
+	name="blue"
+	r="35"
+	g="51"
+	b="50"/>
+<color
+	name="blue"
+	r="36"
+	g="51"
+	b="49"/>
+<color
+	name="blue"
+	r="15"
+	g="23"
+	b="33"/>
+<color
+	name="blue"
+	r="15"
+	g="22"
+	b="31"/>
+<color
+	name="blue"
+	r="32"
+	g="43"
+	b="49"/>
+<color
+	name="blue"
+	r="22"
+	g="34"
+	b="33"/>
+<color
+	name="blue"
+	r="14"
+	g="26"
+	b="31"/>
+<color
+	name="blue"
+	r="24"
+	g="40"
+	b="38"/>
+<color
+	name="blue"
+	r="26"
+	g="34"
+	b="39"/>
+<color
+	name="blue"
+	r="28"
+	g="36"
+	b="40"/>
+<color
+	name="blue"
+	r="34"
+	g="51"
+	b="49"/>
+<color
+	name="blue"
+	r="34"
+	g="47"
+	b="49"/>
+<color
+	name="blue"
+	r="25"
+	g="38"
+	b="36"/>
+<color
+	name="blue"
+	r="32"
+	g="44"
+	b="52"/>
+<color
+	name="blue"
+	r="24"
+	g="31"
+	b="39"/>
+<color
+	name="blue"
+	r="31"
+	g="50"
+	b="45"/>
+<color
+	name="blue"
+	r="31"
+	g="50"
+	b="46"/>
+<color
+	name="blue"
+	r="24"
+	g="33"
+	b="37"/>
+<color
+	name="blue"
+	r="13"
+	g="24"
+	b="33"/>
+<color
+	name="blue"
+	r="15"
+	g="26"
+	b="33"/>
+<color
+	name="blue"
+	r="27"
+	g="42"
+	b="39"/>
+<color
+	name="blue"
+	r="32"
+	g="47"
+	b="49"/>
+<color
+	name="blue"
+	r="15"
+	g="25"
+	b="33"/>
+<color
+	name="blue"
+	r="15"
+	g="25"
+	b="31"/>
+<color
+	name="blue"
+	r="14"
+	g="23"
+	b="34"/>
+<color
+	name="blue"
+	r="15"
+	g="28"
+	b="35"/>
+<color
+	name="blue"
+	r="26"
+	g="36"
+	b="39"/>
+<color
+	name="blue"
+	r="32"
+	g="50"
+	b="47"/>
+<color
+	name="blue"
+	r="32"
+	g="51"
+	b="45"/>
+<color
+	name="blue"
+	r="15"
+	g="26"
+	b="36"/>
+<color
+	name="blue"
+	r="20"
+	g="25"
+	b="32"/>
+<color
+	name="blue"
+	r="32"
+	g="43"
+	b="50"/>
+<color
+	name="blue"
+	r="32"
+	g="44"
+	b="51"/>
+<color
+	name="blue"
+	r="32"
+	g="45"
+	b="49"/>
+<color
+	name="blue"
+	r="34"
+	g="48"
+	b="50"/>
+<color
+	name="blue"
+	r="15"
+	g="25"
+	b="34"/>
+<color
+	name="blue"
+	r="17"
+	g="23"
+	b="29"/>
+<color
+	name="blue"
+	r="30"
+	g="48"
+	b="44"/>
+<color
+	name="blue"
+	r="35"
+	g="52"
+	b="48"/>
+<color
+	name="blue"
+	r="35"
+	g="48"
+	b="47"/>
+<color
+	name="blue"
+	r="17"
+	g="28"
+	b="33"/>
+<color
+	name="blue"
+	r="15"
+	g="26"
+	b="35"/>
+<color
+	name="blue"
+	r="30"
+	g="44"
+	b="43"/>
+<color
+	name="blue"
+	r="32"
+	g="45"
+	b="45"/>
+<color
+	name="blue"
+	r="25"
+	g="43"
+	b="44"/>
+<color
+	name="blue"
+	r="32"
+	g="47"
+	b="44"/>
+<color
+	name="blue"
+	r="33"
+	g="48"
+	b="45"/>
+<color
+	name="blue"
+	r="16"
+	g="22"
+	b="31"/>
+<color
+	name="blue"
+	r="20"
+	g="34"
+	b="34"/>
+<color
+	name="blue"
+	r="21"
+	g="33"
+	b="35"/>
+<color
+	name="blue"
+	r="23"
+	g="37"
+	b="37"/>
+<color
+	name="blue"
+	r="25"
+	g="37"
+	b="37"/>
+<color
+	name="blue"
+	r="31"
+	g="46"
+	b="43"/>
+<color
+	name="blue"
+	r="18"
+	g="32"
+	b="35"/>
+<color
+	name="blue"
+	r="17"
+	g="26"
+	b="31"/>
+<color
+	name="blue"
+	r="19"
+	g="30"
+	b="32"/>
+<color
+	name="blue"
+	r="22"
+	g="36"
+	b="35"/>
+<color
+	name="blue"
+	r="30"
+	g="46"
+	b="45"/>
+<color
+	name="blue"
+	r="17"
+	g="31"
+	b="35"/>
+<color
+	name="blue"
+	r="17"
+	g="24"
+	b="30"/>
+<color
+	name="blue"
+	r="19"
+	g="27"
+	b="31"/>
+<color
+	name="blue"
+	r="21"
+	g="31"
+	b="32"/>
+<color
+	name="blue"
+	r="17"
+	g="33"
+	b="37"/>
+<color
+	name="blue"
+	r="17"
+	g="30"
+	b="36"/>
+<color
+	name="blue"
+	r="23"
+	g="40"
+	b="41"/>
+<color
+	name="blue"
+	r="17"
+	g="26"
+	b="33"/>
+<color
+	name="blue"
+	r="20"
+	g="28"
+	b="31"/>
+<color
+	name="blue"
+	r="22"
+	g="30"
+	b="34"/>
+<color
+	name="blue"
+	r="24"
+	g="34"
+	b="37"/>
+<color
+	name="blue"
+	r="24"
+	g="40"
+	b="41"/>
+<color
+	name="blue"
+	r="18"
+	g="28"
+	b="33"/>
+<color
+	name="blue"
+	r="20"
+	g="29"
+	b="33"/>
+<color
+	name="blue"
+	r="30"
+	g="40"
+	b="43"/>
+<color
+	name="blue"
+	r="18"
+	g="23"
+	b="31"/>
+<color
+	name="blue"
+	r="18"
+	g="24"
+	b="31"/>
+<color
+	name="blue"
+	r="22"
+	g="32"
+	b="35"/>
+<color
+	name="blue"
+	r="23"
+	g="34"
+	b="35"/>
+<color
+	name="blue"
+	r="27"
+	g="44"
+	b="43"/>
+<color
+	name="blue"
+	r="24"
+	g="42"
+	b="41"/>
+<color
+	name="blue"
+	r="19"
+	g="31"
+	b="35"/>
+<color
+	name="blue"
+	r="18"
+	g="24"
+	b="32"/>
+<color
+	name="blue"
+	r="17"
+	g="28"
+	b="36"/>
+<color
+	name="blue"
+	r="19"
+	g="34"
+	b="41"/>
+<color
+	name="blue"
+	r="30"
+	g="41"
+	b="49"/>
+<color
+	name="blue"
+	r="22"
+	g="38"
+	b="41"/>
+<color
+	name="blue"
+	r="24"
+	g="32"
+	b="41"/>
+<color
+	name="blue"
+	r="18"
+	g="22"
+	b="34"/>
+<color
+	name="blue"
+	r="20"
+	g="25"
+	b="34"/>
+<color
+	name="blue"
+	r="30"
+	g="41"
+	b="50"/>
+<color
+	name="blue"
+	r="19"
+	g="32"
+	b="37"/>
+<color
+	name="blue"
+	r="28"
+	g="46"
+	b="51"/>
+<color
+	name="blue"
+	r="24"
+	g="40"
+	b="46"/>
+<color
+	name="blue"
+	r="19"
+	g="23"
+	b="33"/>
+<color
+	name="blue"
+	r="20"
+	g="27"
+	b="33"/>
+<color
+	name="blue"
+	r="23"
+	g="36"
+	b="40"/>
+<color
+	name="blue"
+	r="19"
+	g="32"
+	b="40"/>
+<color
+	name="blue"
+	r="28"
+	g="42"
+	b="41"/>
+<color
+	name="blue"
+	r="28"
+	g="38"
+	b="43"/>
+<color
+	name="blue"
+	r="28"
+	g="37"
+	b="48"/>
+<color
+	name="blue"
+	r="28"
+	g="38"
+	b="47"/>
+<color
+	name="blue"
+	r="28"
+	g="37"
+	b="46"/>
+<color
+	name="blue"
+	r="28"
+	g="37"
+	b="44"/>
+<color
+	name="blue"
+	r="30"
+	g="42"
+	b="43"/>
+<color
+	name="blue"
+	r="28"
+	g="46"
+	b="43"/>
+<color
+	name="blue"
+	r="29"
+	g="44"
+	b="43"/>
+<color
+	name="blue"
+	r="30"
+	g="43"
+	b="50"/>
+<color
+	name="blue"
+	r="27"
+	g="44"
+	b="52"/>
+<color
+	name="blue"
+	r="23"
+	g="40"
+	b="45"/>
+<color
+	name="blue"
+	r="27"
+	g="44"
+	b="45"/>
+<color
+	name="blue"
+	r="23"
+	g="38"
+	b="45"/>
+<color
+	name="blue"
+	r="24"
+	g="38"
+	b="45"/>
+<color
+	name="blue"
+	r="25"
+	g="40"
+	b="44"/>
+<color
+	name="blue"
+	r="28"
+	g="42"
+	b="42"/>
+<color
+	name="blue"
+	r="28"
+	g="41"
+	b="43"/>
+<color
+	name="blue"
+	r="30"
+	g="41"
+	b="46"/>
+<color
+	name="blue"
+	r="22"
+	g="33"
+	b="37"/>
+<color
+	name="blue"
+	r="29"
+	g="47"
+	b="45"/>
+<color
+	name="blue"
+	r="21"
+	g="36"
+	b="48"/>
+<color
+	name="blue"
+	r="26"
+	g="35"
+	b="47"/>
+<color
+	name="blue"
+	r="29"
+	g="48"
+	b="54"/>
+<color
+	name="blue"
+	r="29"
+	g="46"
+	b="53"/>
+<color
+	name="blue"
+	r="28"
+	g="40"
+	b="41"/>
+<color
+	name="blue"
+	r="22"
+	g="36"
+	b="38"/>
+<color
+	name="blue"
+	r="31"
+	g="51"
+	b="49"/>
+<color
+	name="blue"
+	r="31"
+	g="49"
+	b="47"/>
+<color
+	name="blue"
+	r="31"
+	g="48"
+	b="55"/>
+<color
+	name="blue"
+	r="28"
+	g="41"
+	b="46"/>
+<color
+	name="blue"
+	r="26"
+	g="38"
+	b="39"/>
+<color
+	name="blue"
+	r="21"
+	g="34"
+	b="37"/>
+<color
+	name="blue"
+	r="30"
+	g="44"
+	b="45"/>
+<color
+	name="blue"
+	r="34"
+	g="53"
+	b="47"/>
+<color
+	name="blue"
+	r="33"
+	g="53"
+	b="49"/>
+<color
+	name="blue"
+	r="31"
+	g="52"
+	b="50"/>
+<color
+	name="blue"
+	r="31"
+	g="52"
+	b="49"/>
+<color
+	name="blue"
+	r="24"
+	g="30"
+	b="44"/>
+<color
+	name="blue"
+	r="32"
+	g="48"
+	b="57"/>
+<color
+	name="blue"
+	r="32"
+	g="51"
+	b="57"/>
+<color
+	name="blue"
+	r="32"
+	g="48"
+	b="55"/>
+<color
+	name="blue"
+	r="32"
+	g="46"
+	b="52"/>
+<color
+	name="blue"
+	r="22"
+	g="30"
+	b="37"/>
+<color
+	name="blue"
+	r="24"
+	g="34"
+	b="38"/>
+<color
+	name="blue"
+	r="25"
+	g="37"
+	b="39"/>
+<color
+	name="blue"
+	r="25"
+	g="38"
+	b="40"/>
+<color
+	name="blue"
+	r="28"
+	g="45"
+	b="45"/>
+<color
+	name="blue"
+	r="23"
+	g="38"
+	b="43"/>
+<color
+	name="blue"
+	r="36"
+	g="52"
+	b="47"/>
+<color
+	name="blue"
+	r="35"
+	g="55"
+	b="48"/>
+<color
+	name="blue"
+	r="35"
+	g="58"
+	b="49"/>
+<color
+	name="blue"
+	r="32"
+	g="54"
+	b="51"/>
+<color
+	name="blue"
+	r="32"
+	g="47"
+	b="58"/>
+<color
+	name="blue"
+	r="26"
+	g="45"
+	b="50"/>
+<color
+	name="blue"
+	r="27"
+	g="46"
+	b="49"/>
+<color
+	name="blue"
+	r="19"
+	g="27"
+	b="32"/>
+<color
+	name="blue"
+	r="20"
+	g="26"
+	b="35"/>
+<color
+	name="blue"
+	r="23"
+	g="35"
+	b="37"/>
+<color
+	name="blue"
+	r="24"
+	g="38"
+	b="39"/>
+<color
+	name="blue"
+	r="26"
+	g="37"
+	b="40"/>
+<color
+	name="blue"
+	r="21"
+	g="34"
+	b="38"/>
+<color
+	name="blue"
+	r="31"
+	g="46"
+	b="46"/>
+<color
+	name="blue"
+	r="37"
+	g="53"
+	b="48"/>
+<color
+	name="blue"
+	r="37"
+	g="58"
+	b="51"/>
+<color
+	name="blue"
+	r="35"
+	g="59"
+	b="52"/>
+<color
+	name="blue"
+	r="32"
+	g="50"
+	b="49"/>
+<color
+	name="blue"
+	r="32"
+	g="45"
+	b="47"/>
+<color
+	name="blue"
+	r="34"
+	g="45"
+	b="57"/>
+<color
+	name="blue"
+	r="33"
+	g="46"
+	b="57"/>
+<color
+	name="blue"
+	r="32"
+	g="45"
+	b="56"/>
+<color
+	name="blue"
+	r="31"
+	g="45"
+	b="54"/>
+<color
+	name="blue"
+	r="31"
+	g="47"
+	b="52"/>
+<color
+	name="blue"
+	r="25"
+	g="42"
+	b="51"/>
+<color
+	name="blue"
+	r="27"
+	g="46"
+	b="51"/>
+<color
+	name="blue"
+	r="27"
+	g="42"
+	b="48"/>
+<color
+	name="blue"
+	r="20"
+	g="28"
+	b="35"/>
+<color
+	name="blue"
+	r="23"
+	g="33"
+	b="39"/>
+<color
+	name="blue"
+	r="26"
+	g="35"
+	b="41"/>
+<color
+	name="blue"
+	r="27"
+	g="39"
+	b="41"/>
+<color
+	name="blue"
+	r="27"
+	g="42"
+	b="46"/>
+<color
+	name="blue"
+	r="27"
+	g="44"
+	b="46"/>
+<color
+	name="blue"
+	r="20"
+	g="30"
+	b="35"/>
+<color
+	name="blue"
+	r="25"
+	g="39"
+	b="43"/>
+<color
+	name="blue"
+	r="32"
+	g="48"
+	b="46"/>
+<color
+	name="blue"
+	r="34"
+	g="50"
+	b="46"/>
+<color
+	name="blue"
+	r="37"
+	g="55"
+	b="49"/>
+<color
+	name="blue"
+	r="37"
+	g="57"
+	b="53"/>
+<color
+	name="blue"
+	r="36"
+	g="57"
+	b="54"/>
+<color
+	name="blue"
+	r="32"
+	g="51"
+	b="50"/>
+<color
+	name="blue"
+	r="21"
+	g="31"
+	b="50"/>
+<color
+	name="blue"
+	r="21"
+	g="33"
+	b="54"/>
+<color
+	name="blue"
+	r="23"
+	g="35"
+	b="56"/>
+<color
+	name="blue"
+	r="30"
+	g="43"
+	b="56"/>
+<color
+	name="blue"
+	r="30"
+	g="45"
+	b="57"/>
+<color
+	name="blue"
+	r="30"
+	g="42"
+	b="53"/>
+<color
+	name="blue"
+	r="29"
+	g="45"
+	b="52"/>
+<color
+	name="blue"
+	r="23"
+	g="38"
+	b="48"/>
+<color
+	name="blue"
+	r="25"
+	g="40"
+	b="48"/>
+<color
+	name="blue"
+	r="19"
+	g="30"
+	b="37"/>
+<color
+	name="blue"
+	r="26"
+	g="42"
+	b="40"/>
+<color
+	name="blue"
+	r="26"
+	g="41"
+	b="41"/>
+<color
+	name="blue"
+	r="27"
+	g="43"
+	b="43"/>
+<color
+	name="blue"
+	r="21"
+	g="33"
+	b="37"/>
+<color
+	name="blue"
+	r="28"
+	g="42"
+	b="46"/>
+<color
+	name="blue"
+	r="35"
+	g="49"
+	b="49"/>
+<color
+	name="blue"
+	r="38"
+	g="54"
+	b="51"/>
+<color
+	name="blue"
+	r="38"
+	g="58"
+	b="53"/>
+<color
+	name="blue"
+	r="35"
+	g="56"
+	b="52"/>
+<color
+	name="blue"
+	r="33"
+	g="54"
+	b="52"/>
+<color
+	name="blue"
+	r="32"
+	g="49"
+	b="49"/>
+<color
+	name="blue"
+	r="29"
+	g="47"
+	b="46"/>
+<color
+	name="blue"
+	r="21"
+	g="34"
+	b="52"/>
+<color
+	name="blue"
+	r="27"
+	g="42"
+	b="55"/>
+<color
+	name="blue"
+	r="28"
+	g="43"
+	b="55"/>
+<color
+	name="blue"
+	r="29"
+	g="46"
+	b="56"/>
+<color
+	name="blue"
+	r="30"
+	g="46"
+	b="55"/>
+<color
+	name="blue"
+	r="27"
+	g="44"
+	b="54"/>
+<color
+	name="blue"
+	r="28"
+	g="44"
+	b="55"/>
+<color
+	name="blue"
+	r="25"
+	g="43"
+	b="52"/>
+<color
+	name="blue"
+	r="25"
+	g="37"
+	b="41"/>
+<color
+	name="blue"
+	r="28"
+	g="37"
+	b="43"/>
+<color
+	name="blue"
+	r="26"
+	g="40"
+	b="42"/>
+<color
+	name="blue"
+	r="29"
+	g="48"
+	b="46"/>
+<color
+	name="blue"
+	r="27"
+	g="40"
+	b="47"/>
+<color
+	name="blue"
+	r="28"
+	g="41"
+	b="48"/>
+<color
+	name="blue"
+	r="34"
+	g="51"
+	b="52"/>
+<color
+	name="blue"
+	r="35"
+	g="54"
+	b="53"/>
+<color
+	name="blue"
+	r="35"
+	g="55"
+	b="54"/>
+<color
+	name="blue"
+	r="36"
+	g="59"
+	b="52"/>
+<color
+	name="blue"
+	r="34"
+	g="56"
+	b="51"/>
+<color
+	name="blue"
+	r="33"
+	g="56"
+	b="51"/>
+<color
+	name="blue"
+	r="27"
+	g="42"
+	b="44"/>
+<color
+	name="blue"
+	r="25"
+	g="39"
+	b="59"/>
+<color
+	name="blue"
+	r="31"
+	g="51"
+	b="58"/>
+<color
+	name="blue"
+	r="31"
+	g="49"
+	b="57"/>
+<color
+	name="blue"
+	r="31"
+	g="48"
+	b="58"/>
+<color
+	name="blue"
+	r="20"
+	g="26"
+	b="37"/>
+<color
+	name="blue"
+	r="23"
+	g="34"
+	b="39"/>
+<color
+	name="blue"
+	r="24"
+	g="33"
+	b="39"/>
+<color
+	name="blue"
+	r="31"
+	g="49"
+	b="48"/>
+<color
+	name="blue"
+	r="22"
+	g="29"
+	b="37"/>
+<color
+	name="blue"
+	r="28"
+	g="42"
+	b="49"/>
+<color
+	name="blue"
+	r="30"
+	g="42"
+	b="49"/>
+<color
+	name="blue"
+	r="33"
+	g="48"
+	b="51"/>
+<color
+	name="blue"
+	r="32"
+	g="51"
+	b="53"/>
+<color
+	name="blue"
+	r="33"
+	g="52"
+	b="55"/>
+<color
+	name="blue"
+	r="35"
+	g="53"
+	b="53"/>
+<color
+	name="blue"
+	r="33"
+	g="52"
+	b="50"/>
+<color
+	name="blue"
+	r="31"
+	g="51"
+	b="50"/>
+<color
+	name="blue"
+	r="29"
+	g="44"
+	b="46"/>
+<color
+	name="blue"
+	r="25"
+	g="40"
+	b="43"/>
+<color
+	name="blue"
+	r="30"
+	g="43"
+	b="58"/>
+<color
+	name="blue"
+	r="34"
+	g="49"
+	b="59"/>
+<color
+	name="blue"
+	r="32"
+	g="54"
+	b="59"/>
+<color
+	name="blue"
+	r="34"
+	g="55"
+	b="59"/>
+<color
+	name="blue"
+	r="36"
+	g="52"
+	b="59"/>
+<color
+	name="blue"
+	r="30"
+	g="46"
+	b="57"/>
+<color
+	name="blue"
+	r="28"
+	g="42"
+	b="56"/>
+<color
+	name="blue"
+	r="28"
+	g="38"
+	b="49"/>
+<color
+	name="blue"
+	r="31"
+	g="43"
+	b="44"/>
+<color
+	name="blue"
+	r="33"
+	g="42"
+	b="45"/>
+<color
+	name="blue"
+	r="30"
+	g="45"
+	b="46"/>
+<color
+	name="blue"
+	r="32"
+	g="47"
+	b="47"/>
+<color
+	name="blue"
+	r="30"
+	g="45"
+	b="48"/>
+<color
+	name="blue"
+	r="32"
+	g="52"
+	b="57"/>
+<color
+	name="blue"
+	r="33"
+	g="52"
+	b="53"/>
+<color
+	name="blue"
+	r="29"
+	g="48"
+	b="49"/>
+<color
+	name="blue"
+	r="27"
+	g="41"
+	b="45"/>
+<color
+	name="blue"
+	r="30"
+	g="45"
+	b="59"/>
+<color
+	name="blue"
+	r="33"
+	g="48"
+	b="58"/>
+<color
+	name="blue"
+	r="33"
+	g="50"
+	b="58"/>
+<color
+	name="blue"
+	r="33"
+	g="57"
+	b="60"/>
+<color
+	name="blue"
+	r="34"
+	g="53"
+	b="62"/>
+<color
+	name="blue"
+	r="35"
+	g="54"
+	b="61"/>
+<color
+	name="blue"
+	r="31"
+	g="49"
+	b="60"/>
+<color
+	name="blue"
+	r="28"
+	g="47"
+	b="59"/>
+<color
+	name="blue"
+	r="28"
+	g="44"
+	b="58"/>
+<color
+	name="blue"
+	r="28"
+	g="44"
+	b="56"/>
+<color
+	name="blue"
+	r="20"
+	g="27"
+	b="44"/>
+<color
+	name="blue"
+	r="20"
+	g="26"
+	b="38"/>
+<color
+	name="blue"
+	r="23"
+	g="30"
+	b="39"/>
+<color
+	name="blue"
+	r="25"
+	g="36"
+	b="43"/>
+<color
+	name="blue"
+	r="27"
+	g="39"
+	b="43"/>
+<color
+	name="blue"
+	r="30"
+	g="40"
+	b="44"/>
+<color
+	name="blue"
+	r="29"
+	g="41"
+	b="45"/>
+<color
+	name="blue"
+	r="29"
+	g="43"
+	b="45"/>
+<color
+	name="blue"
+	r="31"
+	g="43"
+	b="46"/>
+<color
+	name="blue"
+	r="23"
+	g="36"
+	b="44"/>
+<color
+	name="blue"
+	r="30"
+	g="47"
+	b="49"/>
+<color
+	name="blue"
+	r="30"
+	g="48"
+	b="51"/>
+<color
+	name="blue"
+	r="30"
+	g="50"
+	b="53"/>
+<color
+	name="blue"
+	r="30"
+	g="50"
+	b="54"/>
+<color
+	name="blue"
+	r="31"
+	g="52"
+	b="54"/>
+<color
+	name="blue"
+	r="32"
+	g="49"
+	b="52"/>
+<color
+	name="blue"
+	r="28"
+	g="44"
+	b="49"/>
+<color
+	name="blue"
+	r="22"
+	g="31"
+	b="50"/>
+<color
+	name="blue"
+	r="30"
+	g="40"
+	b="57"/>
+<color
+	name="blue"
+	r="33"
+	g="43"
+	b="58"/>
+<color
+	name="blue"
+	r="34"
+	g="49"
+	b="62"/>
+<color
+	name="blue"
+	r="34"
+	g="47"
+	b="60"/>
+<color
+	name="blue"
+	r="30"
+	g="46"
+	b="59"/>
+<color
+	name="blue"
+	r="26"
+	g="44"
+	b="57"/>
+<color
+	name="blue"
+	r="27"
+	g="43"
+	b="56"/>
+<color
+	name="blue"
+	r="23"
+	g="36"
+	b="47"/>
+<color
+	name="blue"
+	r="22"
+	g="29"
+	b="39"/>
+<color
+	name="blue"
+	r="27"
+	g="38"
+	b="44"/>
+<color
+	name="blue"
+	r="28"
+	g="38"
+	b="44"/>
+<color
+	name="blue"
+	r="30"
+	g="39"
+	b="45"/>
+<color
+	name="blue"
+	r="20"
+	g="32"
+	b="39"/>
+<color
+	name="blue"
+	r="29"
+	g="49"
+	b="52"/>
+<color
+	name="blue"
+	r="30"
+	g="48"
+	b="52"/>
+<color
+	name="blue"
+	r="30"
+	g="39"
+	b="59"/>
+<color
+	name="blue"
+	r="32"
+	g="42"
+	b="60"/>
+<color
+	name="blue"
+	r="31"
+	g="43"
+	b="62"/>
+<color
+	name="blue"
+	r="30"
+	g="41"
+	b="60"/>
+<color
+	name="blue"
+	r="22"
+	g="28"
+	b="40"/>
+<color
+	name="blue"
+	r="20"
+	g="27"
+	b="41"/>
+<color
+	name="blue"
+	r="22"
+	g="27"
+	b="41"/>
+<color
+	name="blue"
+	r="26"
+	g="36"
+	b="43"/>
+<color
+	name="blue"
+	r="19"
+	g="29"
+	b="37"/>
+<color
+	name="blue"
+	r="20"
+	g="35"
+	b="41"/>
+<color
+	name="blue"
+	r="31"
+	g="47"
+	b="51"/>
+<color
+	name="blue"
+	r="33"
+	g="46"
+	b="51"/>
+<color
+	name="blue"
+	r="30"
+	g="45"
+	b="52"/>
+<color
+	name="blue"
+	r="27"
+	g="44"
+	b="48"/>
+<color
+	name="blue"
+	r="27"
+	g="38"
+	b="47"/>
+<color
+	name="blue"
+	r="15"
+	g="24"
+	b="36"/>
+<color
+	name="blue"
+	r="23"
+	g="31"
+	b="48"/>
+<color
+	name="blue"
+	r="30"
+	g="40"
+	b="58"/>
+<color
+	name="blue"
+	r="29"
+	g="42"
+	b="59"/>
+<color
+	name="blue"
+	r="28"
+	g="39"
+	b="58"/>
+<color
+	name="blue"
+	r="26"
+	g="34"
+	b="45"/>
+<color
+	name="blue"
+	r="26"
+	g="34"
+	b="43"/>
+<color
+	name="blue"
+	r="18"
+	g="25"
+	b="34"/>
+<color
+	name="blue"
+	r="20"
+	g="29"
+	b="37"/>
+<color
+	name="blue"
+	r="27"
+	g="42"
+	b="53"/>
+<color
+	name="blue"
+	r="28"
+	g="44"
+	b="51"/>
+<color
+	name="blue"
+	r="29"
+	g="43"
+	b="50"/>
+<color
+	name="blue"
+	r="30"
+	g="44"
+	b="51"/>
+<color
+	name="blue"
+	r="29"
+	g="42"
+	b="52"/>
+<color
+	name="blue"
+	r="25"
+	g="38"
+	b="46"/>
+<color
+	name="blue"
+	r="18"
+	g="25"
+	b="41"/>
+<color
+	name="blue"
+	r="17"
+	g="23"
+	b="39"/>
+<color
+	name="blue"
+	r="26"
+	g="35"
+	b="56"/>
+<color
+	name="blue"
+	r="25"
+	g="37"
+	b="58"/>
+<color
+	name="blue"
+	r="28"
+	g="40"
+	b="59"/>
+<color
+	name="blue"
+	r="28"
+	g="40"
+	b="60"/>
+<color
+	name="blue"
+	r="28"
+	g="39"
+	b="60"/>
+<color
+	name="blue"
+	r="27"
+	g="39"
+	b="61"/>
+<color
+	name="blue"
+	r="26"
+	g="37"
+	b="58"/>
+<color
+	name="blue"
+	r="25"
+	g="37"
+	b="60"/>
+<color
+	name="blue"
+	r="23"
+	g="38"
+	b="53"/>
+<color
+	name="blue"
+	r="24"
+	g="36"
+	b="45"/>
+<color
+	name="blue"
+	r="25"
+	g="35"
+	b="41"/>
+<color
+	name="blue"
+	r="18"
+	g="26"
+	b="35"/>
+<color
+	name="blue"
+	r="19"
+	g="32"
+	b="39"/>
+<color
+	name="blue"
+	r="27"
+	g="42"
+	b="51"/>
+<color
+	name="blue"
+	r="27"
+	g="36"
+	b="47"/>
+<color
+	name="blue"
+	r="28"
+	g="37"
+	b="54"/>
+<color
+	name="blue"
+	r="21"
+	g="36"
+	b="50"/>
+<color
+	name="blue"
+	r="28"
+	g="36"
+	b="52"/>
+<color
+	name="blue"
+	r="22"
+	g="28"
+	b="42"/>
+<color
+	name="blue"
+	r="25"
+	g="34"
+	b="45"/>
+<color
+	name="blue"
+	r="25"
+	g="34"
+	b="43"/>
+<color
+	name="blue"
+	r="26"
+	g="40"
+	b="61"/>
+<color
+	name="blue"
+	r="23"
+	g="36"
+	b="56"/>
+<color
+	name="blue"
+	r="26"
+	g="36"
+	b="45"/>
+<color
+	name="blue"
+	r="18"
+	g="29"
+	b="35"/>
+<color
+	name="blue"
+	r="21"
+	g="34"
+	b="48"/>
+<color
+	name="blue"
+	r="19"
+	g="29"
+	b="46"/>
+<color
+	name="blue"
+	r="28"
+	g="40"
+	b="57"/>
+<color
+	name="blue"
+	r="30"
+	g="40"
+	b="53"/>
+<color
+	name="blue"
+	r="26"
+	g="43"
+	b="58"/>
+<color
+	name="blue"
+	r="25"
+	g="41"
+	b="58"/>
+<color
+	name="blue"
+	r="25"
+	g="40"
+	b="56"/>
+<color
+	name="blue"
+	r="16"
+	g="26"
+	b="35"/>
+<color
+	name="blue"
+	r="19"
+	g="30"
+	b="39"/>
+<color
+	name="blue"
+	r="26"
+	g="40"
+	b="58"/>
+<color
+	name="blue"
+	r="23"
+	g="35"
+	b="54"/>
+<color
+	name="blue"
+	r="24"
+	g="33"
+	b="52"/>
+<color
+	name="blue"
+	r="26"
+	g="40"
+	b="51"/>
+<color
+	name="blue"
+	r="16"
+	g="28"
+	b="35"/>
+<color
+	name="blue"
+	r="19"
+	g="30"
+	b="46"/>
+<color
+	name="blue"
+	r="17"
+	g="28"
+	b="42"/>
+<color
+	name="blue"
+	r="17"
+	g="26"
+	b="39"/>
+<color
+	name="blue"
+	r="17"
+	g="24"
+	b="38"/>
+<color
+	name="blue"
+	r="17"
+	g="23"
+	b="37"/>
+<color
+	name="blue"
+	r="16"
+	g="23"
+	b="35"/>
+<color
+	name="blue"
+	r="21"
+	g="34"
+	b="51"/>
+<color
+	name="blue"
+	r="21"
+	g="33"
+	b="53"/>
+<color
+	name="blue"
+	r="17"
+	g="27"
+	b="45"/>
+<color
+	name="blue"
+	r="17"
+	g="25"
+	b="42"/>
+<color
+	name="blue"
+	r="17"
+	g="25"
+	b="40"/>
+<color
+	name="blue"
+	r="19"
+	g="30"
+	b="40"/>
+<color
+	name="blue"
+	r="22"
+	g="36"
+	b="43"/>
+<color
+	name="blue"
+	r="23"
+	g="39"
+	b="55"/>
+<color
+	name="blue"
+	r="24"
+	g="34"
+	b="57"/>
+<color
+	name="blue"
+	r="27"
+	g="40"
+	b="49"/>
+<color
+	name="blue"
+	r="21"
+	g="29"
+	b="46"/>
+<color
+	name="blue"
+	r="26"
+	g="35"
+	b="55"/>
+<color
+	name="blue"
+	r="17"
+	g="24"
+	b="34"/>
+<color
+	name="blue"
+	r="19"
+	g="31"
+	b="44"/>
+<color
+	name="blue"
+	r="21"
+	g="32"
+	b="50"/>
+<color
+	name="blue"
+	r="18"
+	g="26"
+	b="43"/>
+<color
+	name="blue"
+	r="21"
+	g="31"
+	b="40"/>
+<color
+	name="blue"
+	r="21"
+	g="34"
+	b="43"/>
+<color
+	name="blue"
+	r="26"
+	g="35"
+	b="50"/>
+<color
+	name="blue"
+	r="25"
+	g="38"
+	b="49"/>
+<color
+	name="blue"
+	r="29"
+	g="38"
+	b="51"/>
+<color
+	name="blue"
+	r="26"
+	g="35"
+	b="53"/>
+<color
+	name="blue"
+	r="25"
+	g="33"
+	b="56"/>
+<color
+	name="blue"
+	r="25"
+	g="34"
+	b="54"/>
+<color
+	name="blue"
+	r="27"
+	g="38"
+	b="49"/>
+<color
+	name="blue"
+	r="26"
+	g="36"
+	b="49"/>
+<color
+	name="blue"
+	r="21"
+	g="32"
+	b="48"/>
+<color
+	name="blue"
+	r="23"
+	g="36"
+	b="49"/>
+<color
+	name="blue"
+	r="23"
+	g="37"
+	b="55"/>
+<color
+	name="blue"
+	r="16"
+	g="26"
+	b="36"/>
+<color
+	name="blue"
+	r="19"
+	g="29"
+	b="44"/>
+<color
+	name="blue"
+	r="22"
+	g="31"
+	b="46"/>
+<color
+	name="blue"
+	r="20"
+	g="30"
+	b="48"/>
+<color
+	name="blue"
+	r="18"
+	g="25"
+	b="37"/>
+<color
+	name="blue"
+	r="18"
+	g="26"
+	b="37"/>
+<color
+	name="blue"
+	r="19"
+	g="28"
+	b="38"/>
+<color
+	name="blue"
+	r="21"
+	g="32"
+	b="43"/>
+<color
+	name="blue"
+	r="21"
+	g="34"
+	b="44"/>
+<color
+	name="blue"
+	r="23"
+	g="31"
+	b="42"/>
+<color
+	name="blue"
+	r="22"
+	g="34"
+	b="43"/>
+<color
+	name="blue"
+	r="22"
+	g="35"
+	b="47"/>
+<color
+	name="blue"
+	r="28"
+	g="37"
+	b="51"/>
+<color
+	name="blue"
+	r="26"
+	g="37"
+	b="51"/>
+<color
+	name="blue"
+	r="25"
+	g="40"
+	b="55"/>
+<color
+	name="blue"
+	r="24"
+	g="33"
+	b="55"/>
+<color
+	name="blue"
+	r="23"
+	g="38"
+	b="51"/>
+<color
+	name="blue"
+	r="25"
+	g="40"
+	b="52"/>
+<color
+	name="blue"
+	r="21"
+	g="33"
+	b="45"/>
+<color
+	name="blue"
+	r="23"
+	g="33"
+	b="50"/>
+<color
+	name="blue"
+	r="27"
+	g="37"
+	b="57"/>
+<color
+	name="blue"
+	r="25"
+	g="38"
+	b="56"/>
+<color
+	name="blue"
+	r="25"
+	g="37"
+	b="56"/>
+<color
+	name="blue"
+	r="16"
+	g="23"
+	b="33"/>
+<color
+	name="blue"
+	r="16"
+	g="24"
+	b="32"/>
+<color
+	name="blue"
+	r="16"
+	g="25"
+	b="36"/>
+<color
+	name="blue"
+	r="17"
+	g="26"
+	b="40"/>
+<color
+	name="blue"
+	r="18"
+	g="28"
+	b="41"/>
+<color
+	name="blue"
+	r="19"
+	g="30"
+	b="42"/>
+<color
+	name="blue"
+	r="22"
+	g="32"
+	b="47"/>
+<color
+	name="blue"
+	r="23"
+	g="35"
+	b="49"/>
+<color
+	name="blue"
+	r="22"
+	g="32"
+	b="49"/>
+<color
+	name="blue"
+	r="21"
+	g="32"
+	b="47"/>
+<color
+	name="blue"
+	r="21"
+	g="30"
+	b="46"/>
+<color
+	name="blue"
+	r="20"
+	g="26"
+	b="42"/>
+<color
+	name="blue"
+	r="19"
+	g="29"
+	b="42"/>
+<color
+	name="blue"
+	r="19"
+	g="27"
+	b="40"/>
+<color
+	name="blue"
+	r="18"
+	g="25"
+	b="38"/>
+<color
+	name="blue"
+	r="19"
+	g="27"
+	b="39"/>
+<color
+	name="blue"
+	r="20"
+	g="29"
+	b="40"/>
+<color
+	name="blue"
+	r="21"
+	g="29"
+	b="38"/>
+<color
+	name="blue"
+	r="21"
+	g="30"
+	b="36"/>
+<color
+	name="blue"
+	r="21"
+	g="31"
+	b="38"/>
+<color
+	name="blue"
+	r="21"
+	g="32"
+	b="41"/>
+<color
+	name="blue"
+	r="22"
+	g="31"
+	b="41"/>
+<color
+	name="blue"
+	r="22"
+	g="33"
+	b="43"/>
+<color
+	name="blue"
+	r="22"
+	g="33"
+	b="41"/>
+<color
+	name="blue"
+	r="23"
+	g="34"
+	b="40"/>
+<color
+	name="blue"
+	r="24"
+	g="33"
+	b="42"/>
+<color
+	name="blue"
+	r="22"
+	g="34"
+	b="45"/>
+<color
+	name="blue"
+	r="21"
+	g="34"
+	b="47"/>
+<color
+	name="blue"
+	r="24"
+	g="33"
+	b="45"/>
+<color
+	name="blue"
+	r="24"
+	g="36"
+	b="47"/>
+<color
+	name="blue"
+	r="24"
+	g="36"
+	b="48"/>
+<color
+	name="blue"
+	r="24"
+	g="37"
+	b="55"/>
+<color
+	name="blue"
+	r="25"
+	g="39"
+	b="54"/>
+<color
+	name="blue"
+	r="28"
+	g="39"
+	b="52"/>
+<color
+	name="blue"
+	r="27"
+	g="40"
+	b="54"/>
+<color
+	name="blue"
+	r="26"
+	g="39"
+	b="53"/>
+<color
+	name="blue"
+	r="24"
+	g="40"
+	b="51"/>
+<color
+	name="blue"
+	r="24"
+	g="38"
+	b="51"/>
+<color
+	name="blue"
+	r="24"
+	g="33"
+	b="51"/>
+<color
+	name="blue"
+	r="23"
+	g="36"
+	b="50"/>
+<color
+	name="blue"
+	r="24"
+	g="35"
+	b="51"/>
+<color
+	name="blue"
+	r="23"
+	g="35"
+	b="51"/>
+<color
+	name="blue"
+	r="23"
+	g="37"
+	b="52"/>
+<color
+	name="blue"
+	r="23"
+	g="35"
+	b="52"/>
+<color
+	name="blue"
+	r="23"
+	g="33"
+	b="53"/>
+<color
+	name="blue"
+	r="24"
+	g="35"
+	b="53"/>
+<color
+	name="blue"
+	r="24"
+	g="36"
+	b="52"/>
+<color
+	name="blue"
+	r="27"
+	g="36"
+	b="52"/>
+<color
+	name="blue"
+	r="24"
+	g="38"
+	b="53"/>
+<color
+	name="blue"
+	r="26"
+	g="39"
+	b="54"/>
+<color
+	name="blue"
+	r="28"
+	g="38"
+	b="55"/>
+<color
+	name="blue"
+	r="28"
+	g="40"
+	b="54"/>
+<color
+	name="blue"
+	r="28"
+	g="40"
+	b="51"/>
+<color
+	name="blue"
+	r="28"
+	g="40"
+	b="52"/>
+<color
+	name="blue"
+	r="27"
+	g="40"
+	b="53"/>
+<color
+	name="blue"
+	r="26"
+	g="38"
+	b="51"/>
+<color
+	name="blue"
+	r="25"
+	g="35"
+	b="49"/>
+<color
+	name="blue"
+	r="24"
+	g="35"
+	b="47"/>
+<color
+	name="blue"
+	r="24"
+	g="32"
+	b="46"/>
+<color
+	name="blue"
+	r="22"
+	g="31"
+	b="45"/>
+<color
+	name="blue"
+	r="20"
+	g="28"
+	b="43"/>
+<color
+	name="blue"
+	r="20"
+	g="28"
+	b="44"/>
+<color
+	name="blue"
+	r="20"
+	g="30"
+	b="44"/>
+<color
+	name="blue"
+	r="21"
+	g="31"
+	b="42"/>
+<color
+	name="blue"
+	r="23"
+	g="32"
+	b="45"/>
+<color
+	name="blue"
+	r="24"
+	g="33"
+	b="48"/>
+<color
+	name="blue"
+	r="26"
+	g="34"
+	b="49"/>
+<color
+	name="blue"
+	r="25"
+	g="37"
+	b="51"/>
+<color
+	name="blue"
+	r="26"
+	g="37"
+	b="54"/>
+<color
+	name="blue"
+	r="28"
+	g="39"
+	b="57"/>
+<color
+	name="blue"
+	r="27"
+	g="40"
+	b="57"/>
+<color
+	name="blue"
+	r="27"
+	g="39"
+	b="57"/>
+<color
+	name="blue"
+	r="27"
+	g="38"
+	b="59"/>
+</cc>
+</colorDatabases>
+<program>
+<subroutine>
+<instructions>
+<instr
+	id="13112992"
+	pluginId="ipeSystemSub">
+<name
+	flags="8388626">
+<value
+	type="7"
+	s="main"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="6"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="21239.1"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+</instr>
+<instr
+	id="23035840"
+	pluginId="ipeAcqImgCam">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="acqA"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="0"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="112.854"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<cam
+	flags="142606391">
+<value
+	type="7"
+	s="cam0"/>
+</cam>
+<image
+	flags="2684370955">
+<value
+	type="6"
+	ui64="23043776"/>
+</image>
+<arrival_time
+	flags="606076939">
+<value
+	type="4"
+	d="1.91833e+09"/>
+</arrival_time>
+<image_number
+	flags="606076939">
+<value
+	type="2"
+	i="47"/>
+</image_number>
+<status
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</status>
+</instr>
+<instr
+	id="12795840"
+	pluginId="recvLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="ReceiveLine"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="20949.1"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s="Receives message via TCPIP to compare"/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<ascii_term_char
+	flags="8388663">
+<value
+	type="2"
+	i="46"/>
+</ascii_term_char>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="0"/>
+</timeout>
+<max_chars_to_receive
+	flags="8388663">
+<value
+	type="2"
+	i="16"/>
+</max_chars_to_receive>
+<bytes_recv
+	flags="606076939">
+<value
+	type="3"
+	ui="0"/>
+</bytes_recv>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="0"/>
+</result>
+<incomplete
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</incomplete>
+<text
+	flags="606076939">
+<value
+	type="7"
+	s=""/>
+</text>
+</instr>
+<instr
+	id="12808096"
+	pluginId="ipeSystemIfElse">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="if_elseA"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="0"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="176.849"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<code
+	flags="8396839">
+<value
+	type="7"
+	s="VEngine.ReceiveLine.incomplete == true"/>
+</code>
+</instr>
+<instr
+	id="12971872"
+	pluginId="ipeSystemIfElseTrue">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="if_else_trueA"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="49166"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="135.071"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+</instr>
+<instr
+	id="12980160"
+	pluginId="ipeSystemImgWnd">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="image_windowB"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="6658"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="129.761"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<image_update
+	flags="8388787">
+<value
+	type="2"
+	i="1"/>
+</image_update>
+<clear_when_not_updating
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</clear_when_not_updating>
+<show_overlay_graphics
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</show_overlay_graphics>
+<output_graphics
+	flags="41943091">
+<value
+	type="2"
+	i="15"/>
+</output_graphics>
+<suppress_graphics
+	flags="2147483648">
+<value
+	type="1"
+	b="0"/>
+</suppress_graphics>
+<image
+	flags="2156150823"
+	supplier="acqA.image">
+<value
+	type="6"
+	ui64="0"/>
+</image>
+<calibration
+	flags="35">
+<value
+	type="6"
+	ui64="0"/>
+</calibration>
+<overlay_data
+	flags="0">
+<value
+	type="17"
+	size="0"
+	buf=""/>
+</overlay_data>
+<window_position
+	flags="0">
+<value
+	type="17"
+	size="95"
+	buf="AAAAAgAAAC4B2dDLAAEAAAAAACX////cAAADrwAAArIAAAAl////3AAAA68AAAKyAAAAAAAAv/AAAAAAAAAAAAAAAAAAAAAAAAAl////3AAAACX////cAAADrwAAArI="/>
+</window_position>
+<color_show_mono_rois
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</color_show_mono_rois>
+</instr>
+<instr
+	id="13006912"
+	pluginId="ipeRectRoi">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="rectangleB"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="5296"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="118.073"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<show
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</show>
+<lock_position
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</lock_position>
+<top_left_x
+	flags="8388659">
+<value
+	type="2"
+	i="0"/>
+</top_left_x>
+<top_left_y
+	flags="8388659">
+<value
+	type="2"
+	i="0"/>
+</top_left_y>
+<width
+	flags="8388659">
+<value
+	type="2"
+	i="1280"/>
+</width>
+<height
+	flags="8388659">
+<value
+	type="2"
+	i="960"/>
+</height>
+<angle
+	flags="12582963">
+<value
+	type="4"
+	d="0"/>
+</angle>
+<align_home
+	flags="0">
+<value
+	type="10"
+	mapSize="0"/>
+</align_home>
+<interpolate
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</interpolate>
+<modify_image
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</modify_image>
+<alignment
+	flags="8405031">
+<value
+	type="6"
+	ui64="0"/>
+</alignment>
+<enable_pass_fail
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</enable_pass_fail>
+<code
+	flags="8192">
+<value
+	type="7"
+	s="true"/>
+</code>
+<image
+	flags="2684370955">
+<value
+	type="6"
+	ui64="12979168"/>
+</image>
+<pass
+	flags="606076937">
+<value
+	type="1"
+	b="1"/>
+</pass>
+</instr>
+<instr
+	id="12978592"
+	pluginId="ipeRGB24RectColorMap">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="color_mapA"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="272"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="94.3909"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<trained_colors
+	flags="16423"
+	supplier="trained_colorsA.handle">
+<value
+	type="6"
+	ui64="0"/>
+</trained_colors>
+<tolerance
+	flags="8388659">
+<value
+	type="4"
+	d="20"/>
+</tolerance>
+<colors
+	flags="8388659">
+<value
+	type="7"
+	size="2"
+	e0="orange"
+	e1="blue"/>
+</colors>
+<mono_image_values
+	flags="8388659">
+<value
+	type="4"
+	size="2"
+	buf="AAAAAAAAWUAAAAAAAABeQA=="/>
+</mono_image_values>
+<color_map
+	flags="2684370955">
+<value
+	type="6"
+	ui64="12850592"/>
+</color_map>
+</instr>
+<instr
+	id="12858176"
+	pluginId="ipeSystemImgWnd">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="image_windowC"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="6658"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="5.06592"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<image_update
+	flags="8388787">
+<value
+	type="2"
+	i="1"/>
+</image_update>
+<clear_when_not_updating
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</clear_when_not_updating>
+<show_overlay_graphics
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</show_overlay_graphics>
+<output_graphics
+	flags="41943091">
+<value
+	type="2"
+	i="15"/>
+</output_graphics>
+<suppress_graphics
+	flags="2147483648">
+<value
+	type="1"
+	b="0"/>
+</suppress_graphics>
+<image
+	flags="2156150823"
+	supplier="color_mapA.color_map">
+<value
+	type="6"
+	ui64="0"/>
+</image>
+<calibration
+	flags="35">
+<value
+	type="6"
+	ui64="0"/>
+</calibration>
+<overlay_data
+	flags="0">
+<value
+	type="17"
+	size="0"
+	buf=""/>
+</overlay_data>
+<window_position
+	flags="0">
+<value
+	type="17"
+	size="95"
+	buf="AAAAAgAAAC4B2dDLAAEAAAAAAJsAAACWAAAFFQAAAxQAAACbAAAAlgAABRUAAAMUAAAAAAAAP/AAAAAAAAAAAAAAAAAAAAAAAACbAAAAlgAAAJsAAACWAAAFFQAAAxQ="/>
+</window_position>
+<color_show_mono_rois
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</color_show_mono_rois>
+</instr>
+<instr
+	id="12860672"
+	pluginId="ipeSystemIfElseFalse">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="if_else_falseA"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="49166"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.0305176"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+</instr>
+<instr
+	id="12866784"
+	pluginId="ipeSystemIf">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="ifNameRequested"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="2"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="8.57544"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s="If the message &quot;name.&quot; is sent, respond with the camera name"/>
+</comment>
+<code
+	flags="8396839">
+<value
+	type="7"
+	s="VEngine.ReceiveLine.text==&quot;name.&quot;"/>
+</code>
+</instr>
+<instr
+	id="12878080"
+	pluginId="ipeAcqImgCam">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="AcquireImage"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="0"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="98.4192"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s="Image acquired from camera"/>
+</comment>
+<cam
+	flags="142606391">
+<value
+	type="7"
+	s="cam0"/>
+</cam>
+<image
+	flags="2684370955">
+<value
+	type="6"
+	ui64="12878784"/>
+</image>
+<arrival_time
+	flags="606076939">
+<value
+	type="4"
+	d="3.59018e+09"/>
+</arrival_time>
+<image_number
+	flags="606076939">
+<value
+	type="2"
+	i="69"/>
+</image_number>
+<status
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</status>
+</instr>
+<instr
+	id="12850080"
+	pluginId="sendLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="rightCamSendName"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="1.06812"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<text
+	flags="8388663">
+<value
+	type="7"
+	s="right\n"/>
+</text>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="5000"/>
+</timeout>
+<bytes_sent
+	flags="606076939">
+<value
+	type="3"
+	ui="6"/>
+</bytes_sent>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</result>
+</instr>
+<instr
+	id="15565280"
+	pluginId="ipeSystemImgWnd">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="image_windowA"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="6658"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.274658"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s="Image shown via image window, can be taken out after program runs on rover"/>
+</comment>
+<image_update
+	flags="8388787">
+<value
+	type="2"
+	i="1"/>
+</image_update>
+<clear_when_not_updating
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</clear_when_not_updating>
+<show_overlay_graphics
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</show_overlay_graphics>
+<output_graphics
+	flags="41943091">
+<value
+	type="2"
+	i="15"/>
+</output_graphics>
+<suppress_graphics
+	flags="2147483648">
+<value
+	type="1"
+	b="0"/>
+</suppress_graphics>
+<image
+	flags="2156150823"
+	supplier="AcquireImage.image">
+<value
+	type="6"
+	ui64="0"/>
+</image>
+<calibration
+	flags="35">
+<value
+	type="6"
+	ui64="0"/>
+</calibration>
+<overlay_data
+	flags="0">
+<value
+	type="17"
+	size="0"
+	buf=""/>
+</overlay_data>
+<window_position
+	flags="0">
+<value
+	type="17"
+	size="95"
+	buf="AAAAAgAAAC4B2dDLAAEAAAAAAkMAAAGcAAAGUwAABBsAAAJDAAABnAAABlMAAAQbAAAAAAAAP/AAAAAAAAAAAAAAAAAAAKIAAAJDAAABnAAAAkMAAAGcAAAGUwAABBs="/>
+</window_position>
+<color_show_mono_rois
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</color_show_mono_rois>
+</instr>
+<instr
+	id="22850880"
+	pluginId="ipeRectRoi">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="rectangleA"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="5296"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="1.09863"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<show
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</show>
+<lock_position
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</lock_position>
+<top_left_x
+	flags="8388659">
+<value
+	type="4"
+	d="365"/>
+</top_left_x>
+<top_left_y
+	flags="8388659">
+<value
+	type="4"
+	d="76"/>
+</top_left_y>
+<width
+	flags="8388659">
+<value
+	type="4"
+	d="128"/>
+</width>
+<height
+	flags="8388659">
+<value
+	type="4"
+	d="74"/>
+</height>
+<angle
+	flags="12582963">
+<value
+	type="4"
+	d="0"/>
+</angle>
+<align_home
+	flags="0">
+<value
+	type="10"
+	mapSize="0"/>
+</align_home>
+<interpolate
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</interpolate>
+<modify_image
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</modify_image>
+<alignment
+	flags="8405031">
+<value
+	type="6"
+	ui64="0"/>
+</alignment>
+<enable_pass_fail
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</enable_pass_fail>
+<code
+	flags="8192">
+<value
+	type="7"
+	s="true"/>
+</code>
+<image
+	flags="2684370955">
+<value
+	type="6"
+	ui64="22851936"/>
+</image>
+<pass
+	flags="606076937">
+<value
+	type="1"
+	b="1"/>
+</pass>
+</instr>
+<instr
+	id="22853184"
+	pluginId="ipeRectRoi">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="rectangleC"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="5296"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="6.37817"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<show
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</show>
+<lock_position
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</lock_position>
+<top_left_x
+	flags="8388659">
+<value
+	type="4"
+	d="427"/>
+</top_left_x>
+<top_left_y
+	flags="8388659">
+<value
+	type="4"
+	d="332"/>
+</top_left_y>
+<width
+	flags="8388659">
+<value
+	type="4"
+	d="114"/>
+</width>
+<height
+	flags="8388659">
+<value
+	type="4"
+	d="72"/>
+</height>
+<angle
+	flags="12582963">
+<value
+	type="4"
+	d="0"/>
+</angle>
+<align_home
+	flags="0">
+<value
+	type="10"
+	mapSize="0"/>
+</align_home>
+<interpolate
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</interpolate>
+<modify_image
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</modify_image>
+<alignment
+	flags="8405031">
+<value
+	type="6"
+	ui64="0"/>
+</alignment>
+<enable_pass_fail
+	flags="8388659">
+<value
+	type="1"
+	b="0"/>
+</enable_pass_fail>
+<code
+	flags="8192">
+<value
+	type="7"
+	s="true"/>
+</code>
+<image
+	flags="2684370955">
+<value
+	type="6"
+	ui64="22855520"/>
+</image>
+<pass
+	flags="606076937">
+<value
+	type="1"
+	b="1"/>
+</pass>
+</instr>
+<instr
+	id="22855840"
+	pluginId="ipeSystemIfElse">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="SendImage"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="0"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="20975.7"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s="If message &quot;send.&quot; was received, receive the name of the image to be saved via FTP"/>
+</comment>
+<code
+	flags="8396839">
+<value
+	type="7"
+	s="VEngine.ReceiveLine.text==&quot;send.&quot;"/>
+</code>
+</instr>
+<instr
+	id="22858560"
+	pluginId="ipeSystemIfElseTrue">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="IfTrue"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="49166"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="223.511"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+</instr>
+<instr
+	id="22862528"
+	pluginId="recvLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="nameImage"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.946045"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<ascii_term_char
+	flags="8388663">
+<value
+	type="2"
+	i="46"/>
+</ascii_term_char>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="-1"/>
+</timeout>
+<max_chars_to_receive
+	flags="8388663">
+<value
+	type="2"
+	i="20"/>
+</max_chars_to_receive>
+<bytes_recv
+	flags="606076939">
+<value
+	type="3"
+	ui="6"/>
+</bytes_recv>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</result>
+<incomplete
+	flags="606076939">
+<value
+	type="1"
+	b="0"/>
+</incomplete>
+<text
+	flags="606076939">
+<value
+	type="7"
+	s="image."/>
+</text>
+</instr>
+<instr
+	id="22863968"
+	pluginId="ipeFtpLogImage">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="LogImage"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="0"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="221.466"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="Server.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<image
+	flags="2155888679"
+	supplier="AcquireImage.image">
+<value
+	type="6"
+	ui64="0"/>
+</image>
+<dir
+	flags="8388659">
+<value
+	type="7"
+	s=""/>
+</dir>
+<start_index
+	flags="8388659">
+<value
+	type="2"
+	i="0"/>
+</start_index>
+<end_index
+	flags="8388659">
+<value
+	type="2"
+	i="0"/>
+</end_index>
+<name_base
+	flags="8388659"
+	supplier="nameImage.text">
+<value
+	type="7"
+	s="image"/>
+</name_base>
+<image_format
+	flags="8388787">
+<value
+	type="2"
+	i="0"/>
+</image_format>
+<compression_value
+	flags="8388659">
+<value
+	type="2"
+	i="-1"/>
+</compression_value>
+<name_digits
+	flags="8388659">
+<value
+	type="2"
+	i="0"/>
+</name_digits>
+<conn_timeout
+	flags="8388659">
+<value
+	type="2"
+	i="1000"/>
+</conn_timeout>
+<current_index
+	flags="606076939"
+	receiver="LogImage.start_index">
+<value
+	type="2"
+	i="0"/>
+</current_index>
+</instr>
+<instr
+	id="22865312"
+	pluginId="sendLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="SendLine"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.793457"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<text
+	flags="8388663">
+<value
+	type="7"
+	s="Sent Image\n"/>
+</text>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="0"/>
+</timeout>
+<bytes_sent
+	flags="606076939">
+<value
+	type="3"
+	ui="11"/>
+</bytes_sent>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="1"/>
+</result>
+</instr>
+<instr
+	id="22843136"
+	pluginId="ipeSystemIfElseFalse">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="IfFalse"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="49166"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="20974.8"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+</instr>
+<instr
+	id="15598240"
+	pluginId="sendLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="SendNo"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="20973.9"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<text
+	flags="8388663">
+<value
+	type="7"
+	s="No\n"/>
+</text>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="0"/>
+</timeout>
+<bytes_sent
+	flags="606076939">
+<value
+	type="3"
+	ui="0"/>
+</bytes_sent>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="0"/>
+</result>
+</instr>
+</instructions>
+<structure
+	root="13112992">
+<branch
+	parent="13112992"
+	child0="23035840"
+	child1="12795840"
+	child2="12808096"/>
+<branch
+	parent="12808096"
+	child0="12971872"
+	child1="12860672"/>
+<branch
+	parent="12971872"
+	child0="12980160"
+	child1="12858176"/>
+<branch
+	parent="12980160"
+	child0="13006912"/>
+<branch
+	parent="13006912"
+	child0="12978592"/>
+<branch
+	parent="12860672"
+	child0="12866784"/>
+<branch
+	parent="12866784"
+	child0="12878080"
+	child1="12850080"
+	child2="15565280"
+	child3="22855840"/>
+<branch
+	parent="15565280"
+	child0="22850880"
+	child1="22853184"/>
+<branch
+	parent="22855840"
+	child0="22858560"
+	child1="22843136"/>
+<branch
+	parent="22858560"
+	child0="22862528"
+	child1="22863968"
+	child2="22865312"/>
+<branch
+	parent="22843136"
+	child0="15598240"/>
+</structure>
+</subroutine>
+<subroutine>
+<instructions>
+<instr
+	id="15599648"
+	pluginId="ipeSystemSub">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="onPass"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="8194"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="0.213623"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<event_name
+	type="258"
+	flags="0">
+<value
+	type="7"
+	s="pass"/>
+</event_name>
+</instr>
+</instructions>
+<structure
+	root="15599648"/>
+</subroutine>
+<subroutine>
+<instructions>
+<instr
+	id="15602176"
+	pluginId="ipeSystemSub">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="onFail"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="8194"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="1"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="20959.9"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<event_name
+	type="258"
+	flags="0">
+<value
+	type="7"
+	s="fail"/>
+</event_name>
+</instr>
+<instr
+	id="15604032"
+	pluginId="sendLineId">
+<name
+	flags="8388627">
+<value
+	type="7"
+	s="tcpip_send_lineB"/>
+</name>
+<enabled
+	flags="8388659">
+<value
+	type="1"
+	b="1"/>
+</enabled>
+<flags
+	flags="0">
+<value
+	type="3"
+	ui="65536"/>
+</flags>
+<expanded
+	flags="0">
+<value
+	type="1"
+	b="0"/>
+</expanded>
+<time
+	flags="3">
+<value
+	type="4"
+	d="20959.6"/>
+</time>
+<comment
+	flags="19">
+<value
+	type="7"
+	s=""/>
+</comment>
+<connection
+	flags="16423"
+	supplier="ServerTCPIP.handle">
+<value
+	type="6"
+	ui64="0"/>
+</connection>
+<text
+	flags="8388663">
+<value
+	type="7"
+	s="NOPE"/>
+</text>
+<timeout
+	flags="8388663">
+<value
+	type="2"
+	i="2000"/>
+</timeout>
+<bytes_sent
+	flags="606076939">
+<value
+	type="3"
+	ui="0"/>
+</bytes_sent>
+<result
+	flags="606076939">
+<value
+	type="1"
+	b="0"/>
+</result>
+</instr>
+</instructions>
+<structure
+	root="15602176">
+<branch
+	parent="15602176"
+	child0="15604032"/>
+</structure>
+</subroutine>
+</program>
+<extra_program_data
+	vm="AAAACAAAAAADAAAAEgB3AGEAdABjAGgAXwBwAG8AcwAAAAgAAAAAAAAAACgAcAByAG8AZwByAGEAbQBfAHQAYQBiAF8AZwBlAG8AbQBlAHQAcgB5AAAACwAAAAADAAAACABtAGEAaQBuAAAADABvAG4AUABhAHMAcwAAAAwAbwBuAEYAYQBpAGwAAAAUAG0AYQByAGsAZQByAF8AcABvAHMAAAAIAAAAAAA="/>
+</storage>

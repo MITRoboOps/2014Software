@@ -1,0 +1,179 @@
+# depslib dependency file v1.0
+1397979342 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\cli.c
+	<stdio.h>
+	<SDL/SDL.h>
+	<libswscale/swscale.h>
+	<libavcodec/avcodec.h>
+	"global.inc.h"
+	"oswrap.h"
+	"robocortex.h"
+	"cli_term.h"
+	"plugins/cli.h"
+	"sdl_console.h"
+	"gfx.h"
+
+1397977793 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\plugins\cli.h
+	<stdio.h>
+	"robocortex.h"
+	"oswrap.h"
+	<SDL/SDL_keysym.h>
+	<SDL/SDL_video.h>
+
+1397935351 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\cli_term.c
+	<SDL/SDL.h>
+	<stdio.h>
+	"include/cli_term.h"
+
+1397976613 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\cli_term.h
+
+1397961412 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\oswrap.c
+	<string.h>
+	"include/oswrap.h"
+	<stdio.h>
+	<errno.h>
+	<termios.h>
+	<unistd.h>
+	<fcntl.h>
+
+1397935354 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\oswrap.h
+	<stdint.h>
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/socket.h>
+	<sys/types.h>
+	<arpa/inet.h>
+	<unistd.h>
+	<stdint.h>
+
+1397935351 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\speech.c
+	<math.h>
+	<SDL/SDL.h>
+	"robocortex.h"
+	"include/sam/sam.h"
+	"include/espeak/speak_lib.h"
+
+1397935354 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\sam\sam.h
+
+1397935411 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\espeak\speak_lib.h
+	<stdio.h>
+	<stddef.h>
+
+1397935351 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\utils.c
+	<stdio.h>
+	<string.h>
+	"robocortex.h"
+
+1397972205 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\libcli\comm.c
+
+1397972257 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\libcli\input.c
+
+1397972257 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\libcli\plugins.c
+
+1397975881 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\libcli\gfx.h
+
+1397976613 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\libcli\cli_term.h
+
+1397976656 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\libcli\cli_term.c
+	<SDL/SDL.h>
+	<stdio.h>
+	"cli_term.h"
+
+1397976656 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\cli_term.c
+	<SDL/SDL.h>
+	<stdio.h>
+	"cli_term.h"
+
+1397972205 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\comm.c
+
+1397978918 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\global.inc.c
+	"global.inc.h"
+	"../plugins/cli.h"
+
+1397978703 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\global.inc.h
+	"../plugins/cli.h"
+
+1397972257 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\input.c
+
+1397977815 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\oswrap.c
+	<string.h>
+	"oswrap.h"
+	<stdio.h>
+	<errno.h>
+	<termios.h>
+	<unistd.h>
+	<fcntl.h>
+
+1397972257 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\plugins.c
+
+1397978829 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\gfx.c
+	<stdio.h>
+	<SDL/SDL.h>
+	"gfx.h"
+	"global.inc.h"
+	"cli_term.h"
+	"sdl_console.h"
+	"robocortex.h"
+
+1397978828 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\gfx.h
+
+1397977190 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\sdl_console.h
+
+1397935354 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\robocortex.h
+	"SDL/SDL_video.h"
+	<stdint.h>
+
+1397935411 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\sdl\sdl_video.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"SDL_rwops.h"
+	"begin_code.h"
+	"close_code.h"
+
+1397935411 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\sdl\sdl_stdinc.h
+	"SDL_config.h"
+	<sys/types.h>
+	<stdio.h>
+	<stdlib.h>
+	<stddef.h>
+	<stdarg.h>
+	<stdlib.h>
+	<malloc.h>
+	<stddef.h>
+	<stdarg.h>
+	<memory.h>
+	<string.h>
+	<strings.h>
+	<inttypes.h>
+	<stdint.h>
+	<ctype.h>
+	<iconv.h>
+	"begin_code.h"
+	<alloca.h>
+	<malloc.h>
+	<malloc.h>
+	<malloc.h>
+	<stdlib.h>
+	"close_code.h"
+
+1397935410 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\sdl\sdl_config.h
+	"SDL_platform.h"
+	<stdarg.h>
+
+1397935411 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\sdl\sdl_platform.h
+
+1397935410 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\sdl\begin_code.h
+
+1397935410 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\sdl\close_code.h
+
+1397935410 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\sdl\sdl_error.h
+	"SDL_stdinc.h"
+	"begin_code.h"
+	"close_code.h"
+
+1397935411 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\sdl\sdl_rwops.h
+	"SDL_stdinc.h"
+	"SDL_error.h"
+	"begin_code.h"
+	"close_code.h"
+

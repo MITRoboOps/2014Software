@@ -1,0 +1,19 @@
+An UDP-based robot control application with a strong focus on very low latency. Video and control information is lossy, but the application also provides a secured channel for non-lossy communications where required.
+
+Developed for the KiwiRay project - an easy to build, open hardware omnidirectional robot platform.
+
+The system is now general purpose and all KiwiRay related code is now contained in plugins.
+
+RoboCortex in it's basic form contains a server (with text-to-speech and video sourcing, using x264 for encoding) and a client (basic WASD+mouse control scheme and command prompt, using ffmpeg for video decoding).
+
+The KiwiRay plugins adds functionality for controlling an Arduino via a serial interface and provides prompts for text/command input, an emoticon display (KiwiEmotion) and other implementation specific code.
+
+Also included is a plugin called Monitor or MON9 which can be used in a video surveilance system with up to 9 cameras. This is provided to demonstrate that the system can be used for a wide variety of projects.
+
+RoboCortex is cross-platform and compiles under Windows, Linux and MacOSX.
+
+The default speech library is now eSpeak, but SAM is still available if you want to go back to prime time of the C64. SAM is an old TTS from the C64 (Software Automatic Mouth) and the source code is based on the assembly to C port by Sebastian Macke. The ./sam/ folder contains this library and if you wish to use it, it must be called prior to compiling the server and client executables - it is not part of the current main build scripts.
+
+To build on Windows you might want to save yourself the trouble of manually compiling several open-source projects and simply extract the necessary includes, pre-compiled libraries and dlls from the w32-precompiled.zip archive. All contained files goes on top of the RoboCortex folder after which everything should compile immediately and without external dependencies, using MinGW.
+
+Project is developed and maintained by stg, phrst and jonasb of Forskningsavdelningen - www.forskningsavd.se

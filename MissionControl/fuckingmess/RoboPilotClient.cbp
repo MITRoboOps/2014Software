@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="RoboPilotClient" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/RoboPilotClient" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-I ./include -I ./include/ffmpeg -c" />
+				</Compiler>
+				<Linker>
+					<Add option="-I ./include -L ./lib-w32 -mwindows -lmingw32 -lsdlmain -lsdl -lavcodec -lavutil -lwsock32 -lswscale" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/RoboPilotClient" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-I ./include -L ./lib-w32" />
+			<Add library="lib-w32\libavcodec.a" />
+			<Add library="lib-w32\libavutil.a" />
+			<Add library="lib-w32\libespeak.a" />
+			<Add library="lib-w32\librcplug_cli.a" />
+			<Add library="lib-w32\librcplug_srv.a" />
+			<Add library="lib-w32\libsam.a" />
+			<Add library="lib-w32\libSDL.dll.a" />
+			<Add library="lib-w32\libSDLmain.a" />
+			<Add library="lib-w32\libswscale.a" />
+			<Add library="lib-w32\libvideoinput.a" />
+			<Add library="lib-w32\libx264.a" />
+		</Linker>
+		<Unit filename="cli.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/cli_term.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/cli_term.h" />
+		<Unit filename="include/comm.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/comm.h" />
+		<Unit filename="include/gfx.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/gfx.h" />
+		<Unit filename="include/global.inc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/global.inc.h" />
+		<Unit filename="include/input.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/input.h" />
+		<Unit filename="include/oswrap.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/oswrap.h" />
+		<Unit filename="include/plugins.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="include/plugins.h" />
+		<Unit filename="include/robocortex.h" />
+		<Unit filename="include/sdl_console.h" />
+		<Unit filename="include/videoinput.h" />
+		<Unit filename="include/x264.h" />
+		<Unit filename="plugins/cli.h" />
+		<Unit filename="plugins/ipv4udp/cli.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="plugins/ipv4udp/srv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="plugins/kiwiray/cli.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="plugins/kiwiray/srv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="plugins/monitor/cli.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="plugins/monitor/srv.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="plugins/srv.h" />
+		<Unit filename="utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

@@ -1,0 +1,906 @@
+
+
+HI-TECH Software PIC PRO Macro Assembler V9.83 build 10920 
+                                                                                               Thu Nov 24 19:30:43 2011
+
+HI-TECH Software Omniscient Code Generator (PRO mode) build 10920
+     1                           	processor	16F1825
+     2                           	opt	pw 120
+     3                           	opt	pm
+     4                           	psect	intentry,global,class=CODE,delta=2
+     5                           	psect	cinit,global,class=CODE,delta=2
+     6                           	psect	bssCOMMON,global,class=COMMON,space=1,delta=1
+     7                           	psect	bssBANK0,global,class=BANK0,space=1,delta=1
+     8                           	psect	clrtext,global,class=CODE,delta=2
+     9                           	psect	cstackCOMMON,global,class=COMMON,space=1,delta=1
+    10                           	psect	pa_nodes,global,class=CODE,delta=2
+    11                           	dabs	1,0x7E,2
+    12  000A                     
+    13                           	psect	intentry
+    14  0004                     __pintentry:	
+    15  000B                     _INTCON	set	11
+    16  000C                     _PORTA	set	12
+    17  000E                     _PORTC	set	14
+    18  0072                     _RC2	set	114
+    19  0073                     _RC3	set	115
+    20  0074                     _RC4	set	116
+    21  0075                     _RC5	set	117
+    22  008B                     _SSP1IF	set	139
+    23  0095                     _OPTION_REG	set	149
+    24  0099                     _OSCCON	set	153
+    25  008C                     _TRISA	set	140
+    26  008E                     _TRISC	set	142
+    27  048B                     _SSP1IE	set	1163
+    28  018C                     _ANSELA	set	396
+    29  018E                     _ANSELC	set	398
+    30  0212                     _SSPADD	set	530
+    31  0211                     _SSPBUF	set	529
+    32  0215                     _SSPCON1	set	533
+    33  0216                     _SSPCON2	set	534
+    34  0217                     _SSPCON3	set	535
+    35  020C                     _WPUA	set	524
+    36  020E                     _WPUC	set	526
+    37  10B6                     _ACKSTAT	set	4278
+    38  10A0                     _BF	set	4256
+    39  10AC                     _CKP	set	4268
+    40  10A5                     _D_nA	set	4261
+    41  10A2                     _R_nW	set	4258
+    42  038C                     _INLVLA	set	908
+    43  038E                     _INLVLC	set	910
+    44                           
+    45 ;; =============== function _setup ends ============
+    46 ;; *************** function _isr *****************
+    47 ;; Defined at:
+    48 ;;		line 24 in file "C:\Dropbox\RoboCortex\arduino\KiwiRay\KiwiEmotion\KiwiEmotion.c"
+    49 ;; Parameters:    Size  Location     Type
+    50 ;;		None
+    51 ;; Auto vars:     Size  Location     Type
+    52 ;;  data            1    0[COMMON] unsigned char 
+    53 ;; Return value:  Size  Location     Type
+    54 ;;                  2  1458[COMMON] int 
+    55 ;; Registers used:
+    56 ;;		wreg, fsr1l, fsr1h, status,2, status,0
+    57 ;; Tracked objects:
+    58 ;;		On entry : 0/0
+    59 ;;		On exit  : 1B/0
+    60 ;;		Unchanged: FFFE0/0
+    61 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12
+    62 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+    63 ;;      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+    64 ;;      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+    65 ;;      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+    66 ;;Total ram usage:        1 bytes
+    67 ;; Hardware stack levels used:    1
+    68 ;; This function calls:
+    69 ;;		Nothing
+    70 ;; This function is called by:
+    71 ;;		Interrupt level 1
+    72 ;; This function uses a non-reentrant model
+    73 ;;
+    74  0004                     _isr:	
+    75                           
+    76                           ; Regs used in _isr: [wreg+fsr1l-status,0]
+    77  0004  3180               	pagesel	$
+    78                           
+    79                           ;KiwiEmotion.c: 25: uint8_t data;
+    80                           ;KiwiEmotion.c: 26: static uint8_t last = 0;
+    81                           ;KiwiEmotion.c: 27: if( SSP1IF ) {
+    82  0005  0020               	movlb	0	; select bank0
+    83  0006  1D91               	btfss	17,3
+    84  0007  0009               	retfie
+    85                           
+    86                           ;KiwiEmotion.c: 29: SSP1IF = 0;
+    87  0008  1191               	bcf	17,3
+    88                           
+    89                           ;KiwiEmotion.c: 30: if( BF ) {
+    90  0009  0024               	movlb	4	; select bank4
+    91  000A  1C14               	btfss	20,0
+    92  000B  2828               	goto	i1l3224
+    93                           
+    94                           ;KiwiEmotion.c: 32: if( !R_nW ) {
+    95  000C  1914               	btfsc	20,2
+    96  000D  281E               	goto	i1l1463
+    97                           
+    98                           ;KiwiEmotion.c: 34: data = SSPBUF;
+    99  000E  0811               	movf	17,w	;volatile
+   100  000F  00F0               	movwf	isr@data
+   101                           
+   102                           ;KiwiEmotion.c: 36: if( D_nA ) {
+   103  0010  1E94               	btfss	20,5
+   104  0011  2829               	goto	i1l3226
+   105                           
+   106                           ;KiwiEmotion.c: 38: if( i2c_bytes < 24 ) {
+   107  0012  3018               	movlw	24
+   108  0013  0276               	subwf	_i2c_bytes,w
+   109  0014  1803               	skipnc
+   110  0015  2829               	goto	i1l3226
+   111                           
+   112                           ;KiwiEmotion.c: 39: i2c_packet[ i2c_bytes ] = data;
+   113  0016  0876               	movf	_i2c_bytes,w
+   114  0017  3E20               	addlw	_i2c_packet& (0+255)
+   115  0018  0086               	movwf	6
+   116  0019  0187               	clrf	7
+   117  001A  0870               	movf	isr@data,w
+   118  001B  0081               	movwf	1
+   119                           
+   120                           ;KiwiEmotion.c: 40: i2c_bytes++;
+   121  001C  0AF6               	incf	_i2c_bytes,f
+   122  001D  2829               	goto	i1l3226
+   123  001E                     i1l1463:	
+   124                           
+   125                           ;KiwiEmotion.c: 45: if( !D_nA ) {
+   126  001E  1A94               	btfsc	20,5
+   127  001F  2821               	goto	i1l3218
+   128  0020  0811               	movf	17,w	;volatile
+   129  0021                     i1l3218:	
+   130                           
+   131                           ;KiwiEmotion.c: 48: }
+   132                           ;KiwiEmotion.c: 49: if( ( !D_nA ) || ( !ACKSTAT ) ) {
+   133  0021  1E94               	btfss	20,5
+   134  0022  2825               	goto	i1l3222
+   135  0023  1B16               	btfsc	22,6
+   136  0024  2829               	goto	i1l3226
+   137  0025                     i1l3222:	
+   138                           
+   139                           ;KiwiEmotion.c: 51: SSPBUF = i2c_bytes;
+   140  0025  0876               	movf	_i2c_bytes,w
+   141  0026  0091               	movwf	17	;volatile
+   142  0027  2829               	goto	i1l3226
+   143  0028                     i1l3224:	
+   144                           ;KiwiEmotion.c: 52: }
+   145                           ;KiwiEmotion.c: 53: }
+   146                           ;KiwiEmotion.c: 54: } else {
+   147                           
+   148                           
+   149                           ;KiwiEmotion.c: 57: i2c_bytes = 0;
+   150  0028  01F6               	clrf	_i2c_bytes
+   151  0029                     i1l3226:	
+   152                           
+   153                           ;KiwiEmotion.c: 58: }
+   154                           ;KiwiEmotion.c: 60: CKP = 1;
+   155  0029  1615               	bsf	21,4
+   156  002A  0009               	retfie
+   157  002B                     __end_of_isr:	
+   158                           
+   159 ;; =============== function _isr ends ============
+   160  007E                     btemp	set	126	;btemp
+   161  007E                     wtemp0	set	126
+   162                           
+   163                           	psect	cinit
+   164  002E                     start_initialization:	
+   165  002E  3020               	movlw	low __pbssBANK0
+   166                           
+   167                           ; Clear objects allocated to COMMON
+   168  002F  01F6               	clrf	__pbssCOMMON& (0+127)
+   169                           
+   170                           ; Clear objects allocated to BANK0
+   171  0030  0084               	movwf	4
+   172  0031  3000               	movlw	high __pbssBANK0
+   173  0032  0085               	movwf	5
+   174  0033  3020               	movlw	32
+   175  0034  3180  20D2  3180   	fcall	clear_ram
+   176  0037                     end_of_initialization:	
+   177                           ;End of C runtime variable initialization code
+   178                           
+   179  0037  0020               	movlb	0
+   180  0038  2839               	ljmp	_main	;jump to C main() function
+   181  0039                     __pmaintext:	
+   182 ;;Data sizes: Strings 0, constant 0, data 0, bss 33, persistent 0 stack 0
+   183 ;;Auto spaces:   Size  Autos    Used
+   184 ;; COMMON          14      6       7
+   185 ;; BANK0           80      0      32
+   186 ;; BANK1           80      0       0
+   187 ;; BANK2           80      0       0
+   188 ;; BANK3           80      0       0
+   189 ;; BANK4           80      0       0
+   190 ;; BANK5           80      0       0
+   191 ;; BANK6           80      0       0
+   192 ;; BANK7           80      0       0
+   193 ;; BANK8           80      0       0
+   194 ;; BANK9           80      0       0
+   195 ;; BANK10          80      0       0
+   196 ;; BANK11          80      0       0
+   197 ;; BANK12          48      0       0
+   198 ;;
+   199 ;; Pointer list with targets:
+   200 ;;
+   201 ;; Critical Paths under _main in COMMON
+   202 ;;
+   203 ;;   _main->_setup
+   204 ;;
+   205 ;; Critical Paths under _isr in COMMON
+   206 ;;
+   207 ;;   None.
+   208 ;;
+   209 ;; Critical Paths under _main in BANK0
+   210 ;;
+   211 ;;   None.
+   212 ;;
+   213 ;; Critical Paths under _isr in BANK0
+   214 ;;
+   215 ;;   None.
+   216 ;;
+   217 ;; Critical Paths under _main in BANK1
+   218 ;;
+   219 ;;   None.
+   220 ;;
+   221 ;; Critical Paths under _isr in BANK1
+   222 ;;
+   223 ;;   None.
+   224 ;;
+   225 ;; Critical Paths under _main in BANK2
+   226 ;;
+   227 ;;   None.
+   228 ;;
+   229 ;; Critical Paths under _isr in BANK2
+   230 ;;
+   231 ;;   None.
+   232 ;;
+   233 ;; Critical Paths under _main in BANK3
+   234 ;;
+   235 ;;   None.
+   236 ;;
+   237 ;; Critical Paths under _isr in BANK3
+   238 ;;
+   239 ;;   None.
+   240 ;;
+   241 ;; Critical Paths under _main in BANK4
+   242 ;;
+   243 ;;   None.
+   244 ;;
+   245 ;; Critical Paths under _isr in BANK4
+   246 ;;
+   247 ;;   None.
+   248 ;;
+   249 ;; Critical Paths under _main in BANK5
+   250 ;;
+   251 ;;   None.
+   252 ;;
+   253 ;; Critical Paths under _isr in BANK5
+   254 ;;
+   255 ;;   None.
+   256 ;;
+   257 ;; Critical Paths under _main in BANK6
+   258 ;;
+   259 ;;   None.
+   260 ;;
+   261 ;; Critical Paths under _isr in BANK6
+   262 ;;
+   263 ;;   None.
+   264 ;;
+   265 ;; Critical Paths under _main in BANK7
+   266 ;;
+   267 ;;   None.
+   268 ;;
+   269 ;; Critical Paths under _isr in BANK7
+   270 ;;
+   271 ;;   None.
+   272 ;;
+   273 ;; Critical Paths under _main in BANK8
+   274 ;;
+   275 ;;   None.
+   276 ;;
+   277 ;; Critical Paths under _isr in BANK8
+   278 ;;
+   279 ;;   None.
+   280 ;;
+   281 ;; Critical Paths under _main in BANK9
+   282 ;;
+   283 ;;   None.
+   284 ;;
+   285 ;; Critical Paths under _isr in BANK9
+   286 ;;
+   287 ;;   None.
+   288 ;;
+   289 ;; Critical Paths under _main in BANK10
+   290 ;;
+   291 ;;   None.
+   292 ;;
+   293 ;; Critical Paths under _isr in BANK10
+   294 ;;
+   295 ;;   None.
+   296 ;;
+   297 ;; Critical Paths under _main in BANK11
+   298 ;;
+   299 ;;   None.
+   300 ;;
+   301 ;; Critical Paths under _isr in BANK11
+   302 ;;
+   303 ;;   None.
+   304 ;;
+   305 ;; Critical Paths under _main in BANK12
+   306 ;;
+   307 ;;   None.
+   308 ;;
+   309 ;; Critical Paths under _isr in BANK12
+   310 ;;
+   311 ;;   None.
+   312 ;;
+   313 ;;Main: autosize = 0, tempsize = 0, incstack = 0, save=0
+   314 ;;
+   315 ;;
+   316 ;;Call Graph Tables:
+   317 ;;
+   318 ;; ---------------------------------------------------------------------------------
+   319 ;; (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+   320 ;; ---------------------------------------------------------------------------------
+   321 ;; (0) _main                                                11    11      0     255
+   322 ;;                                              2 COMMON     4     4      0
+   323 ;;                              _setup
+   324 ;; ---------------------------------------------------------------------------------
+   325 ;; (1) _setup                                                1     1      0      45
+   326 ;;                                              1 COMMON     1     1      0
+   327 ;; ---------------------------------------------------------------------------------
+   328 ;; Estimated maximum stack depth 1
+   329 ;; ---------------------------------------------------------------------------------
+   330 ;; (Depth) Function   	        Calls       Base Space   Used Autos Params    Refs
+   331 ;; ---------------------------------------------------------------------------------
+   332 ;; (2) _isr                                                  1     1      0      15
+   333 ;;                                              0 COMMON     1     1      0
+   334 ;; ---------------------------------------------------------------------------------
+   335 ;; Estimated maximum stack depth 2
+   336 ;; ---------------------------------------------------------------------------------
+   337 ;; Call Graph Graphs:
+   338 ;; _main (ROOT)
+   339 ;;   _setup
+   340 ;;
+   341 ;; _isr (ROOT)
+   342 ;;
+   343 ;; Address spaces:
+   344 ;;Name               Size   Autos  Total    Cost      Usage
+   345 ;;BIGRAM             3F0      0       0       0        0.0%
+   346 ;;EEDATA             100      0       0       0        0.0%
+   347 ;;NULL                 0      0       0       0        0.0%
+   348 ;;CODE                 0      0       0       0        0.0%
+   349 ;;BITCOMMON            E      0       0       1        0.0%
+   350 ;;BITSFR0              0      0       0       1        0.0%
+   351 ;;SFR0                 0      0       0       1        0.0%
+   352 ;;COMMON               E      6       7       2       50.0%
+   353 ;;BITSFR1              0      0       0       2        0.0%
+   354 ;;SFR1                 0      0       0       2        0.0%
+   355 ;;BITSFR2              0      0       0       3        0.0%
+   356 ;;SFR2                 0      0       0       3        0.0%
+   357 ;;STACK                0      0       1       3        0.0%
+   358 ;;BITBANK0            50      0       0       4        0.0%
+   359 ;;BITSFR3              0      0       0       4        0.0%
+   360 ;;SFR3                 0      0       0       4        0.0%
+   361 ;;BANK0               50      0      20       5       40.0%
+   362 ;;BITSFR4              0      0       0       5        0.0%
+   363 ;;SFR4                 0      0       0       5        0.0%
+   364 ;;BITBANK1            50      0       0       6        0.0%
+   365 ;;BITSFR5              0      0       0       6        0.0%
+   366 ;;SFR5                 0      0       0       6        0.0%
+   367 ;;BANK1               50      0       0       7        0.0%
+   368 ;;BITSFR6              0      0       0       7        0.0%
+   369 ;;SFR6                 0      0       0       7        0.0%
+   370 ;;BITBANK2            50      0       0       8        0.0%
+   371 ;;BITSFR7              0      0       0       8        0.0%
+   372 ;;SFR7                 0      0       0       8        0.0%
+   373 ;;BANK2               50      0       0       9        0.0%
+   374 ;;BITSFR8              0      0       0       9        0.0%
+   375 ;;SFR8                 0      0       0       9        0.0%
+   376 ;;BITBANK3            50      0       0      10        0.0%
+   377 ;;BITSFR9              0      0       0      10        0.0%
+   378 ;;SFR9                 0      0       0      10        0.0%
+   379 ;;BANK3               50      0       0      11        0.0%
+   380 ;;BITSFR10             0      0       0      11        0.0%
+   381 ;;SFR10                0      0       0      11        0.0%
+   382 ;;BITBANK4            50      0       0      12        0.0%
+   383 ;;BITSFR11             0      0       0      12        0.0%
+   384 ;;SFR11                0      0       0      12        0.0%
+   385 ;;BANK4               50      0       0      13        0.0%
+   386 ;;BITSFR12             0      0       0      13        0.0%
+   387 ;;SFR12                0      0       0      13        0.0%
+   388 ;;BITBANK5            50      0       0      14        0.0%
+   389 ;;BITSFR13             0      0       0      14        0.0%
+   390 ;;SFR13                0      0       0      14        0.0%
+   391 ;;BANK5               50      0       0      15        0.0%
+   392 ;;BITSFR14             0      0       0      15        0.0%
+   393 ;;SFR14                0      0       0      15        0.0%
+   394 ;;BITBANK6            50      0       0      16        0.0%
+   395 ;;BITSFR15             0      0       0      16        0.0%
+   396 ;;SFR15                0      0       0      16        0.0%
+   397 ;;BANK6               50      0       0      17        0.0%
+   398 ;;BITSFR16             0      0       0      17        0.0%
+   399 ;;SFR16                0      0       0      17        0.0%
+   400 ;;BITBANK7            50      0       0      18        0.0%
+   401 ;;BITSFR17             0      0       0      18        0.0%
+   402 ;;SFR17                0      0       0      18        0.0%
+   403 ;;BANK7               50      0       0      19        0.0%
+   404 ;;BITSFR18             0      0       0      19        0.0%
+   405 ;;SFR18                0      0       0      19        0.0%
+   406 ;;BITSFR19             0      0       0      20        0.0%
+   407 ;;SFR19                0      0       0      20        0.0%
+   408 ;;ABS                  0      0      27      20        0.0%
+   409 ;;BITBANK8            50      0       0      21        0.0%
+   410 ;;BITSFR20             0      0       0      21        0.0%
+   411 ;;SFR20                0      0       0      21        0.0%
+   412 ;;BANK8               50      0       0      22        0.0%
+   413 ;;BITSFR21             0      0       0      22        0.0%
+   414 ;;SFR21                0      0       0      22        0.0%
+   415 ;;BITBANK9            50      0       0      23        0.0%
+   416 ;;BITSFR22             0      0       0      23        0.0%
+   417 ;;SFR22                0      0       0      23        0.0%
+   418 ;;BANK9               50      0       0      24        0.0%
+   419 ;;BITSFR23             0      0       0      24        0.0%
+   420 ;;SFR23                0      0       0      24        0.0%
+   421 ;;BITBANK10           50      0       0      25        0.0%
+   422 ;;BITSFR24             0      0       0      25        0.0%
+   423 ;;SFR24                0      0       0      25        0.0%
+   424 ;;BANK10              50      0       0      26        0.0%
+   425 ;;BITSFR25             0      0       0      26        0.0%
+   426 ;;SFR25                0      0       0      26        0.0%
+   427 ;;BITBANK11           50      0       0      27        0.0%
+   428 ;;BITSFR26             0      0       0      27        0.0%
+   429 ;;SFR26                0      0       0      27        0.0%
+   430 ;;BANK11              50      0       0      28        0.0%
+   431 ;;BITSFR27             0      0       0      28        0.0%
+   432 ;;SFR27                0      0       0      28        0.0%
+   433 ;;BITBANK12           30      0       0      29        0.0%
+   434 ;;BITSFR28             0      0       0      29        0.0%
+   435 ;;SFR28                0      0       0      29        0.0%
+   436 ;;BANK12              30      0       0      30        0.0%
+   437 ;;BITSFR29             0      0       0      30        0.0%
+   438 ;;SFR29                0      0       0      30        0.0%
+   439 ;;BITSFR30             0      0       0      31        0.0%
+   440 ;;SFR30                0      0       0      31        0.0%
+   441 ;;DATA                 0      0      28      31        0.0%
+   442 ;;BITSFR31             0      0       0      32        0.0%
+   443 ;;SFR31                0      0       0      32        0.0%
+   444                           
+   445                           
+   446 ;; *************** function _main *****************
+   447 ;; Defined at:
+   448 ;;		line 141 in file "C:\Dropbox\RoboCortex\arduino\KiwiRay\KiwiEmotion\KiwiEmotion.c"
+   449 ;; Parameters:    Size  Location     Type
+   450 ;;		None
+   451 ;; Auto vars:     Size  Location     Type
+   452 ;;  delay           4    0        unsigned long 
+   453 ;;  n               1    5[COMMON] unsigned char 
+   454 ;;  q               1    4[COMMON] unsigned char 
+   455 ;;  rowix           1    3[COMMON] unsigned char 
+   456 ;;  row             1    2[COMMON] unsigned char 
+   457 ;;  b               1    0        unsigned char 
+   458 ;;  g               1    0        unsigned char 
+   459 ;;  r               1    0        unsigned char 
+   460 ;; Return value:  Size  Location     Type
+   461 ;;		None               void
+   462 ;; Registers used:
+   463 ;;		wreg, fsr1l, fsr1h, status,2, status,0, pclath, cstack
+   464 ;; Tracked objects:
+   465 ;;		On entry : 17F/0
+   466 ;;		On exit  : 1F/0
+   467 ;;		Unchanged: FFE00/0
+   468 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12
+   469 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   470 ;;      Locals:         4       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   471 ;;      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   472 ;;      Totals:         4       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   473 ;;Total ram usage:        4 bytes
+   474 ;; Hardware stack levels required when called:    2
+   475 ;; This function calls:
+   476 ;;		_setup
+   477 ;; This function is called by:
+   478 ;;		Startup code after reset
+   479 ;; This function uses a non-reentrant model
+   480 ;;
+   481  0039                     _main:	
+   482                           
+   483                           ;KiwiEmotion.c: 142: unsigned char r, g, b, q;
+   484                           ;KiwiEmotion.c: 143: unsigned char row = 0, rowix;
+   485                           
+   486                           ; Regs used in _main: [wreg+fsr1l-status,0+pclath+cstack]
+   487  0039  01F2               	clrf	main@row
+   488                           
+   489                           ;KiwiEmotion.c: 144: unsigned char n;
+   490                           ;KiwiEmotion.c: 145: unsigned long delay;
+   491                           ;KiwiEmotion.c: 146: setup();
+   492  003A  2090  3180         	fcall	_setup
+   493  003C                     l3266:	
+   494                           
+   495                           ;KiwiEmotion.c: 148: RC5 = 1; asm( "NOP" ); asm( "NOP" );;
+   496  003C  0020               	movlb	0	; select bank0
+   497  003D  168E               	bsf	14,5
+   498  003E  0000               	nop	;#
+   499  003F  0000               	nop	;#
+   500                           
+   501                           ;KiwiEmotion.c: 149: RC3 = 1; asm( "NOP" ); asm( "NOP" ); RC3 = 0; asm( "NOP" ); asm( "N
+      +                          OP" );;
+   502  0040  0020               	movlb	0	; select bank0
+   503  0041  158E               	bsf	14,3
+   504  0042  0000               	nop	;#
+   505  0043  0000               	nop	;#
+   506  0044  0020               	movlb	0	; select bank0
+   507  0045  118E               	bcf	14,3
+   508  0046  0000               	nop	;#
+   509  0047  0000               	nop	;#
+   510                           
+   511                           ;KiwiEmotion.c: 150: PORTA = ( PORTA & 0xF8 ) | row;
+   512  0048  0020               	movlb	0	; select bank0
+   513  0049  080C               	movf	12,w
+   514  004A  39F8               	andlw	248
+   515  004B  0472               	iorwf	main@row,w
+   516  004C  008C               	movwf	12	;volatile
+   517                           
+   518                           ;KiwiEmotion.c: 151: RC5 = 0; asm( "NOP" ); asm( "NOP" );;
+   519  004D  128E               	bcf	14,5
+   520  004E  0000               	nop	;#
+   521  004F  0000               	nop	;#
+   522  0050  3007               	movlw	7
+   523                           
+   524                           ;KiwiEmotion.c: 152: row = ( row + 1 ) & 7;
+   525  0051  0AF2               	incf	main@row,f
+   526  0052  05F2               	andwf	main@row,f
+   527                           
+   528                           ;KiwiEmotion.c: 153: rowix = row * 3;
+   529  0053  0872               	movf	main@row,w
+   530  0054  0772               	addwf	main@row,w
+   531  0055  0772               	addwf	main@row,w
+   532  0056  00F3               	movwf	main@rowix
+   533                           
+   534                           ;KiwiEmotion.c: 154: q = i2c_packet[ rowix + 0 ];
+   535  0057  3E20               	addlw	_i2c_packet& (0+255)
+   536                           
+   537                           ;KiwiEmotion.c: 155: for( n = 0; n < 8; n++ ) {
+   538  0058  20CC  3180         	fcall	PL3	;call to abstracted procedure
+   539  005A                     l1481:	
+   540                           
+   541                           ;KiwiEmotion.c: 156: RC2 = 0 != ( q & 0x80 );
+   542  005A  1FF4               	btfss	main@q,7
+   543  005B  285F               	goto	u100
+   544  005C  0020               	movlb	0	; select bank0
+   545  005D  150E               	bsf	14,2
+   546  005E  2861               	goto	u114
+   547  005F                     u100:	
+   548  005F  0020               	movlb	0	; select bank0
+   549  0060  110E               	bcf	14,2
+   550  0061                     u114:	
+   551                           
+   552                           ;KiwiEmotion.c: 157: q <<= 1;
+   553  0061  35F4               	lslf	main@q,f
+   554                           
+   555                           ;KiwiEmotion.c: 158: RC4 = 1; asm( "NOP" ); asm( "NOP" ); RC4 = 0;;
+   556  0062  160E               	bsf	14,4
+   557  0063  0000               	nop	;#
+   558  0064  0000               	nop	;#
+   559  0065  20C6  3180         	fcall	PL2	;call to abstracted procedure
+   560  0067  1C03               	skipc
+   561  0068  285A               	goto	l1481
+   562                           
+   563                           ;KiwiEmotion.c: 159: }
+   564                           ;KiwiEmotion.c: 160: q = i2c_packet[ rowix + 1 ];
+   565  0069  0873               	movf	main@rowix,w
+   566  006A  3E21               	addlw	(_i2c_packet+1)& (0+255)
+   567                           
+   568                           ;KiwiEmotion.c: 161: for( n = 0; n < 8; n++ ) {
+   569  006B  20CC  3180         	fcall	PL3	;call to abstracted procedure
+   570  006D                     l1483:	
+   571                           
+   572                           ;KiwiEmotion.c: 162: RC2 = 0 != ( q & 0x80 );
+   573  006D  1FF4               	btfss	main@q,7
+   574  006E  2872               	goto	u130
+   575  006F  0020               	movlb	0	; select bank0
+   576  0070  150E               	bsf	14,2
+   577  0071  2874               	goto	u144
+   578  0072                     u130:	
+   579  0072  0020               	movlb	0	; select bank0
+   580  0073  110E               	bcf	14,2
+   581  0074                     u144:	
+   582                           
+   583                           ;KiwiEmotion.c: 163: q <<= 1;
+   584  0074  35F4               	lslf	main@q,f
+   585                           
+   586                           ;KiwiEmotion.c: 164: RC4 = 1; asm( "NOP" ); asm( "NOP" ); RC4 = 0;;
+   587  0075  160E               	bsf	14,4
+   588  0076  0000               	nop	;#
+   589  0077  0000               	nop	;#
+   590  0078  20C6  3180         	fcall	PL2	;call to abstracted procedure
+   591  007A  1C03               	skipc
+   592  007B  286D               	goto	l1483
+   593                           
+   594                           ;KiwiEmotion.c: 165: }
+   595                           ;KiwiEmotion.c: 166: q = i2c_packet[ rowix + 2 ];
+   596  007C  0873               	movf	main@rowix,w
+   597  007D  3E22               	addlw	(_i2c_packet+2)& (0+255)
+   598                           
+   599                           ;KiwiEmotion.c: 167: for( n = 0; n < 8; n++ ) {
+   600  007E  20CC  3180         	fcall	PL3	;call to abstracted procedure
+   601  0080                     l1485:	
+   602                           
+   603                           ;KiwiEmotion.c: 168: RC2 = 0 != ( q & 0x80 );
+   604  0080  1FF4               	btfss	main@q,7
+   605  0081  2885               	goto	u160
+   606  0082  0020               	movlb	0	; select bank0
+   607  0083  150E               	bsf	14,2
+   608  0084  2887               	goto	u174
+   609  0085                     u160:	
+   610  0085  0020               	movlb	0	; select bank0
+   611  0086  110E               	bcf	14,2
+   612  0087                     u174:	
+   613                           
+   614                           ;KiwiEmotion.c: 169: q <<= 1;
+   615  0087  35F4               	lslf	main@q,f
+   616                           
+   617                           ;KiwiEmotion.c: 170: RC4 = 1; asm( "NOP" ); asm( "NOP" ); RC4 = 0;;
+   618  0088  160E               	bsf	14,4
+   619  0089  0000               	nop	;#
+   620  008A  0000               	nop	;#
+   621  008B  20C6  3180         	fcall	PL2	;call to abstracted procedure
+   622  008D  1803               	btfsc	3,0
+   623  008E  283C               	goto	l3266
+   624  008F  2880               	goto	l1485
+   625  0090                     __end_of_main:	
+   626  0090                     __ptext43:	
+   627 ;; =============== function _main ends ============
+   628                           
+   629                           
+   630 ;; *************** function _setup *****************
+   631 ;; Defined at:
+   632 ;;		line 110 in file "C:\Dropbox\RoboCortex\arduino\KiwiRay\KiwiEmotion\KiwiEmotion.c"
+   633 ;; Parameters:    Size  Location     Type
+   634 ;;		None
+   635 ;; Auto vars:     Size  Location     Type
+   636 ;;  n               1    1[COMMON] unsigned char 
+   637 ;; Return value:  Size  Location     Type
+   638 ;;		None               void
+   639 ;; Registers used:
+   640 ;;		wreg, fsr1l, fsr1h, status,2, status,0
+   641 ;; Tracked objects:
+   642 ;;		On entry : 17F/0
+   643 ;;		On exit  : 17F/4
+   644 ;;		Unchanged: FFE80/0
+   645 ;; Data sizes:     COMMON   BANK0   BANK1   BANK2   BANK3   BANK4   BANK5   BANK6   BANK7   BANK8   BANK9  BANK10  BANK1
+      +1  BANK12
+   646 ;;      Params:         0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   647 ;;      Locals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   648 ;;      Temps:          0       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   649 ;;      Totals:         1       0       0       0       0       0       0       0       0       0       0       0       
+      +0       0
+   650 ;;Total ram usage:        1 bytes
+   651 ;; Hardware stack levels used:    1
+   652 ;; Hardware stack levels required when called:    1
+   653 ;; This function calls:
+   654 ;;		Nothing
+   655 ;; This function is called by:
+   656 ;;		_main
+   657 ;; This function uses a non-reentrant model
+   658 ;;
+   659  0090                     _setup:	
+   660                           
+   661                           ;KiwiEmotion.c: 111: unsigned char n;
+   662                           ;KiwiEmotion.c: 112: OSCCON = 0b01110000;
+   663                           
+   664                           ; Regs used in _setup: [wreg+fsr1l-status,0]
+   665  0090  3070               	movlw	112
+   666  0091  0021               	movlb	1	; select bank1
+   667  0092  0099               	movwf	25	;volatile
+   668                           
+   669                           ;KiwiEmotion.c: 113: ANSELA = 0b00000000;
+   670  0093  0023               	movlb	3	; select bank3
+   671  0094  018C               	clrf	12	;volatile
+   672                           
+   673                           ;KiwiEmotion.c: 114: ANSELC = 0b00000000;
+   674  0095  018E               	clrf	14	;volatile
+   675                           
+   676                           ;KiwiEmotion.c: 115: PORTA = 0b00000000;
+   677  0096  0020               	movlb	0	; select bank0
+   678  0097  018C               	clrf	12	;volatile
+   679                           
+   680                           ;KiwiEmotion.c: 116: PORTC = 0b00000000;
+   681  0098  018E               	clrf	14	;volatile
+   682                           
+   683                           ;KiwiEmotion.c: 117: TRISA = 0b11111000;
+   684  0099  30F8               	movlw	248
+   685  009A  0021               	movlb	1	; select bank1
+   686  009B  008C               	movwf	12	;volatile
+   687                           
+   688                           ;KiwiEmotion.c: 118: TRISC = 0b11000011;
+   689  009C  30C3               	movlw	195
+   690  009D  008E               	movwf	14	;volatile
+   691                           
+   692                           ;KiwiEmotion.c: 120: WPUA = 0b00000000;
+   693  009E  0024               	movlb	4	; select bank4
+   694  009F  018C               	clrf	12	;volatile
+   695                           
+   696                           ;KiwiEmotion.c: 121: WPUC = 0b00000011;
+   697  00A0  3003               	movlw	3
+   698  00A1  008E               	movwf	14	;volatile
+   699                           
+   700                           ;KiwiEmotion.c: 122: OPTION_REG = 0b01111111;
+   701  00A2  307F               	movlw	127
+   702  00A3  0021               	movlb	1	; select bank1
+   703  00A4  0095               	movwf	21	;volatile
+   704                           
+   705                           ;KiwiEmotion.c: 123: INLVLA = 0b00111111;
+   706  00A5  303F               	movlw	63
+   707  00A6  0027               	movlb	7	; select bank7
+   708  00A7  008C               	movwf	12	;volatile
+   709                           
+   710                           ;KiwiEmotion.c: 124: INLVLC = 0b00111111;
+   711  00A8  008E               	movwf	14	;volatile
+   712                           
+   713                           ;KiwiEmotion.c: 126: for( n = 0; n < 32; n++ ) {
+   714  00A9  01F1               	clrf	setup@n
+   715  00AA                     l3252:	
+   716                           
+   717                           ;KiwiEmotion.c: 127: i2c_packet[ n ] = 0;
+   718  00AA  0871               	movf	setup@n,w
+   719  00AB  3E20               	addlw	_i2c_packet& (0+255)
+   720  00AC  0086               	movwf	6
+   721  00AD  3020               	movlw	32
+   722  00AE  0187               	clrf	7
+   723  00AF  0181               	clrf	1
+   724  00B0  0AF1               	incf	setup@n,f
+   725  00B1  0271               	subwf	setup@n,w
+   726  00B2  1C03               	skipc
+   727  00B3  28AA               	goto	l3252
+   728                           
+   729                           ;KiwiEmotion.c: 128: }
+   730                           ;KiwiEmotion.c: 129: i2c_packet[ 10 ] = 0b00011000;
+   731  00B4  3018               	movlw	24
+   732  00B5  0020               	movlb	0	; select bank0
+   733  00B6  00AA               	movwf	_i2c_packet+10
+   734                           
+   735                           ;KiwiEmotion.c: 130: i2c_packet[ 13 ] = 0b00011000;
+   736  00B7  00AD               	movwf	_i2c_packet+13
+   737                           
+   738                           ;KiwiEmotion.c: 132: SSP1IE = 1;
+   739  00B8  0021               	movlb	1	; select bank1
+   740  00B9  3066               	movlw	102
+   741  00BA  1591               	bsf	17,3
+   742                           
+   743                           ;KiwiEmotion.c: 133: SSPADD = 0x33 << 1;
+   744  00BB  0024               	movlb	4	; select bank4
+   745  00BC  0092               	movwf	18	;volatile
+   746                           
+   747                           ;KiwiEmotion.c: 134: SSPCON3 = 0b00110000;
+   748  00BD  3030               	movlw	48
+   749  00BE  0097               	movwf	23	;volatile
+   750                           
+   751                           ;KiwiEmotion.c: 135: SSPCON2 = 0b00000001;
+   752  00BF  3001               	movlw	1
+   753  00C0  0096               	movwf	22	;volatile
+   754                           
+   755                           ;KiwiEmotion.c: 136: SSPCON1 = 0b00111110;
+   756  00C1  303E               	movlw	62
+   757  00C2  0095               	movwf	21	;volatile
+   758                           
+   759                           ;KiwiEmotion.c: 137: INTCON = 0b11000000;
+   760  00C3  30C0               	movlw	192
+   761  00C4  008B               	movwf	11	;volatile
+   762  00C5  0008               	return
+   763  00C6                     __end_of_setup:	
+   764  00C6                     PL2:	
+   765  00C6  0020               	movlb	0	; select bank0
+   766  00C7  3008               	movlw	8
+   767  00C8  120E               	bcf	14,4
+   768  00C9  0AF5               	incf	main@n,f
+   769  00CA  0275               	subwf	main@n,w
+   770  00CB  0008               	return
+   771  00CC                     PL3:	
+   772  00CC  0086               	movwf	6
+   773  00CD  0187               	clrf	7
+   774  00CE  0801               	movf	1,w
+   775  00CF  00F4               	movwf	main@q
+   776  00D0  01F5               	clrf	main@n
+   777  00D1  0008               	return
+   778                           
+   779                           	psect	bssCOMMON
+   780  0076                     __pbssCOMMON:	
+   781  0076                     _i2c_bytes:	
+   782  0076                     	ds	1
+   783                           
+   784                           	psect	bssBANK0
+   785  0020                     __pbssBANK0:	
+   786  0020                     _i2c_packet:	
+   787  0020                     	ds	32
+   788                           
+   789                           	psect	clrtext
+   790  00D2                     clear_ram:	
+   791                           ;	Called with FSR0 containing the base address, and
+   792                           ;	WREG with the size to clear
+   793                           
+   794  00D2  0064               	clrwdt	;clear the watchdog before getting into this loop
+   795  00D3                     clrloop:	
+   796  00D3  0180               	clrf	0	;clear RAM location pointed to by FSR
+   797  00D4  3101               	addfsr 0,1
+   798  00D5  0B89               	decfsz	9,f	;Have we reached the end of clearing yet?
+   799  00D6  28D3               	goto	clrloop	;have we reached the end yet?
+   800  00D7  3400               	retlw	0	;all done for this memory range, return
+   801                           
+   802                           	psect	cstackCOMMON
+   803  0070                     __pcstackCOMMON:	
+   804  0070                     ??_isr:	
+   805  0070                     ?_setup:	
+   806                           ; 0 bytes @ 0x0
+   807                           
+   808  0070                     ?_main:	
+   809                           ; 0 bytes @ 0x0
+   810                           
+   811  0070                     ?_isr:	
+   812                           ; 0 bytes @ 0x0
+   813                           
+   814  0070                     isr@data:	
+   815                           ; 2 bytes @ 0x0
+   816                           
+   817                           
+   818                           ; 1 bytes @ 0x0
+   819  0070                     	ds	1
+   820  0071                     ??_setup:	
+   821  0071                     setup@n:	
+   822                           ; 0 bytes @ 0x1
+   823                           
+   824                           
+   825                           ; 1 bytes @ 0x1
+   826  0071                     	ds	1
+   827  0072                     ??_main:	
+   828  0072                     main@row:	
+   829                           ; 0 bytes @ 0x2
+   830                           
+   831                           
+   832                           ; 1 bytes @ 0x2
+   833  0072                     	ds	1
+   834  0073                     main@rowix:	
+   835                           
+   836                           ; 1 bytes @ 0x3
+   837  0073                     	ds	1
+   838  0074                     main@q:	
+   839                           
+   840                           ; 1 bytes @ 0x4
+   841  0074                     	ds	1
+   842  0075                     main@n:	
+   843                           
+   844                           ; 1 bytes @ 0x5
+   845  0075                     	ds	1
+
+
+HI-TECH Software PICC Macro Assembler V9.83 build 10920 
+Symbol Table                                                                                   Thu Nov 24 19:30:43 2011
+
+                  _BF 10A0                   _CKP 10AC                   _RC2 0072                   _RC3 0073  
+                 _RC4 0074                   _RC5 0075                   u100 005F                   u130 0072  
+                 u114 0061                   u160 0085                   u144 0074                   u174 0087  
+                 _isr 0004                   wreg 0009                  l3300 0000                  l3230 0000  
+                l3240 0000                  l3232 0000                  l3320 0000                  l3312 0000  
+                l1481 005A                  l3242 0000                  l3234 0000                  l3330 0000  
+                l3306 0000                  l1483 006D                  l3260 0000                  l3252 00AA  
+                l3244 0000                  l3236 0000                  l3228 0000                  l3332 0000  
+                l3324 0000                  l3308 0000                  l1477 0000                  l1485 0080  
+                l3254 0000                  l3246 0000                  l3238 0000                  l3318 0000  
+                l3270 0000                  l3262 0000                  l3256 0000                  l3248 0000  
+                l3280 0000                  l3272 0000                  l3264 0000                  l3290 0000  
+                l3282 0000                  l3274 0000                  l3266 003C                  l3292 0000  
+                l3284 0000                  l3276 0000                  l3268 0000                  l3294 0000  
+                l3286 0000                  l3278 0000                  l3296 0000                  l3288 0000  
+                l3298 0000                  ?_isr 0070                  _D_nA 10A5                  _WPUA 020C  
+                _WPUC 020E                  _R_nW 10A2                  _main 0039                  fsr0h 0005  
+                fsr1h 0007                  fsr0l 0004                  indf0 0000                  indf1 0001  
+                fsr1l 0006                  btemp 007E                  start 002B                 ??_isr 0070  
+               ?_main 0070                 _PORTA 000C                 _PORTC 000E                 _TRISA 008C  
+               _TRISC 008E                 _setup 0090                 main@n 0075                 main@q 0074  
+               wtemp0 007E            _i2c_packet 0020          __end_of_main 0090                ??_main 0072  
+              ?_setup 0070                _ANSELA 018C                _ANSELC 018E                i1l3200 0000  
+              i1l3222 0025                i1l3214 0000                i1l1463 001E                i1l3208 0000  
+              i1l3224 0028                i1l3218 0021                i1l3226 0029                _INLVLA 038C  
+              _INLVLC 038E                _INTCON 000B                _OSCCON 0099                _SSP1IE 048B  
+              _SSP1IF 008B                _SSPADD 0212                _SSPBUF 0211                clrloop 00D3  
+              setup@n 0071        __pcstackCOMMON 0070         __end_of_setup 00C6               ??_setup 0071  
+          __pbssBANK0 0020            __pmaintext 0039            __pintentry 0004               _ACKSTAT 10B6  
+             _SSPCON1 0215               _SSPCON2 0216               _SSPCON3 0217          __size_of_isr 0027  
+             main@row 0072  end_of_initialization 0037               isr@data 0070   start_initialization 002E  
+           _i2c_bytes 0076           __end_of_isr 002B           __pbssCOMMON 0076        __size_of_setup 0036  
+           main@rowix 0073              __ptext43 0090         __size_of_main 0057              clear_ram 00D2  
+            intlevel1 0000            _OPTION_REG 0095  

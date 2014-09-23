@@ -1,0 +1,20 @@
+FTP Server:
+-Created by "Serv-U" program on Desktop. It currently runs automatically as a local service on the 192.168.1.10 Computer.
+-Use the "SmartFTP" Client to check if the FTP server is running. In the address bar, type 192.168.1.10. The login should be roboops with password roboops2014.
+
+TCP/IP:
+-Run "hercules_3-2-6" located on the Desktop. Click on "TCP Server". Make sure the "Port" under server status is 1024. 
+
+
+
+----------------------------------------------
+
+Getting Images from the BOA to the FTP Folder:
+
+1) Find the appropriate BOA via the iDiscover tool. Then load the correct program (in this case, it should be saved as program "1").
+
+2) Run "hercules_3-2-6" located on the Desktop. Click on "TCP Server". Make sure the "Port" under server status is 1024.
+
+3) Run the BOA via the run continuously button (the button with two curved green arrows).
+
+4) Everything an image is desires, type "send.namehere." without quotations. The program will then save an image into the FTP directory (located in C:\RoboFTP) with the name "namehere.0". Note, all image names will end with a 0.

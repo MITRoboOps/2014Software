@@ -1,0 +1,44 @@
+﻿<Window x:Class="RoboOpsNavGUI.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:bing="clr-namespace:Microsoft.Maps.MapControl.WPF;assembly=Microsoft.Maps.MapControl.WPF"
+        Title="NAV GUI" Height="937.438" Width="1277.512"
+        Closing="Window_Closing">
+    <Grid>
+        <bing:Map x:Name="Map" CredentialsProvider="AtbB4TpqgdgTSZEBBGkcWBbvp0Lk9jnsVDjvadm5r2W_QYk-tGHIXSJsVxsXNa2F" 
+              Mode="Aerial" VerticalAlignment="Stretch" 
+              Center="29.564855, -95.081505" ZoomLevel="20" Margin="200,0,0,50" MouseLeftButtonDown="Map_MouseLeftButtonDown" MouseRightButtonDown="Map_MouseRightButtonDown">
+            <bing:MapPolyline Locations="{Binding Locations}"  Stroke="Red" StrokeThickness="1" />
+            <bing:MapItemsControl ItemsSource="{Binding PushPins}" >
+                <bing:MapItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <bing:Pushpin Location="{Binding}" />
+                    </DataTemplate>
+                </bing:MapItemsControl.ItemTemplate>
+            </bing:MapItemsControl>
+        </bing:Map>
+        <Button x:Name="bDropPin" Content="Drop Pin At Current Location" HorizontalAlignment="Left" Margin="186,0,0,25" VerticalAlignment="Bottom" Width="168" Click="bDropPin_Click"/>
+        <Button Content="View: Follow" HorizontalAlignment="Center" Margin="391,0,337,0" VerticalAlignment="Bottom" Width="75" Click="bViewFollow_Click"/>
+        <Button x:Name="bViewStatic" Content="View: Static" HorizontalAlignment="Center" Margin="391,0,337,25" VerticalAlignment="Bottom" Width="75" Click="bViewStatic_Click"/>
+        <Button x:Name="bDeleteTrack" Content="Delete Track" HorizontalAlignment="Center" Margin="695,0,480,0" VerticalAlignment="Bottom" Width="76" Click="LoadLastTrack_Click"/>
+        <ToggleButton x:Name="togPinOnClick" Content="Pin On Click" HorizontalAlignment="Left" Margin="186,0,0,5" VerticalAlignment="Bottom" Width="168" Click="togPinOnClick_Click"/>
+        <Button x:Name="bConnectGPS" Content="Connect" HorizontalAlignment="Right" Margin="774,0,10,25" VerticalAlignment="Bottom" Width="75" Click="bConnectGPS_Click"/>
+        <Button x:Name="bViewReset" Content="View: Reset" HorizontalAlignment="Center" Margin="499,0,285,25" VerticalAlignment="Bottom" Width="75" Click="bViewReset_Click"/>
+
+        <TextBlock x:Name="tLat" HorizontalAlignment="Left" Margin="67,10,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Lat: " HorizontalAlignment="Left" Margin="10,5,0,0" VerticalAlignment="Top"/>
+        <Label Content="Lon:" HorizontalAlignment="Left" Margin="10,22,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tLon" HorizontalAlignment="Left" Margin="67,27,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Speed:" HorizontalAlignment="Left" Margin="10,38,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tSpeed" HorizontalAlignment="Left" Margin="67,43,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Heading:" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top"/>
+        <TextBlock x:Name="tHeading" HorizontalAlignment="Left" Margin="67,59,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        <Label Content="Status: " HorizontalAlignment="Right" Margin="0,0,85,0" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="tGPSConnStatus" HorizontalAlignment="Right" Margin="0,0,8,5" TextWrapping="Wrap" Text="Disconnected" VerticalAlignment="Bottom" Width="77"/>
+        <Label Content="Status: " HorizontalAlignment="Left" Margin="0,0,0,2" VerticalAlignment="Bottom"/>
+        <TextBlock x:Name="tStatusConnStatus" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Disconnected" VerticalAlignment="Bottom" Width="77" Margin="48,0,0,7"/>
+
+        <ToggleButton x:Name="togDrawPoly" Content="Draw Poly" HorizontalAlignment="Left" Margin="359,0,0,25" VerticalAlignment="Bottom" Width="85" Click="togDrawPoly_Click"/>
+        <Button x:Name="bConnectStatus" Content="Connect" HorizontalAlignment="Left" Margin="10,0,0,25" VerticalAlignment="Bottom" Width="75" Click="bConnectStatus_Click"/>
+    </Grid>
+</Window>

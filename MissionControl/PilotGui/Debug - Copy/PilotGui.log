@@ -1,0 +1,45 @@
+﻿Build started 6/4/2014 2:38:50 PM.
+     1>Project "C:\Users\reobaird\Dropbox\MIT\RoboOps\Software\PilotGui\PilotGui.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt InputHandler.cpp OutputHandler.cpp PilotGui.cpp SDLHelper.cpp UDPCli.cpp globals.cpp
+         InputHandler.cpp
+     1>c:\users\reobaird\dropbox\mit\roboops\software\pilotgui\inputhandler.cpp(87): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\reobaird\dropbox\mit\roboops\software\pilotgui\inputhandler.cpp(90): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\reobaird\dropbox\mit\roboops\software\pilotgui\inputhandler.cpp(93): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\reobaird\dropbox\mit\roboops\software\pilotgui\inputhandler.cpp(96): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\reobaird\dropbox\mit\roboops\software\pilotgui\inputhandler.cpp(101): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         Generating Code...
+         Compiling...
+         globals.cpp
+         UDPCli.cpp
+         SDLHelper.cpp
+         PilotGui.cpp
+         OutputHandler.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\reobaird\Dropbox\MIT\RoboOps\Software\PilotGui\Debug\PilotGui.exe" /INCREMENTAL /NOLOGO /LIBPATH:C:\Users\reobaird\Dropbox\MIT\RoboOps\Software\PilotGui\lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib ws2_32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\reobaird\Dropbox\MIT\RoboOps\Software\PilotGui\Debug\PilotGui.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\reobaird\Dropbox\MIT\RoboOps\Software\PilotGui\Debug\PilotGui.lib" /MACHINE:X86 Debug\globals.obj
+         Debug\InputHandler.obj
+         Debug\logger.obj
+         Debug\MSGParser.obj
+         Debug\OutputHandler.obj
+         Debug\PilotGui.obj
+         Debug\SDLHelper.obj
+         Debug\UDPCli.obj
+         lib\ffmpeg\avcodec.lib
+         lib\ffmpeg\avdevice.lib
+         lib\ffmpeg\avfilter.lib
+         lib\ffmpeg\avformat.lib
+         lib\ffmpeg\avutil.lib
+         lib\ffmpeg\postproc.lib
+         lib\ffmpeg\swresample.lib
+         lib\ffmpeg\swscale.lib
+         lib\SDL\SDL2.lib
+         lib\SDL\SDL2main.lib
+         lib\SDL\SDL2_image.lib
+         lib\SDL\SDL2_ttf.lib
+         PilotGui.vcxproj -> C:\Users\reobaird\Dropbox\MIT\RoboOps\Software\PilotGui\Debug\PilotGui.exe
+     1>Done Building Project "C:\Users\reobaird\Dropbox\MIT\RoboOps\Software\PilotGui\PilotGui.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:04.95

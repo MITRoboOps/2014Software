@@ -1,0 +1,50 @@
+# depslib dependency file v1.0
+1397961412 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\oswrap.c
+	<string.h>
+	"include/oswrap.h"
+	<stdio.h>
+	<errno.h>
+	<termios.h>
+	<unistd.h>
+	<fcntl.h>
+
+1397935354 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\include\oswrap.h
+	<stdint.h>
+	<winsock2.h>
+	<windows.h>
+	<ws2tcpip.h>
+	<sys/socket.h>
+	<sys/types.h>
+	<arpa/inet.h>
+	<unistd.h>
+	<stdint.h>
+
+1397935351 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\utils.c
+	<stdio.h>
+	<string.h>
+	"robocortex.h"
+
+1397964399 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\capture.cpp
+	<stdio.h>
+	<videoinput.h>
+	"opencv/cv.h"
+	"opencv/highgui.h"
+
+1397963655 source:c:\users\reobaird\dropbox\mit\roboops\software\robopilot\srv.c
+	<stdio.h>
+	<signal.h>
+	<SDL/SDL.h>
+	<libswscale/swscale.h>
+	<x264.h>
+	"oswrap.h"
+	"robocortex.h"
+	"speech.h"
+	"plugins/srv.h"
+	"sdl_console.h"
+
+1397935354 c:\users\reobaird\dropbox\mit\roboops\software\robopilot\plugins\srv.h
+	<stdio.h>
+	"robocortex.h"
+	"oswrap.h"
+	<SDL/SDL_video.h>
+
